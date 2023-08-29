@@ -17,26 +17,14 @@
   <main>
     <section class='relative'>
       <img src='images/main-bg.jpg' class='main-bg'/>
-      <!-- Navbar (tablets + desktops) -->
+      <!-- Navbar -->
       <nav role="navigation"
-        class="px-8 pt-6 md:flex md:justify-center md:gap-x-32 lg:pt-10 xl:max-w-screen-2xl">
+        class="px-8 pt-6 flex flex-col justify-center items-center md:flex-row md:gap-x-32 lg:pt-10 xl:max-w-screen-2xl">
   
         <!-- Logo -->
-        <div>
+        <div class='w-1/6 pt-4 pb-8 md:py-0'>
           <a href="index.html">
-            <svg class="w-24 xl:w-32" width="83" height="29" viewBox="0 0 83 29" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <title>FTM Logo</title>
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M29.3235 16.8328C29.1582 19.1573 29.0137 22.0352 27.0771 23.3267C25.0095 24.7056 22.1351 22.5016 19.7555 23.2137C17.7533 23.8129 16.9586 27.0745 14.8716 26.9794C12.8414 26.8869 12.0663 24.178 10.5749 22.7954C9.24317 21.561 7.70495 20.6661 6.54936 19.2648C5.04642 17.4423 3.09917 15.7305 2.81316 13.3833C2.51302 10.9201 3.36085 8.2717 4.98102 6.39379C6.57907 4.54153 9.21741 4.19227 11.4989 3.31587C13.7168 2.46388 13.4649 2.04997 15.661 2.9545C18.0017 3.91857 19.5183 6.88348 22.5528 7.12233C24.164 8.60452 26.6463 8.59899 28.0023 10.3186C29.3969 12.087 29.4834 14.584 29.3235 16.8328Z"
-                fill="black" fill-opacity="0.42" />
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M27.1993 15.5102C27.034 17.8347 26.8895 20.7127 24.9529 22.0042C22.8853 23.3831 20.0109 21.179 17.6313 21.8911C15.6291 22.4903 14.8345 25.7519 12.7474 25.6568C10.7172 25.5643 9.94209 22.8554 8.45067 21.4729C7.11898 20.2384 5.58075 19.3436 4.42517 17.9422C2.92223 16.1197 2.15777 13.3114 1.87177 10.9642C1.57162 8.50096 2.805 7.67767 4.42517 5.79976C6.02321 3.94749 7.09322 2.86969 9.37468 1.99329C11.5926 1.14131 13.9364 1.08875 16.1326 1.99329C18.4733 2.95735 18.5646 4.08493 20.4286 5.79975C22.0398 7.28194 24.5221 7.27642 25.8781 8.99599C27.2727 10.7644 27.3592 13.2614 27.1993 15.5102Z"
-                fill="#0CFAB7" />
-              <path
-                d="M45.0293 16.3359H39.502V22H36.0742V7.78125H45.5859V10.4277H39.502V13.6992H45.0293V16.3359ZM61.3691 10.4277H57.1016V22H53.6738V10.4277H49.4844V7.78125H61.3691V10.4277ZM70.3262 7.78125L73.5 17.6738L76.6641 7.78125H81.1758V22H77.7383V18.6797L78.0703 11.8828L74.6328 22H72.3672L68.9199 11.873L69.252 18.6797V22H65.8242V7.78125H70.3262Z"
-                fill="#777676" />
-            </svg>
+            <img class='w-full' src='images/logo-white.png'/>
           </a>
         </div>
   
@@ -89,15 +77,19 @@
             <div class="absolute bottom-1 bg-accent h-3 w-full transform -rotate-6">
             </div>
           </div>을 소개합니다</h2>
-          <div class='text-left mt-8 leading-relaxed md:leading-loose md:mt-16'>
-            <p class="text-md md:text-lg mt-1 text-gray-800">이 직원은 휴식, 퇴근, 잠이 없습니다.</p>
-            <p class="text-md md:text-lg mt-1 text-gray-800">
-              그는 막대한 인건비나 휴가도 바라지 않습니다.</p>
-            <p class="text-md md:text-lg mt-1 text-gray-800">
-              그는 당신의 사업에 대한 고객들의 신뢰도를 높여줍니다. </p>
+          <div class='text-center mt-8 leading-relaxed md:leading-loose md:mt-16'>
+            <p class="text-md md:text-lg mt-1 text-gray-800">그는 당신의 제품과 서비스를 고객들에게 24시간 연중무휴로 소개합니다.</p>
             <p class="text-md md:text-lg mt-1 text-gray-800">
               그는 당신의 고객들이 있는 곳이라면 지구 반대편까지도 찾아갑니다.</p>
-            <p class="text-md md:text-lg mt-1 text-gray-800">그는 당신의 제품과 서비스를 고객들에게 24시간 연중무휴로 소개합니다.</p>
+              <p class="text-md md:text-lg mt-1 text-gray-800">
+                그는 당신의 사업에 대한 고객들의 신뢰도를 높여줍니다. </p>
+                <p class="text-md md:text-lg mt-1 text-gray-800">
+                  그는 막대한 인건비나 휴가도 바라지 않습니다.</p>
+            <p class="text-md md:text-lg mt-1 text-gray-800">그에게는 휴식, 퇴근, 잠이 없습니다.</p>
+
+
+
+            
             <p class="text-md mt-8 md:text-lg text-gray-800">그의 이름은 <span class='bg-black text-white'>웹사이트</span>입니다.</p>
       </div>
     </section>
@@ -121,8 +113,8 @@
               <i class="fa-solid fa-handshake-simple md:text-2xl"></i>
             </div>
             <div class='md:w-10/12 lg:w-11/12 lg:pl-8'>
-              <p class="text-xl font-bold text-center my-6 md:my-0 md:text-left">믿을만한 업체</p>
-              <p class="text-md leading-relaxed md:text-lg mt-2 text-gray-800">디파짓만 받고 사라지는 악덕 업체들이 있습니다. 다른 웹사이트의 디자인과 컨텐츠를 무단으로 가져다 쓰는 곳들이 있습니다. 웹사이트 제작 의뢰시 가장 먼저 믿을만한 곳인지 확인하세요. 웹타민은 유튜브에 얼굴과 본명을 공개한 <span class='bg-black text-white'>개발자 유튜버</span>가 운영하고 있습니다.</p>
+              <p class="text-xl font-bold text-center my-6 md:my-0 md:text-left">번역이 정확한 업체</p>
+              <p class="text-md leading-relaxed md:text-lg mt-2 text-gray-800">영어권자 고객들을 위해서는 웹사이트가 영문으로도 제공되어야만 합니다. 그런데 전문적이지 않은, 소위 번역기체 영어로 소개되어 있는 홈페이지들이 있습니다. 웹사이트 제작 의뢰시 깔끔한 번역을 제공하는지 확인하세요. 웹타민은 미국 현지 대기업 <span class='bg-black text-white'>통역사 출신 개발자</span>가 운영하고 있습니다.</p>
             </div>
           </div>
           <div class='flex justify-between items-center flex-col border border-opacity-5 border-b-0 shadow-md py-8 px-12 my-10 bg-white md:flex-row'>
@@ -277,7 +269,7 @@
             </div>
           </div>는 환영입니다</h2>
           <!-- CTA -->
-          <a href="#"
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdEa50c1igUGS0bRGVWa45k1nirdl61vExS0tDGvasNI6Irtw/viewform?usp=sharing" rel='no-referrer' target='_blank'
           class="block uppercase font-medium bg-accent px-12 py-4 text-black shadow-md mx-auto w-1/2 md:w-full lg:w-max mt-12 text-center"><span
             class="text-md md:text-xl opacity-75">문의하기</span></a>
 
@@ -327,9 +319,9 @@
 
     <!-- Social Links & Copyright-->
     <div class="flex flex-col items-center opacity-50 text-xs mb-4 lg:mb-6">
-      <div class='mb-2'>
+      <!-- <div class='mb-2'>
         <a href='https://www.youtube.com/@jonghwikim' rel='no-referrer' target='_blank'><i class="fa-brands fa-youtube text-white text-lg"></i></a>
-      </div>
+      </div> -->
       <div class="font-medium mb-1">&copy; Webtamin</div>
     </div>
   </footer>
