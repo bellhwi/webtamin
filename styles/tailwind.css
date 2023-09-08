@@ -53,16 +53,16 @@
   object-fit: cover;
 }
 
-.bg-accent3 {
-  background-color: #4d6799;
-}
-
 .bg-footer {
   background-color: #101a24;
 }
 
 .color-accent {
   color: #b3cdff;
+}
+
+.btn-bg {
+  background-color: #ccdeff;
 }
 
 .icon-bg {
