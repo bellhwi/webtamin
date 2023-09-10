@@ -71,6 +71,10 @@
   border-radius: 50%;
 }
 
+.logo {
+  max-width: 10rem;
+}
+
 a {
   text-decoration: none;
 }
