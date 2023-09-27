@@ -76,6 +76,11 @@
   min-width: 7rem;
 }
 
+.vl {
+  border-color: black;
+  border-left: 8px solid;
+}
+
 a {
   text-decoration: none;
 }
