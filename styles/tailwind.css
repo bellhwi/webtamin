@@ -23,10 +23,6 @@
   }
 }
 
-.fa-check {
-  color: #6b84b3;
-}
-
 .main-bg {
   position: absolute;
   left: 0;
@@ -53,12 +49,16 @@
   object-fit: cover;
 }
 
-.bg-footer {
+.bg-dark {
   background-color: #101a24;
 }
 
 .color-accent {
   color: #b3cdff;
+}
+
+.color-check {
+  color: #6b84b3;
 }
 
 .btn-bg {
@@ -81,6 +81,16 @@
   border-left: 8px solid;
 }
 
+.text-gap {
+  margin-left: -0.3rem;
+}
+
 a {
   text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .text-gap {
+    margin-left: -0.5rem;
+  }
 }

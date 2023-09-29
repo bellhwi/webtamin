@@ -1,205 +1,221 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="웹사이트를 제작할 때 자주 찾는 질문과 답변들을 소개해드립니다."
+    />
+    <title>[공지] 문의 전 필독 사항 | 웹타민</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="웹사이트를 제작할 때 자주 찾는 질문과 답변들을 소개해드립니다.">
-  <title>[공지] 문의 전 필독 사항 | 웹타민</title>
+    <!-- CSS Files -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="nofollow"
+    />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/tailwind.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../favicon-16x16.png"
+    />
+    <link rel="manifest" href="../site.webmanifest" />
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-JGET5W7JRZ"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || []
+    function gtag() {
+      dataLayer.push(arguments)
+    }
+    gtag('js', new Date())
 
-  <!-- CSS Files -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="nofollow" />
-  <link rel="stylesheet" href="../styles/index.css">
-  <link rel="stylesheet" href="../styles/tailwind.css">
-  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
-<link rel="manifest" href="../site.webmanifest">
-</head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JGET5W7JRZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-JGET5W7JRZ');
-</script>
-<body>
-  <main>
-    <section class='relative'>
-      <img src='../images/column-bg.webp' alt='' class='column-bg'/>
-      <!-- Navbar -->
-      <nav role="navigation"
-        class="px-8 pt-6 flex flex-col justify-center items-center md:flex-row md:gap-x-32 lg:pt-10">
-  
+    gtag('config', 'G-JGET5W7JRZ')
+  </script>
+  <body>
+    <main>
+      <!-- Hero -->
+      <section class="relative pt-10 pb-4">
+        <img src="../images/column-bg.webp" alt="" class="column-bg" />
         <!-- Logo -->
-        <div class='logo w-1/6 py-4 md:py-0'>
-          <a href="../index.html">
-            <img class='w-full' alt='logo' src='../images/logo-white.png'/>
-          </a>
+        <div class="w-11/12 mx-auto 2xl:w-1/2">
+          <div class="logo w-1/12">
+            <a href="index.html">
+              <img class="w-full" alt="logo" src="images/logo-white.png" />
+            </a>
+          </div>
         </div>
-  
-        <!-- Menu -->
+        <!-- Main landing -->
         <div
-          class="list-none flex justify-center items-center gap-x-6 text-xs text-white font-medium lg:text-sm lg:gap-x-12 lg:pl-10">
-          
-          <!-- Menu Item -->
-          <div class="inline-block relative">
-            <li class="relative"><a href="../column.html" class="inline-block h-full w-full">칼럼</a></li>
-          </div>
-          
-          <!-- Menu Item -->
-          <div class="inline-block relative">
-            <li class="relative"><a href="../index.html#services" class="inline-block h-full w-full">서비스</a></li>
-          </div>
-          
-          <div class="inline-block relative">
-            <li class="relative"><a href="../index.html#work" class="inline-block h-full w-full">포트폴리오</a></li>
-          </div>
-          
-          <!-- Menu Item -->
-          <div class="inline-block relative">
-            <li class="relative"><a href="../index.html#testimonials" class="inline-block h-full w-full">고객후기</a></li>
-          </div>
-  
-          <!-- Menu Item -->
-          <div class="inline-block relative">
-            <li class="relative"><a href="../index.html#contact" class="inline-block h-full w-full">문의하기</a></li>
-          </div>
-        </div>
-      </nav>
-      <!-- Main landing section -->
-      <section
-        class="flex justify-center items-center mt-8 pb-8 md:pb-0 md:mt-10 lg:relative lg:gap-x-24 xl:max-w-screen-2xl xl:mx-auto lg:py-20">
-        <div>
-          <!-- Text Container-->
-          <div class="xs:pr-1 pt-8 px-4 md:px-8 md:flex-shrink-0 md:py-16 lg:py-24 w-full text-center md:text-left text-white">
-            <h1 class="font-bold text-4xl leading-relaxed md:leading-normal md:text-5xl lg:text-6xl pb-4"><span class='color-accent'>웹사이트 제작</span> <br class='md:hidden'> 절대 서두르지 마세요</h1>
-            <p class="text-md mt-8 mb-8 md:mt-12 md:w-3/4 md:text-lg lg:text-2xl lg:w-full">소중한 시간과 비용을 전부 날려버릴 수 있습니다.</p>
+          class="flex justify-center items-center mt-6 pb-12 py-12 md:py-20 lg:gap-x-24 xl:max-w-screen-2xl xl:mx-auto lg:py-20 xl:py-36 2xl:py-52"
+        >
+          <div>
+            <!-- Text Container-->
+            <div class="w-full text-center md:text-left text-white">
+              <h1
+                class="font-bold text-4xl leading-relaxed md:leading-normal md:text-5xl lg:text-6xl xl:text-7xl pb-4"
+              >
+                <span class="color-accent">웹사이트 제작</span>
+                <br class="md:hidden" />절대 서두르지 마세요
+              </h1>
+              <p
+                class="text-md mt-6 mb-8 md:w-3/4 md:text-lg lg:text-2xl lg:w-full"
+              >
+                소중한 시간과 비용을 전부 날려버릴 수 있습니다.
+              </p>
+              <a
+                href="../index.html"
+                class="btn-bg block uppercase mx-auto text-black shadow-md py-4 w-max mt-12 md:mx-0 md:mr-auto px-12 py-4 rounded-sm"
+                ><span class="text-md lg:text-xl">메인으로 가기</span></a
+              >
+            </div>
           </div>
         </div>
       </section>
-    </section>
 
-    <!--  Column Container -->
-    <section class="leading-loose relative max-w-screen-xl mx-auto" id='column-container'>
-      <!-- Headings and text container -->
-      <div class="text-left px-12 py-16 md:px-4 md:pt-20 md:px-20">
-        <!-- Heading -->
-        <h2 class="text-2xl font-bold md:text-3xl lg:text-4xl">[공지] 문의 전 필독 사항</h2>
-        <p class="text-gray-800 mt-5 text-sm">2023-06-03</p>
-        <hr class='text-gray-600 mt-5 w-full'/>
-        <!-- Content -->
-        <div class='text-left mt-5 leading-relaxed md:leading-loose text-gray-800'>
-          <p class='max-w-full'>
-            안녕하세요, 웹타민입니다.<br>
-            웹타민의 서비스에 대해 자주 찾는 질문과 답변들을 말씀드립니다.<br>
-            <br>
-            <strong>Q. 의뢰 가능한 웹사이트의 종류는 어떻게 되나요?</strong><br>
-            A. 개인 및 사업 대상의 소개형 웹사이트를 전문적으로 제작하고 있습니다. 주로 상품 소개, 서비스 소개, 회사 소개, 문의하기 등의 페이지로 구성됩니다.<br>
-            <br>
-            <strong>Q. 웹사이트 제작 기간은 얼마나 되나요?</strong><br>
-            A. 약 30일 정도 소요됩니다. 프로젝트 크기에 따라 단축되거나 연장될 수 있습니다.<br>
-            <br>
-            <strong>Q. 웹사이트 제작 비용은 어떻게 되나요?</strong><br>
-            A. $1,000입니다. 도메인(웹사이트 주소) 등록비는 별도로 1년 기준 평균 $10-$20 정도 발생합니다. 그외 추가 비용은 일절 없습니다.<br>
-            <br>
-            <strong>Q. 웹사이트의 환불 정책은 어떻게 되나요?</strong><br>
-            A. 불만족시 제작비 100% 전액 환불됩니다. <br>
-            <br>
-            <strong>Q. 웹사이트 제작에 포함되는 서비스는 어떤 것들이 있나요?</strong><br>
-            A. 웹사이트 디자인 및 레이아웃 개발, 상세 페이지 및 기능 구성, 영문 번역 페이지 추가, 반응형 디자인 적용, 검색 엔진 최적화(SEO), 웹사이트 테스트 및 배포, 사후 유지보수를 제공합니다.<br>
-            <br>
-            <strong>Q. 웹사이트 제작의 전체적인 흐름이 어떻게 되나요?</strong><br>
-            A. 주로 다음의 절차로 이루어집니다. 문의 양식 제출 - 제안서 전달 - 계약서 작성 - 웹사이트 제작 착수 - 1차 결과물 전달 - 피드백 반영 - 2차 결과물 전달 - 피드백 반영 - 최종 결과물 전달 - 도메인 등록 - 유지보수<br>
-            <br>
-            <strong>Q. 웹사이트 완성 이후 유지보수는 어떻게 되나요?</strong><br>
-            A. 횟수 제한 없이 평생 무료로 제공됩니다.<br>
-            <br>
-            <strong>Q. 카피라이팅이나 로고 디자인 서비스도 제공되나요?</strong><br>
-            A. 준비 단계에 있습니다.<br>
-            <br>
-            <strong>Q. 도메인 등록 및 개인 이메일 주소 발급은 혼자 해야 하나요?</strong><br>
-            A. 도메인 제공 업체에 계정 생성하여 전달드립니다. 이후 등록 절차 도와드립니다.<br>
-            <br>
-            <strong>Q. 웹사이트 제작 이후 코드 및 디자인의 지적 재산권은 누가 갖게 되나요?</strong><br>
-            A. 제작사에 소유권이 있습니다. 소스 코드와 개발에 사용된 자산은 제공되지 않습니다.<br>
-            <br>
-            그밖에 더 궁금하신 사항은 아래 이메일 주소로 문의해주시기 바랍니다.<br>
-            감사합니다.<br>
-            <br>
-            contact@webtamin.co<br></p>
+      <!--  Column Container -->
+      <section
+        class="leading-loose relative max-w-screen-xl mx-auto"
+        id="column-container"
+      >
+        <!-- Headings and text container -->
+        <div class="text-left px-12 py-16 md:px-4 md:pt-20 md:px-20">
+          <!-- Heading -->
+          <h2 class="text-2xl font-bold md:text-3xl lg:text-4xl">
+            [공지] 문의 전 필독 사항
+          </h2>
+          <p class="text-gray-800 mt-5 text-sm">2023-06-03</p>
+          <hr class="text-gray-600 mt-5 w-full" />
+          <!-- Content -->
+          <div
+            class="text-left mt-5 leading-relaxed md:leading-loose text-gray-800"
+          >
+            <p class="max-w-full">
+              안녕하세요, 웹타민입니다.<br />
+              웹타민의 서비스에 대해 자주 찾는 질문과 답변들을 말씀드립니다.<br />
+              <br />
+              <strong>Q. 의뢰 가능한 웹사이트의 종류는 어떻게 되나요?</strong
+              ><br />
+              A. 개인 및 사업 대상의 소개형 웹사이트를 전문적으로 제작하고
+              있습니다. 주로 상품 소개, 서비스 소개, 회사 소개, 문의하기 등의
+              페이지로 구성됩니다.<br />
+              <br />
+              <strong>Q. 웹사이트 제작 기간은 얼마나 되나요?</strong><br />
+              A. 약 30일 정도 소요됩니다. 프로젝트 크기에 따라 단축되거나 연장될
+              수 있습니다.<br />
+              <br />
+              <strong>Q. 웹사이트 제작 비용은 어떻게 되나요?</strong><br />
+              A. $1,000입니다. 도메인(웹사이트 주소) 등록비는 별도로 1년 기준
+              평균 $10-$20 정도 발생합니다. 그외 추가 비용은 일절 없습니다.<br />
+              <br />
+              <strong>Q. 웹사이트의 환불 정책은 어떻게 되나요?</strong><br />
+              A. 불만족시 제작비 100% 전액 환불됩니다. <br />
+              <br />
+              <strong
+                >Q. 웹사이트 제작에 포함되는 서비스는 어떤 것들이
+                있나요?</strong
+              ><br />
+              A. 웹사이트 디자인 및 레이아웃 개발, 상세 페이지 및 기능 구성,
+              영문 번역 페이지 추가, 반응형 디자인 적용, 검색 엔진 최적화(SEO),
+              웹사이트 테스트 및 배포, 사후 유지보수를 제공합니다.<br />
+              <br />
+              <strong>Q. 웹사이트 제작의 전체적인 흐름이 어떻게 되나요?</strong
+              ><br />
+              A. 주로 다음의 절차로 이루어집니다. 문의 양식 제출 - 제안서 전달 -
+              계약서 작성 - 웹사이트 제작 착수 - 1차 결과물 전달 - 피드백 반영 -
+              2차 결과물 전달 - 피드백 반영 - 최종 결과물 전달 - 도메인 등록 -
+              유지보수<br />
+              <br />
+              <strong>Q. 웹사이트 완성 이후 유지보수는 어떻게 되나요?</strong
+              ><br />
+              A. 횟수 제한 없이 평생 무료로 제공됩니다.<br />
+              <br />
+              <strong>Q. 카피라이팅이나 로고 디자인 서비스도 제공되나요?</strong
+              ><br />
+              A. 준비 단계에 있습니다.<br />
+              <br />
+              <strong
+                >Q. 도메인 등록 및 개인 이메일 주소 발급은 혼자 해야
+                하나요?</strong
+              ><br />
+              A. 도메인 제공 업체에 계정 생성하여 전달드립니다. 이후 등록 절차
+              도와드립니다.<br />
+              <br />
+              <strong
+                >Q. 웹사이트 제작 이후 코드 및 디자인의 지적 재산권은 누가 갖게
+                되나요?</strong
+              ><br />
+              A. 제작사에 소유권이 있습니다. 소스 코드와 개발에 사용된 자산은
+              제공되지 않습니다.<br />
+              <br />
+              그밖에 더 궁금하신 사항은 아래 이메일 주소로 문의해주시기
+              바랍니다.<br />
+              감사합니다.<br />
+              <br />
+              contact@webtamin.co<br />
+            </p>
+          </div>
         </div>
-    </section>
-  </main>
+        <!-- Back to column page -->
+        <div class="text-center mb-20">
+          <a
+            href="../column.html"
+            class="border border-black py-4 w-max px-12 py-4 rounded-sm text-gray-800 lg:text-xl"
+            >칼럼 더 보기</a
+          >
+        </div>
+      </section>
+    </main>
 
-<!-- Footer -->
-  <footer
-    class="relative z-20 flex flex-col items-center justify-between px-4 pt-12 bg-white bg-footer text-white lg:shadow-inner">
-    <!-- Menu Items -->
-    <div
-      class="text-xs md:text-sm list-none w-full max-w-screen-xl flex flex-row justify-center items-center pb-8 gap-x-8 opacity-75 lg:gap-x-16">
-      <!-- Menu items -->
-      <div class="flex justify-between items-center max-w-max gap-y-2 md:gap-y-0 md:flex-row md:gap-x-12">
-        <!-- Menu Item -->
-        <div class="inline-block relative mx-3">
-          <li class="relative z-10 font-medium lg:font-normal lg:hover:underline"><a
-              href="../column.html" class="inline-block h-full w-full">칼럼</a>
-          </li>
-          <div class="absolute bottom-0 h-1 w-full bg-accent hidden md:absolute lg:hidden"></div>
-        </div>
-        
-        <div class="inline-block relative mx-3">
-          <li class="relative z-10 font-medium lg:font-normal lg:hover:underline"><a
-              href="../index.html#services" class="inline-block h-full w-full">서비스</a>
-          </li>
-          <div class="absolute bottom-0 h-1 w-full bg-accent hidden md:absolute lg:hidden"></div>
-        </div>
-        
-        <div class="inline-block relative mx-3">
-          <li class="relative z-10 font-medium lg:font-normal lg:hover:underline"><a
-              href="../index.html#work" class="inline-block h-full w-full">포트폴리오</a>
-          </li>
-          <div class="absolute bottom-0 h-1 w-full bg-accent hidden md:absolute lg:hidden"></div>
-        </div>
-
-        <!-- Menu Item -->
-        <div class="inline-block relative mx-3">
-          <li class="relative z-10 font-medium lg:font-normal lg:hover:underline"><a
-              href="../index.html#testimonials" class="inline-block h-full w-full">고객후기</a></li>
-          <div class="absolute bottom-0 h-1 w-full bg-accent hidden md:absolute lg:hidden"></div>
-        </div>
-       
-        <!-- Menu Item -->
-        <div class="inline-block relative mx-3">
-          <li class="relative z-10 font-medium lg:font-normal lg:hover:underline"><a
-              href="../index.html#contact" class="inline-block h-full w-full">문의하기</a>
-          </li>
-          <div class="absolute bottom-0 h-1 w-full bg-accent hidden md:absolute lg:hidden"></div>
+    <!-- Footer -->
+    <footer
+      class="relative flex flex-col items-center justify-between px-4 pt-8 bg-dark text-white lg:shadow-inner"
+    >
+      <!-- Contact Icon -->
+      <div class="fixed right-0 bottom-0 m-4">
+        <div
+          class="flex items-center justify-center rounded-full btn-bg text-black w-12 h-12 md:w-auto md:h-auto md:p-4"
+        >
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdEa50c1igUGS0bRGVWa45k1nirdl61vExS0tDGvasNI6Irtw/viewform?usp=sharing"
+            rel="nofollow"
+            target="_blank"
+            ><i class="fa-solid fa-comment md:mr-2"></i
+            ><span class="hidden md:inline-block">문의하기</span></a
+          >
         </div>
       </div>
-    </div>
-    
-    <!-- Contact Icon -->
-    <div class='fixed right-0 bottom-0 m-4 md:m-8'>
-      <div class='flex items-center justify-center rounded-full btn-bg text-black w-12 h-12 md:w-auto md:h-auto md:p-4'>
-        <a href='https://docs.google.com/forms/d/e/1FAIpQLSdEa50c1igUGS0bRGVWa45k1nirdl61vExS0tDGvasNI6Irtw/viewform?usp=sharing' rel='nofollow' target='_blank'><i class="fa-solid fa-comment md:mr-2"></i><span class='hidden md:inline-block'>문의하기</span></a>
+
+      <!-- Social Links & Copyright-->
+      <div class="flex flex-col items-center opacity-50 text-xs mb-4 lg:mb-6">
+        <div class="font-medium mb-1">사업자등록번호(EIN): 93-3136163</div>
+        <div class="font-medium mb-1">
+          &copy; <span id="currentYear"> </span> WEBTAMIN
+        </div>
       </div>
-    </div>
-    
-    <!-- Social Links & Copyright-->
-    <div class="flex flex-col items-center opacity-50 text-xs mb-4 lg:mb-6">
-      <!-- <div class='mb-2'>
-        <a href='https://www.youtube.com/@Webtaminkim' rel='nofollow' target='_blank'><i class="fa-brands fa-youtube text-white text-lg"></i></a>
-      </div> -->
-      <div class="font-medium mb-1">&copy; <span id='currentYear'> </span> WEBTAMIN</div>
-    </div>
-  </footer>
+    </footer>
 
-</body>
-
-<script src="../js/index.js"></script>
-
+    <script src="../js/index.js"></script>
+  </body>
 </html>
