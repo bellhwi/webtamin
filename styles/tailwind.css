@@ -9,10 +9,6 @@
     scroll-behavior: smooth;
   }
 
-  p {
-    @apply max-w-prose;
-  }
-
   .text-stroke_thin {
     text-stroke: 1px black;
   }
