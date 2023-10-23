@@ -19,20 +19,7 @@
   }
 }
 
-.main-bg {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -10;
-  filter: brightness(20%);
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-.column-bg {
+.bg-overlay {
   position: absolute;
   left: 0;
   top: 0;
@@ -43,6 +30,23 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+.bg-overlay-video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -10;
+  filter: brightness(50%);
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.z-0 {
+  z-index: 0;
 }
 
 .bg-dark {
