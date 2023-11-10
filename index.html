@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="웹타민은 미국 캘리포니아에 위치한 한인 웹사이트 제작소입니다. 웹사이트 디자인, 홈페이지 제작, 웹사이트 개발 서비스를 제공합니다. 소개형 홈페이지를 전문적으로 제작하고 있습니다."
+      content="웹타민은 미국 캘리포니아에 위치한 한인 웹사이트 제작소입니다. 웹사이트 디자인, 홈페이지 제작, 웹사이트 개발 서비스를 제공합니다. 소개형 맞춤 홈페이지를 전문적으로 제작하고 있습니다."
     />
-    <title>웹타민 | 한인 웹사이트 제작소</title>
+    <title>웹타민</title>
 
     <!-- CSS Files -->
     <link
@@ -18,8 +18,8 @@
       crossorigin="anonymous"
       referrerpolicy="nofollow"
     />
-    <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="styles/tailwind.css" />
+    <link rel="stylesheet" href="styles/index.css" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -42,11 +42,11 @@
   <body>
     <main>
       <!-- Hero -->
-      <section class="relative pt-10 pb-4">
-        <!-- <img src="images/bg-overlay.webp" alt="" class="bg-overlay" /> -->
+      <section class="relative py-16 px-8">
+        <!-- Hero video -->
         <video
           src="images/main-video.mp4"
-          class="bg-overlay-video"
+          class="bg-overlay"
           type="video/mp4"
           preload="auto"
           autoplay
@@ -55,280 +55,251 @@
           playsinline
           poster="images/video-thumb.png"
         ></video>
-        <!-- Logo -->
-        <div class="flex justify-center">
-          <div class="logo w-1/12">
-            <a href="index.html">
-              <img class="w-full" alt="logo" src="images/logo-white.png" />
-            </a>
-          </div>
-        </div>
-        <!-- Main landing -->
-        <div
-          class="flex justify-center items-center mt-6 pb-12 py-12 md:py-20 lg:gap-x-24 xl:max-w-screen-2xl xl:mx-auto lg:py-40 2xl:py-60"
-        >
-          <div>
-            <!-- Text Container-->
-            <div class="w-full md:text-left text-white px-8">
-              <h1
-                class="font-bold text-4xl leading-relaxed md:leading-normal md:text-6xl xl:text-7xl pb-4"
-              >
-                남 다른 당신만을 위한
-                <br class="md:hidden" />
-                <span class="color-accent">맞춤 웹사이트</span>
-              </h1>
-              <p
-                class="text-gray-100 mt-6 mb-8 md:text-lg lg:text-2xl lg:w-full lg:mt-12"
-              >
-                템플릿 없는 100% 주문 제작형 웹사이트를 만들어드립니다. 불만족시
-                제작비는 전액 환불됩니다.
-              </p>
+        <!-- Hero content -->
+        <div class="container mx-auto flex flex-col items-center">
+          <!-- Topbar -->
+          <div class="w-full flex items-center justify-between">
+            <!-- Logo -->
+            <div class="logo w-1/12">
+              <a href="index.html">
+                <img class="w-full" alt="logo" src="images/logo-white.png" />
+              </a>
             </div>
+            <!-- Language -->
+            <div class="flex items-center space-x-4">
+              <span class="text-white">언어: </span
+              ><img
+                src="images/korean-icon.png"
+                alt="korean icon"
+                class="w-8"
+              />
+              <a href="en/index.html"
+                ><img src="images/usa-icon.png" alt="english icon" class="w-8"
+              /></a>
+            </div>
+          </div>
+          <!-- Text -->
+          <div>
+            <h1
+              class="mt-16 text-center text-white font-bold text-5xl md:text-6xl lg:text-7xl"
+            >
+              당신만을 위한
+              <br />
+              <span class="text-color-primary-lighter">맞춤 제작 웹사이트</span>
+            </h1>
+            <p
+              class="mt-4 text-center text-gray-100 text-lg md:text-2xl md:mt-8"
+            >
+              불만족시 무조건 제작비 전액 환불됩니다.
+            </p>
           </div>
         </div>
       </section>
 
       <!-- Services -->
-      <section class="bg-gray-50 pb-16 px-4">
-        <div class="container mx-auto pt-20">
-          <!-- Title -->
-          <p class="text-sm mx-auto mb-4 text-center">템플릿 vs 맞춤 제작</p>
-          <h2 class="text-center text-2xl font-bold md:text-4xl lg:text-5xl">
+      <section class="bg-gray-50 py-16 px-8">
+        <div class="container mx-auto flex flex-col items-center">
+          <!-- Top content-->
+          <p class="text-sm mx-auto text-center">템플릿 vs 맞춤 제작</p>
+          <h2 class="text-center mt-4 text-3xl font-bold md:text-5xl">
             <div class="relative inline-block z-20">
               <div class="relative z-10">웹사이트</div>
               <div
-                class="absolute bottom-2 bg-accent h-3 w-full transform -rotate-3"
+                class="absolute bottom-2 bg-color-primary-lighter h-3 w-full transform -rotate-3"
               ></div>
             </div>
             <span class="text-gap">, 달라져야할 때입니다.</span>
           </h2>
-          <p
-            class="text-lg md:text-2xl lg:text-3xl text-gray-800 mx-auto mt-12 text-center max-w-screen-lg md:leading-relaxed"
-          >
+          <p class="mt-8 text-lg md:text-2xl md:text-center">
             <span
               >웹사이트는 개인과 사업의
-              <strong class="btn-bg">브랜드 가치 극대화</strong>를 위해 존재해야
-              합니다.</span
+              <strong class="bg-color-primary-lighter"
+                >브랜드 가치 극대화</strong
+              >를 위해 존재해야 합니다.</span
             >
             <br class="hidden md:block" />
-            <span class="md:inline-block lg:mt-2"
+            <span class="md:inline-block md:mt-2"
               >틀에 갖힌 템플릿으로는 태생적인 한계에 부딪힐 수밖에
               없습니다.</span
             >
           </p>
-          <div
-            class="grid grid-cols-2 gap-4 mt-20 mb-12 mx-auto max-w-screen-md"
-          >
-            <p class="text-center font-semibold">템플릿 홈페이지</p>
-            <p class="text-center font-semibold">맞춤 홈페이지</p>
-            <!-- Box 1 -->
-            <div class="bg-gray-200 p-6 rounded shadow-md md:px-8 md:py-12">
-              <h2 class="md:text-lg text-gray-600 font-bold mb-2">
-                획일화된 디자인
-              </h2>
-              <p class="text-sm md:text-base text-gray-500">
-                템플릿을 이용한 웹사이트는 외관상 다른 홈페이지들과 비슷하여
-                두각을 나타내기 어렵습니다.
-              </p>
-            </div>
+          <!-- Bottom content -->
+          <div class="mt-16 mx-auto">
+            <p class="text-center font-semibold">템플릿 웹사이트</p>
+            <div class="mt-4 grid grid-cols-2 gap-4 lg:grid-cols-4">
+              <!-- Box -->
+              <div class="bg-gray-200 p-6 rounded shadow-md md:px-8 md:py-12">
+                <h2 class="md:text-lg text-gray-600 font-bold">
+                  획일화된 디자인
+                </h2>
+                <p class="text-sm md:text-base text-gray-500 mt-4">
+                  템플릿을 이용한 웹사이트는 외관상 다른 홈페이지들과 비슷하여
+                  두각을 나타내기 어렵습니다.
+                </p>
+              </div>
+              <!-- Box -->
+              <div class="bg-gray-200 p-6 rounded shadow-md md:px-8 md:py-12">
+                <h2 class="md:text-lg text-gray-600 font-bold">
+                  제한적인 기능
+                </h2>
+                <p class="text-sm md:text-base text-gray-500 mt-4">
+                  미리 만들어진 템플릿의 기능적 제한으로 인해 개발에 한계가
+                  있습니다.
+                </p>
+              </div>
 
-            <!-- Box 2 -->
-            <div class="bg-white p-6 rounded shadow-md md:px-8 md:py-12">
-              <h2 class="md:text-lg font-bold mb-2">맞춤 디자인</h2>
-              <p class="text-sm md:text-base text-gray-800">
-                주문 제작 웹사이트는 나에게 딱 맞는 독특한 디자인으로 경쟁에서
-                돋보이게 됩니다.
-              </p>
+              <!-- Box -->
+              <div class="bg-gray-200 p-6 rounded shadow-md md:px-8 md:py-12">
+                <h2 class="md:text-lg text-gray-600 font-bold">느린 속도</h2>
+                <p class="text-sm md:text-base text-gray-500 mt-4">
+                  사용하지 않는 기능까지 탑재한 무거운 템플릿으로 인해 로딩이
+                  길어질 수 있습니다.
+                </p>
+              </div>
+              <!-- Box -->
+              <div class="bg-gray-200 p-6 rounded shadow-md md:px-8 md:py-12">
+                <h2 class="md:text-lg text-gray-600 font-bold">
+                  부족한 정체성
+                </h2>
+                <p class="text-sm md:text-base text-gray-500 mt-4">
+                  디자인과 기능의 제한으로 인해 브랜드의 색깔과 성격을 나타내기
+                  어렵습니다.
+                </p>
+              </div>
             </div>
+            <p class="text-center font-semibold mt-8">맞춤 웹사이트</p>
+            <div class="mt-4 grid grid-cols-2 gap-4 lg:grid-cols-4">
+              <!-- Box -->
+              <div
+                class="bg-color-primary-lighter p-6 rounded shadow-md md:px-8 md:py-12"
+              >
+                <h2 class="md:text-lg font-bold">맞춤 디자인</h2>
+                <p class="text-sm md:text-base text-gray-700 mt-4">
+                  주문 제작 웹사이트는 나에게 딱 맞는 독특한 디자인으로 경쟁에서
+                  돋보이게 됩니다.
+                </p>
+              </div>
 
-            <!-- Box 3 -->
-            <div class="bg-gray-200 p-6 rounded shadow-md md:px-8 md:py-12">
-              <h2 class="md:text-lg text-gray-600 font-bold mb-2">
-                제한적인 기능
-              </h2>
-              <p class="text-sm md:text-base text-gray-500">
-                미리 만들어진 템플릿의 기능적 제한으로 인해 개발에 한계가
-                있습니다.
-              </p>
-            </div>
+              <!-- Box -->
+              <div
+                class="bg-color-primary-lighter p-6 rounded shadow-md md:px-8 md:py-12"
+              >
+                <h2 class="md:text-lg font-bold">자유로운 기능</h2>
+                <p class="text-sm md:text-base text-gray-700 mt-4">
+                  아무런 제한없이 원하는 기능을 마음대로 입맛에 맞게 개발할 수
+                  있습니다.
+                </p>
+              </div>
 
-            <!-- Box 4 -->
-            <div class="bg-white p-6 rounded shadow-md md:px-8 md:py-12">
-              <h2 class="md:text-lg font-bold mb-2">자유로운 기능</h2>
-              <p class="text-sm md:text-base text-gray-800">
-                아무런 제한없이 원하는 기능을 마음대로 입맛에 맞게 개발할 수
-                있습니다.
-              </p>
-            </div>
+              <!-- Box -->
+              <div
+                class="bg-color-primary-lighter p-6 rounded shadow-md md:px-8 md:py-12"
+              >
+                <h2 class="md:text-lg font-bold">빠른 속도</h2>
+                <p class="text-sm md:text-base text-gray-700 mt-4">
+                  필요한 기능만을 구현하여 불필요한 로딩 시간을 줄일 수
+                  있습니다.
+                </p>
+              </div>
 
-            <!-- Box 5 -->
-            <div class="bg-gray-200 p-6 rounded shadow-md md:px-8 md:py-12">
-              <h2 class="md:text-lg text-gray-600 font-bold mb-2">느린 속도</h2>
-              <p class="text-sm md:text-base text-gray-500">
-                사용하지 않는 기능까지 탑재한 무거운 템플릿으로 인해 로딩이
-                길어질 수 있습니다.
-              </p>
-            </div>
-
-            <!-- Box 6 -->
-            <div class="bg-white p-6 rounded shadow-md md:px-8 md:py-12">
-              <h2 class="md:text-lg font-bold mb-2">빠른 속도</h2>
-              <p class="text-sm md:text-base text-gray-800">
-                필요한 기능만을 구현하여 불필요한 로딩 시간을 줄일 수 있습니다.
-              </p>
-            </div>
-            <!-- Box 7 -->
-            <div class="bg-gray-200 p-6 rounded shadow-md md:px-8 md:py-12">
-              <h2 class="md:text-lg text-gray-600 font-bold mb-2">
-                부족한 정체성
-              </h2>
-              <p class="text-sm md:text-base text-gray-500">
-                디자인과 기능의 제한으로 인해 브랜드의 색깔과 성격을 나타내기
-                어렵습니다.
-              </p>
-            </div>
-
-            <!-- Box 8 -->
-            <div class="bg-white p-6 rounded shadow-md md:px-8 md:py-12">
-              <h2 class="md:text-lg font-bold mb-2">강력한 정체성</h2>
-              <p class="text-sm md:text-base text-gray-800">
-                아무 제약 없는 디자인과 기능 개발로 브랜드의 고유한 정체성과
-                가치를 극대화할 수 있습니다.
-              </p>
+              <!-- Box -->
+              <div
+                class="bg-color-primary-lighter p-6 rounded shadow-md md:px-8 md:py-12"
+              >
+                <h2 class="md:text-lg font-bold">강력한 정체성</h2>
+                <p class="text-sm md:text-base text-gray-700 mt-4">
+                  아무 제약 없는 디자인과 기능 개발로 브랜드의 고유한 정체성과
+                  가치를 극대화할 수 있습니다.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       <!--  Services -->
-      <section class="leading-loose relative bg-gray-100">
+      <section class="relative bg-gray-100 py-16 px-8">
         <!-- Headings and text container -->
-        <div
-          class="text-center px-4 pt-20 pb-24 lg:flex lg:flex-col lg:items-center"
-        >
+        <div class="container mx-auto flex flex-col items-center">
           <!-- Title -->
-          <p class="text-xs mx-auto mb-4 md:text-sm">브랜드 가치</p>
+          <p class="text-xs mx-auto md:text-sm">차별점</p>
           <!-- Heading and description -->
-          <h2 class="text-center text-2xl font-bold md:text-4xl lg:text-5xl">
+          <h2 class="text-center mt-4 text-3xl font-bold md:text-5xl">
             '기존의 웹사이트 제작에 어떤
             <div class="relative inline-block z-20">
               <div class="relative z-10">문제점</div>
               <div
-                class="absolute bottom-1 bg-accent h-3 w-full transform -rotate-6"
+                class="absolute bottom-1 bg-color-primary-lighter h-3 w-full transform -rotate-6"
               ></div>
             </div>
             <span class="text-gap">이 있을까?'</span>
           </h2>
-          <p
-            class="text-lg md:text-2xl lg:text-3xl text-gray-800 mx-auto mt-12 text-center max-w-screen-lg md:leading-relaxed"
-          >
+          <p class="text-lg md:text-2xl mx-auto mt-8 md:text-center">
             위 물음에서부터 웹타민은 시작되었습니다.
             <br class="hidden md:block" />
             남 다른 가치를 창출하기 위해
-            <span class="md:inline-block lg:mt-2"
-              ><strong class="btn-bg">차별화된 서비스</strong>를
-              제공합니다.</span
+            <span class="md:inline-block md:mt-2"
+              ><strong class="bg-color-primary-lighter">차별화된 서비스</strong
+              >를 제공합니다.</span
             >
           </p>
-          <div class="text-left mt-16">
+          <div class="grid grid-cols-1 gap-4 mt-16 lg:grid-cols-3">
             <div
-              class="flex justify-between items-center flex-col border border-opacity-5 border-b-0 shadow-md py-8 px-12 bg-white rounded-md md:flex-row"
+              class="flex justify-center items-center flex-col shadow-md p-8 bg-white rounded md:justify-start"
             >
-              <div
-                class="w-10 h-10 rounded-full bg-dark text-white flex items-center justify-center md:w-16 md:h-16"
-              >
-                <i class="fa-solid fa-palette md:text-2xl"></i>
-              </div>
-              <div class="md:w-10/12 lg:w-11/12 lg:pl-8">
-                <p
-                  class="text-xl font-bold text-center my-6 md:my-0 md:text-left"
-                >
-                  가치를 창조하는 업체
-                </p>
-                <p class="leading-relaxed md:text-lg mt-2 text-gray-800">
-                  웹사이트의 외형은 사업의 첫 인상을 결정짓는 매우 중요한
-                  요소입니다. 웹상에는 미리 만들어진 디자인을 이용한
-                  홈페이지들이 대다수입니다. 이런 템플릿을 이용한 웹사이트는
-                  기능적, 디자인적 제한에 갖힐 수 밖에 없습니다. 웹타민의
-                  홈페이지는
-                  <strong class="btn-bg">템플릿 없이 100% 맞춤 제작</strong
-                  >됩니다.
-                </p>
-              </div>
-            </div>
-            <div
-              class="flex justify-between items-center flex-col border border-opacity-5 border-b-0 shadow-md py-8 px-12 my-8 bg-white rounded-md md:flex-row"
-            >
-              <div
-                class="w-10 h-10 rounded-full bg-dark text-white flex items-center justify-center md:w-16 md:h-16"
-              >
-                <i class="fa-solid fa-heart md:text-2xl"></i>
-              </div>
-              <div class="md:w-10/12 lg:w-11/12 lg:pl-8">
-                <p
-                  class="text-xl font-bold text-center my-6 md:my-0 md:text-left"
-                >
-                  마음을 사로잡는 업체
-                </p>
-                <p class="leading-relaxed md:text-lg mt-2 text-gray-800">
-                  웹사이트의 주된 목적은 판매 촉진, 전문성 입증 등 사람을
-                  설득하는 것입니다. 따라서 방문자의 입장을 고려한 설계는
-                  필수입니다. 이런 고민없이 화려한 외형만이 부각된 웹사이트들이
-                  있습니다. 웹타민은 레이아웃, 디자인, 메뉴 구성, 버튼의
-                  위치까지
-                  <strong class="btn-bg"
-                    >주요 고객층과 사용자의 심리를 분석</strong
-                  >하여 체계적으로 제작합니다.
-                </p>
-              </div>
-            </div>
+              <i class="text-center fa-solid fa-gem text-2xl"></i>
 
-            <div
-              class="flex justify-between items-center flex-col border border-opacity-5 border-b-0 shadow-md py-8 px-12 my-8 bg-white rounded-md md:flex-row"
-            >
-              <div
-                class="w-10 h-10 rounded-full bg-dark text-white flex items-center justify-center md:w-16 md:h-16"
-              >
-                <i class="fa-solid fa-gem md:text-2xl"></i>
-              </div>
-              <div class="md:w-10/12 lg:w-11/12 lg:pl-8">
-                <p
-                  class="text-xl font-bold text-center my-6 md:my-0 md:text-left"
-                >
-                  품질을 보증하는 업체
-                </p>
-                <p class="leading-relaxed md:text-lg mt-2 text-gray-800">
+              <div>
+                <p class="font-bold text-center mt-2 md:text-lg">품질 보증</p>
+                <p class="text-sm text-gray-700 mt-4 md:text-base">
                   웹사이트 제작에는 큰 비용과 오랜 시간이 들어갑니다. 결과물이
                   만족스럽지 않다고 느꼈을 땐 이미 들인 기회비용이 너무 커져있기
                   마련입니다. 이런 경우 일정 기간이 지나 환불이 제작비 일부에
-                  그치거나 아예 불가하게 됩니다. 웹타민은 제작 기간의 어느
-                  시점을 막론하고
-                  <strong class="btn-bg">불만족시 제작비 100% 환불</strong
+                  그치거나 아예 불가하게 됩니다. 웹타민은 제작의 어느 시점을
+                  막론하고
+                  <strong class="bg-color-primary-lighter"
+                    >불만족시 제작비 100% 환불</strong
                   >해드립니다.
                 </p>
               </div>
             </div>
             <div
-              class="flex justify-between items-center flex-col border border-opacity-5 border-b-0 shadow-md py-8 px-12 my-8 bg-white rounded-md md:flex-row"
+              class="flex justify-center items-center flex-col shadow-md p-8 bg-white rounded md:justify-start"
             >
-              <div
-                class="w-10 h-10 rounded-full bg-dark text-white flex items-center justify-center md:w-16 md:h-16"
-              >
-                <i class="fa-solid fa-screwdriver-wrench md:text-2xl"></i>
-              </div>
-              <div class="md:w-10/12 lg:w-11/12 lg:pl-8">
-                <p
-                  class="text-xl font-bold text-center my-6 md:my-0 md:text-left"
-                >
-                  미래를 책임지는 업체
+              <i class="text-center fa-solid fa-palette text-2xl"></i>
+
+              <div>
+                <p class="font-bold text-center mt-2 md:text-lg">독특한 외관</p>
+                <p class="text-sm text-gray-700 mt-4 md:text-base">
+                  웹사이트의 외형은 사업의 첫 인상을 결정짓는 매우 중요한
+                  요소입니다. 웹상에는 미리 만들어진 디자인을 이용한
+                  홈페이지들이 대다수입니다. 이런 템플릿을 이용한 웹사이트는
+                  기능적, 디자인적 제한에 갖힐 수 밖에 없습니다. 웹타민의
+                  홈페이지는
+                  <strong class="bg-color-primary-lighter"
+                    >템플릿 없이 100% 맞춤 제작</strong
+                  >됩니다.
                 </p>
-                <p class="leading-relaxed md:text-lg mt-2 text-gray-800">
-                  웹사이트는 뚝딱 만들고 끝이 아닙니다. 제작 이후에는 문구 수정,
-                  컨텐츠 업데이트 등의 추가적인 절차가 따르게 됩니다. 대부분의
-                  업체는 사후 일정 기간 및 횟수에 한해서만 유지보수를
-                  제공합니다. 웹타민은 기간 제한 없이
-                  <strong class="btn-bg">평생 무료로 유지보수</strong>를
-                  해드립니다.
+              </div>
+            </div>
+            <div
+              class="flex justify-center items-center flex-col shadow-md p-8 bg-white rounded md:justify-start"
+            >
+              <i class="text-center fa-solid fa-chess-knight text-2xl"></i>
+
+              <div>
+                <p class="font-bold text-center mt-2 md:text-lg">
+                  전략적 디자인
+                </p>
+                <p class="text-sm text-gray-700 mt-4 md:text-base">
+                  웹사이트의 주된 목적은 판매 촉진, 전문성 입증 등 사람을
+                  설득하는 것입니다. 따라서 방문자의 입장을 고려한 설계는
+                  필수입니다. 이런 고민없이 화려한 외형만이 부각된 웹사이트들이
+                  있습니다. 웹타민은 레이아웃, 디자인, 메뉴 구성, 버튼의
+                  위치까지
+                  <strong class="bg-color-primary-lighter"
+                    >주요 고객층과 사용자의 심리를 분석</strong
+                  >하여 체계적으로 제작합니다.
                 </p>
               </div>
             </div>
@@ -336,197 +307,143 @@
         </div>
       </section>
 
-      <!-- Services offered -->
-      <section class="relative py-20 px-8">
+      <!-- Value -->
+      <section class="relative py-16 px-8">
         <img src="images/fire-bg.jpg" alt="" class="bg-overlay" />
-        <div class="z-10">
+        <div class="container mx-auto">
           <!-- Title -->
           <p class="text-xs mx-auto mb-4 text-center text-gray-100 md:text-sm">
             제작 범위
           </p>
 
           <h2
-            class="text-white text-center text-2xl font-bold md:text-4xl lg:text-5xl"
+            class="text-center text-white mt-4 text-3xl font-bold md:text-5xl"
           >
             장인 정신을 추구합니다.
           </h2>
           <p
-            class="text-lg md:text-2xl lg:text-3xl text-gray-100 mx-auto mt-12 text-center max-w-screen-lg md:leading-relaxed"
+            class="text-lg text-gray-100 mt-8 md:text-xl md:text-center md:text-2xl"
           >
             웹타민은 한 분야에 대한 깊이 있는 전문성을 고집합니다.
             <br class="hidden md:block" />
-            브랜딩 극대화에 특화된
-            <span class="md:inline-block lg:mt-2"
-              >맞춤 제작 소개형 홈페이지만을 제작합니다.</span
+            <span class="md:block md:mt-2"
+              >브랜딩 극대화에 특화된 맞춤 제작 소개형 홈페이지만을
+              제작합니다.</span
             >
           </p>
         </div>
       </section>
 
       <!-- Proof of work -->
-      <section class="px-4 pt-20 md:px-20 lg:px-40 bg-gray-100">
+      <section class="px-8 py-16 bg-gray-100">
         <!-- Container -->
-        <div
-          class="relative rounded-3xl overflow-hidden xl:max-w-screen-xl xl:mx-auto"
-        >
+        <div class="container mx-auto">
           <!-- Title -->
-          <p class="text-xs mx-auto mb-4 text-center md:text-sm">제작 기술력</p>
+          <p class="text-xs text-center md:text-sm">제작 기술력</p>
           <!-- Heading and description -->
-          <div class="relative text-center px-2">
-            <h2 class="text-center text-2xl font-bold md:text-4xl lg:text-5xl">
+          <div>
+            <h2 class="text-center mt-4 text-3xl font-bold md:text-5xl">
               <div class="relative inline-block z-20">
                 <div class="relative z-10">고객 웹사이트</div>
                 <div
-                  class="absolute bottom-1 bg-accent h-3 w-full transform -rotate-6"
+                  class="absolute bottom-1 bg-color-primary-lighter h-3 w-full transform -rotate-6"
                 ></div>
               </div>
               <span class="text-gap">를 직접 확인해보세요.</span>
             </h2>
-            <p
-              class="text-lg md:text-2xl lg:text-3xl text-gray-800 mx-auto mt-12 text-center max-w-screen-lg md:leading-relaxed"
-            >
+            <p class="text-lg md:text-2xl mt-8 md:text-center">
               고객의 심리를 분석한 웹사이트는 모든 요소에 디테일이 숨어있습니다.
               <br class="hidden md:block" />
               나에게 꼭 맞는 웹사이트는
-              <span class="md:inline-block lg:mt-2"
-                ><strong class="btn-bg">전략적으로 설계</strong>되어야만
-                합니다.</span
-              >
+              <strong class="bg-color-primary-lighter md:inline-block lg:mt-2"
+                >전략적으로 설계</strong
+              >되어야만 합니다.
             </p>
           </div>
 
-          <!-- Projects -->
-          <div class="px-6 py-4 md:mx-8">
+          <!-- Projects container -->
+          <div class="mt-16 space-y-16">
             <!-- Project 1 -->
-            <div
-              class="py-12 md:pt-16 lg:grid lg:grid-cols-2 lg:gap-x-16 lg:h-96 lg:py-0 lg:mt-24 lg:mb-32"
-            >
+            <div class="flex flex-col items-center justify-center lg:flex-row">
               <!-- Project Image -->
-              <div class="lg:relative lg:pb-2/3">
-                <img
-                  class="shadow-lg rounded-md md:w-full lg:h-full lg:object-cover lg:object-top lg:absolute"
-                  src="images/haxa.webp"
-                  alt="work image 1"
-                />
-              </div>
+              <img
+                class="shadow-md rounded lg:w-1/2 lg:mr-8"
+                src="images/haxa.webp"
+                alt="work image 1"
+              />
 
               <!-- Project Details -->
-              <div class="lg:h-full lg:flex lg:items-center">
-                <div class="lg:grid lg:auto-rows-min">
-                  <!-- Project name -->
-                  <div class="inline-block relative">
-                    <div class="lg:relative lg:inline-block">
-                      <h3
-                        class="relative z-10 font-bold pt-8 text-lg md:text-xl"
-                      >
-                        제품 소개 웹사이트
-                      </h3>
-                      <div class="absolute bottom-0 h-2 w-full bg-accent"></div>
-                    </div>
-                  </div>
+              <div class="mr-auto lg:mr-0 lg:w-1/2">
+                <!-- Project name -->
+                <h3 class="mt-4 font-bold md:text-lg lg:mt-0">
+                  제품 소개 웹사이트
+                </h3>
 
-                  <!-- Project description -->
-                  <p class="py-4 leading-relaxed md:py-6 text-gray-800">
-                    제품 소개형 웹사이트는
-                    <strong class="btn-bg"
-                      >방문자의 시선을 브랜드와 제품에 집중</strong
-                    >시키는 것이 중요합니다.
-                  </p>
-                  <ul
-                    class="list-disc mb-8 ml-8 leading-relaxed lg:leading-loose"
-                  >
-                    <li>
-                      상품 히어로 이미지를 배경으로 사용하여 시각적으로
-                      <strong>이목 집중</strong>
-                    </li>
-                    <li>
-                      캐치 프레이즈를 배치하여
-                      <strong>브랜드 가치를 강조</strong>
-                    </li>
-                    <li>
-                      실시간 제품 수량을 버튼으로 제공하여
-                      <strong>편의성 도모</strong>
-                    </li>
-                    <li>
-                      주력 상품 상단 배치로 <strong>판매 촉진 극대화</strong>
-                    </li>
-                  </ul>
-                  <!-- CTA -->
-                  <a
-                    href="https://haxalabs.com/"
-                    target="_blank"
-                    rel="nofollow"
-                    class="btn-bg inline-block uppercase px-4 py-2 text-black shadow-md ml-auto rounded-sm lg:ml-0 lg:w-max"
-                    ><span class="text-sm">웹사이트 방문하기</span></a
-                  >
-                </div>
+                <!-- Project description -->
+                <p class="my-4 text-sm md:text-base">
+                  제품 소개형 웹사이트는
+                  <strong class="bg-color-primary-lighter"
+                    >방문자의 시선을 브랜드와 제품에 집중</strong
+                  >시키는 것이 중요합니다.
+                </p>
+                <ul class="list-disc ml-6 text-sm md:text-base">
+                  <li>
+                    상품 히어로 이미지를 배경으로 사용하여 시각적으로 이목 집중
+                  </li>
+                  <li>캐치 프레이즈를 배치하여 브랜드 가치를 강조</li>
+                  <li>실시간 제품 수량을 버튼으로 제공하여 편의성 도모</li>
+                  <li>주력 상품 상단 배치로 판매 촉진 극대화</li>
+                </ul>
+                <!-- CTA -->
+                <a
+                  href="https://haxalabs.com/"
+                  target="_blank"
+                  rel="nofollow noopener"
+                  class="text-sm mt-8 bg-color-primary text-white inline-block uppercase px-6 py-3 shadow-md rounded-sm lg:text-base"
+                  >웹사이트 방문하기</a
+                >
               </div>
             </div>
-
             <!-- Project 2 -->
-            <div
-              class="py-12 md:pt-16 lg:grid lg:grid-cols-2 lg:gap-x-16 lg:h-96 lg:py-0 lg:my-32"
-            >
+            <div class="flex flex-col items-center justify-center lg:flex-row">
               <!-- Project Image -->
-              <div class="lg:relative lg:pb-2/3 lg:col-start-2">
-                <img
-                  class="shadow-lg rounded-md md:w-full lg:h-full lg:object-cover lg:object-top lg:absolute z-10"
-                  src="images/arnidxiong.webp"
-                  alt="work image 2"
-                />
-              </div>
+              <img
+                class="shadow-md rounded lg:w-1/2 lg:order-2 lg:ml-8"
+                src="images/arnidxiong.webp"
+                alt="work image 2"
+              />
 
               <!-- Project Details -->
-              <div class="lg:h-full lg:flex lg:items-center lg:row-start-1">
-                <div class="lg:grid lg:auto-rows-min">
-                  <!-- Project name -->
-                  <div class="inline-block relative">
-                    <div class="lg:relative lg:inline-block">
-                      <h3
-                        class="relative z-10 font-bold pt-8 text-lg md:text-xl"
-                      >
-                        포트폴리오 웹사이트
-                      </h3>
-                      <div class="absolute bottom-0 h-2 w-full bg-accent"></div>
-                    </div>
-                  </div>
+              <div class="mr-auto lg:mr-0 lg:w-1/2 lg:order-1">
+                <!-- Project name -->
+                <h3 class="mt-4 font-bold md:text-lg lg:mt-0">
+                  포트폴리오 웹사이트
+                </h3>
 
-                  <!-- Project description -->
-                  <p class="py-4 leading-relaxed md:py-6 text-gray-800">
-                    포트폴리오 웹사이트는
-                    <strong class="btn-bg"
-                      >해당 분야에 대한 전문성을 입증</strong
-                    >하는 것이 목적입니다.
-                  </p>
-                  <ul
-                    class="list-disc leading-relaxed mb-8 ml-8 lg:leading-loose"
-                  >
-                    <li>
-                      구조화된 디자인을 채택하여
-                      <strong>손쉬운 사용 도모</strong>
-                    </li>
-                    <li>
-                      각 프로젝트 정사각형 통일으로 불필요한
-                      <strong>주의 분산 방지</strong>
-                    </li>
-                    <li>
-                      프로젝트에 마우스 올릴 시 나타나는 제목으로
-                      <strong>신속한 정보 파악</strong>
-                    </li>
-                    <li>
-                      자기 소개 영역을 따로 분리하여
-                      <strong>시각적 난잡함 제거</strong>
-                    </li>
-                  </ul>
-                  <!-- CTA -->
-                  <a
-                    href="https://arnidxiong.co/"
-                    target="_blank"
-                    rel="nofollow"
-                    class="btn-bg inline-block uppercase px-4 py-2 text-black shadow-md ml-auto rounded-sm lg:ml-0 lg:w-max"
-                    ><span class="text-sm">웹사이트 방문하기</span></a
-                  >
-                </div>
+                <!-- Project description -->
+                <p class="my-4 text-sm md:text-base">
+                  포트폴리오 웹사이트는
+
+                  <strong class="bg-color-primary-lighter"
+                    >해당 분야에 대한 전문성</strong
+                  >을 입증하는 것이 목적입니다.
+                </p>
+                <ul class="list-disc ml-6 text-sm md:text-base">
+                  <li>구조화된 디자인을 채택하여 손쉬운 사용 도모</li>
+                  <li>각 프로젝트 정사각형 통일으로 불필요한 주의 분산 방지</li>
+                  <li>
+                    프로젝트에 마우스 올릴 시 나타나는 제목으로 신속한 정보 파악
+                  </li>
+                  <li>자기 소개 영역을 따로 분리하여 시각적 난잡함 제거</li>
+                </ul>
+                <!-- CTA -->
+                <a
+                  href="https://arnidxiong.co/"
+                  target="_blank"
+                  rel="nofollow noopener"
+                  class="text-sm mt-8 bg-color-primary text-white inline-block uppercase px-6 py-3 shadow-md rounded-sm lg:text-base"
+                  >웹사이트 방문하기</a
+                >
               </div>
             </div>
           </div>
@@ -534,189 +451,222 @@
       </section>
 
       <!-- Testimonials -->
-      <section class="relative py-20 lg:py-24">
-        <img src="images/testimonial-bg.jpg" alt="" class="bg-overlay" />
-        <div class="relative">
-          <p class="text-xs mx-auto mb-4 text-center text-gray-100 md:text-sm">
+      <section class="relative py-16 px-8">
+        <img src="images/testimonial-bg.jpg" alt="" class="bg-overlay-dark" />
+        <div class="container mx-auto">
+          <p class="text-xs mx-auto text-center text-gray-100 md:text-sm">
             후기
           </p>
           <h2
-            class="text-white text-center text-2xl font-bold md:text-4xl lg:text-5xl"
+            class="text-white text-center mt-4 text-3xl font-bold md:text-5xl"
           >
             고객 만족을 실현합니다.
           </h2>
           <!-- Testimonials container -->
-          <div class="w-full max-w-screen-sm mx-auto px-8 pt-12 lg:pt-16">
-            <p
-              class="text-white leading-relaxed md:leading-relaxed md:text-lg lg:text-xl lg:leading-relaxed"
-            >
+          <div class="max-w-screen-sm mx-auto mt-8 text-gray-100">
+            <p class="md:text-lg">
               "I hired webtamin to build my portfolio website for me. Because of
-              him, I received a lot of compliments of
-              <strong class="color-accent font-semibold"
-                >how clean and easy it is to navigate around</strong
-              >. He listens and understands how I wanted my website and
-              proceeded to create me a beautiful, simple and clean website. I
-              will definitely use his service again!"
+              him, I received a lot of compliments of how clean and easy it is
+              to navigate around. He listens and understands how I wanted my
+              website and proceeded to create me a beautiful, simple and clean
+              website. I will definitely use his service again!"
             </p>
-            <h4
-              class="mt-4 text-sm font-semibold text-gray-100 text-right md:text-base"
-            >
+            <h4 class="mt-4 font-semibold text-right text-sm md:text-base">
               Annie S.
             </h4>
           </div>
         </div>
       </section>
 
-      <!-- Services offered -->
-      <section class="relative bg-gray-100">
-        <div class="relative z-20 py-20 px-8">
+      <!-- Columns -->
+      <section class="px-8 py-16 bg-gray-100">
+        <div class="container mx-auto">
           <!-- Title -->
-          <p class="text-xs mx-auto mb-4 text-center md:text-sm">칼럼</p>
-          <h2 class="text-center text-2xl font-bold md:text-4xl lg:text-5xl">
+          <p class="text-xs text-center md:text-sm">칼럼</p>
+          <h2 class="text-center mt-4 text-3xl font-bold md:text-5xl">
             <div class="relative inline-block z-20">
               <div class="relative z-10">'웹알못'</div>
               <div
-                class="absolute bottom-2 bg-accent h-3 w-full transform -rotate-3"
+                class="absolute bottom-2 bg-color-primary-lighter h-3 w-full transform -rotate-3"
               ></div>
             </div>
             <span class="text-gap">이시라구요? 걱정마세요.</span>
           </h2>
-          <p
-            class="text-lg md:text-2xl lg:text-3xl text-gray-800 mx-auto mt-12 text-center max-w-screen-lg md:leading-relaxed"
-          >
+          <p class="text-lg md:text-2xl mt-8 md:text-center">
             웹사이트 제작에 대해 잘 알지 못해도 괜찮습니다.
             <br class="hidden md:block" />
             <span class="md:inline-block lg:mt-2"
-              >글을 <strong class="btn-bg">읽어보는 것</strong>만으로도
-              충분합니다.</span
+              >글을
+              <strong class="bg-color-primary-lighter">읽어보는 것</strong
+              >만으로도 충분합니다.</span
             >
           </p>
-          <div class="bg-white mx-auto max-w-3xl w-11/12 mt-20 md:w-full">
-            <a
-              href="columns/3-reasons-you-need-to-create-a-custom-website.html#column-container"
-              target="_blank"
-              referrerpolicy="noopener nofollow"
-            >
-              <div
-                class="border border-opacity-5 border-b-0 shadow-md p-6 my-6 mx-auto rounded"
-              >
-                <div
-                  class="flex flex-col-reverse justify-between items-center md:flex-row"
-                >
-                  <h2 class="text-lg font-semibold text-gray-800 mt-1 mb:mt-0">
-                    맞춤 웹사이트 제작이 필요한 3가지 이유
-                  </h2>
-                  <p class="text-gray-600 text-right text-xs md:text-sm">
-                    2023-10-07
-                  </p>
+          <!-- Column container -->
+          <div
+            class="mt-16 gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4"
+          >
+            <!-- Column -->
+            <div class="flex flex-col">
+              <div class="bg-white shadow-md rounded flex flex-col h-full">
+                <img
+                  src="images/columns/3-reasons-you-need-to-create-a-custom-website/branding.jpg"
+                  alt="website design"
+                  class="column-thumbnail"
+                />
+                <div class="p-4 h-full flex flex-col justify-between">
+                  <div>
+                    <h2 class="font-semibold md:text-lg">
+                      맞춤 웹사이트 제작이 필요한 3가지 이유
+                    </h2>
+                    <p class="text-gray-700 text-xs mt-2 md:text-sm">
+                      2023-10-07
+                    </p>
+                    <p class="text-sm text-gray-700 mt-4 md:text-base">
+                      웹사이트 제작에는 크게 두 가지 방법이 있습니다. 첫째는
+                      템플릿이라고 하는 미리 만들어진...
+                    </p>
+                  </div>
+                  <a
+                    href="columns/3-reasons-you-need-to-create-a-custom-website.html#column-container"
+                    class="mt-8 underline-offset-4 inline-block text-color-primary font-bold underline text-sm md:text-base"
+                    >더 읽어보기</a
+                  >
                 </div>
-                <p class="text-sm text-gray-600 mt-4">
-                  웹사이트 제작에는 크게 두 가지 방법이 있습니다. 첫째는
-                  템플릿이라고 하는 미리 만들어진...
-                </p>
               </div>
-            </a>
-          </div>
-          <div class="bg-white mx-auto max-w-3xl w-11/12 md:w-full">
-            <a
-              href="columns/5-reasons-why-website-development-takes-long.html#column-container"
-              target="_blank"
-              referrerpolicy="noopener nofollow"
-            >
-              <div
-                class="border border-opacity-5 border-b-0 shadow-md p-6 my-6 mx-auto rounded"
-              >
-                <div
-                  class="flex flex-col-reverse justify-between items-center md:flex-row"
-                >
-                  <h2 class="text-lg font-semibold text-gray-800 mt-1 mb:mt-0">
-                    웹사이트 제작이 오래 걸리는 5가지 이유
-                  </h2>
-                  <p class="text-gray-600 text-right text-xs md:text-sm">
-                    2023-09-02
-                  </p>
+            </div>
+            <!-- Column -->
+            <div class="flex flex-col">
+              <div class="bg-white shadow-md rounded flex flex-col h-full">
+                <img
+                  src="images/columns/5-reasons-why-website-development-takes-long/planning.jpg"
+                  alt="website planning"
+                  class="column-thumbnail"
+                />
+                <div class="p-4 h-full flex flex-col justify-between">
+                  <div>
+                    <h2 class="font-semibold md:text-lg">
+                      웹사이트 제작이 오래 걸리는 5가지 이유
+                    </h2>
+                    <p class="text-gray-700 text-xs mt-2 md:text-sm">
+                      2023-09-02
+                    </p>
+                    <p class="text-sm text-gray-700 mt-4 md:text-base">
+                      웹사이트 제작 기간은 디자인, 페이지 수, 기능, 제작사의
+                      역량 등에 따라 달라질 수 있습니다...
+                    </p>
+                  </div>
+                  <a
+                    href="columns/5-reasons-why-website-development-takes-long.html#column-container"
+                    class="mt-8 underline-offset-4 inline-block inline-block text-color-primary font-bold underline text-sm md:text-base"
+                    >더 읽어보기</a
+                  >
                 </div>
-                <p class="text-sm text-gray-600 mt-4">
-                  웹사이트 제작 기간은 디자인, 페이지 수, 기능, 제작사의 역량
-                  등에 따라 달라질 수 있습니다...
-                </p>
               </div>
-            </a>
-          </div>
-          <div class="bg-white mx-auto max-w-3xl w-11/12 md:w-full">
-            <a
-              href="columns/how-to-prevent-fraud-from-website-development.html#column-container"
-              target="_blank"
-              referrerpolicy="noopener nofollow"
-            >
-              <div
-                class="border border-opacity-5 border-b-0 shadow-md p-6 my-6 mx-auto rounded"
-              >
-                <div
-                  class="flex flex-col-reverse justify-between items-center md:flex-row"
-                >
-                  <h2 class="text-lg font-semibold text-gray-800 mt-1 mb:mt-0">
-                    웹사이트 제작 사기 피해를 예방하는 방법
-                  </h2>
-                  <p class="text-gray-600 text-right text-xs md:text-sm">
-                    2023-08-05
-                  </p>
+            </div>
+            <!-- Column -->
+            <div class="flex flex-col">
+              <div class="bg-white shadow-md rounded flex flex-col h-full">
+                <img
+                  src="images/columns/how-to-prevent-fraud-from-website-development/fraud image-1.jpg"
+                  alt="running person"
+                  class="column-thumbnail"
+                />
+                <div class="p-4 h-full flex flex-col justify-between">
+                  <div>
+                    <h2 class="font-semibold md:text-lg">
+                      웹사이트 제작 사기 피해를 예방하는 방법
+                    </h2>
+                    <p class="text-gray-700 text-xs mt-2 md:text-sm">
+                      2023-08-05
+                    </p>
+                    <p class="text-sm text-gray-700 mt-4 md:text-base">
+                      이 칼럼은 이전 글인 '웹사이트 제작 사기꾼들이 많은 3가지
+                      이유'의 후속글입니다...
+                    </p>
+                  </div>
+                  <a
+                    href="columns/how-to-prevent-fraud-from-website-development.html#column-container"
+                    class="mt-8 underline-offset-4 inline-block text-color-primary font-bold underline text-sm md:text-base"
+                    >더 읽어보기</a
+                  >
                 </div>
-                <p class="text-sm text-gray-600 mt-4">
-                  이 칼럼은 이전 글인 '웹사이트 제작 사기꾼들이 많은 3가지
-                  이유'의 후속글입니다...
-                </p>
               </div>
-            </a>
-          </div>
-          <div class="text-center mx-auto block mt-20">
-            <a
-              href="column.html"
-              class="btn-bg text-black shadow-md py-4 px-12 w-rounded-sm lg:text-xl"
-              >칼럼 더 보기</a
-            >
+            </div>
+            <!-- Column -->
+            <div class="flex flex-col">
+              <div class="bg-white shadow-md rounded flex flex-col h-full">
+                <img
+                  src="images/columns/3-reasons-for-the-high-number-of-scammers-in-website-development/anonymous.jpg"
+                  alt="man with mask"
+                  class="column-thumbnail"
+                />
+                <div class="p-4 h-full flex flex-col justify-between">
+                  <div>
+                    <h2 class="font-semibold md:text-lg">
+                      웹사이트 제작 사기꾼들이 많은 3가지 이유
+                    </h2>
+                    <p class="text-gray-700 text-xs mt-2 md:text-sm">
+                      2023-07-01
+                    </p>
+                    <p class="text-sm text-gray-700 mt-4 md:text-base">
+                      웹사이트 제작 의뢰, 사기 당하지 않을 자신 있으신가요?
+                      그렇다면 뒤로 가셔도 좋습니다...
+                    </p>
+                  </div>
+                  <a
+                    href="columns/3-reasons-for-the-high-number-of-scammers-in-website-development.html#column-container"
+                    class="mt-8 underline-offset-4 inline-block text-color-primary font-bold underline text-sm md:text-base"
+                    >더 읽어보기</a
+                  >
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- Pricing -->
-      <section class="relative bg-gray-50">
-        <div class="relative z-20 pt-20 pb-8">
+      <section class="px-8 py-16 bg-gray-50">
+        <div class="container mx-auto">
           <!-- Title -->
-          <p class="text-sm mx-auto mb-4 text-center">제작비</p>
-          <h2 class="text-center text-2xl font-bold md:text-4xl lg:text-5xl">
+          <p class="text-sm mx-auto text-center">제작비</p>
+          <h2 class="text-center mt-4 text-3xl font-bold md:text-5xl">
             <div class="relative inline-block z-20">
-              <div class="relative z-10">1등 마케팅 직원</div>
+              <div class="relative z-10">유일무이한 웹사이트</div>
               <div
-                class="absolute bottom-2 bg-accent h-3 w-full transform -rotate-3"
+                class="absolute bottom-2 bg-color-primary-lighter h-3 w-full transform -rotate-3"
               ></div>
             </div>
-            <span class="text-gap">을 보내드립니다.</span>
+            <span class="text-gap">를 제작해드립니다.</span>
           </h2>
-          <p
-            class="text-lg md:text-2xl lg:text-3xl text-gray-800 mx-auto mt-12 text-center max-w-screen-lg leading-loose"
-          >
-            <strong class="btn-bg">유일무이한 웹사이트</strong>를
-            제작해드립니다.
+          <p class="text-lg md:text-2xl mt-8 text-center">
+            <strong class="bg-color-primary-lighter"></strong>
           </p>
           <!-- Pricing container -->
-          <div
-            class="flex justify-center items-center my-12 w-5/6 mx-auto max-w-fit"
-          >
-            <div class="py-10 px-8 rounded-md shadow-lg w-full max-w-sm">
-              <p class="text-xs font-bold text-center color-check uppercase">
-                bespoke
-              </p>
-              <h2
-                class="text-5xl font-semibold pt-2 pb-8 text-center text-gray-900 md:text-7xl"
+          <div class="grid grid-cols-1 mt-16 gap-4 lg:grid-cols-3 lg:gap-8">
+            <!-- Basic -->
+            <div
+              class="flex flex-col items-center justify-start p-8 rounded shadow-md border-b-4 border-color-primary-light"
+            >
+              <p
+                class="text-lg font-bold text-center uppercase text-color-primary-light lg:text-2xl"
               >
+                basic
+              </p>
+              <h2 class="text-5xl font-semibold mt-2 text-center md:text-7xl">
                 $1,500
               </h2>
+              <div class="flex items-center space-x-1 text-gray-700 mt-4">
+                <i class="fa-solid fa-clock"></i>
+                <small class="inline-block text-sm"
+                  >평균 제작 기간: 2주 - 4주</small
+                >
+              </div>
 
-              <ul class="leading-snug">
-                <li class="flex items-center mb-4">
+              <ul class="mt-8 space-y-4 mx-auto">
+                <li class="flex items-center">
                   <svg
-                    class="w-5 h-5 color-check mr-2"
+                    class="w-5 h-5 mr-2 text-color-primary-light"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -731,9 +681,9 @@
                   </svg>
                   맞춤 디자인
                 </li>
-                <li class="flex items-center mb-4">
+                <li class="flex items-center">
                   <svg
-                    class="w-5 h-5 color-check mr-2"
+                    class="w-5 h-5 mr-2 text-color-primary-light"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -746,11 +696,11 @@
                       d="M5 13l4 4L19 7"
                     ></path>
                   </svg>
-                  페이지 무제한
+                  최대 페이지 5개
                 </li>
-                <li class="flex items-center mb-4">
+                <li class="flex items-center">
                   <svg
-                    class="w-5 h-5 color-check mr-2"
+                    class="w-5 h-5 mr-2 text-color-primary-light"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -763,11 +713,11 @@
                       d="M5 13l4 4L19 7"
                     ></path>
                   </svg>
-                  수작업 코딩 개발
+                  최대 수정 횟수 3번
                 </li>
-                <li class="flex items-center mb-4">
+                <li class="flex items-center">
                   <svg
-                    class="w-5 h-5 color-check mr-2"
+                    class="w-5 h-5 mr-2 text-color-primary-light"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -780,11 +730,229 @@
                       d="M5 13l4 4L19 7"
                     ></path>
                   </svg>
-                  모바일 기기 완벽 대응
+                  유지보수 기간 3개월
                 </li>
-                <li class="flex items-center mb-4">
+              </ul>
+            </div>
+            <!-- Standard -->
+            <div
+              class="overflow-hidden relative flex flex-col items-center justify-start p-8 rounded shadow-md border-b-4 border-color-primary"
+            >
+              <div
+                class="absolute -left-12 top-6 w-44 text-center bg-color-primary text-white font-bold -rotate-45 lg:text-lg"
+              >
+                인기
+              </div>
+              <p
+                class="text-lg font-bold text-center text-color-primary uppercase lg:text-2xl"
+              >
+                standard
+              </p>
+              <h2 class="text-5xl font-semibold mt-2 text-center md:text-7xl">
+                $2,500
+              </h2>
+              <div class="flex items-center space-x-1 text-gray-700 mt-4">
+                <i class="fa-solid fa-clock"></i>
+                <small class="inline-block text-sm"
+                  >평균 제작 기간: 4주 - 6주</small
+                >
+              </div>
+              <ul class="mt-8 space-y-4 mx-auto">
+                <li class="flex items-center">
                   <svg
-                    class="w-5 h-5 color-check mr-2"
+                    class="w-5 h-5 text-color-primary mr-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                  맞춤 디자인
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 text-color-primary mr-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                  모바일 기기 대응
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 text-color-primary mr-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                  방문자 분석 도구 연동
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 text-color-primary mr-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                  최대 페이지 15개
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 text-color-primary mr-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                  최대 수정 횟수 7번
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 text-color-primary mr-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                  유지보수 기간 12개월
+                </li>
+              </ul>
+            </div>
+            <!-- Premium -->
+            <div
+              class="flex flex-col items-center justify-start p-8 rounded shadow-md border-b-4 border-color-primary-dark"
+            >
+              <p
+                class="text-lg font-bold text-center text-color-primary-dark uppercase lg:text-2xl"
+              >
+                Premium
+              </p>
+              <h2 class="text-5xl font-semibold mt-2 text-center md:text-7xl">
+                $3,500
+              </h2>
+              <div class="flex items-center space-x-1 text-gray-700 mt-4">
+                <i class="fa-solid fa-clock"></i>
+                <small class="inline-block text-sm"
+                  >평균 제작 기간: 5주 - 7주</small
+                >
+              </div>
+
+              <ul class="mt-8 space-y-4 mx-auto">
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 text-color-primary-dark mr-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                  맞춤 디자인
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 text-color-primary-dark mr-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                  모바일 기기 대응
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 text-color-primary-dark mr-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                  방문자 분석 도구 연동
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 text-color-primary-dark mr-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                  로딩 속도 최적화
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 text-color-primary-dark mr-2"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -799,9 +967,9 @@
                   </svg>
                   검색 엔진 최적화(SEO)
                 </li>
-                <li class="flex items-center mb-4">
+                <li class="flex items-center">
                   <svg
-                    class="w-5 h-5 color-check mr-2"
+                    class="w-5 h-5 text-color-primary-dark mr-2"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -814,11 +982,11 @@
                       d="M5 13l4 4L19 7"
                     ></path>
                   </svg>
-                  초고속 웹사이트 로딩 속도
+                  페이지 무제한
                 </li>
-                <li class="flex items-center mb-4">
+                <li class="flex items-center">
                   <svg
-                    class="w-5 h-5 color-check mr-2"
+                    class="w-5 h-5 text-color-primary-dark mr-2"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -831,9 +999,24 @@
                       d="M5 13l4 4L19 7"
                     ></path>
                   </svg>
-                  방문자 분석 도구<span class="hidden md:inline"
-                    >(Google Analytics)</span
-                  >&nbsp;연동
+                  수정 횟수 무제한
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 text-color-primary-dark mr-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                  유지보수 기간 평생
                 </li>
               </ul>
             </div>
@@ -842,76 +1025,60 @@
       </section>
 
       <!-- Promises -->
-      <section class="pb-12 bg-gray-100 px-4">
-        <div class="container mx-auto py-8 pt-20">
+      <section class="py-16 bg-gray-100 px-8">
+        <div class="container mx-auto flex flex-col items-center">
           <!-- Title -->
-          <p class="text-sm mx-auto mb-4 text-center">품질 보증제</p>
-          <h2 class="text-center text-2xl font-bold md:text-4xl lg:text-5xl">
-            안심하세요.
+          <p class="text-center text-sm">고객 안심제</p>
+          <h2 class="text-center mt-4 text-3xl font-bold md:text-5xl">
+            품질을
             <div class="relative inline-block z-20">
-              <div class="relative z-10">5 NO</div>
+              <div class="relative z-10">약속</div>
               <div
-                class="absolute bottom-2 bg-accent h-3 w-full transform -rotate-3"
+                class="absolute bottom-2 bg-color-primary-lighter h-3 w-full transform -rotate-3"
               ></div>
             </div>
-            <span class="text-gap">를 약속드립니다.</span>
+            <span class="text-gap">드립니다.</span>
           </h2>
+          <!-- Promise container -->
           <div
-            class="grid grid-cols-1 gap-4 mt-16 mx-auto text-center max-w-screen-md w-4/5 sm:grid-cols-2 md:w-full md:grid-cols-3 xl:grid-cols-5 lg:text-left xl:max-w-screen-xl"
+            class="grid grid-cols-1 gap-4 mt-16 md:grid-cols-2 lg:grid-cols-4"
           >
-            <!-- Box 1 -->
+            <!-- Box  -->
             <div
-              class="w-60 h-60 flex items-center justify-center flex-col mx-auto py-12 px-8 rounded-md shadow-md bg-white"
+              class="flex justify-center flex-col p-8 rounded shadow-md bg-color-primary-lighter md:justify-start"
             >
-              <p class="text-center text-lg">1</p>
-              <h2 class="text-center text-lg font-bold mb-4">불만은 NO</h2>
-              <p class="text-left text-gray-800">
+              <h2 class="text-center font-bold mb-4 lg:text-lg">불만은 NO</h2>
+              <p class="text-gray-700">
                 제작 과정 어느 시점에서든 불만족시 제작비 전액 환불해드립니다.
               </p>
             </div>
-
-            <!-- Box 2 -->
+            <!-- Box  -->
             <div
-              class="w-60 h-60 flex items-center justify-center flex-col mx-auto py-12 px-8 rounded-md shadow-md bg-white"
+              class="flex justify-center flex-col p-8 rounded shadow-md bg-color-primary-lighter md:justify-start"
             >
-              <p class="text-center text-lg">2</p>
-              <h2 class="text-center text-lg font-bold mb-4">걱정은 NO</h2>
-              <p class="text-left text-gray-800">
-                사후 유지보수는 기간 제한 없이 평생 무상으로 제공됩니다.
+              <h2 class="text-center font-bold mb-4 lg:text-lg">바가지는 NO</h2>
+              <p class="text-gray-700">
+                제작비는 고정으로 연간 도메인 비용 제외한 추가 비용은 일절
+                없습니다.
               </p>
             </div>
 
-            <!-- Box 3 -->
+            <!-- Box  -->
             <div
-              class="w-60 h-60 flex items-center justify-center flex-col mx-auto py-12 px-8 rounded-md shadow-md bg-white"
+              class="flex justify-center flex-col p-8 rounded shadow-md bg-color-primary-lighter md:justify-start"
             >
-              <p class="text-center text-lg">3</p>
-              <h2 class="text-center text-lg font-bold mb-4">바가지는 NO</h2>
-              <p class="text-left text-gray-800">
-                제작비는 $2,000 고정으로 연간 도메인 비용 제외한 추가 비용은
-                일절 없습니다.
-              </p>
-            </div>
-
-            <!-- Box 4 -->
-            <div
-              class="w-60 h-60 flex items-center justify-center flex-col mx-auto py-12 px-8 rounded-md shadow-md bg-white"
-            >
-              <p class="text-center text-lg">4</p>
-              <h2 class="text-center text-lg font-bold mb-4">중복은 NO</h2>
-              <p class="text-left text-gray-800">
-                웹 빌더의 미리 만들어둔 템플릿이 아닌 100% 코딩으로 맞춤
+              <h2 class="text-center font-bold mb-4 lg:text-lg">중복은 NO</h2>
+              <p class="text-gray-700">
+                웹 빌더의 미리 만들어둔 템플릿이 아닌 맞춤 디자인으로
                 제작해드립니다.
               </p>
             </div>
-
-            <!-- Box 5 -->
+            <!-- Box  -->
             <div
-              class="w-60 h-60 flex items-center justify-center flex-col mx-auto py-12 px-8 rounded-md shadow-md bg-white"
+              class="flex justify-center flex-col p-8 rounded shadow-md bg-color-primary-lighter md:justify-start"
             >
-              <p class="text-center text-lg">5</p>
-              <h2 class="text-center text-lg font-bold mb-4">하자는 NO</h2>
-              <p class="text-left text-gray-800">
+              <h2 class="text-center font-bold mb-4 lg:text-lg">하자는 NO</h2>
+              <p class="text-gray-700">
                 모든 기능과 디자인을 철저히 테스팅 후 최종 결과물을
                 전달해드립니다.
               </p>
@@ -919,43 +1086,45 @@
           </div>
         </div>
       </section>
+
       <!-- Contact -->
-      <section class="relative flex justify-center py-20">
-        <img src="images/contact-bg.jpg" alt="" class="bg-overlay" />
+      <section class="relative py-16 px-8">
+        <img src="images/contact-bg.jpg" alt="mailbox" class="bg-overlay" />
         <!-- Text and form Container -->
-        <div class="relative text-center">
-          <!-- Title -->
-          <p class="text-sm mx-auto mb-4 text-center text-gray-100">시작하기</p>
+        <div class="container mx-auto flex flex-col items-center">
           <!-- Heading and description -->
-          <h2 class="text-white text-2xl font-bold md:text-4xl lg:text-5xl">
+          <h2
+            class="text-center text-white mt-4 text-3xl font-bold md:text-5xl"
+          >
             문의는 환영입니다.
           </h2>
-          <p class="md:text-lg mt-12 text-gray-100">contact@webtamin.co</p>
-          <div class="text-center mt-20">
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSdEa50c1igUGS0bRGVWa45k1nirdl61vExS0tDGvasNI6Irtw/viewform?usp=sharing"
-              rel="nofollow"
-              target="_blank"
-              class="border border-white py-4 w-max px-12 py-4 rounded-sm text-white lg:text-xl"
-              >제작 문의하기</a
-            >
-          </div>
+          <p class="md:text-lg mt-8 text-center text-gray-100">
+            contact@webtamin.co
+          </p>
+          <!-- CTA -->
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdEa50c1igUGS0bRGVWa45k1nirdl61vExS0tDGvasNI6Irtw/viewform?usp=sharing"
+            target="_blank"
+            rel="nofollow noopener"
+            class="text-sm mt-8 text-white bg-color-primary inline-block uppercase px-6 py-3 shadow-md rounded-sm lg:text-base lg:px-12"
+            >시작하기</a
+          >
         </div>
       </section>
     </main>
 
     <!-- Footer -->
     <footer
-      class="relative flex flex-col items-center justify-between px-4 pt-8 bg-dark text-white lg:shadow-inner"
+      class="relative flex flex-col items-center justify-between px-4 pt-8 bg-black text-white lg:shadow-inner"
     >
       <!-- Contact Icon -->
-      <div class="fixed right-0 bottom-0 m-4">
+      <div class="z-50 fixed right-0 bottom-0 m-4">
         <div
-          class="flex items-center justify-center rounded-full btn-bg text-black w-12 h-12 md:w-auto md:h-auto md:p-4"
+          class="flex items-center justify-center rounded-full bg-color-primary text-white w-12 h-12 md:w-auto md:h-auto md:p-4"
         >
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLSdEa50c1igUGS0bRGVWa45k1nirdl61vExS0tDGvasNI6Irtw/viewform?usp=sharing"
-            rel="nofollow"
+            rel="nofollow noopener"
             target="_blank"
             ><i class="fa-solid fa-comment md:mr-2"></i
             ><span class="hidden md:inline-block">문의하기</span></a
@@ -964,11 +1133,11 @@
       </div>
 
       <!-- Social Links & Copyright-->
-      <div class="flex flex-col items-center opacity-50 text-xs mb-4 lg:mb-6">
+      <div
+        class="flex flex-col items-center text-gray-400 text-xs mb-4 lg:mb-6"
+      >
         <div class="font-medium mb-1">사업자등록번호(EIN): 93-3136163</div>
-        <div class="font-medium mb-1">
-          &copy; <span id="currentYear"> </span> WEBTAMIN
-        </div>
+        <div class="font-medium mb-1">&copy; WEBTAMIN</div>
       </div>
     </footer>
 

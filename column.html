@@ -18,8 +18,8 @@
       crossorigin="anonymous"
       referrerpolicy="nofollow"
     />
-    <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="styles/tailwind.css" />
+    <link rel="stylesheet" href="styles/index.css" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -42,218 +42,224 @@
   <body>
     <main>
       <!-- Hero -->
-      <section class="relative pt-10 pb-4">
-        <img src="images/column-bg.webp" alt="" class="bg-overlay" />
-        <!-- Logo -->
-        <div class="flex justify-center">
-          <div class="logo w-1/12">
-            <a href="index.html">
-              <img class="w-full" alt="logo" src="images/logo-white.png" />
-            </a>
-          </div>
-        </div>
-        <!-- Main landing -->
-        <div
-          class="flex justify-center items-center mt-6 pb-12 py-12 md:py-20 lg:gap-x-24 xl:max-w-screen-2xl xl:mx-auto lg:py-40 2xl:py-60"
-        >
-          <div>
-            <!-- Text Container-->
-            <div class="w-full text-center md:text-left text-white">
-              <h1
-                class="font-bold text-4xl leading-relaxed md:leading-normal md:text-5xl lg:text-6xl xl:text-7xl pb-4"
-              >
-                <span class="color-accent">웹사이트 제작</span>
-                <br class="md:hidden" />절대 서두르지 마세요.
-              </h1>
-              <p
-                class="text-md mt-6 mb-8 md:w-3/4 md:text-lg lg:text-2xl lg:w-full"
-              >
-                소중한 시간과 비용을 전부 날려버릴 수 있습니다.
-              </p>
+      <section class="relative py-16 px-8">
+        <!-- Hero image -->
+        <img
+          src="images/column-bg.jpg"
+          alt="typing laptop"
+          class="bg-overlay-dark"
+        />
+        <!-- Hero content -->
+        <div class="container mx-auto flex flex-col items-center">
+          <!-- Topbar -->
+          <div class="w-full flex items-center justify-between">
+            <!-- Logo -->
+            <div class="logo w-1/12">
+              <a href="index.html">
+                <img class="w-full" alt="logo" src="images/logo-white.png" />
+              </a>
             </div>
+            <!-- Language -->
+            <div class="flex items-center space-x-4">
+              <span class="text-white">언어: </span>
+              <img src="images/korean-icon.png" alt="korean icon" class="w-8" />
+              <a href="en/column.html"
+                ><img src="images/usa-icon.png" alt="english icon" class="w-8"
+              /></a>
+            </div>
+          </div>
+          <!-- Text -->
+          <div class="text-center">
+            <h1
+              class="mt-16 text-center text-white font-bold text-5xl md:text-6xl lg:text-7xl"
+            >
+              칼럼
+            </h1>
+            <!-- CTA -->
+            <a
+              href="index.html"
+              class="text-sm mt-8 bg-color-primary text-white inline-block uppercase px-6 py-3 shadow-md rounded-sm lg:text-base"
+              >메인으로 가기</a
+            >
           </div>
         </div>
       </section>
 
-      <!--  Column Container -->
-      <section class="leading-loose relative">
-        <!-- Headings and text container -->
-        <div
-          class="text-center px-10 py-12 md:px-4 md:pt-20 md:px-20 lg:flex lg:flex-col lg:items-center"
-        >
-          <!-- Title -->
-          <p class="text-xs md:text-sm mx-auto mb-4 text-center">칼럼</p>
-          <!-- Heading and description -->
-          <h2 class="text-center text-2xl font-bold md:text-4xl lg:text-5xl">
-            <div class="relative inline-block z-20">
-              <div class="relative z-10">천천히</div>
-              <div
-                class="absolute bottom-1 bg-accent h-3 w-full transform -rotate-6"
-              ></div>
-            </div>
-            결정해도 늦지 않습니다.
-          </h2>
-          <p
-            class="text-lg md:text-2xl lg:text-3xl text-gray-800 mx-auto mt-12 text-center max-w-screen-lg md:leading-relaxed"
-          >
-            <span
-              >웹사이트 제작에 대해
-              <strong class="btn-bg">충분히 조사</strong>하고 알아봐주세요. </span
-            ><br class="hidden lg:block" />
-            <span class="lg:inline-block lg:mt-2"
-              >아는만큼 보이기 마련입니다.</span
-            >
-          </p>
-        </div>
-      </section>
-      <div class="flex justify-center items-center mb-8" id="column-main">
-        <div class="max-w-3xl w-11/12 md:w-full">
-          <ul class="space-y-4">
-            <!-- Post -->
-            <a href="columns/faq.html#column-container">
-              <li
-                class="border border-opacity-5 border-b-0 shadow-md p-6 my-8 rounded"
-              >
-                <div
-                  class="flex flex-col-reverse justify-between items-center md:flex-row"
-                >
-                  <h2 class="text-lg font-semibold text-gray-800 mt-1 mb:mt-0">
-                    📌 문의 전 필독 사항
-                  </h2>
-                  <p class="text-gray-600 text-right text-xs md:text-sm">
+      <section class="py-16 px-8">
+        <div class="container mx-auto"></div>
+        <div class="gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+          <!-- Column -->
+          <div class="flex flex-col">
+            <div class="bg-white shadow-md rounded flex flex-col h-full">
+              <img
+                src="images/columns/faq/thinker.jpg"
+                alt="thinking person"
+                class="column-thumbnail"
+              />
+              <div class="p-4 h-full flex flex-col justify-between">
+                <div>
+                  <h2 class="font-semibold md:text-lg">📌 자주 찾는 질문</h2>
+                  <p class="text-gray-700 text-xs mt-2 md:text-sm">
                     2023-06-03
                   </p>
+                  <p class="text-sm text-gray-700 mt-4 md:text-base">
+                    안녕하세요, 웹타민입니다. 웹타민의 서비스에 대해 자주 찾는
+                    질문과 답변들을 말씀드립니다...
+                  </p>
                 </div>
-                <p class="text-sm text-gray-600 mt-4">
-                  안녕하세요, 웹타민입니다. 웹타민의 서비스에 대해 자주 찾는
-                  질문과 답변들을 말씀드립니다...
-                </p>
-              </li>
-            </a>
-            <a
-              href="columns/3-reasons-you-need-to-create-a-custom-website.html#column-container"
-            >
-              <li
-                class="border border-opacity-5 border-b-0 shadow-md p-6 my-8 rounded"
-              >
-                <div
-                  class="flex flex-col-reverse justify-between items-center md:flex-row"
+                <a
+                  href="columns/faq.html#column-container"
+                  class="w-max mt-8 underline-offset-4 inline-block text-color-primary font-bold underline text-sm md:text-base"
+                  >더 읽어보기</a
                 >
-                  <h2 class="text-lg font-semibold text-gray-800 mt-1 mb:mt-0">
+              </div>
+            </div>
+          </div>
+          <!-- Column -->
+          <div class="flex flex-col">
+            <div class="bg-white shadow-md rounded flex flex-col h-full">
+              <img
+                src="images/columns/3-reasons-you-need-to-create-a-custom-website/branding.jpg"
+                alt="website design"
+                class="column-thumbnail"
+              />
+              <div class="p-4 h-full flex flex-col justify-between">
+                <div>
+                  <h2 class="font-semibold md:text-lg">
                     맞춤 웹사이트 제작이 필요한 3가지 이유
                   </h2>
-                  <p class="text-gray-600 text-right text-xs md:text-sm">
+                  <p class="text-gray-700 text-xs mt-2 md:text-sm">
                     2023-10-07
                   </p>
+                  <p class="text-sm text-gray-700 mt-4 md:text-base">
+                    웹사이트 제작에는 크게 두 가지 방법이 있습니다. 첫째는
+                    템플릿이라고 하는 미리 만들어진...
+                  </p>
                 </div>
-                <p class="text-sm text-gray-600 mt-4">
-                  웹사이트 제작에는 크게 두 가지 방법이 있습니다. 첫째는
-                  템플릿이라고 하는 미리 만들어진...
-                </p>
-              </li>
-            </a>
-            <a
-              href="columns/5-reasons-why-website-development-takes-long.html#column-container"
-            >
-              <li
-                class="border border-opacity-5 border-b-0 shadow-md p-6 my-8 rounded"
-              >
-                <div
-                  class="flex flex-col-reverse justify-between items-center md:flex-row"
+                <a
+                  href="columns/3-reasons-you-need-to-create-a-custom-website.html#column-container"
+                  class="w-max mt-8 underline-offset-4 inline-block text-color-primary font-bold underline text-sm md:text-base"
+                  >더 읽어보기</a
                 >
-                  <h2 class="text-lg font-semibold text-gray-800 mt-1 mb:mt-0">
+              </div>
+            </div>
+          </div>
+          <!-- Column -->
+          <div class="flex flex-col">
+            <div class="bg-white shadow-md rounded flex flex-col h-full">
+              <img
+                src="images/columns/5-reasons-why-website-development-takes-long/planning.jpg"
+                alt="website planning"
+                class="column-thumbnail"
+              />
+              <div class="p-4 h-full flex flex-col justify-between">
+                <div>
+                  <h2 class="font-semibold md:text-lg">
                     웹사이트 제작이 오래 걸리는 5가지 이유
                   </h2>
-                  <p class="text-gray-600 text-right text-xs md:text-sm">
+                  <p class="text-gray-700 text-xs mt-2 md:text-sm">
                     2023-09-02
                   </p>
+                  <p class="text-sm text-gray-700 mt-4 md:text-base">
+                    웹사이트 은 디자인, 페이지 수, 기능, 제작사의 역량 등에 따라
+                    달라질 수 있습니다...
+                  </p>
                 </div>
-                <p class="text-sm text-gray-600 mt-4">
-                  웹사이트 제작 기간은 디자인, 페이지 수, 기능, 제작사의 역량
-                  등에 따라 달라질 수 있습니다...
-                </p>
-              </li>
-            </a>
-            <a
-              href="columns/how-to-prevent-fraud-from-website-development.html#column-container"
-            >
-              <li
-                class="border border-opacity-5 border-b-0 shadow-md p-6 my-8 rounded"
-              >
-                <div
-                  class="flex flex-col-reverse justify-between items-center md:flex-row"
+                <a
+                  href="columns/5-reasons-why-website-development-takes-long.html#column-container"
+                  class="w-max mt-8 underline-offset-4 inline-block inline-block text-color-primary font-bold underline text-sm md:text-base"
+                  >더 읽어보기</a
                 >
-                  <h2 class="text-lg font-semibold text-gray-800 mt-1 mb:mt-0">
+              </div>
+            </div>
+          </div>
+          <!-- Column -->
+          <div class="flex flex-col">
+            <div class="bg-white shadow-md rounded flex flex-col h-full">
+              <img
+                src="images/columns/how-to-prevent-fraud-from-website-development/fraud image-1.jpg"
+                alt="running person"
+                class="column-thumbnail"
+              />
+              <div class="p-4 h-full flex flex-col justify-between">
+                <div>
+                  <h2 class="font-semibold md:text-lg">
                     웹사이트 제작 사기 피해를 예방하는 방법
                   </h2>
-                  <p class="text-gray-600 text-right text-xs md:text-sm">
+                  <p class="text-gray-700 text-xs mt-2 md:text-sm">
                     2023-08-05
                   </p>
-                </div>
-                <p class="text-sm text-gray-600 mt-4">
-                  이 칼럼은 이전 글인 '웹사이트 제작 사기꾼들이 많은 3가지
-                  이유'의 후속글입니다...
-                </p>
-              </li>
-            </a>
-            <a
-              href="columns/3-reasons-for-the-high-number-of-scammers-in-website-development.html#column-container"
-            >
-              <li
-                class="border border-opacity-5 border-b-0 shadow-md p-6 my-8 rounded"
-              >
-                <div
-                  class="flex flex-col-reverse justify-between items-center md:flex-row"
-                >
-                  <h2 class="text-lg font-semibold text-gray-800 mt-1 mb:mt-0">
-                    웹사이트 제작 사기꾼들이 많은 3가지 이유
-                  </h2>
-                  <p class="text-gray-600 text-right text-xs md:text-sm">
-                    2023-07-01
+                  <p class="text-sm text-gray-700 mt-4 md:text-base">
+                    이 칼럼은 이전 글인 '웹사이트 제작 사기꾼들이 많은 3가지
+                    이유'의 후속글입니다...
                   </p>
                 </div>
-                <p class="text-sm text-gray-600 mt-4">
-                  웹사이트 제작 의뢰, 사기 당하지 않을 자신 있으신가요? 그렇다면
-                  뒤로 가셔도 좋습니다...
-                </p>
-              </li>
-            </a>
-          </ul>
-
-          <a
-            href="index.html"
-            class="btn-bg block mx-auto text-black shadow-md py-4 w-max mt-16 mb-8 px-12 rounded-sm lg:text-xl"
-            >메인으로 가기</a
-          >
+                <a
+                  href="columns/how-to-prevent-fraud-from-website-development.html#column-container"
+                  class="w-max mt-8 underline-offset-4 inline-block text-color-primary font-bold underline text-sm md:text-base"
+                  >더 읽어보기</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Column -->
+          <div class="flex flex-col">
+            <div class="bg-white shadow-md rounded flex flex-col h-full">
+              <img
+                src="images/columns/3-reasons-for-the-high-number-of-scammers-in-website-development/anonymous.jpg"
+                alt="man with mask"
+                class="column-thumbnail"
+              />
+              <div class="p-4 h-full flex flex-col justify-between">
+                <div>
+                  <h2 class="font-semibold md:text-lg">
+                    웹사이트 제작 사기꾼들이 많은 3가지 이유
+                  </h2>
+                  <p class="text-gray-700 text-xs mt-2 md:text-sm">
+                    2023-07-01
+                  </p>
+                  <p class="text-sm text-gray-700 mt-4 md:text-base">
+                    웹사이트 제작 의뢰, 사기 당하지 않을 자신 있으신가요?
+                    그렇다면 뒤로 가셔도 좋습니다...
+                  </p>
+                </div>
+                <a
+                  href="columns/3-reasons-for-the-high-number-of-scammers-in-website-development.html#column-container"
+                  class="w-max mt-8 underline-offset-4 inline-block text-color-primary font-bold underline text-sm md:text-base"
+                  >더 읽어보기</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
     </main>
 
     <!-- Footer -->
     <footer
-      class="relative flex flex-col items-center justify-between px-4 pt-8 bg-dark text-white lg:shadow-inner"
+      class="relative flex flex-col items-center justify-between px-4 pt-8 bg-black text-white lg:shadow-inner"
     >
       <!-- Contact Icon -->
       <div class="fixed right-0 bottom-0 m-4">
         <div
-          class="flex items-center justify-center rounded-full btn-bg text-black w-12 h-12 md:w-auto md:h-auto md:p-4"
+          class="flex items-center justify-center rounded-full bg-color-primary text-black w-12 h-12 md:w-auto md:h-auto md:p-4"
         >
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLSdEa50c1igUGS0bRGVWa45k1nirdl61vExS0tDGvasNI6Irtw/viewform?usp=sharing"
-            rel="nofollow"
+            rel="nofollow noopener"
             target="_blank"
-            ><i class="fa-solid fa-comment md:mr-2"></i
-            ><span class="hidden md:inline-block">문의하기</span></a
+            ><i class="fa-solid text-white fa-comment md:mr-2"></i
+            ><span class="hidden text-white md:inline-block">문의하기</span></a
           >
         </div>
       </div>
 
       <!-- Social Links & Copyright-->
-      <div class="flex flex-col items-center opacity-50 text-xs mb-4 lg:mb-6">
+      <div
+        class="flex flex-col items-center text-gray-400 text-xs mb-4 lg:mb-6"
+      >
         <div class="font-medium mb-1">사업자등록번호(EIN): 93-3136163</div>
-        <div class="font-medium mb-1">
-          &copy; <span id="currentYear"> </span> WEBTAMIN
-        </div>
+        <div class="font-medium mb-1">&copy; WEBTAMIN</div>
       </div>
     </footer>
 
