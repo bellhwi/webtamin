@@ -141,13 +141,3 @@ ul {
   border-color: black;
   border-left: 8px solid;
 }
-
-.text-gap {
-  margin-left: -0.3rem;
-}
-
-@media (min-width: 768px) {
-  .text-gap {
-    margin-left: -0.5rem;
-  }
-}
