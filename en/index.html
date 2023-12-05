@@ -58,14 +58,14 @@
   <body>
     <main>
       <!-- Hero -->
-      <section class="relative py-16 px-8">
+      <section class="relative py-16 px-8 lg:py-24">
         <!-- Hero image -->
         <img
-          src="../images/hero-1024.webp"
+          src="../images/hero-1536.webp"
           srcset="
             ../images/hero-640.webp   640w,
             ../images/hero-1024.webp 1024w,
-            ../images/hero-1280.webp 1280w
+            ../images/hero-1536.webp 1536w
           "
           sizes="100vw"
           alt="coding laptop"
@@ -78,16 +78,31 @@
             <!-- Logo -->
             <div>
               <a href="index.html">
-                <img class="w-full" alt="logo" src="../images/logo.webp" />
+                <img
+                  class="w-full"
+                  alt="logo"
+                  src="../images/logo.webp"
+                  width="112"
+                  height="26"
+                />
               </a>
             </div>
             <!-- Language -->
             <div class="flex items-center space-x-4">
               <span class="text-white">Language: </span>
               <a href="../index.html"
-                ><img src="../images/korean-icon.webp" alt="korean icon"
+                ><img
+                  src="../images/korean-icon.webp"
+                  alt="korean icon"
+                  width="32"
+                  height="21"
               /></a>
-              <img src="../images/usa-icon.webp" alt="english icon" />
+              <img
+                src="../images/usa-icon.webp"
+                alt="english icon"
+                width="32"
+                height="32"
+              />
             </div>
           </div>
           <!-- Text -->
@@ -249,6 +264,8 @@
               sizes="(max-width:480px) 480px, 640px"
               alt="web developer of webtamin"
               class="grayscale lg:w-2/5"
+              width="640"
+              height="480"
             />
             <div class="mt-4 lg:w-3/5">
               <p>
@@ -381,6 +398,8 @@
                   sizes="(max-width:480px) 480px, 768px"
                   alt="arnidxiong website mockup design"
                   class="p-4"
+                  width="768"
+                  height="429"
                 />
                 <div class="p-4 h-full flex flex-col justify-between">
                   <div>
@@ -412,6 +431,8 @@
                   sizes="(max-width:480px) 480px, 768px"
                   alt="junlawfirm website mockup design"
                   class="p-4"
+                  width="768"
+                  height="429"
                 />
                 <div class="p-4 h-full flex flex-col justify-between">
                   <div>
@@ -440,7 +461,13 @@
       <!-- Testimonials -->
       <section class="relative py-16 px-8">
         <img
-          src="../images/testimonial-bg.webp"
+          src="../images/testimonial.webp"
+          srcset="
+            ../images/testimonial-640.webp   640w,
+            ../images/testimonial-1024.webp 1024w,
+            ../images/testimonial-1536.webp 1536w
+          "
+          sizes="100vw"
           alt="people talking"
           class="bg-overlay-dark"
         />
@@ -487,7 +514,14 @@
                 <img
                   src="../images/columns/3-reasons-you-need-to-create-a-custom-website/branding.webp"
                   alt="website design"
+                  srcset="
+                    ../images/columns/3-reasons-you-need-to-create-a-custom-website/branding-372.webp 372w,
+                    ../images/columns/3-reasons-you-need-to-create-a-custom-website/branding.webp     640w
+                  "
+                  sizes="(max-width:372px) 372px, 640px"
                   class="column-thumbnail"
+                  width="640"
+                  height="392"
                 />
                 <div class="p-4 h-full flex flex-col justify-between">
                   <div>
@@ -516,7 +550,14 @@
                 <img
                   src="../images/columns/5-reasons-why-website-development-takes-long/planning.webp"
                   alt="website planning"
+                  srcset="
+                    ../images/columns/5-reasons-why-website-development-takes-long/planning-372.webp 372w,
+                    ../images/columns/5-reasons-why-website-development-takes-long/planning.webp     640w
+                  "
+                  sizes="(max-width:372px) 372px, 640px"
                   class="column-thumbnail"
+                  width="640"
+                  height="427"
                 />
                 <div class="p-4 h-full flex flex-col justify-between">
                   <div>
@@ -545,7 +586,13 @@
                 <img
                   src="../images/columns/how-to-prevent-fraud-from-website-development/running-man.webp"
                   alt="running person"
+                  srcset="
+                    ../images/columns/how-to-prevent-fraud-from-website-development/running-man-372.webp 372w,
+                    ../images/columns/how-to-prevent-fraud-from-website-development/running-man.webp     640w
+                  "
                   class="column-thumbnail"
+                  width="640"
+                  height="427"
                 />
                 <div class="p-4 h-full flex flex-col justify-between">
                   <div>
@@ -574,6 +621,10 @@
                 <img
                   src="../images/columns/3-reasons-for-the-high-number-of-scammers-in-website-development/anonymous.webp"
                   alt="man with mask"
+                  srcset="
+                    ../images/columns/3-reasons-for-the-high-number-of-scammers-in-website-development/anonymous-372.webp 372w,
+                    ../images/columns/3-reasons-for-the-high-number-of-scammers-in-website-development/anonymous.webp     640w
+                  "
                   class="column-thumbnail"
                 />
                 <div class="p-4 h-full flex flex-col justify-between">
@@ -941,7 +992,17 @@
 
       <!-- Contact -->
       <section class="relative py-16 px-8">
-        <img src="../images/contact-bg.webp" alt="mailbox" class="bg-overlay" />
+        <img
+          src="../images/contact-bg.webp"
+          alt="mailbox"
+          srcset="
+            ../images/contact-640.webp   640w,
+            ../images/contact-1024.webp 1024w,
+            ../images/contact-1536.webp 1536w
+          "
+          sizes="100vw"
+          class="bg-overlay"
+        />
         <!-- Text and form Container -->
         <div class="container mx-auto flex flex-col items-center">
           <!-- Heading and description -->
