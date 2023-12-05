@@ -18,7 +18,7 @@
       crossorigin="anonymous"
       referrerpolicy="nofollow"
     />
-    <link rel="stylesheet" href="../styles/tailwind.css" />
+
     <link rel="stylesheet" href="../styles/index.css" />
     <link
       rel="apple-touch-icon"
@@ -61,7 +61,13 @@
       <section class="relative py-16 px-8">
         <!-- Hero image -->
         <img
-          src="../images/coding.webp"
+          src="../images/hero-1024.webp"
+          srcset="
+            ../images/hero-640.webp   640w,
+            ../images/hero-1024.webp 1024w,
+            ../images/hero-1280.webp 1280w
+          "
+          sizes="100vw"
           alt="coding laptop"
           class="bg-overlay"
         />
@@ -70,29 +76,18 @@
           <!-- Topbar -->
           <div class="w-full flex items-center justify-between">
             <!-- Logo -->
-            <div class="logo w-1/12">
+            <div>
               <a href="index.html">
-                <img
-                  class="w-full"
-                  alt="logo"
-                  src="../images/logo-white.webp"
-                />
+                <img class="w-full" alt="logo" src="../images/logo.webp" />
               </a>
             </div>
             <!-- Language -->
             <div class="flex items-center space-x-4">
               <span class="text-white">Language: </span>
               <a href="../index.html"
-                ><img
-                  src="../images/korean-icon.webp"
-                  alt="korean icon"
-                  class="w-8"
+                ><img src="../images/korean-icon.webp" alt="korean icon"
               /></a>
-              <img
-                src="../images/usa-icon.webp"
-                alt="english icon"
-                class="w-8"
-              />
+              <img src="../images/usa-icon.webp" alt="english icon" />
             </div>
           </div>
           <!-- Text -->
@@ -246,7 +241,12 @@
             class="flex flex-col items-center justify-center mt-8 lg:flex-row lg:space-x-8"
           >
             <img
-              src="../images/jonghwikim.webp"
+              src="../images/jonghwikim-640.webp"
+              srcset="
+                ../images/jonghwikim-480.webp 480w,
+                ../images/jonghwikim-640.webp 640w
+              "
+              sizes="(max-width:480px) 480px, 640px"
               alt="web developer of webtamin"
               class="grayscale lg:w-2/5"
             />
@@ -258,18 +258,9 @@
                 that she needed a portfolio website. I started making it right
                 away, and after I completed it, my wife succeeded in getting a
                 job with her website. As a result of that, I learned that
-                developing a website can satisfy someone's needs. Since then, I
-                have opened a
-                <a
-                  href="https://www.youtube.com/@jonghwikim"
-                  rel="nofollow noopener"
-                  target="_blank"
-                  class="text-color-primary"
-                  >coding YouTube channel</a
-                >
-                to share knowledge related to development. I am now creating a
-                website for small businesses that helps them market and
-                contributes to increasing their profits.
+                developing a website can satisfy someone's needs. I am now
+                creating a website for small businesses that helps them market
+                and contributes to increasing their profits.
               </p>
               <p class="mt-4"></p>
             </div>
@@ -377,39 +368,18 @@
             Check our extremely fast websites.
           </h2>
           <!-- Container -->
-          <div class="mt-16 gap-4 grid grid-cols-1 md:grid-cols-3">
+          <div class="mt-16 gap-4 grid grid-cols-1 md:grid-cols-2">
             <!-- Content -->
             <div class="flex flex-col">
               <div class="bg-white shadow-md rounded flex flex-col h-full">
                 <img
-                  src="../images/haxa-mockup.webp"
-                  alt="website design"
-                  class="p-4"
-                />
-                <div class="p-4 h-full flex flex-col justify-between">
-                  <div>
-                    <h2 class="font-semibold md:text-lg">haxalabs.com</h2>
-                    <p class="text-sm text-gray-700 mt-4 md:text-base">
-                      haxalabs.com is a website for introducing and promoting
-                      products.
-                    </p>
-                  </div>
-                  <a
-                    href="https://haxalabs.com/"
-                    target="_blank"
-                    rel="nofollow noopener"
-                    class="w-max text-sm mt-8 bg-color-primary text-white inline-block uppercase px-6 py-3 shadow-md rounded-sm lg:text-base"
-                    >visit website</a
-                  >
-                </div>
-              </div>
-            </div>
-            <!-- Content -->
-            <div class="flex flex-col">
-              <div class="bg-white shadow-md rounded flex flex-col h-full">
-                <img
-                  src="../images/arnid-mockup.webp"
-                  alt="website design"
+                  src="../images/arnid-768.webp"
+                  srcset="
+                    ../images/arnid-480.webp 480w,
+                    ../images/arnid-768.webp 768w
+                  "
+                  sizes="(max-width:480px) 480px, 768px"
+                  alt="arnidxiong website mockup design"
                   class="p-4"
                 />
                 <div class="p-4 h-full flex flex-col justify-between">
@@ -434,8 +404,13 @@
             <div class="flex flex-col">
               <div class="bg-white shadow-md rounded flex flex-col h-full">
                 <img
-                  src="../images/junlawfirm-mockup.webp"
-                  alt="website design"
+                  src="../images/junlawfirm-768.webp"
+                  srcset="
+                    ../images/junlawfirm-480.webp 480w,
+                    ../images/junlawfirm-768.webp 768w
+                  "
+                  sizes="(max-width:480px) 480px, 768px"
+                  alt="junlawfirm website mockup design"
                   class="p-4"
                 />
                 <div class="p-4 h-full flex flex-col justify-between">
@@ -568,7 +543,7 @@
             <div class="flex flex-col">
               <div class="bg-white shadow-md rounded flex flex-col h-full">
                 <img
-                  src="../images/columns/how-to-prevent-fraud-from-website-development/fraud image-1.webp"
+                  src="../images/columns/how-to-prevent-fraud-from-website-development/running-man.webp"
                   alt="running person"
                   class="column-thumbnail"
                 />
@@ -1019,6 +994,6 @@
       </div>
     </footer>
 
-    <script src="../js/index.js"></script>
+    <script defer src="../js/index.js"></script>
   </body>
 </html>

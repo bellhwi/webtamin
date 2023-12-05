@@ -18,7 +18,7 @@
       crossorigin="anonymous"
       referrerpolicy="nofollow"
     />
-    <link rel="stylesheet" href="styles/tailwind.css" />
+
     <link rel="stylesheet" href="styles/index.css" />
     <link
       rel="apple-touch-icon"
@@ -61,7 +61,12 @@
       <section class="relative py-16 px-8">
         <!-- Hero image -->
         <img
-          src="images/column-bg.webp"
+          srcset="
+            images/column-hero-640.webp   640w,
+            images/column-hero-1024.webp 1024w,
+            images/column-hero-1536.webp 1536w
+          "
+          sizes="100vw"
           alt="typing laptop"
           class="bg-overlay-dark"
         />
@@ -70,9 +75,9 @@
           <!-- Topbar -->
           <div class="w-full flex items-center justify-between">
             <!-- Logo -->
-            <div class="logo w-1/12">
+            <div>
               <a href="index.html">
-                <img class="w-full" alt="logo" src="images/logo-white.webp" />
+                <img class="w-full" alt="logo" src="images/logo.webp" />
               </a>
             </div>
             <!-- Language -->
@@ -197,7 +202,7 @@
           <div class="flex flex-col">
             <div class="bg-white shadow-md rounded flex flex-col h-full">
               <img
-                src="images/columns/how-to-prevent-fraud-from-website-development/fraud image-1.webp"
+                src="images/columns/how-to-prevent-fraud-from-website-development/running-man.webp"
                 alt="running person"
                 class="column-thumbnail"
               />

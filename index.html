@@ -17,7 +17,7 @@
       crossorigin="anonymous"
       referrerpolicy="nofollow"
     />
-    <link rel="stylesheet" href="styles/tailwind.css" />
+
     <link rel="stylesheet" href="styles/index.css" />
     <link
       rel="apple-touch-icon"
@@ -57,17 +57,33 @@
   <body>
     <main>
       <!-- Hero -->
-      <section class="relative py-16 px-8">
+      <section class="relative py-16 px-8 lg:py-24">
         <!-- Hero image -->
-        <img src="images/coding.webp" alt="coding laptop" class="bg-overlay" />
+        <img
+          src="images/hero-1536.webp"
+          srcset="
+            images/hero-640.webp   640w,
+            images/hero-1024.webp 1024w,
+            images/hero-1536.webp 1536w
+          "
+          sizes="100vw"
+          alt="coding laptop"
+          class="bg-overlay"
+        />
         <!-- Hero content -->
         <div class="container mx-auto flex flex-col items-center">
           <!-- Topbar -->
           <div class="w-full flex items-center justify-between">
             <!-- Logo -->
-            <div class="logo w-1/12">
+            <div>
               <a href="index.html">
-                <img class="w-full" alt="logo" src="images/logo-white.webp" />
+                <img
+                  class="w-full"
+                  alt="logo"
+                  src="images/logo.webp"
+                  width="112"
+                  height="26"
+                />
               </a>
             </div>
             <!-- Language -->
@@ -76,10 +92,15 @@
               ><img
                 src="images/korean-icon.webp"
                 alt="korean icon"
-                class="w-8"
+                width="32"
+                height="21"
               />
               <a href="en/index.html" hreflang="en"
-                ><img src="images/usa-icon.webp" alt="english icon" class="w-8"
+                ><img
+                  src="images/usa-icon.webp"
+                  alt="english icon"
+                  width="32"
+                  height="32"
               /></a>
             </div>
           </div>
@@ -255,9 +276,16 @@
             class="flex flex-col items-center justify-center mt-8 lg:flex-row lg:space-x-8"
           >
             <img
-              src="images/jonghwikim.webp"
+              src="images/jonghwikim-640.webp"
+              srcset="
+                images/jonghwikim-480.webp 480w,
+                images/jonghwikim-640.webp 640w
+              "
+              sizes="(max-width:480px) 480px, 640px"
               alt="web developer of webtamin"
               class="grayscale lg:w-2/5"
+              width="640"
+              height="480"
             />
             <div class="mt-4 lg:w-3/5">
               <p>
@@ -267,18 +295,9 @@
                 이야기를 들었습니다. 바로 제작에 착수했고 완성한 이후 아내는
                 웹사이트와 함께 취업에 성공했습니다. 그 일을 계기로 웹사이트
                 개발이 누군가의 필요를 채워줄 수 있다는 것을 알게 되었습니다.
-                이후
-                <a
-                  href="https://www.youtube.com/@jonghwikim"
-                  rel="nofollow noopener"
-                  target="_blank"
-                  class="text-color-primary"
-                  >코딩 유튜브 채널</a
-                >을 개설하여 개발 관련 지식을 공유해오고 있습니다. 지금은 소규모
-                사업자들을 위해 마케팅을 돕고 수익 증대에 기여하는 웹사이트를
-                제작하고 있습니다.
+                현재는 소규모 사업자들을 위해 마케팅을 돕고 수익 증대에 기여하는
+                웹사이트를 제작하고 있습니다.
               </p>
-              <p class="mt-4"></p>
             </div>
           </div>
         </div>
@@ -384,39 +403,21 @@
             남 다른 속도를 확인해보세요.
           </h2>
           <!-- Container -->
-          <div class="mt-16 gap-4 grid grid-cols-1 md:grid-cols-3">
+          <div class="mt-16 gap-4 grid grid-cols-1 md:grid-cols-2">
             <!-- Content -->
             <div class="flex flex-col">
               <div class="bg-white shadow-md rounded flex flex-col h-full">
                 <img
-                  src="images/haxa-mockup.webp"
-                  alt="haxalabs website mockup design"
-                  class="p-4"
-                />
-                <div class="p-4 h-full flex flex-col justify-between">
-                  <div>
-                    <h2 class="font-semibold md:text-lg">haxalabs.com</h2>
-                    <p class="text-sm text-gray-700 mt-4 md:text-base">
-                      제품을 소개하고 홍보하기 위한 웹사이트입니다.
-                    </p>
-                  </div>
-                  <a
-                    href="https://haxalabs.com/"
-                    target="_blank"
-                    rel="nofollow noopener"
-                    class="w-max text-sm mt-8 bg-color-primary text-white inline-block uppercase px-6 py-3 shadow-md rounded-sm lg:text-base"
-                    >웹사이트 방문하기</a
-                  >
-                </div>
-              </div>
-            </div>
-            <!-- Content -->
-            <div class="flex flex-col">
-              <div class="bg-white shadow-md rounded flex flex-col h-full">
-                <img
-                  src="images/arnid-mockup.webp"
+                  src="images/arnid-768.webp"
+                  srcset="
+                    images/arnid-480.webp 480w,
+                    images/arnid-768.webp 768w
+                  "
+                  sizes="(max-width:480px) 480px, 768px"
                   alt="arnidxiong website mockup design"
                   class="p-4"
+                  width="768"
+                  height="429"
                 />
                 <div class="p-4 h-full flex flex-col justify-between">
                   <div>
@@ -439,9 +440,16 @@
             <div class="flex flex-col">
               <div class="bg-white shadow-md rounded flex flex-col h-full">
                 <img
-                  src="images/junlawfirm-mockup.webp"
+                  src="images/junlawfirm-768.webp"
+                  srcset="
+                    images/junlawfirm-480.webp 480w,
+                    images/junlawfirm-768.webp 768w
+                  "
+                  sizes="(max-width:480px) 480px, 768px"
                   alt="junlawfirm website mockup design"
                   class="p-4"
+                  width="768"
+                  height="429"
                 />
                 <div class="p-4 h-full flex flex-col justify-between">
                   <div>
@@ -469,7 +477,13 @@
       <!-- Testimonials -->
       <section class="relative py-16 px-8">
         <img
-          src="images/testimonial-bg.webp"
+          src="images/testimonial.webp"
+          srcset="
+            images/testimonial-640.webp   640w,
+            images/testimonial-1024.webp 1024w,
+            images/testimonial-1280.webp 1280w
+          "
+          sizes="100vw"
           alt="people talking"
           class="bg-overlay-dark"
         />
@@ -517,6 +531,8 @@
                   src="images/columns/3-reasons-you-need-to-create-a-custom-website/branding.webp"
                   alt="website design"
                   class="column-thumbnail"
+                  width="640"
+                  height="392"
                 />
                 <div class="p-4 h-full flex flex-col justify-between">
                   <div>
@@ -546,6 +562,8 @@
                   src="images/columns/5-reasons-why-website-development-takes-long/planning.webp"
                   alt="website planning"
                   class="column-thumbnail"
+                  width="640"
+                  height="427"
                 />
                 <div class="p-4 h-full flex flex-col justify-between">
                   <div>
@@ -572,9 +590,11 @@
             <div class="flex flex-col">
               <div class="bg-white shadow-md rounded flex flex-col h-full">
                 <img
-                  src="images/columns/how-to-prevent-fraud-from-website-development/fraud image-1.webp"
+                  src="images/columns/how-to-prevent-fraud-from-website-development/running-man.webp"
                   alt="running person"
                   class="column-thumbnail"
+                  width="640"
+                  height="427"
                 />
                 <div class="p-4 h-full flex flex-col justify-between">
                   <div>
@@ -604,6 +624,8 @@
                   src="images/columns/3-reasons-for-the-high-number-of-scammers-in-website-development/anonymous.webp"
                   alt="man with mask"
                   class="column-thumbnail"
+                  width="640"
+                  height="427"
                 />
                 <div class="p-4 h-full flex flex-col justify-between">
                   <div>
@@ -967,7 +989,17 @@
 
       <!-- Contact -->
       <section class="relative py-16 px-8">
-        <img src="images/contact-bg.webp" alt="mailbox" class="bg-overlay" />
+        <img
+          src="images/contact-1280.webp"
+          srcset="
+            images/contact-640.webp   640w,
+            images/contact-1024.webp 1024w,
+            images/contact-1280.webp 1280w
+          "
+          sizes="100vw"
+          alt="mailbox"
+          class="bg-overlay"
+        />
         <!-- Text and form Container -->
         <div class="container mx-auto flex flex-col items-center">
           <!-- Heading and description -->
@@ -1020,6 +1052,6 @@
       </div>
     </footer>
 
-    <script src="js/index.js"></script>
+    <script defer src="js/index.js"></script>
   </body>
 </html>
