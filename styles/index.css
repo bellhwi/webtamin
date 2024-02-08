@@ -887,6 +887,10 @@ video {
   width: 33.333333%;
 }
 
+.w-1\/6 {
+  width: 16.666667%;
+}
+
 .w-12 {
   width: 3rem;
 }
@@ -2874,6 +2878,10 @@ ul {
 }
 
 @media (min-width: 640px) {
+  .sm\:w-1\/6 {
+    width: 16.666667%;
+  }
+
   .sm\:underline {
     text-decoration-line: underline;
   }
@@ -2902,6 +2910,10 @@ ul {
 
   .md\:w-auto {
     width: auto;
+  }
+
+  .md\:w-1\/6 {
+    width: 16.666667%;
   }
 
   .md\:grid-cols-2 {
