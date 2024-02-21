@@ -920,6 +920,14 @@ video {
   width: max-content;
 }
 
+.w-36 {
+  width: 9rem;
+}
+
+.w-24 {
+  width: 6rem;
+}
+
 .max-w-screen-lg {
   max-width: 1024px;
 }
@@ -2882,6 +2890,14 @@ ul {
     width: 16.666667%;
   }
 
+  .sm\:w-1\/12 {
+    width: 8.333333%;
+  }
+
+  .sm\:w-36 {
+    width: 9rem;
+  }
+
   .sm\:underline {
     text-decoration-line: underline;
   }
@@ -2904,16 +2920,8 @@ ul {
     height: auto;
   }
 
-  .md\:w-1\/12 {
-    width: 8.333333%;
-  }
-
   .md\:w-auto {
     width: auto;
-  }
-
-  .md\:w-1\/6 {
-    width: 16.666667%;
   }
 
   .md\:grid-cols-2 {
