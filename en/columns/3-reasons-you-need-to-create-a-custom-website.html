@@ -79,7 +79,7 @@
           <div class="w-full flex items-center justify-center">
             <!-- Logo -->
             <div>
-              <a href="../index.html">
+              <a href="../index.html" class="flex justify-center">
                 <img
                   class="w-1/2"
                   alt="logo"
@@ -110,7 +110,7 @@
               <a
                 href="../column.html"
                 class="w-max text-sm text-white inline-block uppercase px-6 py-3 rounded-sm lg:text-base"
-                >read more</a
+                >view all columns</a
               >
             </div>
           </div>
@@ -120,9 +120,9 @@
       <!--  Column Container -->
       <section class="py-16 px-8" id="column-container">
         <!-- Headings and text container -->
-        <div class="max-w-screen-lg mx-auto">
+        <div class="flex flex-col lg:flex-row">
           <!-- Content -->
-          <div class="space-y-8">
+          <div class="space-y-8 w-full lg:w-9/12 lg:mr-16">
             <div>
               There are two ways to create a website. The first method is to
               build a website with a web builder and a pre-made template. The
@@ -363,20 +363,59 @@
               website design.
             </div>
             <!-- CTA -->
-            <div class="flex">
+            <div class="flex justify-center">
               <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLSePAwS6Spkqw4Mr5zsKGPjZTbQN9Ej78mD7-hMt6PeT2Ch_Bw/viewform?usp=sharing"
-                rel="nofollow noopener"
+                rel="noopener"
                 target="_blank"
                 class="text-sm bg-color-primary text-white inline-block uppercase px-6 py-3 shadow-md rounded-sm lg:text-base"
                 >Fill out inquiry form</a
               >
-              <a
-                href="../column.html"
-                class="w-max text-sm text-black inline-block uppercase px-6 py-3 rounded-sm lg:text-base"
-                >read more</a
-              >
             </div>
+          </div>
+          <!-- Related Articles -->
+          <div class="w-full h-fit mt-16 lg:mt-0 lg:w-3/12 lg:px-0">
+            <h3 class="uppercase font-bold">related articles</h3>
+            <ul
+              class="mt-8 space-y-4 text-gray-700 font-normal text-sm 2xl:text-base"
+            >
+              <li>
+                <a href="website-design-never-fall-to-these-3-pitfalls.html"
+                  >Website Design, Never Fall To These 3 Pitfalls
+                </a>
+              </li>
+              <hr class="border-gray-300" />
+              <li>
+                <a href="4-must-check-when-requesting-website-development.html"
+                  >4 Must Check When Requesting Website Development</a
+                >
+              </li>
+              <hr class="border-gray-300" />
+              <li>
+                <a href="website-design-process-explained-in-5-steps.html"
+                  >Website Design Process Explained in 5 Steps
+                </a>
+              </li>
+              <hr class="border-gray-300" />
+              <li>
+                <a href="5-reasons-why-website-development-takes-long.html"
+                  >5 Reasons Why Website Development Takes Long</a
+                >
+              </li>
+              <hr class="border-gray-300" />
+              <li>
+                <a href="how-to-prevent-fraud-from-website-development.html"
+                  >How To Prevent Fraud From Website Development</a
+                >
+              </li>
+              <hr class="border-gray-300" />
+              <li>
+                <a
+                  href="3-reasons-why-there-are-scammers-in-website-development.html"
+                  >3 Reasons Why There are Scammers in Website Development</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -397,7 +436,7 @@
             class="flex items-center justify-center rounded-full bg-color-primary text-white w-12 h-12 md:w-auto md:h-auto md:p-4"
           >
             <i class="fa-solid fa-comment md:mr-2"></i
-            ><span class="hidden md:inline-block">Contact</span>
+            ><span class="font-normal hidden md:inline-block">Contact</span>
           </div>
         </div>
       </a>
