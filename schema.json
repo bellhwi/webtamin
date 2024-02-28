@@ -1,0 +1,60 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Webtamin",
+  "image": "https://drive.google.com/file/d/1qaJiKPhSOdIsYyN6pssKVyCuB0V2EPFu/view?usp=sharing",
+  "url": "https://webtamin.co/",
+  "telephone": "+19165918323",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "2221 Casa Linda Dr.",
+    "addressLocality": "Sacramento",
+    "addressRegion": "CA",
+    "postalCode": "95822",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.4843279,
+    "longitude": -121.4839556
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Monday",
+      "opens": "08:00",
+      "closes": "17:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Tuesday",
+      "opens": "08:00",
+      "closes": "17:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Wednesday",
+      "opens": "08:00",
+      "closes": "17:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Thursday",
+      "opens": "08:00",
+      "closes": "17:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Friday",
+      "opens": "08:00",
+      "closes": "17:00"
+    }
+  ],
+  "sameAs": [
+    "https://www.facebook.com/webtamin/",
+    "https://www.instagram.com/webtamin.design/",
+    "https://www.youtube.com/@webtamin",
+    "https://www.linkedin.com/in/jonghwikim/",
+    "https://webtamin.co/"
+  ]
+}
