@@ -10,7 +10,7 @@
     />
     <meta
       property="og:image"
-      content="../../images/columns/3-reasons-for-the-high-number-of-scammers-in-website-development/anonymous.webp"
+      content="../images/blog/3-reasons-for-the-high-number-of-scammers-in-website-development/anonymous.webp"
     />
     <title>3 Reasons Why Scammers in Website Development | Webtamin</title>
     <!-- CSS Files -->
@@ -21,34 +21,34 @@
       crossorigin="anonymous"
       referrerpolicy="nofollow"
     />
-    <link rel="stylesheet" href="../../styles/index.css" />
+    <link rel="stylesheet" href="../styles/index.css" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="../../apple-touch-icon.png"
+      href="../apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="../../favicon-32x32.png"
+      href="../favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="../../favicon-16x16.png"
+      href="../favicon-16x16.png"
     />
-    <link rel="manifest" href="../../site.webmanifest" />
+    <link rel="manifest" href="../site.webmanifest" />
     <link
       rel="alternate"
-      href="https://webtamin.co/columns/3-reasons-why-there-are-scammers-in-website-development"
-      hreflang="ko"
-    />
-    <link
-      rel="alternate"
-      href="https://webtamin.co/en/columns/3-reasons-why-there-are-scammers-in-website-development"
+      href="https://webtamin.co/blog/3-reasons-why-there-are-scammers-in-website-development"
       hreflang="en"
+    />
+    <link
+      rel="alternate"
+      href="https://webtamin.co/ko/blog/3-reasons-why-there-are-scammers-in-website-development"
+      hreflang="ko"
     />
   </head>
   <!-- Google tag (gtag.js) -->
@@ -69,59 +69,95 @@
   <body>
     <main>
       <!-- Hero -->
-      <section class="relative py-16 px-8">
-        <!-- Hero image -->
-        <img
-          src="../../images/column-hero-1536.webp"
-          srcset="
-            ../../images/column-hero-640.webp   640w,
-            ../../images/column-hero-1024.webp 1024w,
-            ../../images/column-hero-1536.webp 1536w
-          "
-          sizes="100vw"
-          alt="typing laptop"
-          class="bg-overlay-dark"
-        />
+      <section class="bg-gray-900 py-16 px-8">
         <!-- Hero content -->
         <div class="container mx-auto flex flex-col items-center">
           <!-- Topbar -->
-          <div class="w-full flex items-center justify-center">
+          <div class="w-full flex items-center justify-between">
             <!-- Logo -->
-            <div>
-              <a href="../index.html" class="flex justify-center">
-                <img
-                  class="w-1/2"
-                  alt="logo"
-                  src="../../images/logo.webp"
-                  width="240"
-                  height="56"
-                />
-              </a>
+            <a href="../index.html"
+              ><img src="../images/logo.webp" alt="logo" class="w-24 sm:w-36"
+            /></a>
+            <div class="nav-overlay hidden" id="nav-overlay"></div>
+            <!-- Hamburger Menu Icon -->
+            <div class="lg:hidden">
+              <button id="menu-toggle" class="text-white focus:outline-none">
+                <i class="fa-solid fa-bars text-2xl"></i>
+              </button>
             </div>
+            <ul
+              class="z-50 nav fixed right-0 top-0 h-full w-36 text-sm bg-gray-900 text-gray-100 font-semibold flex flex-col p-6 space-y-6 lg:translate-x-0 lg:bg-transparent lg:flex-row lg:w-max lg:text-base lg:relative lg:p-0 lg:space-y-0 lg:space-x-8"
+              id="nav-list"
+            >
+              <li>
+                <a href="../index.html" class="uppercase">home</a>
+              </li>
+              <li>
+                <a href="../about.html" class="uppercase">about</a>
+              </li>
+              <li class="relative hidden lg:block" id="services-menu">
+                <a href="#" class="uppercase" id="services"
+                  >services <i class="fa-solid fa-chevron-down ml-1"></i
+                ></a>
+                <div
+                  class="hidden absolute h-fit bg-gray-200 z-10 w-max p-4 inset-0 mt-6 flex flex-col space-y-2 text-gray-400"
+                >
+                  <a
+                    href="services/web-design.html"
+                    class="uppercase hover:text-gray-800"
+                    >web design</a
+                  >
+                  <hr class="border border-gray-300" />
+                  <a
+                    href="services/web-maintenance.html"
+                    class="uppercase hover:text-gray-800"
+                    >web maintenance</a
+                  >
+                  <hr class="border border-gray-300" />
+                  <a
+                    href="services/seo.html"
+                    class="uppercase hover:text-gray-800"
+                    >seo</a
+                  >
+                </div>
+              </li>
+              <li class="lg:hidden">
+                <a href="services.html" class="uppercase">services</a>
+              </li>
+              <li>
+                <a href="../index.html#portfolio" class="uppercase"
+                  >portfolio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../blog.html"
+                  class="uppercase underline underline-offset-4"
+                  >blog</a
+                >
+              </li>
+              <li>
+                <a href="../index.html#contact" class="uppercase">contact</a>
+              </li>
+
+              <li class="lg:hidden">
+                <div
+                  id="nav-close"
+                  class="nav-close mx-auto mt-8 cursor-pointer w-max"
+                >
+                  <i class="fa-solid fa-x"></i>
+                </div>
+              </li>
+            </ul>
           </div>
           <!-- Text -->
-          <div class="text-center">
-            <h1
-              class="mt-16 text-center text-white font-bold text-4xl md:text-6xl lg:text-7xl"
-            >
-              3 Reasons Why There are Scammers in Website Development
-            </h1>
-            <p class="text-gray-100 my-4 text-sm">07-01-2023</p>
-            <div class="space-x-2">
-              <!-- CTA -->
-              <a
-                href="../index.html"
-                class="w-max text-sm text-white mt-8 bg-color-primary text- inline-block uppercase px-6 py-3 shadow-md rounded-sm lg:text-base"
-                >Go to Main</a
-              >
-              <!-- CTA -->
-              <a
-                href="../column.html"
-                class="w-max text-sm text-white inline-block uppercase px-6 py-3 rounded-sm lg:text-base"
-                >view all columns</a
-              >
-            </div>
-          </div>
+
+          <h1
+            class="mt-16 text-center text-white font-bold text-4xl md:text-6xl lg:text-7xl"
+          >
+            3 Reasons Why There are Scammers in Website Development
+          </h1>
+          <p class="text-gray-100 mt-8 text-sm">07-01-2023</p>
         </div>
       </section>
 
@@ -130,7 +166,9 @@
         <!-- Headings and text container -->
         <div class="flex flex-col lg:flex-row">
           <!-- Content -->
-          <div class="space-y-8 w-full lg:w-9/12 lg:mr-16">
+          <div
+            class="text-gray-700 space-y-8 w-full lg:w-9/12 lg:mr-16 lg:text-lg"
+          >
             <div>
               Are you confident you won't be scammed by requesting the website
               development? Then, you may exit this page. However, If not, please
@@ -152,7 +190,7 @@
               </h2>
             </div>
             <img
-              src="../../images/columns/3-reasons-for-the-high-number-of-scammers-in-website-development/low-financial-barrier.webp"
+              src="../images/blog/3-reasons-for-the-high-number-of-scammers-in-website-development/low-financial-barrier.webp"
               alt="low financial barrier"
             />
             <div>
@@ -196,7 +234,7 @@
               </h2>
             </div>
             <img
-              src="../../images/columns/3-reasons-for-the-high-number-of-scammers-in-website-development/anonymous.webp"
+              src="../images/blog/3-reasons-for-the-high-number-of-scammers-in-website-development/anonymous.webp"
               alt="anonymous image"
             />
             <div>
@@ -237,7 +275,7 @@
               </h2>
             </div>
             <img
-              src="../../images/columns/3-reasons-for-the-high-number-of-scammers-in-website-development/coding.webp"
+              src="../images/blog/3-reasons-for-the-high-number-of-scammers-in-website-development/coding.webp"
               alt="coding image"
             />
             <div>
@@ -284,31 +322,41 @@
               So far, we've looked at three reasons why there are so many
               scammers in the web development industry. Let's sum up.
             </div>
-            <div>
-              <strong>1. Low Financial Barrier </strong><br />
-              Some people think they have nothing to lose and turn their backs
-              on customers.
-              <br />
-              <strong>2. Fake Information </strong><br />
-              It's not hard at all to open an online store with fabricated
-              things.
-              <br />
-              <strong>3. Technical Knowledge </strong><br />
-              Anyone can be ripped off in areas they don't know.
-              <br />
+            <div class="space-y-4">
+              <p>
+                <span class="font-bold">1. Low Financial Barrier </span><br />
+                Some people think they have nothing to lose and turn their backs
+                on customers.
+              </p>
+              <p>
+                <span class="font-bold">2. Fake Information </span><br />
+                It's not hard at all to open an online store with fabricated
+                things.
+              </p>
+              <p>
+                <span class="font-bold">3. Technical Knowledge </span><br />
+                Anyone can be ripped off in areas they don't know.
+              </p>
             </div>
             <div>
               Then how do we avoid these pitfalls? We’ll cover that in the next
-              column.
+              article.
             </div>
             <!-- CTA -->
-            <div class="flex justify-center">
+            <div
+              class="flex justify-center items-center space-x-4 w-max lg:space-x-8"
+            >
               <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLSePAwS6Spkqw4Mr5zsKGPjZTbQN9Ej78mD7-hMt6PeT2Ch_Bw/viewform?usp=sharing"
                 rel="noopener"
                 target="_blank"
                 class="text-sm bg-color-primary text-white inline-block uppercase px-6 py-3 shadow-md rounded-sm lg:text-base"
-                >Fill out inquiry form</a
+                >get a quote now</a
+              >
+              <a
+                href="../blog.html"
+                class="w-max text-sm inline-block uppercase lg:text-base"
+                >view all posts</a
               >
             </div>
           </div>
@@ -361,31 +409,72 @@
 
     <!-- Footer -->
     <footer
-      class="relative flex flex-col items-center justify-between px-4 pt-8 bg-black text-white lg:shadow-inner"
+      class="relative flex flex-col items-center justify-between px-4 py-8 bg-gray-900 text-white lg:shadow-inner"
     >
-      <!-- Contact Icon -->
-      <a
-        href="https://docs.google.com/forms/d/e/1FAIpQLSePAwS6Spkqw4Mr5zsKGPjZTbQN9Ej78mD7-hMt6PeT2Ch_Bw/viewform?usp=sharing"
-        rel="nofollow noopener"
-        target="_blank"
-      >
-        <div class="z-50 fixed right-0 bottom-0 m-4">
+      <!-- Call Icon -->
+      <a href="tel:+19165918323" class="lg:hidden">
+        <div class="z-10 fixed right-0 bottom-0 m-4">
           <div
             class="flex items-center justify-center rounded-full bg-color-primary text-white w-12 h-12 md:w-auto md:h-auto md:p-4"
           >
-            <i class="fa-solid fa-comment md:mr-2"></i
-            ><span class="font-normal hidden md:inline-block">Contact</span>
+            <i class="fa-solid fa-phone md:mr-2"></i>
+          </div>
+        </div>
+      </a>
+      <!-- Email Icon -->
+      <a href="mailto:contact@webtamin.co" class="hidden lg:block">
+        <div class="z-10 fixed right-0 bottom-0 m-4">
+          <div
+            class="flex items-center justify-center rounded-full bg-color-primary text-white w-12 h-12 md:w-auto md:h-auto md:p-4"
+          >
+            <i class="fa-solid fa-envelope md:mr-2"></i
+            ><span class="font-normal hidden md:inline-block">Contact Us</span>
           </div>
         </div>
       </a>
 
       <!-- Social Links & Copyright-->
-      <div
-        class="flex flex-col items-center text-gray-400 text-xs mb-4 lg:mb-6"
-      >
-        <div class="font-medium mb-1">EIN: 93-3136163</div>
-        <div class="font-medium mb-1">&copy; WEBTAMIN</div>
+      <div class="flex flex-col items-center text-gray-400 text-xs">
+        <a href="../index.html"
+          ><img src="../images/logo.webp" alt="logo" class="w-24 sm:w-36"
+        /></a>
+        <!-- Social Links -->
+        <div class="flex items-center space-x-8 my-4 text-lg">
+          <a
+            href="https://www.linkedin.com/in/jonghwikim/"
+            target="_blank"
+            rel="noopener"
+            class="hover:text-white"
+          >
+            <i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/webtamin/"
+            target="_blank"
+            rel="noopener"
+            class="hover:text-white"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/webtamin.design/"
+            target="_blank"
+            rel="noopener"
+            class="hover:text-white"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.youtube.com/@webtamin?sub_confirmation=1"
+            target="_blank"
+            rel="noopener"
+            class="hover:text-white"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+        </div>
+
+        <div>&copy; 2023 Webtamin. All rights reserved.</div>
       </div>
     </footer>
+
+    <script defer src="../js/index.js"></script>
   </body>
 </html>

@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="We create a custom website for small businesses. We analyze your business and represent it on the website strategically. Boost your profit with us today!"
+      content="코딩으로 직접 비즈니스 웹사이트를 맞춤 제작합니다. 웹 빌더로 만들어진
+      사이트와는 차별화되는 속도와 브랜딩을 통해 제값하는 사이트를 만들어 드립니다."
     />
-    <title>Custom Website Design | Webtamin</title>
-
+    <title>맞춤 웹사이트 디자인 | 웹타민</title>
     <!-- CSS Files -->
     <link
       rel="stylesheet"
@@ -19,27 +19,13 @@
       referrerpolicy="nofollow"
     />
 
-    <link rel="stylesheet" href="../styles/index.css" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="../apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="../favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="../favicon-16x16.png"
-    />
-    <link rel="manifest" href="../site.webmanifest" />
-    <link rel="alternate" href="https://webtamin.co/" hreflang="ko" />
-    <link rel="alternate" href="https://webtamin.co/en" hreflang="en" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="alternate" href="https://webtamin.co/" hreflang="en" />
+    <link rel="alternate" href="https://webtamin.co/ko" hreflang="ko" />
   </head>
   <!-- Google tag (gtag.js) -->
   <script
@@ -61,11 +47,11 @@
       <section class="relative py-16 px-8 lg:py-24">
         <!-- Hero image -->
         <img
-          src="../images/hero-1536.webp"
+          src="images/hero-1536.webp"
           srcset="
-            ../images/hero-640.webp   640w,
-            ../images/hero-1024.webp 1024w,
-            ../images/hero-1536.webp 1536w
+            images/hero-640.webp   640w,
+            images/hero-1024.webp 1024w,
+            images/hero-1536.webp 1536w
           "
           sizes="100vw"
           alt="coding laptop"
@@ -76,38 +62,40 @@
           <!-- Topbar -->
           <div class="w-full flex items-center justify-between">
             <!-- Logo -->
-            <img src="../images/logo.webp" alt="logo" class="w-24 sm:w-36" />
+
+            <img class="w-24 sm:w-36" alt="logo" src="images/logo.webp" />
 
             <!-- Language -->
             <div class="flex items-center space-x-4">
-              <span class="font-normal text-white">Language: </span>
-              <a href="../index.html"
-                ><img
-                  src="../images/korean-icon.webp"
-                  alt="korean flag"
-                  width="32"
-                  height="21"
-              /></a>
-              <img
-                src="../images/usa-icon.webp"
-                alt="usa flag"
+              <span class="text-white font-normal">Language: </span
+              ><img
+                src="images/korean-icon.webp"
+                alt="korean flag"
                 width="32"
-                height="32"
+                height="21"
               />
+              <a href="en/index.html"
+                ><img
+                  src="images/usa-icon.webp"
+                  alt="usa flag"
+                  width="32"
+                  height="32"
+              /></a>
             </div>
           </div>
           <!-- Text -->
           <div>
             <h1
-              class="mt-16 text-white font-bold text-4xl md:text-6xl lg:text-7xl"
+              class="mt-16 text-center text-white font-bold text-4xl md:text-6xl lg:text-7xl"
             >
+              코딩으로 제작되는
+              <br class="block lg:hidden" />
               <span class="text-color-primary-lighter font-bold"
-                >Custom Website</span
+                >맞춤 웹사이트</span
               >
-              <br />for Small Businesses
             </h1>
             <p class="mt-4 text-gray-200 text-lg md:text-2xl md:mt-8">
-              You can leave if you're looking for a cheap so-so website.
+              그럭저럭 무난한 웹사이트를 찾으신다면 돌아가셔도 좋습니다.
             </p>
           </div>
         </div>
@@ -116,38 +104,44 @@
       <!-- Services -->
       <section class="bg-gray-50 py-16 px-8">
         <div class="container mx-auto flex flex-col items-center">
+          <!-- Title -->
+          <p class="text-xs text-center md:text-sm">웹 빌더 vs 코딩</p>
           <!-- Top content-->
-          <p class="text-sm mx-auto text-center">Web builder vs Custom</p>
           <h2 class="text-center mt-4 text-3xl font-bold md:text-5xl">
-            Custom Website, why?
+            웹사이트 제작, 알고 계셨나요?
           </h2>
           <p
             class="max-w-screen-lg text-gray-600 text-lg md:text-xl mt-8 md:text-center"
           >
-            Most websites are built by web builders such as WordPress, Wix, and
-            Squarespace. Creating your website with one of these can be simple
-            and affordable. However, there are limitations in design, function,
-            and speed. We build custom websites by coding. See how the website
-            we made could be
-            <span class="font-bold">superior to your competitors.</span>
+            인터넷상 대부분의 사이트들은 웹 빌더(WordPress, Wix 등)로
+            제작됩니다. 웹 빌더를 사용하면 비교적 저렴하고 손쉽게 웹사이트를
+            제작할 수 있습니다. 반면 디자인과 기능, 속도에 한계가 있습니다.
+            웹타민은 코딩으로 직접 웹사이트를 제작합니다. 웹 빌더로 만들어진
+            사이트와는
+            <span class="font-bold"
+              >차별화되는 속도와 브랜딩을 통해 사업의 수익을 높이는데
+              기여합니다.</span
+            >
             <a
-              href="../en/columns/3-reasons-you-need-to-create-a-custom-website.html"
-              class="text-color-primary uppercase"
-              >learn more</a
+              href="blog/3-reasons-you-need-to-create-a-custom-website.html"
+              class="text-color-primary"
+              >더 알아보기</a
             >
           </p>
           <!-- Bottom content -->
           <div class="mt-16 mx-auto">
-            <p class="text-center font-semibold">Web builder</p>
+            <p class="text-center font-semibold">웹 빌더 제작</p>
             <div class="mt-4 grid grid-cols-2 gap-4 lg:grid-cols-4">
               <!-- Box -->
               <div
                 class="flex flex-col items-center bg-white p-6 rounded shadow-md md:px-8 md:py-12"
               >
                 <i class="text-center fa-regular fa-copy"></i>
-                <h2 class="md:text-lg font-bold mt-2">Uniform design</h2>
+                <p class="md:text-lg font-bold text-center mt-2">
+                  획일화된 디자인
+                </p>
                 <p class="text-sm md:text-base text-gray-600 mt-4">
-                  Similar look to others, doesn’t stand out.
+                  같은 템플릿을 쓰는 다른 웹사이트들과 외형이 비슷합니다.
                 </p>
               </div>
               <!-- Box -->
@@ -155,9 +149,11 @@
                 class="flex flex-col items-center bg-white p-6 rounded shadow-md md:px-8 md:py-12"
               >
                 <i class="text-center fa-solid fa-minimize"></i>
-                <h2 class="md:text-lg font-bold mt-2">Limited function</h2>
+                <p class="md:text-lg font-bold text-center mt-2">
+                  제한적인 기능
+                </p>
                 <p class="text-sm md:text-base text-gray-600 mt-4">
-                  Restricted function within the template.
+                  템플릿이 제공하는 범위 내에서만 기능을 개발할 수 있습니다.
                 </p>
               </div>
 
@@ -166,9 +162,9 @@
                 class="flex flex-col items-center bg-white p-6 rounded shadow-md md:px-8 md:py-12"
               >
                 <i class="text-center fa-solid fa-arrow-trend-down"></i>
-                <h2 class="md:text-lg font-bold mt-2">Slow speed</h2>
+                <p class="md:text-lg font-bold text-center mt-2">느린 속도</p>
                 <p class="text-sm md:text-base text-gray-600 mt-4">
-                  Lose customers who don't want to wait.
+                  불필요한 기능과 난잡한 코드로 인해 로딩 속도가 느립니다.
                 </p>
               </div>
               <!-- Box -->
@@ -176,22 +172,25 @@
                 class="flex flex-col items-center bg-white p-6 rounded shadow-md md:px-8 md:py-12"
               >
                 <i class="text-center fa-solid fa-ghost"></i>
-                <h2 class="md:text-lg font-bold mt-2">Lack of identity</h2>
+                <p class="md:text-lg font-bold text-center mt-2">
+                  부족한 정체성
+                </p>
                 <p class="text-sm md:text-base text-gray-600 mt-4">
-                  Discourage customers' engagement, fewer conversions.
+                  템플릿의 틀에 갇혀 브랜드의 독특한 색깔을 나타내기 어렵습니다.
                 </p>
               </div>
             </div>
-            <p class="text-center font-semibold mt-8">Coding</p>
+            <p class="text-center font-semibold mt-8">코딩 제작</p>
             <div class="mt-4 grid grid-cols-2 gap-4 lg:grid-cols-4">
               <!-- Box -->
               <div
                 class="flex flex-col items-center bg-color-primary-lighter p-6 rounded shadow-md md:px-8 md:py-12"
               >
                 <i class="text-center fa-solid fa-compass-drafting"></i>
-                <h2 class="md:text-lg font-bold mt-2">Custom design</h2>
+                <p class="md:text-lg font-bold text-center mt-2">맞춤 디자인</p>
                 <p class="text-sm md:text-base text-gray-600 mt-4">
-                  Be memorable with the unique design.
+                  전문 디자이너에 의해 브랜드에 딱 맞는 외형으로 손수
+                  제작됩니다.
                 </p>
               </div>
 
@@ -200,9 +199,12 @@
                 class="flex flex-col items-center bg-color-primary-lighter p-6 rounded shadow-md md:px-8 md:py-12"
               >
                 <i class="text-center fa-solid fa-gear"></i>
-                <h2 class="md:text-lg font-bold mt-2">Unlimited function</h2>
+                <p class="md:text-lg font-bold text-center mt-2">
+                  자유로운 기능
+                </p>
                 <p class="text-sm md:text-base text-gray-600 mt-4">
-                  Implement any features you want.
+                  원하는 기능을 개발하는 것에 있어 기술적인 제한이 전혀
+                  없습니다.
                 </p>
               </div>
 
@@ -211,9 +213,10 @@
                 class="flex flex-col items-center bg-color-primary-lighter p-6 rounded shadow-md md:px-8 md:py-12"
               >
                 <i class="text-center fa-solid fa-arrow-trend-up"></i>
-                <h2 class="md:text-lg font-bold mt-2">High speed</h2>
+                <p class="md:text-lg font-bold text-center mt-2">빠른 속도</p>
                 <p class="text-sm md:text-base text-gray-600 mt-4">
-                  Satisfy customers with fast and responsive content.
+                  필요한 코드만을 작성하고 최적화하여 로딩 시간을 줄일 수
+                  있습니다.
                 </p>
               </div>
 
@@ -222,9 +225,11 @@
                 class="flex flex-col items-center bg-color-primary-lighter p-6 rounded shadow-md md:px-8 md:py-12"
               >
                 <i class="text-center fa-solid fa-user"></i>
-                <h2 class="md:text-lg font-bold mt-2">Strong identity</h2>
+                <p class="md:text-lg font-bold text-center mt-2">
+                  강력한 정체성
+                </p>
                 <p class="text-sm md:text-base text-gray-600 mt-4">
-                  Impress the brand to customers, increase profit.
+                  브랜드의 고유한 정체성과 가치를 극대화할 수 있습니다.
                 </p>
               </div>
             </div>
@@ -236,27 +241,32 @@
       <section class="py-16 bg-gray-100 px-8">
         <div class="container mx-auto flex flex-col items-center">
           <!-- Title -->
-          <p class="text-xs mx-auto text-center md:text-sm">About Us</p>
+          <p class="text-xs mx-auto text-center md:text-sm">소개</p>
           <h2 class="text-center mt-4 text-3xl font-bold md:text-5xl">
-            Website design in Sacramento
+            '왜 웹사이트 하나 안 보일까?'
           </h2>
           <p
             class="max-w-screen-lg text-gray-600 text-lg md:text-xl mt-8 md:text-center"
           >
-            <i>'Why can't I find a single website?'</i> Looking at small
-            businesses at Google, I thought about this. Small businesses
-            hesitate to create websites because they are not worth the money.
-            Webtamin was started to solve this problem.
+            구글에서 여러 사업체들을 보며 위와 같은 생각이 들었습니다. 소규모
+            사업자들이 웹사이트 제작을 주저하는 이유는 한마디로 제값을
+            못해서입니다. 웹사이트를 제작해도
+            <span class="font-semibold">사업에 별 도움이 안 되는 것</span
+            >입니다. 제작 이후 업체와
+            <span class="font-semibold"
+              >연락이 안 되고 심지어는 웹사이트 접속이 안 되기까지</span
+            >
+            합니다. 웹타민은 이 문제를 해결하기 위해 시작되었습니다.
           </p>
 
           <div
             class="flex flex-col items-center justify-center mt-8 lg:flex-row lg:space-x-8"
           >
             <img
-              src="../images/jonghwikim-640.webp"
+              src="images/jonghwikim-640.webp"
               srcset="
-                ../images/jonghwikim-480.webp 480w,
-                ../images/jonghwikim-640.webp 640w
+                images/jonghwikim-480.webp 480w,
+                images/jonghwikim-640.webp 640w
               "
               sizes="(max-width:480px) 480px, 640px"
               alt="web developer of webtamin"
@@ -266,17 +276,15 @@
             />
             <div class="mt-4 lg:w-3/5">
               <p class="text-gray-600">
-                Hello, my name is Jonghwi Kim. A few years ago, I became
-                interested in coding and started developing software as a hobby.
-                Then, one day, I heard from my wife, who is a graphic designer,
-                that she needed a portfolio website. I started making it right
-                away, and after I completed it, my wife succeeded in getting a
-                job with her website. As a result of that, I learned that
-                developing a website can satisfy someone's needs. I am now
-                creating a website for small businesses that helps them market
-                and contributes to increasing their profits.
+                안녕하세요, 제 이름은 김종휘입니다. 수년 전, 코딩에 흥미를
+                느끼고 취미 삼아 소프트웨어 개발을 시작했습니다. 그러던 어느날
+                그래픽 디자이너인 아내로부터 포트폴리오 웹사이트가 필요하다는
+                이야기를 들었습니다. 바로 제작에 착수했고 완성한 이후 아내는
+                웹사이트와 함께 취업에 성공했습니다. 그 일을 계기로 웹사이트
+                개발이 누군가의 필요를 채워줄 수 있다는 것을 알게 되었습니다.
+                현재는 소규모 사업자들을 위해 마케팅을 돕고 수익 증대에 기여하는
+                웹사이트를 제작하고 있습니다.
               </p>
-              <p class="mt-4"></p>
             </div>
           </div>
         </div>
@@ -287,12 +295,12 @@
         <div class="container mx-auto">
           <!-- Title -->
           <p class="text-xs mx-auto mb-4 text-center text-gray-100 md:text-sm">
-            Why choose us
+            차별점
           </p>
           <h2
             class="text-center text-white mt-4 text-3xl font-bold md:text-5xl"
           >
-            You do your business, <br />We do your website.
+            고객님은 사업에만 집중하세요.
           </h2>
           <div
             class="max-w-xs mx-auto grid grid-cols-1 gap-8 mt-16 lg:grid-cols-4 md:container"
@@ -307,11 +315,11 @@
                 <p
                   class="text-color-primary-lighter font-bold text-center mt-2 md:text-lg"
                 >
-                  Full Customization
+                  맞춤 제작
                 </p>
                 <p class="text-sm text-gray-100 mt-4 md:text-base">
-                  We create your website with a custom design and feature. As
-                  unique as you are, so should your website.
+                  고객님의 사업과 요구 사항에 꼭 맞는 맞춤형 웹사이트를
+                  제작해드립니다. 고객님이 특별하듯 웹사이트도 그러해야 합니다.
                 </p>
               </div>
             </div>
@@ -325,11 +333,11 @@
                 <p
                   class="text-color-primary-lighter font-bold text-center mt-2 md:text-lg"
                 >
-                  Direct Support
+                  직통 고객지원
                 </p>
                 <p class="text-sm text-gray-100 mt-4 md:text-base">
-                  We provide the direct phone number you can reach out to. Don't
-                  wait for days to get the response.
+                  담당자의 직통 연락처를 제공해드리며 전화시 신속하게
+                  응답해드립니다. 통화 대기에 귀한 시간 낭비하지 마세요.
                 </p>
               </div>
             </div>
@@ -337,17 +345,17 @@
               class="flex justify-center items-center flex-col md:justify-start"
             >
               <i
-                class="text-color-primary-lighter text-center fa-solid fa-infinity"
+                class="text-color-primary-lighter text-center fa-solid fa-brush"
               ></i>
               <div>
                 <p
                   class="text-color-primary-lighter font-bold text-center mt-2 md:text-lg"
                 >
-                  Unlimited Revision
+                  무제한 수정
                 </p>
                 <p class="text-sm text-gray-100 mt-4 md:text-base">
-                  We offer boundless updates for content and design. Be free
-                  from tracking the number of revisions.
+                  컨텐츠 추가, 디자인 업데이트, 문구 변경 등 횟수 제한 없이
+                  작업해드립니다. 수정 횟수에 대한 부담은 내려놓으세요.
                 </p>
               </div>
             </div>
@@ -361,11 +369,11 @@
                 <p
                   class="text-color-primary-lighter font-bold text-center mt-2 md:text-lg"
                 >
-                  Lifetime Maintenance
+                  평생 유지보수
                 </p>
                 <p class="text-sm text-gray-100 mt-4 md:text-base">
-                  We take care of the code updates and hosting to make sure the
-                  website works 24/7. No hassle for maintenance.
+                  코드 업데이트, 호스팅 관리 등 웹사이트가 항상 문제 없이
+                  작동하도록 관리해드립니다. 유지보수 염려하지 마세요.
                 </p>
               </div>
             </div>
@@ -377,9 +385,9 @@
       <section class="px-8 py-16 bg-gray-100">
         <div class="container mx-auto">
           <!-- Title -->
-          <p class="text-xs text-center md:text-sm">Portfolio</p>
+          <p class="text-xs text-center md:text-sm">포트폴리오</p>
           <h2 class="text-center mt-4 text-3xl font-bold md:text-5xl">
-            Check our customers' websites.
+            고객 웹사이트를 확인해보세요.
           </h2>
           <!-- Container -->
           <div class="mt-16 gap-4 grid grid-cols-1 md:grid-cols-2">
@@ -387,10 +395,10 @@
             <div class="flex flex-col">
               <div class="bg-white shadow-md rounded flex flex-col h-full">
                 <img
-                  src="../images/arnid-768.webp"
+                  src="images/arnid-768.webp"
                   srcset="
-                    ../images/arnid-480.webp 480w,
-                    ../images/arnid-768.webp 768w
+                    images/arnid-480.webp 480w,
+                    images/arnid-768.webp 768w
                   "
                   sizes="(max-width:480px) 480px, 768px"
                   alt="arnidxiong website mockup design"
@@ -400,10 +408,9 @@
                 />
                 <div class="p-4 h-full flex flex-col justify-between">
                   <div>
-                    <h2 class="font-semibold md:text-lg">arnidxiong.co</h2>
+                    <p class="font-semibold md:text-lg">arnidxiong.co</p>
                     <p class="text-sm text-gray-600 mt-4 md:text-base">
-                      arnidxiong.co is a website for displaying graphic
-                      designers' works.
+                      그래픽 디자이너의 작업물 전시를 위한 웹사이트입니다.
                     </p>
                   </div>
                   <a
@@ -411,7 +418,7 @@
                     target="_blank"
                     rel="nofollow noopener"
                     class="w-max text-sm mt-8 bg-color-primary text-white inline-block uppercase px-6 py-3 shadow-md rounded-sm lg:text-base"
-                    >visit website</a
+                    >웹사이트 방문하기</a
                   >
                 </div>
               </div>
@@ -420,10 +427,10 @@
             <div class="flex flex-col">
               <div class="bg-white shadow-md rounded flex flex-col h-full">
                 <img
-                  src="../images/junlawfirm-768.webp"
+                  src="images/junlawfirm-768.webp"
                   srcset="
-                    ../images/junlawfirm-480.webp 480w,
-                    ../images/junlawfirm-768.webp 768w
+                    images/junlawfirm-480.webp 480w,
+                    images/junlawfirm-768.webp 768w
                   "
                   sizes="(max-width:480px) 480px, 768px"
                   alt="junlawfirm website mockup design"
@@ -433,12 +440,11 @@
                 />
                 <div class="p-4 h-full flex flex-col justify-between">
                   <div>
-                    <h2 class="font-semibold md:text-lg">
-                      junlawfirm.netlify.com(ongoing)
-                    </h2>
+                    <p class="font-semibold md:text-lg">
+                      junlawfirm.netlify.com(진행중)
+                    </p>
                     <p class="text-sm text-gray-600 mt-4 md:text-base">
-                      junlawfirm.netlify.com is a website for services and
-                      reservations in the attorney's office.
+                      변호사 사무실의 서비스와 예약을 위한 웹사이트입니다.
                     </p>
                   </div>
                   <a
@@ -446,7 +452,7 @@
                     target="_blank"
                     rel="nofollow noopener"
                     class="w-max text-sm mt-8 bg-color-primary text-white inline-block uppercase px-6 py-3 shadow-md rounded-sm lg:text-base"
-                    >visit website</a
+                    >웹사이트 방문하기</a
                   >
                 </div>
               </div>
@@ -458,11 +464,11 @@
       <!-- Testimonials -->
       <section class="relative py-16 px-8">
         <img
-          src="../images/testimonial-1536.webp"
+          src="images/testimonial-1536.webp"
           srcset="
-            ../images/testimonial-640.webp   640w,
-            ../images/testimonial-1024.webp 1024w,
-            ../images/testimonial-1536.webp 1536w
+            images/testimonial-640.webp   640w,
+            images/testimonial-1024.webp 1024w,
+            images/testimonial-1536.webp 1536w
           "
           sizes="100vw"
           alt="people talking"
@@ -470,12 +476,12 @@
         />
         <div class="container mx-auto">
           <p class="text-xs mx-auto text-center text-gray-100 md:text-sm">
-            Testimonials
+            후기
           </p>
           <h2
             class="text-white text-center mt-4 text-3xl font-bold md:text-5xl"
           >
-            Satisfaction matters.
+            고객 만족을 실현합니다.
           </h2>
           <!-- Testimonials container -->
           <div class="max-w-screen-sm mx-auto mt-8 text-gray-100">
@@ -486,9 +492,9 @@
               website and proceeded to create me a beautiful, simple and clean
               website. I will definitely use his service again!"
             </p>
-            <span class="mt-4 font-semibold text-right text-sm md:text-base">
+            <p class="mt-4 font-semibold text-right text-sm md:text-base">
               Annie S.
-            </span>
+            </p>
           </div>
         </div>
       </section>
@@ -497,13 +503,12 @@
       <section class="px-8 py-16 bg-gray-50">
         <div class="container mx-auto text-center">
           <!-- Title -->
-          <p class="text-sm mx-auto text-center">Service</p>
+          <p class="text-sm mx-auto text-center">서비스</p>
           <h2 class="text-center mt-4 text-3xl font-bold md:text-5xl">
-            Boost your brand with us!
+            제값하는 웹사이트를 제작해드립니다.
           </h2>
           <p class="text-lg text-gray-600 md:text-xl mt-8 md:text-center">
-            The price is set after consultation based on the size, number of
-            pages, and feature of the project.
+            가격은 프로젝트의 크기, 페이지 수, 기능에 따라 상담 후 책정됩니다.
           </p>
           <!-- Container -->
           <div class="grid grid-cols-1 mt-16 gap-4 lg:grid-cols-4">
@@ -511,65 +516,64 @@
             <div
               class="flex flex-col justify-start p-8 rounded shadow-md border-s-4 border-color-primary"
             >
-              <h2
-                class="text-left text-lg font-bold text-color-primary lg:text-xl"
+              <h3
+                class="text-left text-lg font-bold text-color-primary uppercase lg:text-xl"
               >
-                Responsive Design
-              </h2>
+                반응형 디자인 적용
+              </h3>
               <p class="mt-4 text-left text-gray-600">
-                We build a website that looks good both on desktop and mobile
-                devices such as tablets and smartphones.
+                데스크탑, 노트북, 태블릿, 휴대폰의 모든 화면에서 잘 보이도록
+                제작됩니다.
               </p>
             </div>
             <!-- Content -->
             <div
               class="flex flex-col justify-start p-8 rounded shadow-md border-s-4 border-color-primary"
             >
-              <h2
-                class="text-left text-lg font-bold text-color-primary lg:text-xl"
+              <h3
+                class="text-left text-lg font-bold text-color-primary uppercase lg:text-xl"
               >
-                Search Engine Optimization(SEO)
-              </h2>
+                검색 엔진 최적화(SEO)
+              </h3>
               <p class="mt-4 text-left text-gray-600">
-                We build a website to be exposed easily to the top of the search
-                engine results.
+                웹사이트가 검색 엔진 결과 상위에 노출되기 쉽도록 제작해드립니다.
               </p>
             </div>
             <!-- Content -->
             <div
               class="flex flex-col justify-start p-8 rounded shadow-md border-s-4 border-color-primary"
             >
-              <h2
-                class="text-left text-lg font-bold text-color-primary lg:text-xl"
+              <h3
+                class="text-left text-lg font-bold text-color-primary uppercase lg:text-xl"
               >
-                Fast Loading Speed
-              </h2>
+                로딩 속도 최적화
+              </h3>
               <p class="mt-4 text-left text-gray-600">
-                We optimize the code efficiently to create a website fast.
+                코드를 효율적으로 작성하여 빠른 로딩 속도로 제작됩니다.
               </p>
             </div>
             <!-- Content -->
             <div
               class="flex flex-col justify-start p-8 rounded shadow-md border-s-4 border-color-primary"
             >
-              <h2
-                class="text-left text-lg font-bold text-color-primary lg:text-xl"
+              <h3
+                class="text-left text-lg font-bold text-color-primary uppercase lg:text-xl"
               >
-                Visitor analytics tool
-              </h2>
+                방문자 분석 도구 연동
+              </h3>
               <p class="mt-4 text-left text-gray-600">
-                We link tools to analyze visitors' activities so that they can
-                be used for marketing.
+                마케팅에 활용할 수 있도록 방문자의 활동을 분석하는 도구를
+                연동해드립니다.
               </p>
             </div>
           </div>
           <!-- CTA -->
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSePAwS6Spkqw4Mr5zsKGPjZTbQN9Ej78mD7-hMt6PeT2Ch_Bw/viewform"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdEa50c1igUGS0bRGVWa45k1nirdl61vExS0tDGvasNI6Irtw/viewform?usp=sharing"
             target="_blank"
             rel="noopener"
-            class="mx-auto text-sm mt-8 text-white bg-color-primary inline-block uppercase px-6 py-3 shadow-md rounded-sm lg:text-base"
-            >Get quote now</a
+            class="mx-auto text-sm mt-8 text-white bg-color-primary inline-block uppercase px-6 py-3 shadow-md rounded-sm lg:text-base lg:px-12"
+            >견적 신청하기</a
           >
         </div>
       </section>
@@ -579,16 +583,16 @@
         <div class="container mx-auto">
           <!-- Title -->
           <p class="text-xs mx-auto mb-4 text-center text-gray-100 md:text-sm">
-            Quality Assurance
+            품질 보증제
           </p>
           <h2
             class="text-center text-white mt-4 text-3xl font-bold md:text-5xl"
           >
-            Don't worry.
+            안심하세요.
           </h2>
           <p class="text-gray-100 text-lg md:text-xl mt-8 md:text-center">
-            If you are dissatisfied during the project, you will unconditionally
-            get a full refund for the price.
+            프로젝트 진행중 불만족시 제작비 무조건 전액 환불됩니다. 그만큼 자신
+            있습니다.
           </p>
         </div>
       </section>
@@ -597,9 +601,9 @@
       <section class="px-8 py-16 bg-gray-100">
         <div class="container mx-auto">
           <!-- Title -->
-          <p class="text-xs text-center md:text-sm">Column</p>
+          <p class="text-xs text-center md:text-sm">칼럼</p>
           <h2 class="text-center mt-4 text-3xl font-bold md:text-5xl">
-            We've covered things you want to know.
+            웹사이트 제작에 대한 궁금증을 풀어드립니다.
           </h2>
           <!-- Column container -->
           <div
@@ -609,14 +613,14 @@
             <div class="flex flex-col bg-white shadow-md rounded">
               <div class="p-8 h-full flex flex-col justify-between">
                 <a
-                  href="columns/3-reasons-you-need-to-create-a-custom-website.html"
+                  href="blog/3-reasons-you-need-to-create-a-custom-website.html"
                   class="font-semibold md:text-xl hover:underline"
                 >
-                  3 Reasons You Need to Create a Custom Website
+                  맞춤 웹사이트 제작이 필요한 3가지 이유
                 </a>
                 <p class="text-sm text-gray-600 mt-4 md:text-base">
-                  There are two main ways to create a website. The first method
-                  is to create a template based on...
+                  웹사이트 제작에는 크게 두 가지 방법이 있습니다. 첫째는
+                  템플릿이라고 하는 미리 만들어진...
                 </p>
               </div>
             </div>
@@ -625,14 +629,14 @@
             <div class="flex flex-col bg-white shadow-md rounded">
               <div class="p-8 h-full flex flex-col justify-between">
                 <a
-                  href="../en/columns/4-must-check-when-requesting-website-development.html"
+                  href="blog/4-must-check-when-requesting-website-development.html"
                   class="font-semibold md:text-xl hover:underline"
                 >
-                  4 Must Check Before Website Development
+                  웹사이트 제작 의뢰시 반드시 확인해야할 4가지
                 </a>
                 <p class="text-sm text-gray-600 mt-4 md:text-base">
-                  Are you considering requesting a website? If so, you may be
-                  looking everywhere for an agency...
+                  웹사이트 제작 의뢰를 생각중이신가요? 그렇다면 제작 업체를
+                  이곳저곳 알아보고 계실겁니다...
                 </p>
               </div>
             </div>
@@ -641,29 +645,31 @@
             <div class="flex flex-col bg-white shadow-md rounded">
               <div class="p-8 h-full flex flex-col justify-between">
                 <a
-                  href="../en/columns/5-reasons-why-website-development-takes-long.html"
+                  href="blog/5-reasons-why-website-development-takes-long.html"
                   class="font-semibold md:text-xl hover:underline"
                 >
-                  5 Reasons Why Website Development Takes Long
+                  웹사이트 제작이 오래 걸리는 5가지 이유
                 </a>
                 <p class="text-sm text-gray-600 mt-4 md:text-base">
-                  The duration of the website development may vary depending on
-                  the design, number of pages...
+                  웹사이트 제작 기간은 디자인, 페이지 수, 기능, 제작사의 역량
+                  등에 따라 달라질 수 있습니다...
                 </p>
               </div>
             </div>
+
             <!-- Column -->
+
             <div class="flex flex-col bg-white shadow-md rounded">
               <div class="p-8 h-full flex flex-col justify-between">
                 <a
-                  href="../en/columns/how-to-prevent-fraud-from-website-development.html"
+                  href="blog/how-to-prevent-fraud-from-website-development.html"
                   class="font-semibold md:text-xl hover:underline"
                 >
-                  How to Prevent Fraud From Website Development
+                  웹사이트 제작 사기 피해를 예방하는 방법
                 </a>
                 <p class="text-sm text-gray-600 mt-4 md:text-base">
-                  This column is a follow-up to the previous column, '3 reasons
-                  for the high number of scammers...
+                  이 칼럼은 이전 글인 '웹사이트 제작 사기꾼들이 많은 3가지
+                  이유'의 후속글입니다...
                 </p>
               </div>
             </div>
@@ -674,14 +680,14 @@
       <!-- Contact -->
       <section class="relative py-16 px-8">
         <img
-          src="../images/contact-1536.webp"
-          alt="mailbox"
+          src="images/contact-1280.webp"
           srcset="
-            ../images/contact-640.webp   640w,
-            ../images/contact-1024.webp 1024w,
-            ../images/contact-1536.webp 1536w
+            images/contact-640.webp   640w,
+            images/contact-1024.webp 1024w,
+            images/contact-1536.webp 1536w
           "
           sizes="100vw"
+          alt="mailbox"
           class="bg-overlay"
         />
         <!-- Text and form Container -->
@@ -690,18 +696,18 @@
           <h2
             class="text-center text-white mt-4 text-3xl font-bold md:text-5xl"
           >
-            Contact Us!
+            문의는 환영입니다.
           </h2>
           <p class="md:text-lg mt-8 text-center text-gray-100">
             contact@webtamin.co
           </p>
           <!-- CTA -->
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSePAwS6Spkqw4Mr5zsKGPjZTbQN9Ej78mD7-hMt6PeT2Ch_Bw/viewform?usp=sharing"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdEa50c1igUGS0bRGVWa45k1nirdl61vExS0tDGvasNI6Irtw/viewform?usp=sharing"
             target="_blank"
-            rel="nofollow noopener"
-            class="uppercase text-sm mt-8 bg-color-primary text-white inline-block uppercase px-6 py-3 shadow-md rounded-sm lg:text-base lg:px-9"
-            >Fill out inquiry form</a
+            rel=" noopener"
+            class="text-sm mt-8 text-white bg-color-primary inline-block uppercase px-6 py-3 shadow-md rounded-sm lg:text-base lg:px-12"
+            >제작 문의하기</a
           >
         </div>
       </section>
@@ -713,8 +719,8 @@
     >
       <!-- Contact Icon -->
       <a
-        href="https://docs.google.com/forms/d/e/1FAIpQLSePAwS6Spkqw4Mr5zsKGPjZTbQN9Ej78mD7-hMt6PeT2Ch_Bw/viewform?usp=sharing"
-        rel="nofollow noopener"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSdEa50c1igUGS0bRGVWa45k1nirdl61vExS0tDGvasNI6Irtw/viewform?usp=sharing"
+        rel=" noopener"
         target="_blank"
       >
         <div class="z-50 fixed right-0 bottom-0 m-4">
@@ -722,7 +728,7 @@
             class="flex items-center justify-center rounded-full bg-color-primary text-white w-12 h-12 md:w-auto md:h-auto md:p-4"
           >
             <i class="fa-solid fa-comment md:mr-2"></i
-            ><span class="font-normal hidden md:inline-block">Contact</span>
+            ><span class="hidden font-normal md:inline-block">문의하기</span>
           </div>
         </div>
       </a>
@@ -731,7 +737,7 @@
       <div
         class="flex flex-col items-center text-gray-400 text-xs mb-4 lg:mb-6"
       >
-        <div class="font-medium mb-1">EIN: 93-3136163</div>
+        <div class="font-medium mb-1">사업자등록번호(EIN): 93-3136163</div>
         <div class="font-medium mb-1">&copy; WEBTAMIN</div>
       </div>
     </footer>

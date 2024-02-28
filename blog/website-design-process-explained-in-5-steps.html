@@ -10,7 +10,7 @@
     />
     <meta
       property="og:image"
-      content="../../images/columns/website-design-process-explained-in-5-steps/website-planning.webp"
+      content="../../images/blog/website-design-process-explained-in-5-steps/website-planning.webp"
     />
     <title>Website Design Process Explained in 5 Steps | Webtamin</title>
     <!-- CSS Files -->
@@ -21,34 +21,34 @@
       crossorigin="anonymous"
       referrerpolicy="nofollow"
     />
-    <link rel="stylesheet" href="../../styles/index.css" />
+    <link rel="stylesheet" href="../styles/index.css" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="../../apple-touch-icon.png"
+      href="../apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="../../favicon-32x32.png"
+      href="../favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="../../favicon-16x16.png"
+      href="../favicon-16x16.png"
     />
-    <link rel="manifest" href="../../site.webmanifest" />
+    <link rel="manifest" href="../site.webmanifest" />
     <link
       rel="alternate"
-      href="https://webtamin.co/columns/website-design-process-explained-in-5-steps"
-      hreflang="ko"
-    />
-    <link
-      rel="alternate"
-      href="https://webtamin.co/en/columns/website-design-process-explained-in-5-steps"
+      href="https://webtamin.co/blog/website-design-process-explained-in-5-steps"
       hreflang="en"
+    />
+    <link
+      rel="alternate"
+      href="https://webtamin.co/ko/blog/website-design-process-explained-in-5-steps"
+      hreflang="ko"
     />
   </head>
   <!-- Google tag (gtag.js) -->
@@ -67,61 +67,95 @@
   </script>
   <body>
     <main>
-      <!-- Hero -->
-      <section class="relative py-16 px-8">
-        <!-- Hero image -->
-        <img
-          src="../../images/column-hero-1536.webp"
-          srcset="
-            ../../images/column-hero-640.webp   640w,
-            ../../images/column-hero-1024.webp 1024w,
-            ../../images/column-hero-1536.webp 1536w
-          "
-          sizes="100vw"
-          alt="typing laptop"
-          class="bg-overlay-dark"
-        />
+      <section class="bg-gray-900 py-16 px-8">
         <!-- Hero content -->
         <div class="container mx-auto flex flex-col items-center">
           <!-- Topbar -->
-          <div class="w-full flex items-center justify-center">
+          <div class="w-full flex items-center justify-between">
             <!-- Logo -->
-            <div>
-              <a href="../index.html" class="flex justify-center">
-                <img
-                  class="w-1/2"
-                  alt="logo"
-                  src="../../images/logo.webp"
-                  width="240"
-                  height="56"
-                />
-              </a>
+            <a href="../index.html"
+              ><img src="../images/logo.webp" alt="logo" class="w-24 sm:w-36"
+            /></a>
+            <div class="nav-overlay hidden" id="nav-overlay"></div>
+            <!-- Hamburger Menu Icon -->
+            <div class="lg:hidden">
+              <button id="menu-toggle" class="text-white focus:outline-none">
+                <i class="fa-solid fa-bars text-2xl"></i>
+              </button>
             </div>
+            <ul
+              class="z-50 nav fixed right-0 top-0 h-full w-36 text-sm bg-gray-900 text-gray-100 font-semibold flex flex-col p-6 space-y-6 lg:translate-x-0 lg:bg-transparent lg:flex-row lg:w-max lg:text-base lg:relative lg:p-0 lg:space-y-0 lg:space-x-8"
+              id="nav-list"
+            >
+              <li>
+                <a href="../index.html" class="uppercase">home</a>
+              </li>
+              <li>
+                <a href="../about.html" class="uppercase">about</a>
+              </li>
+              <li class="relative hidden lg:block" id="services-menu">
+                <a href="#" class="uppercase" id="services"
+                  >services <i class="fa-solid fa-chevron-down ml-1"></i
+                ></a>
+                <div
+                  class="hidden absolute h-fit bg-gray-200 z-10 w-max p-4 inset-0 mt-6 flex flex-col space-y-2 text-gray-400"
+                >
+                  <a
+                    href="services/web-design.html"
+                    class="uppercase hover:text-gray-800"
+                    >web design</a
+                  >
+                  <hr class="border border-gray-300" />
+                  <a
+                    href="services/web-maintenance.html"
+                    class="uppercase hover:text-gray-800"
+                    >web maintenance</a
+                  >
+                  <hr class="border border-gray-300" />
+                  <a
+                    href="services/seo.html"
+                    class="uppercase hover:text-gray-800"
+                    >seo</a
+                  >
+                </div>
+              </li>
+              <li class="lg:hidden">
+                <a href="services.html" class="uppercase">services</a>
+              </li>
+              <li>
+                <a href="../index.html#portfolio" class="uppercase"
+                  >portfolio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../blog.html"
+                  class="uppercase underline underline-offset-4"
+                  >blog</a
+                >
+              </li>
+              <li>
+                <a href="../index.html#contact" class="uppercase">contact</a>
+              </li>
+
+              <li class="lg:hidden">
+                <div
+                  id="nav-close"
+                  class="nav-close mx-auto mt-8 cursor-pointer w-max"
+                >
+                  <i class="fa-solid fa-x"></i>
+                </div>
+              </li>
+            </ul>
           </div>
           <!-- Text -->
-          <div class="text-center">
-            <h1
-              class="mt-16 text-center text-white font-bold text-4xl md:text-6xl lg:text-7xl"
-            >
-              Website Design Process Explained in 5 Steps
-            </h1>
-            <p class="text-gray-100 my-4 text-sm">01-06-2024</p>
 
-            <div class="space-x-2">
-              <!-- CTA -->
-              <a
-                href="../index.html"
-                class="w-max text-sm text-white mt-8 bg-color-primary text- inline-block uppercase px-6 py-3 shadow-md rounded-sm lg:text-base"
-                >Go to Main</a
-              >
-              <!-- CTA -->
-              <a
-                href="../column.html"
-                class="w-max text-sm text-white inline-block uppercase px-6 py-3 rounded-sm lg:text-base"
-                >view all columns</a
-              >
-            </div>
-          </div>
+          <h1
+            class="mt-16 text-center text-white font-bold text-4xl md:text-6xl lg:text-7xl"
+          >
+            Website Design Process Explained in 5 Steps
+          </h1>
+          <p class="text-gray-100 mt-8 text-sm">01-06-2024</p>
         </div>
       </section>
 
@@ -130,7 +164,9 @@
         <!-- Headings and text container -->
         <div class="flex flex-col lg:flex-row">
           <!-- Content -->
-          <div class="space-y-8 w-full lg:w-9/12 lg:mr-16">
+          <div
+            class="text-gray-700 space-y-8 w-full lg:w-9/12 lg:mr-16 lg:text-lg"
+          >
             <div>
               Do you know how websites are created? You might think, “Do I need
               to know?” “I don’t know and that is why I leave it to the agency,
@@ -172,10 +208,10 @@
             <div>
               Once again, don’t worry, it’s not rocket science. It’s enough to
               know only
-              <span class="bg-yellow-200">the basic knowledge</span> covered in
-              this article. Then, let’s take a look at the forest called website
-              design. The development of a website will mainly go through the
-              following five stages.
+              <span class="bg-yellow-200 font-bold">the basic knowledge</span>
+              covered in this article. Then, let’s take a look at the forest
+              called website design. The development of a website will mainly go
+              through the following five stages.
             </div>
             <div class="flex pt-8">
               <div class="vl"></div>
@@ -185,7 +221,7 @@
             </div>
 
             <img
-              src="../../images/columns/website-design-process-explained-in-5-steps/website-planning.webp"
+              src="../images/blog/website-design-process-explained-in-5-steps/website-planning.webp"
               width="640"
               height="427"
               alt="website planning"
@@ -220,7 +256,7 @@
               so vague. Let me give you an example.
             </div>
             <img
-              src="../../images/columns/website-design-process-explained-in-5-steps/website-application-en.gif"
+              src="../images/blog/website-design-process-explained-in-5-steps/website-application-en.gif"
               width="600"
               height="375"
               alt="website application"
@@ -256,7 +292,7 @@
               </h2>
             </div>
             <img
-              src="../../images/columns/website-design-process-explained-in-5-steps/website-design-wireframe.webp"
+              src="../images/blog/website-design-process-explained-in-5-steps/website-design-wireframe.webp"
               width="640"
               height="480"
               alt="website design wireframe"
@@ -287,7 +323,7 @@
               design results much faster than the actual website design.
             </div>
             <img
-              src="../../images/columns/website-design-process-explained-in-5-steps/website-design-mockup.webp"
+              src="../images/blog/website-design-process-explained-in-5-steps/website-design-mockup.webp"
               width="640"
               height="529"
               alt="website design mockup"
@@ -321,13 +357,13 @@
               </h2>
             </div>
             <img
-              src="../../images/columns/website-design-process-explained-in-5-steps/website-developmet.webp"
+              src="../images/blog/website-design-process-explained-in-5-steps/website-developmet.webp"
               width="640"
               height="427"
               alt="website development"
             />
             <div>
-              <span class="bg-yellow-200">
+              <span class="bg-yellow-200 font-bold">
                 Developing is the work of implementing designs and functions on
                 a website. </span
               >There are two main ways to develop a website.​
@@ -367,7 +403,7 @@
             </div>
 
             <img
-              src="../../images/columns/website-design-process-explained-in-5-steps/website-coding.webp"
+              src="../images/blog/website-design-process-explained-in-5-steps/website-coding.webp"
               width="640"
               height="427"
               alt="website coding"
@@ -385,7 +421,7 @@
 
             <div>
               <a
-                href="https://webtamin.co/en/columns/3-reasons-you-need-to-create-a-custom-website"
+                href="https://webtamin.co/blog/3-reasons-you-need-to-create-a-custom-website"
                 target="_blank"
                 class="text-blue-500"
                 >3 Reasons You Need To Create a Custom Website
@@ -396,7 +432,7 @@
               <h2 class="text-xl font-bold p-2 ml-2 lg:text-2xl">4. Testing</h2>
             </div>
             <img
-              src="../../images/columns/website-design-process-explained-in-5-steps/mobile-testing.webp"
+              src="../images/blog/website-design-process-explained-in-5-steps/mobile-testing.webp"
               width="640"
               height="427"
               alt="mobile testing"
@@ -434,7 +470,7 @@
             </div>
 
             <img
-              src="../../images/columns/website-design-process-explained-in-5-steps/website-testing-framework.webp"
+              src="../images/blog/website-design-process-explained-in-5-steps/website-testing-framework.webp"
               width="683"
               height="1167"
               alt="website testing framework"
@@ -462,7 +498,7 @@
               </h2>
             </div>
             <img
-              src="../../images/columns/website-design-process-explained-in-5-steps/world-map.webp"
+              src="../images/blog/website-design-process-explained-in-5-steps/world-map.webp"
               width="640"
               height="427"
               alt="world map"
@@ -482,7 +518,7 @@
               accordingly.
             </div>
             <img
-              src="../../images/columns/website-design-process-explained-in-5-steps/server.webp"
+              src="../images/blog/website-design-process-explained-in-5-steps/server.webp"
               width="640"
               height="359"
               alt="server"
@@ -503,7 +539,7 @@
               to it.
             </div>
             <img
-              src="../../images/columns/website-design-process-explained-in-5-steps/netlify.webp"
+              src="../images/blog/website-design-process-explained-in-5-steps/netlify.webp"
               width="640"
               height="427"
               alt="netlify"
@@ -532,13 +568,20 @@
               website design.
             </div>
             <!-- CTA -->
-            <div class="flex justify-center">
+            <div
+              class="flex justify-center items-center space-x-4 w-max lg:space-x-8"
+            >
               <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLSePAwS6Spkqw4Mr5zsKGPjZTbQN9Ej78mD7-hMt6PeT2Ch_Bw/viewform?usp=sharing"
                 rel="noopener"
                 target="_blank"
                 class="text-sm bg-color-primary text-white inline-block uppercase px-6 py-3 shadow-md rounded-sm lg:text-base"
-                >Fill out inquiry form</a
+                >get a quote now</a
+              >
+              <a
+                href="../blog.html"
+                class="w-max text-sm inline-block uppercase lg:text-base"
+                >view all posts</a
               >
             </div>
           </div>
@@ -592,31 +635,74 @@
 
     <!-- Footer -->
     <footer
-      class="relative flex flex-col items-center justify-between px-4 pt-8 bg-black text-white lg:shadow-inner"
+      class="relative flex flex-col items-center justify-between px-4 py-8 bg-gray-900 text-white lg:shadow-inner"
     >
-      <!-- Contact Icon -->
-      <a
-        href="https://docs.google.com/forms/d/e/1FAIpQLSePAwS6Spkqw4Mr5zsKGPjZTbQN9Ej78mD7-hMt6PeT2Ch_Bw/viewform?usp=sharing"
-        rel="nofollow noopener"
-        target="_blank"
-      >
-        <div class="z-50 fixed right-0 bottom-0 m-4">
+      <!-- Call Icon -->
+      <a href="tel:+19165918323" class="lg:hidden">
+        <div class="z-10 fixed right-0 bottom-0 m-4">
           <div
             class="flex items-center justify-center rounded-full bg-color-primary text-white w-12 h-12 md:w-auto md:h-auto md:p-4"
           >
-            <i class="fa-solid fa-comment md:mr-2"></i
-            ><span class="font-normal hidden md:inline-block">Contact</span>
+            <i class="fa-solid fa-phone md:mr-2"></i>
+          </div>
+        </div>
+      </a>
+      <!-- Email Icon -->
+      <a href="mailto:contact@webtamin.co" class="hidden lg:block">
+        <div class="z-10 fixed right-0 bottom-0 m-4">
+          <div
+            class="flex items-center justify-center rounded-full bg-color-primary text-white w-12 h-12 md:w-auto md:h-auto md:p-4"
+          >
+            <i class="fa-solid fa-envelope md:mr-2"></i
+            ><span class="font-normal hidden md:inline-block">Contact Us</span>
           </div>
         </div>
       </a>
 
       <!-- Social Links & Copyright-->
-      <div
-        class="flex flex-col items-center text-gray-400 text-xs mb-4 lg:mb-6"
-      >
-        <div class="font-medium mb-1">EIN: 93-3136163</div>
-        <div class="font-medium mb-1">&copy; WEBTAMIN</div>
+      <div class="flex flex-col items-center text-gray-400 text-xs">
+        <a href="../index.html"
+          ><img src="../images/logo.webp" alt="logo" class="w-24 sm:w-36"
+        /></a>
+        <!-- Social Links -->
+        <div class="flex items-center space-x-8 my-4 text-lg">
+          <a
+            href="https://www.linkedin.com/in/jonghwikim/"
+            target="_blank"
+            rel="noopener"
+            class="hover:text-white"
+          >
+            <i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/webtamin/"
+            target="_blank"
+            rel="noopener"
+            class="hover:text-white"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/webtamin.design/"
+            target="_blank"
+            rel="noopener"
+            class="hover:text-white"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.youtube.com/@webtamin?sub_confirmation=1"
+            target="_blank"
+            rel="noopener"
+            class="hover:text-white"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+        </div>
+
+              <div>&copy; 2023 Webtamin. All rights reserved.</div>
       </div>
     </footer>
+
+    <script defer src='../js/index.js'></script>
   </body>
+</html>
+
 </html>

@@ -115,3 +115,26 @@ ul {
   border-color: black;
   border-left: 8px solid;
 }
+
+.nav {
+  transform: translateX(9rem);
+  transition: all 0.4s;
+}
+
+.nav.show {
+  transform: translateX(0);
+}
+
+.nav-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+}
+
+.contact-link:hover span {
+  text-decoration: underline;
+}

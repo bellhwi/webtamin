@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="We build hand-coded custom websites. It allows you to have full control over speed optimization. It favors Google's search ranking algorithm more than other sites built with page builders."
+    />
+    <title>Website Design | Webtamin</title>
+
+    <!-- CSS Files -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="nofollow"
+    />
+
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../favicon-16x16.png"
+    />
+    <link rel="manifest" href="../site.webmanifest" />
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-JGET5W7JRZ"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || []
+    function gtag() {
+      dataLayer.push(arguments)
+    }
+    gtag('js', new Date())
+
+    gtag('config', 'G-JGET5W7JRZ')
+  </script>
+  <body>
+    <main>
+      <!-- Hero -->
+      <section class="bg-gray-900 py-16 px-8">
+        <!-- Hero content -->
+        <div class="container mx-auto flex flex-col items-center">
+          <!-- Topbar -->
+          <div class="w-full flex items-center justify-between">
+            <!-- Logo -->
+            <a href="../index.html"
+              ><img src="../images/logo.webp" alt="logo" class="w-24 sm:w-36"
+            /></a>
+            <div class="nav-overlay hidden" id="nav-overlay"></div>
+            <!-- Hamburger Menu Icon -->
+            <div class="lg:hidden">
+              <button id="menu-toggle" class="text-white focus:outline-none">
+                <i class="fa-solid fa-bars text-2xl"></i>
+              </button>
+            </div>
+            <ul
+              class="z-50 nav fixed right-0 top-0 h-full w-36 text-sm bg-gray-900 text-gray-100 font-semibold flex flex-col p-6 space-y-6 lg:translate-x-0 lg:bg-transparent lg:flex-row lg:w-max lg:text-base lg:relative lg:p-0 lg:space-y-0 lg:space-x-8"
+              id="nav-list"
+            >
+              <li>
+                <a href="../index.html" class="uppercase">home</a>
+              </li>
+              <li>
+                <a href="../about.html" class="uppercase">about</a>
+              </li>
+              <li class="relative" id="services-menu">
+                <a href="#" class="uppercase" id="services"
+                  >services <i class="fa-solid fa-chevron-down ml-1"></i
+                ></a>
+                <div
+                  class="hidden absolute h-fit bg-gray-200 z-10 w-max p-4 inset-0 mt-6 flex flex-col space-y-2 text-gray-400"
+                >
+                  <a
+                    href="../services/web-design.html"
+                    class="uppercase hover:text-gray-800"
+                    >web design</a
+                  >
+                  <hr class="border border-gray-300" />
+                  <a
+                    href="../services/web-maintenance.html"
+                    class="uppercase hover:text-gray-800"
+                    >web maintenance</a
+                  >
+                  <hr class="border border-gray-300" />
+                  <a
+                    href="../services/seo.html"
+                    class="uppercase hover:text-gray-800"
+                    >seo</a
+                  >
+                </div>
+              </li>
+
+              <li>
+                <a href="../index.html#portfolio" class="uppercase"
+                  >portfolio</a
+                >
+              </li>
+              <li>
+                <a href="../blog.html" class="uppercase">blog</a>
+              </li>
+              <li>
+                <a href="../index.html#contact" class="uppercase">contact</a>
+              </li>
+
+              <li class="lg:hidden">
+                <div
+                  id="nav-close"
+                  class="nav-close mx-auto mt-8 cursor-pointer w-max"
+                >
+                  <i class="fa-solid fa-x"></i>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- Text -->
+
+          <h1
+            class="mt-16 text-white font-bold text-4xl md:text-6xl lg:text-7xl"
+          >
+            Custom Web Design
+          </h1>
+        </div>
+      </section>
+
+      <!-- Custom Web Design & Development -->
+      <section class="py-16 bg-gray-50 px-8">
+        <div class="container mx-auto flex flex-col items-center">
+          <!-- Title -->
+          <h2 class="text-center mt-4 text-3xl font-bold md:text-5xl">
+            The Hand-coded Website You Need
+          </h2>
+
+          <div
+            class="flex flex-col items-center justify-center mt-16 lg:flex-row lg:space-x-8"
+          >
+            <div
+              class="flex items-center justify-between order-1 lg:order-2 lg:flex-col lg:ml-4"
+            >
+              <div class="text-sm text-color-primary space-y-4 lg:hidden">
+                <div><i class="fa-solid fa-check"></i> Full Customization</div>
+                <div><i class="fa-solid fa-check"></i> Speed Optimization</div>
+                <div><i class="fa-solid fa-check"></i> Unlimited Revision</div>
+                <div><i class="fa-solid fa-check"></i> Google Analytics</div>
+              </div>
+              <img
+                src="../images/web-design-and-development.webp"
+                alt="website design and development"
+                class="w-1/2 lg:w-full"
+                width="640"
+                height="925"
+              />
+            </div>
+            <div
+              class="mt-8 space-y-8 text-gray-600 order-2 lg:order-1 lg:w-4/5"
+            >
+              <p>
+                We design and develop hand-coded custom websites. Why do you
+                want to build a custom website over the one created by page
+                builders? The most important reason is the speed.
+              </p>
+              <p>
+                <span class="font-bold"
+                  >Website speed has been a direct search ranking factor</span
+                >
+                since 2010 by Google. If your website is slower than others,
+                your website’s rank will likely fall behind. You will lose
+                customers who don’t go to the next search result.
+              </p>
+              <p>
+                Page builders often prioritize ease of use and visual design
+                over the efficiency of the code. They include various features
+                and styling options to cater to a wide range of design
+                preferences. As a result, it leads to larger file sizes and
+                slows down the website.
+              </p>
+              <p>
+                However, you can fully optimize the speed when it comes to the
+                hand-coded website. Plus, You have much more control over design
+                and content since you build it from scratch.
+              </p>
+              <div class="text-color-primary space-y-4 hidden lg:block">
+                <div class="flex space-x-8">
+                  <div>
+                    <i class="fa-solid fa-check"></i> Full Customization
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-check"></i> Speed Optimization
+                  </div>
+                </div>
+                <div class="flex space-x-8">
+                  <div>
+                    <i class="fa-solid fa-check"></i> Unlimited Revision
+                  </div>
+                  <div><i class="fa-solid fa-check"></i> Google Analytics</div>
+                </div>
+              </div>
+              <!-- CTA -->
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSePAwS6Spkqw4Mr5zsKGPjZTbQN9Ej78mD7-hMt6PeT2Ch_Bw/viewform"
+                target="_blank"
+                rel="noopener"
+                class="uppercase text-sm mt-8 bg-color-primary text-white uppercase px-6 py-3 shadow-md rounded-sm inline-block lg:text-base lg:px-9"
+                >get a quote now</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="relative py-16 px-8" id="contact">
+        <img
+          src="../images/contact-1536.webp"
+          alt="mailbox"
+          srcset="
+            ../images/contact-640.webp   640w,
+            ../images/contact-1024.webp 1024w,
+            ../images/contact-1536.webp 1536w
+          "
+          sizes="100vw"
+          class="bg-overlay-dark"
+        />
+        <!-- Text and form Container -->
+        <div class="container mx-auto flex flex-col items-center">
+          <!-- Heading and description -->
+          <h2
+            class="text-center text-white mt-4 text-3xl font-bold md:text-5xl"
+          >
+            Contact Us
+          </h2>
+          <div class="mt-8 space-y-4">
+            <a
+              href="mailto:contact@webtamin.co"
+              class="w-max md:text-lg text-center text-gray-100 flex items-center contact-link"
+            >
+              <i class="fa-solid fa-envelope mr-2"></i>
+              <span class="underline-offset-4">contact@webtamin.co</span>
+            </a>
+            <a
+              href="tel:+19165918323"
+              class="w-max md:text-lg text-center text-gray-100 flex items-center contact-link"
+            >
+              <i class="fa-solid fa-phone mr-2"></i>
+              <span class="underline-offset-4">(+1) 916-591-8323</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer
+      class="relative flex flex-col items-center justify-between px-4 py-8 bg-gray-900 text-white lg:shadow-inner"
+    >
+      <!-- Call Icon -->
+      <a href="tel:+19165918323" class="lg:hidden">
+        <div class="z-10 fixed right-0 bottom-0 m-4">
+          <div
+            class="flex items-center justify-center rounded-full bg-color-primary text-white w-12 h-12 md:w-auto md:h-auto md:p-4"
+          >
+            <i class="fa-solid fa-phone md:mr-2"></i>
+          </div>
+        </div>
+      </a>
+      <!-- Email Icon -->
+      <a href="mailto:contact@webtamin.co" class="hidden lg:block">
+        <div class="z-10 fixed right-0 bottom-0 m-4">
+          <div
+            class="flex items-center justify-center rounded-full bg-color-primary text-white w-12 h-12 md:w-auto md:h-auto md:p-4"
+          >
+            <i class="fa-solid fa-envelope md:mr-2"></i
+            ><span class="font-normal hidden md:inline-block">Contact Us</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Social Links & Copyright-->
+      <div class="flex flex-col items-center text-gray-400 text-xs">
+        <a href="../index.html"
+          ><img src="../images/logo.webp" alt="logo" class="w-24 sm:w-36"
+        /></a>
+        <!-- Social Links -->
+        <div class="flex items-center space-x-8 my-4 text-lg">
+          <a
+            href="https://www.linkedin.com/in/jonghwikim/"
+            target="_blank"
+            rel="noopener"
+            class="hover:text-white"
+          >
+            <i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/webtamin/"
+            target="_blank"
+            rel="noopener"
+            class="hover:text-white"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/webtamin.design/"
+            target="_blank"
+            rel="noopener"
+            class="hover:text-white"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.youtube.com/@webtamin?sub_confirmation=1"
+            target="_blank"
+            rel="noopener"
+            class="hover:text-white"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+        </div>
+
+        <div>&copy; 2023 Webtamin. All rights reserved.</div>
+      </div>
+    </footer>
+
+    <script defer src="../js/index.js"></script>
+  </body>
+</html>

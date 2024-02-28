@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Webtamin builds websites that bring you profit. We recognize common problems of non-profitable websites and have solutions to tackle them."
+    />
+    <title>About | Webtamin</title>
+
+    <!-- CSS Files -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="nofollow"
+    />
+
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../favicon-16x16.png"
+    />
+    <link rel="manifest" href="../site.webmanifest" />
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-JGET5W7JRZ"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || []
+    function gtag() {
+      dataLayer.push(arguments)
+    }
+    gtag('js', new Date())
+
+    gtag('config', 'G-JGET5W7JRZ')
+  </script>
+  <body>
+    <main>
+      <!-- Hero -->
+      <section class="bg-gray-900 py-16 px-8">
+        <!-- Hero content -->
+        <div class="container mx-auto flex flex-col items-center">
+          <!-- Topbar -->
+          <div class="w-full flex items-center justify-between">
+            <!-- Logo -->
+            <a href="index.html"
+              ><img src="images/logo.webp" alt="logo" class="w-24 sm:w-36"
+            /></a>
+            <div class="nav-overlay hidden" id="nav-overlay"></div>
+            <!-- Hamburger Menu Icon -->
+            <div class="lg:hidden">
+              <button id="menu-toggle" class="text-white focus:outline-none">
+                <i class="fa-solid fa-bars text-2xl"></i>
+              </button>
+            </div>
+            <ul
+              class="z-50 nav fixed right-0 top-0 h-full w-36 text-sm bg-gray-900 text-gray-100 font-semibold flex flex-col p-6 space-y-6 lg:translate-x-0 lg:bg-transparent lg:flex-row lg:w-max lg:text-base lg:relative lg:p-0 lg:space-y-0 lg:space-x-8"
+              id="nav-list"
+            >
+              <li>
+                <a href="index.html" class="uppercase">home</a>
+              </li>
+              <li>
+                <a href="#" class="uppercase underline underline-offset-4"
+                  >about</a
+                >
+              </li>
+              <li class="relative hidden lg:block" id="services-menu">
+                <a href="#" class="uppercase" id="services"
+                  >services <i class="fa-solid fa-chevron-down ml-1"></i
+                ></a>
+                <div
+                  class="hidden absolute h-fit bg-gray-200 z-10 w-max p-4 inset-0 mt-6 flex flex-col space-y-2 text-gray-400"
+                >
+                  <a
+                    href="services/web-design.html"
+                    class="uppercase hover:text-gray-800"
+                    >web design</a
+                  >
+                  <hr class="border border-gray-300" />
+                  <a
+                    href="services/web-maintenance.html"
+                    class="uppercase hover:text-gray-800"
+                    >web maintenance</a
+                  >
+                  <hr class="border border-gray-300" />
+                  <a
+                    href="services/seo.html"
+                    class="uppercase hover:text-gray-800"
+                    >seo</a
+                  >
+                </div>
+              </li>
+              <li class="lg:hidden">
+                <a href="services.html" class="uppercase">services</a>
+              </li>
+              <li>
+                <a
+                  href="index.html#portfolio"
+                  class="uppercase"
+                  id="portfolio-menu"
+                  >portfolio</a
+                >
+              </li>
+              <li>
+                <a href="blog.html" class="uppercase">blog</a>
+              </li>
+              <li>
+                <a href="index.html#contact" class="uppercase" id="contact-menu"
+                  >contact</a
+                >
+              </li>
+
+              <li class="lg:hidden">
+                <div
+                  id="nav-close"
+                  class="nav-close mx-auto mt-8 cursor-pointer w-max"
+                >
+                  <i class="fa-solid fa-x"></i>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- Text -->
+
+          <h1
+            class="mt-16 text-white font-bold text-4xl md:text-6xl lg:text-7xl"
+          >
+            About
+          </h1>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="py-16 bg-gray-50 px-8">
+        <div class="container mx-auto flex flex-col items-center">
+          <!-- Title -->
+          <h2 class="text-center mt-4 text-3xl font-bold md:text-5xl">
+            Build a Profitable Website
+          </h2>
+
+          <div
+            class="flex flex-col items-center justify-center mt-16 lg:flex-row lg:space-x-8"
+          >
+            <img
+              src="../images/jonghwikim-about-960.webp"
+              srcset="
+                ../images/jonghwikim-about-480.webp 480w,
+                ../images/jonghwikim-about-960.webp 960w
+              "
+              sizes="(max-width:480px) 480px, 960px"
+              alt="web developer of webtamin"
+              class="grayscale w-3/5 lg:w-2/5"
+              width="960"
+              height="1280"
+            />
+            <div class="mt-8 space-y-8 text-gray-600">
+              <p>
+                Hi there, my name is Jonghwi Kim, a founder of Webtamin. I’ve
+                been contacting a lot of business owners to ask if they need
+                help building or redesigning their websites. As you can imagine,
+                more than half say "NO". Tough reality for me haha.
+              </p>
+              <p>
+                What do you think the reason is? Most of them think
+                <span class="font-bold">having a website is not worth it.</span>
+                They spent thousands of dollars on the website that don’t bring
+                any profit to the business. There are three common reasons why
+                it happens.
+              </p>
+              <ul class="list-decimal font-bold ml-8">
+                <li>Poor Design</li>
+                <li>Weak Content</li>
+                <li>Low Search Ranking</li>
+              </ul>
+              <p>
+                Webtamin was launched to tackle these problems. As a web design
+                agency, we admit that sometimes a website can be expensive
+                digital garbage. We don’t like wasting our time and yours to
+                build something useless. We make websites right and see them as
+                an asset that
+                <span class="font-bold">brings you profit over time.</span>
+              </p>
+              <!-- CTA -->
+              <a
+                href="services/web-design.html"
+                class="flex justify-center w-max mx-auto uppercase text-sm mt-8 bg-color-primary text-white uppercase px-6 py-3 shadow-md rounded-sm lg:text-base lg:px-9 lg:mx-0"
+                >check our service</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our promise -->
+      <section class="relative bg-gray-100 py-16 px-8">
+        <div class="container mx-auto">
+          <!-- Title -->
+          <h2 class="text-center mt-4 text-3xl font-bold md:text-5xl">
+            Our Promise
+          </h2>
+          <div
+            class="max-w-xs mx-auto grid grid-cols-1 gap-8 mt-16 lg:grid-cols-3 md:container"
+          >
+            <div
+              class="flex justify-center items-center flex-col md:justify-start"
+            >
+              <i class="text-color-primary text-center fa-solid fa-headset"></i>
+              <div>
+                <p
+                  class="text-color-primary font-bold text-center mt-2 md:text-lg"
+                >
+                  Immediate Support
+                </p>
+                <p class="text-sm text-gray-500 mt-4 md:text-base">
+                  No phone tree or automated response system. Don’t waste your
+                  time holding on the phone.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex justify-center items-center flex-col md:justify-start"
+            >
+              <i
+                class="text-color-primary text-center fa-solid fa-sack-dollar"
+              ></i>
+              <div>
+                <p
+                  class="text-color-primary font-bold text-center mt-2 md:text-lg"
+                >
+                  Transparent Fee
+                </p>
+                <p class="text-sm text-gray-500 mt-4 md:text-base">
+                  We inform you of all the service fees in advance. No
+                  additional costs surprise.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex justify-center items-center flex-col md:justify-start"
+            >
+              <i class="text-color-primary text-center fa-solid fa-gem"></i>
+              <div>
+                <p
+                  class="text-color-primary font-bold text-center mt-2 md:text-lg"
+                >
+                  Quality Assurance
+                </p>
+                <p class="text-sm text-gray-500 mt-4 md:text-base">
+                  We’ll refund you in full if you’re unhappy with our services
+                  during the development phase. No questions asked.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="relative py-16 px-8" id="contact">
+        <img
+          src="../images/contact-1536.webp"
+          alt="mailbox"
+          srcset="
+            ../images/contact-640.webp   640w,
+            ../images/contact-1024.webp 1024w,
+            ../images/contact-1536.webp 1536w
+          "
+          sizes="100vw"
+          class="bg-overlay-dark"
+        />
+        <!-- Text and form Container -->
+        <div class="container mx-auto flex flex-col items-center">
+          <!-- Heading and description -->
+          <h2
+            class="text-center text-white mt-4 text-3xl font-bold md:text-5xl"
+          >
+            Contact Us
+          </h2>
+          <div class="mt-8 space-y-4">
+            <a
+              href="mailto:contact@webtamin.co"
+              class="w-max md:text-lg text-center text-gray-100 flex items-center contact-link"
+            >
+              <i class="fa-solid fa-envelope mr-2"></i>
+              <span class="underline-offset-4">contact@webtamin.co</span>
+            </a>
+            <a
+              href="tel:+19165918323"
+              class="w-max md:text-lg text-center text-gray-100 flex items-center contact-link"
+            >
+              <i class="fa-solid fa-phone mr-2"></i>
+              <span class="underline-offset-4">(+1) 916-591-8323</span>
+            </a>
+          </div>
+          <!-- CTA -->
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSePAwS6Spkqw4Mr5zsKGPjZTbQN9Ej78mD7-hMt6PeT2Ch_Bw/viewform?usp=sharing"
+            target="_blank"
+            rel="nofollow noopener"
+            class="uppercase text-sm mt-8 bg-color-primary text-white inline-block uppercase px-6 py-3 shadow-md rounded-sm lg:text-base lg:px-9"
+            >get a quote now</a
+          >
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer
+      class="relative flex flex-col items-center justify-between px-4 py-8 bg-gray-900 text-white lg:shadow-inner"
+    >
+      <!-- Call Icon -->
+      <a href="tel:+19165918323" class="lg:hidden">
+        <div class="z-10 fixed right-0 bottom-0 m-4">
+          <div
+            class="flex items-center justify-center rounded-full bg-color-primary text-white w-12 h-12 md:w-auto md:h-auto md:p-4"
+          >
+            <i class="fa-solid fa-phone md:mr-2"></i>
+          </div>
+        </div>
+      </a>
+      <!-- Email Icon -->
+      <a href="mailto:contact@webtamin.co" class="hidden lg:block">
+        <div class="z-10 fixed right-0 bottom-0 m-4">
+          <div
+            class="flex items-center justify-center rounded-full bg-color-primary text-white w-12 h-12 md:w-auto md:h-auto md:p-4"
+          >
+            <i class="fa-solid fa-envelope md:mr-2"></i
+            ><span class="font-normal hidden md:inline-block">Contact Us</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Social Links & Copyright-->
+      <div class="flex flex-col items-center text-gray-400 text-xs">
+        <img src="../images/logo.webp" alt="logo" class="w-24 sm:w-36" />
+        <!-- Social Links -->
+        <div class="flex items-center space-x-8 my-4 text-lg">
+          <a
+            href="https://www.linkedin.com/in/jonghwikim/"
+            target="_blank"
+            rel="noopener"
+            class="hover:text-white"
+          >
+            <i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/webtamin/"
+            target="_blank"
+            rel="noopener"
+            class="hover:text-white"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/webtamin.design/"
+            target="_blank"
+            rel="noopener"
+            class="hover:text-white"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.youtube.com/@webtamin?sub_confirmation=1"
+            target="_blank"
+            rel="noopener"
+            class="hover:text-white"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+        </div>
+
+        <div>&copy; 2023 Webtamin. All rights reserved.</div>
+      </div>
+    </footer>
+
+    <script defer src="js/index.js"></script>
+  </body>
+</html>
