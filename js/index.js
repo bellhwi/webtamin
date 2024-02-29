@@ -49,12 +49,12 @@ function handleSideNavbar() {
 function toggleServicesMenu() {
   servicesMenu.addEventListener('mouseenter', (e) => {
     const menu = e.target.querySelector('div')
-    menu.classList.remove('hidden')
+    menu.classList.remove('lg:hidden')
   })
 
   servicesMenu.addEventListener('mouseleave', (e) => {
     const menu = e.target.querySelector('div')
-    menu.classList.add('hidden')
+    menu.classList.add('lg:hidden')
   })
 }
 

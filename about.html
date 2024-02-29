@@ -64,12 +64,21 @@
           <div class="w-full flex items-center justify-between">
             <!-- Logo -->
             <a href="index.html"
-              ><img src="images/logo.webp" alt="logo" class="w-24 sm:w-36"
+              ><img
+                src="images/logo.webp"
+                alt="logo"
+                class="w-24 sm:w-36"
+                width="240"
+                height="56"
             /></a>
             <div class="nav-overlay hidden" id="nav-overlay"></div>
             <!-- Hamburger Menu Icon -->
             <div class="lg:hidden">
-              <button id="menu-toggle" class="text-white focus:outline-none">
+              <button
+                id="menu-toggle"
+                class="text-white focus:outline-none"
+                aria-label="navigation-menu"
+              >
                 <i class="fa-solid fa-bars text-2xl"></i>
               </button>
             </div>
@@ -81,38 +90,37 @@
                 <a href="index.html" class="uppercase">home</a>
               </li>
               <li>
-                <a href="#" class="uppercase underline underline-offset-4"
+                <a
+                  href="about.html"
+                  class="uppercase underline underline-offset-4"
                   >about</a
                 >
               </li>
-              <li class="relative hidden lg:block" id="services-menu">
+              <li class="relative" id="services-menu">
                 <a href="#" class="uppercase" id="services"
                   >services <i class="fa-solid fa-chevron-down ml-1"></i
                 ></a>
                 <div
-                  class="hidden absolute h-fit bg-gray-200 z-10 w-max p-4 inset-0 mt-6 flex flex-col space-y-2 text-gray-400"
+                  class="lg:hidden text-xs lg:text-base lg:absolute lg:h-fit lg:bg-gray-200 z-10 lg:w-max ml-1 lg:ml-0 mt-4 lg:p-4 lg:inset-0 lg:mt-6 flex flex-col space-y-4 lg:space-y-2 text-gray-400"
                 >
                   <a
                     href="services/web-design.html"
                     class="uppercase hover:text-gray-800"
                     >web design</a
                   >
-                  <hr class="border border-gray-300" />
+                  <hr class="hidden border border-gray-300 lg:inline-block" />
                   <a
                     href="services/web-maintenance.html"
                     class="uppercase hover:text-gray-800"
-                    >web maintenance</a
+                    ><span class="hidden lg:inline">web</span> maintenance</a
                   >
-                  <hr class="border border-gray-300" />
+                  <hr class="hidden border border-gray-300 lg:inline-block" />
                   <a
                     href="services/seo.html"
                     class="uppercase hover:text-gray-800"
                     >seo</a
                   >
                 </div>
-              </li>
-              <li class="lg:hidden">
-                <a href="services.html" class="uppercase">services</a>
               </li>
               <li>
                 <a
@@ -352,7 +360,13 @@
 
       <!-- Social Links & Copyright-->
       <div class="flex flex-col items-center text-gray-400 text-xs">
-        <img src="../images/logo.webp" alt="logo" class="w-24 sm:w-36" />
+        <img
+          src="../images/logo.webp"
+          alt="logo"
+          class="w-24 sm:w-36"
+          width="240"
+          height="56"
+        />
         <!-- Social Links -->
         <div class="flex items-center space-x-8 my-4 text-lg">
           <a
@@ -360,6 +374,7 @@
             target="_blank"
             rel="noopener"
             class="hover:text-white"
+            aria-label="LinkedIn"
           >
             <i class="fa-brands fa-linkedin-in"></i
           ></a>
@@ -368,6 +383,7 @@
             target="_blank"
             rel="noopener"
             class="hover:text-white"
+            aria-label="Facebook"
             ><i class="fa-brands fa-facebook-f"></i
           ></a>
           <a
@@ -375,6 +391,7 @@
             target="_blank"
             rel="noopener"
             class="hover:text-white"
+            aria-label="Instagram"
             ><i class="fa-brands fa-instagram"></i
           ></a>
           <a
@@ -382,6 +399,7 @@
             target="_blank"
             rel="noopener"
             class="hover:text-white"
+            aria-label="YouTube"
             ><i class="fa-brands fa-youtube"></i
           ></a>
         </div>
