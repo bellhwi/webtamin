@@ -3056,6 +3056,10 @@ ul {
     display: inline-block;
   }
 
+  .md\:hidden{
+    display: none;
+  }
+
   .md\:h-auto{
     height: auto;
   }
@@ -3325,6 +3329,10 @@ ul {
   .lg\:py-24{
     padding-top: 6rem;
     padding-bottom: 6rem;
+  }
+
+  .lg\:text-left{
+    text-align: left;
   }
 
   .lg\:text-2xl{
