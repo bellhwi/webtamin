@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="We build hand-coded custom websites. It allows you to have full control over speed optimization. It favors Google's search ranking algorithm more than other sites built with page builders."
+      content="We provide a custom built website by coding. With full control over speed optimization, it favors Google's search ranking algorithm more than other sites built with page builders."
     />
     <script type="application/ld+json" src="../schema.json"></script>
-    <title>Website Design | Webtamin</title>
+    <script type="application/ld+json" src="../schema-itemList.json"></script>
+    <title>Custom Built Website | Webtamin</title>
 
     <!-- CSS Files -->
     <link
@@ -99,9 +100,7 @@
                 <div
                   class="lg:hidden text-xs lg:text-base lg:absolute lg:h-fit lg:bg-gray-200 z-10 lg:w-max ml-1 lg:ml-0 mt-4 lg:p-4 lg:inset-0 lg:mt-6 flex flex-col space-y-4 lg:space-y-2 text-gray-400"
                 >
-                  <a
-                    href="web-design.html"
-                    class="uppercase hover:text-gray-800 underline underline-offset-4"
+                  <a href="web-design.html" class="uppercase text-gray-800"
                     >web design</a
                   >
                   <hr class="hidden border border-gray-300 lg:inline-block" />
@@ -151,7 +150,10 @@
           <h1
             class="mt-16 text-white font-bold text-4xl md:text-6xl lg:text-7xl"
           >
-            Custom Web Design
+            <span class="text-color-primary-lighter font-bold"
+              >Custom Built</span
+            >
+            Website
           </h1>
         </div>
       </section>
@@ -161,7 +163,7 @@
         <div class="container mx-auto flex flex-col items-center">
           <!-- Title -->
           <h2 class="text-center mt-4 text-3xl font-bold md:text-5xl">
-            The Hand-coded Website You Need
+            Website Customization You Need
           </h2>
 
           <div
@@ -188,9 +190,9 @@
               class="mt-8 space-y-8 text-gray-600 order-2 lg:order-1 lg:w-4/5"
             >
               <p>
-                We design and develop hand-coded custom websites. Why do you
-                want to build a custom website over the one created by page
-                builders? The most important reason is the speed.
+                We provide custom built websites. Why do you want a custom built
+                website over the one created by page builders? The key is the
+                speed.
               </p>
               <p>
                 <span class="font-bold"
@@ -204,13 +206,16 @@
                 Page builders often prioritize ease of use and visual design
                 over the efficiency of the code. They include various features
                 and styling options to cater to a wide range of design
-                preferences. As a result, it leads to larger file sizes and
-                slows down the website.
+                preferences. Therefore it leads to larger file sizes and slows
+                down the website.
               </p>
               <p>
-                However, you can fully optimize the speed when it comes to the
-                hand-coded website. Plus, You have much more control over design
-                and content since you build it from scratch.
+                As a custom website agency, we
+                <span class="font-bold"
+                  >fully optimize your website's speed</span
+                >
+                to go high on search ranking. Plus, we provide website
+                customization in design and features to cater to your taste.
               </p>
               <div class="text-color-primary space-y-4 hidden lg:block">
                 <div class="flex space-x-8">
@@ -236,6 +241,54 @@
                 class="uppercase text-sm mt-8 bg-color-primary text-white uppercase px-6 py-3 shadow-md rounded-sm inline-block lg:text-base lg:px-9"
                 >get a quote now</a
               >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Related Services -->
+      <section class="relative bg-gray-100 py-16 px-8">
+        <div class="container mx-auto">
+          <!-- Title -->
+          <h2 class="text-center mt-4 text-3xl font-bold md:text-5xl">
+            Related Services
+          </h2>
+          <div
+            class="max-w-xs mx-auto grid grid-cols-1 gap-8 mt-16 lg:grid-cols-2 md:container"
+          >
+            <div
+              class="flex justify-center items-center flex-col md:justify-start border-s-4 border-color-primary py-4 px-8"
+            >
+              <div>
+                <a
+                  href="web-maintenance.html"
+                  class="text-color-primary font-bold mt-2 text-lg md:text-2xl hover:underline"
+                >
+                  Web Maintenance
+                </a>
+                <p class="text-sm text-gray-500 mt-4 md:text-base">
+                  Just like how your phone needs updates to stay fast and
+                  secure, websites also need regular check-ups to keep running
+                  smoothly as technology changes.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex justify-center items-center flex-col md:justify-start border-s-4 border-color-primary py-4 px-8"
+            >
+              <div>
+                <a
+                  href="seo.html"
+                  class="text-color-primary font-bold mt-2 text-lg md:text-2xl hover:underline"
+                >
+                  SEO
+                </a>
+                <p class="text-sm text-gray-500 mt-4 md:text-base">
+                  Your website might be awesome, but if people can't find it,
+                  it's like having a hidden gem. We make your site easily be
+                  found on search engines.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -355,7 +408,9 @@
           ></a>
         </div>
 
-        <div>&copy; 2023 Webtamin. All rights reserved.</div>
+        <div>
+          &copy; <span id="currentYear"></span> Webtamin. All rights reserved.
+        </div>
       </div>
     </footer>
 

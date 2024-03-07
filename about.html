@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Webtamin builds websites that bring you profit. We recognize common problems of non-profitable websites and have solutions to tackle them."
+      content="We provide web design services for small businesses. We recognize common problems of non-profitable websites and have solutions to tackle them."
     />
     <script type="application/ld+json" src="schema.json"></script>
-    <title>About | Webtamin</title>
+    <script type="application/ld+json" src="schema-itemList.json"></script>
+    <title>Web Design Services for Small Businesses | Webtamin</title>
 
     <!-- CSS Files -->
     <link
@@ -152,9 +153,15 @@
           <!-- Text -->
 
           <h1
-            class="mt-16 text-white font-bold text-4xl md:text-6xl lg:text-7xl"
+            class="mt-16 text-center text-white font-bold text-4xl md:text-6xl lg:text-7xl"
           >
-            About
+            Web Design Services
+            <p class="lg:mt-2">
+              for
+              <span class="text-color-primary-lighter font-bold"
+                >Small Businesses</span
+              >
+            </p>
           </h1>
         </div>
       </section>
@@ -202,18 +209,16 @@
                 <li>Low Search Ranking</li>
               </ul>
               <p>
-                Webtamin was launched to tackle these problems. As a web design
-                agency, we admit that sometimes a website can be expensive
-                digital garbage. We don’t like wasting our time and yours to
-                build something useless. We make websites right and see them as
-                an asset that
+                Webtamin was launched to tackle these problems. We provide high
+                quality web design and management services for small businesses.
+                We make websites right and see them as an asset that
                 <span class="font-bold">brings you profit over time.</span>
               </p>
               <!-- CTA -->
               <a
                 href="services/web-design.html"
                 class="flex justify-center w-max mx-auto uppercase text-sm mt-8 bg-color-primary text-white uppercase px-6 py-3 shadow-md rounded-sm lg:text-base lg:px-9 lg:mx-0"
-                >check our service</a
+                >check our services</a
               >
             </div>
           </div>
@@ -404,7 +409,9 @@
           ></a>
         </div>
 
-        <div>&copy; 2023 Webtamin. All rights reserved.</div>
+        <div>
+          &copy; <span id="currentYear"></span> Webtamin. All rights reserved.
+        </div>
       </div>
     </footer>
 

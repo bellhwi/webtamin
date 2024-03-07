@@ -1,0 +1,54 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "ItemList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "url": "https://webtamin.co/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "About",
+      "url": "https://webtamin.co/about"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Web Design",
+      "url": "https://webtamin.co/services/web-design"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Web Maintenance",
+      "url": "https://webtamin.co/services/web-maintenance"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "SEO",
+      "url": "https://webtamin.co/services/seo"
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "Portfolio",
+      "url": "https://webtamin.co/#portfolio"
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "name": "Blog",
+      "url": "https://webtamin.co/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "name": "Contact",
+      "url": "https://webtamin.co/#contact"
+    }
+  ]
+}

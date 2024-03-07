@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="We keep your website up-to-date on technical updates. Your website is secured and keeps track of the latest Google SEO changes. We’ve got your website, focus on your business."
+      content="We provide a monthly website maintenance packages at a reasonable price.  We maintain your website secure and keep track of the latest Google SEO changes. Don't leave your website as it is."
     />
     <script type="application/ld+json" src="../schema.json"></script>
-    <title>Web Maintenance | Webtamin</title>
+    <script type="application/ld+json" src="../schema-itemList.json"></script>
+    <title>Website Maintenance Package | Webtamin</title>
 
     <!-- CSS Files -->
     <link
@@ -105,9 +106,7 @@
                     >web design</a
                   >
                   <hr class="hidden border border-gray-300 lg:inline-block" />
-                  <a
-                    href="web-maintenance.html"
-                    class="uppercase hover:text-gray-800 underline underline-offset-4"
+                  <a href="web-maintenance.html" class="uppercase text-gray-800"
                     ><span class="hidden lg:inline">web</span> maintenance</a
                   >
                   <hr class="hidden border border-gray-300 lg:inline-block" />
@@ -151,7 +150,11 @@
           <h1
             class="mt-16 text-white font-bold text-4xl md:text-6xl lg:text-7xl"
           >
-            Web Maintenance
+            Monthly Website <br />
+            <span class="text-color-primary-lighter font-bold"
+              >Maintenance</span
+            >
+            Packages
           </h1>
         </div>
       </section>
@@ -187,10 +190,13 @@
               class="mt-8 space-y-8 text-gray-600 order-2 lg:order-1 lg:w-3/5"
             >
               <p>
-                Why do you need maintenance for the website that is already
-                done? It’s because technology is updating over time. For
-                example, many websites were built with Adobe Flash back in the
-                day. However, times have changed, and those websites are not
+                We provide monthly website maintenance packages. Why do you need
+                maintenance when the website is already done? It’s because
+                <span class="font-bold">technology is updating over time.</span>
+              </p>
+              <p>
+                For example, many websites were built with Adobe Flash back in
+                the day. However, times have changed, and those websites are not
                 accessible through iPhones anymore. Imagine if you are one of
                 them, you could lose all customers who use iPhones.
               </p>
@@ -206,9 +212,9 @@
                 downhill.
               </p>
               <p>
-                We make sure your website is
+                With our website maintenance package, your website is
                 <span class="font-bold"
-                  >up-to-date, secured, and keep track of the latest Google SEO
+                  >up-to-date, secure, and keep track of the latest Google SEO
                   changes.</span
                 >
               </p>
@@ -232,6 +238,53 @@
         </div>
       </section>
 
+      <!-- Related Services -->
+      <section class="relative bg-gray-100 py-16 px-8">
+        <div class="container mx-auto">
+          <!-- Title -->
+          <h2 class="text-center mt-4 text-3xl font-bold md:text-5xl">
+            Related Services
+          </h2>
+          <div
+            class="max-w-xs mx-auto grid grid-cols-1 gap-8 mt-16 lg:grid-cols-2 md:container"
+          >
+            <div
+              class="flex justify-center items-center flex-col md:justify-start border-s-4 border-color-primary py-4 px-8"
+            >
+              <div>
+                <a
+                  href="web-design.html"
+                  class="text-color-primary font-bold mt-2 text-lg md:text-2xl hover:underline"
+                >
+                  Custom Web Design
+                </a>
+                <p class="text-sm text-gray-500 mt-4 md:text-base">
+                  Choosing a custom-built website over one from a page builder?
+                  It's about speed. Custom sites are optimized for faster
+                  loading times, ensuring a better user experience.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex justify-center items-center flex-col md:justify-start border-s-4 border-color-primary py-4 px-8"
+            >
+              <div>
+                <a
+                  href="seo.html"
+                  class="text-color-primary font-bold mt-2 text-lg md:text-2xl hover:underline"
+                >
+                  SEO
+                </a>
+                <p class="text-sm text-gray-500 mt-4 md:text-base">
+                  Your website might be awesome, but if people can't find it,
+                  it's like having a hidden gem. We make your site easily be
+                  found on search engines.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- Contact -->
       <section class="relative py-16 px-8" id="contact">
         <img
@@ -346,7 +399,9 @@
           ></a>
         </div>
 
-        <div>&copy; 2023 Webtamin. All rights reserved.</div>
+        <div>
+          &copy; <span id="currentYear"></span> Webtamin. All rights reserved.
+        </div>
       </div>
     </footer>
 

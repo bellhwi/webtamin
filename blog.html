@@ -9,6 +9,7 @@
       content="Knowledge is power. We’ve covered the things you want to know about web design and development. If you come up with any questions please contact us."
     />
     <script type="application/ld+json" src="schema.json"></script>
+    <script type="application/ld+json" src="schema-itemList.json"></script>
     <title>Blog | Webtamin</title>
     <!-- CSS Files -->
     <link
@@ -161,27 +162,6 @@
 
       <section class="py-16 px-8">
         <div class="gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-          <!-- Column -->
-          <div class="flex flex-col bg-white shadow-md rounded">
-            <img
-              src="../images/blog/faq/thinker.webp"
-              alt="thinking person"
-              class="column-thumbnail"
-              width="640"
-              height="427"
-            />
-            <div class="p-4 h-full flex flex-col">
-              <a
-                href="blog/faq.html"
-                class="font-semibold md:text-lg hover:underline"
-                >📌 FAQ</a
-              >
-              <p class="text-gray-500 text-xs mt-2 md:text-sm">06-03-2023</p>
-              <p class="text-sm text-gray-500 mt-4 md:text-base">
-                Q. What should I prepare for development requests...
-              </p>
-            </div>
-          </div>
           <!-- Column -->
           <div class="flex flex-col bg-white shadow-md rounded">
             <img
@@ -420,7 +400,9 @@
           ></a>
         </div>
 
-        <div>&copy; 2023 Webtamin. All rights reserved.</div>
+        <div>
+          &copy; <span id="currentYear"></span> Webtamin. All rights reserved.
+        </div>
       </div>
     </footer>
 

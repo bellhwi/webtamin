@@ -13,7 +13,9 @@
       content="../images/blog/4-must-check-when-requesting-website-development/conversation.webp"
     />
 
-    <script type="application/ld+json" src="../schema.json"></script><title>4 Must Check Before Website Development | Webtamin</title>
+    <script type="application/ld+json" src="../schema.json"></script>
+    <script type="application/ld+json" src="../schema-itemList.json"></script>
+    <title>4 Must Check Before Website Development | Webtamin</title>
     <!-- CSS Files -->
     <link
       rel="stylesheet"
@@ -76,12 +78,21 @@
           <div class="w-full flex items-center justify-between">
             <!-- Logo -->
             <a href="../index.html"
-              ><img src="../images/logo.webp" alt="logo" class="w-24 sm:w-36" width='240' height='56'
+              ><img
+                src="../images/logo.webp"
+                alt="logo"
+                class="w-24 sm:w-36"
+                width="240"
+                height="56"
             /></a>
             <div class="nav-overlay hidden" id="nav-overlay"></div>
             <!-- Hamburger Menu Icon -->
             <div class="lg:hidden">
-              <button id="menu-toggle" class="text-white focus:outline-none" aria-label='navigation-menu'>
+              <button
+                id="menu-toggle"
+                class="text-white focus:outline-none"
+                aria-label="navigation-menu"
+              >
                 <i class="fa-solid fa-bars text-2xl"></i>
               </button>
             </div>
@@ -114,7 +125,9 @@
                     ><span class="hidden lg:inline">web</span> maintenance</a
                   >
                   <hr class="hidden border border-gray-300 lg:inline-block" />
-                  <a href="../services/seo.html" class="uppercase hover:text-gray-800"
+                  <a
+                    href="../services/seo.html"
+                    class="uppercase hover:text-gray-800"
                     >seo</a
                   >
                 </div>
@@ -448,7 +461,12 @@
       <!-- Social Links & Copyright-->
       <div class="flex flex-col items-center text-gray-400 text-xs">
         <a href="../index.html"
-          ><img src="../images/logo.webp" alt="logo" class="w-24 sm:w-36" width='240' height='56'
+          ><img
+            src="../images/logo.webp"
+            alt="logo"
+            class="w-24 sm:w-36"
+            width="240"
+            height="56"
         /></a>
         <!-- Social Links -->
         <div class="flex items-center space-x-8 my-4 text-lg">
@@ -487,12 +505,12 @@
           ></a>
         </div>
 
-              <div>&copy; 2023 Webtamin. All rights reserved.</div>
+        <div>
+          &copy; <span id="currentYear"></span> Webtamin. All rights reserved.
+        </div>
       </div>
     </footer>
 
-    <script defer src='../js/index.js'></script>
+    <script defer src="../js/index.js"></script>
   </body>
-</html>
-
 </html>
