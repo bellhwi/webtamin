@@ -6,19 +6,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Are you looking for a Sacramento web design company? Look no further. We provide our clients with a 100% satisfaction guarantee. Check out..."
+      content="Are you looking for a Sacramento web design agency? Look no further. We offer custom websites for small businesses starting at $150/mo. Check out..."
     />
-    <script type="application/ld+json" src="schema.json"></script>
-    <script type="application/ld+json" src="schema-itemList.json"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Webtamin",
+        "image": "/images/logo-circle.png",
+        "url": "https://webtamin.co/",
+        "telephone": "+19165918323",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "2221 Casa Linda Dr.",
+          "addressLocality": "Sacramento",
+          "addressRegion": "CA",
+          "postalCode": "95822",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 38.4843279,
+          "longitude": -121.4839556
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday",
+              "Sunday"
+            ],
+            "opens": "00:00",
+            "closes": "23:59"
+          }
+        ],
+        "sameAs": [
+          "https://www.facebook.com/webtamin/",
+          "https://www.instagram.com/webtamin.design/",
+          "https://www.youtube.com/@webtamin",
+          "https://www.linkedin.com/in/jonghwikim/",
+          "https://webtamin.co/"
+        ]
+      }
+    </script>
+    <script type="application/ld+json" src="schema-itemList.json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "ItemList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "url": "https://webtamin.co/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "About",
+            "url": "https://webtamin.co/about"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Web Design",
+            "url": "https://webtamin.co/services/web-design"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Web Maintenance",
+            "url": "https://webtamin.co/services/web-maintenance"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "SEO",
+            "url": "https://webtamin.co/services/seo"
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "name": "Portfolio",
+            "url": "https://webtamin.co/#portfolio"
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "name": "Blog",
+            "url": "https://webtamin.co/blog"
+          },
+          {
+            "@type": "ListItem",
+            "position": 8,
+            "name": "Contact",
+            "url": "https://webtamin.co/contact"
+          }
+        ]
+      }
+    </script>
     <title>Sacramento Web Design | Webtamin</title>
 
     <!-- CSS Files -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
       crossorigin="anonymous"
-      referrerpolicy="nofollow"
+      referrerpolicy="no-referrer"
     />
 
     <link rel="stylesheet" href="../styles/index.css" />
@@ -44,21 +144,21 @@
     <!-- YouTube Player -->
     <link rel="stylesheet" href="styles/lite-yt-embed.css" />
     <script src="js/lite-yt-embed.js"></script>
-  </head>
-  <!-- Google tag (gtag.js) -->
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-JGET5W7JRZ"
-  ></script>
-  <script>
-    window.dataLayer = window.dataLayer || []
-    function gtag() {
-      dataLayer.push(arguments)
-    }
-    gtag('js', new Date())
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-JGET5W7JRZ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
 
-    gtag('config', 'G-JGET5W7JRZ')
-  </script>
+      gtag('config', 'G-JGET5W7JRZ')
+    </script>
+  </head>
   <body>
     <main>
       <!-- Hero -->
@@ -171,7 +271,7 @@
               Sacramento <br class="md:hidden" />Web Design
             </h1>
             <p class="mt-4 text-gray-200 text-lg md:text-2xl md:mt-8">
-              We build custom websites for small businesses starting at $150/mo.
+              We offer custom websites for small businesses starting at $150/mo.
             </p>
             <!-- CTA -->
             <a
@@ -203,12 +303,14 @@
                 />
                 <div class="p-4 h-full flex flex-col justify-between">
                   <div>
-                    <a
-                      href="services/custom-built-website.html"
-                      class="text-color-primary font-bold md:text-lg"
-                      >Custom Web Design</a
-                    >
-                    <p class="text-sm text-gray-500 mt-4 md:text-base">
+                    <h3>
+                      <a
+                        href="services/custom-built-website.html"
+                        class="text-color-primary font-bold md:text-lg"
+                        >Custom Web Design</a
+                      >
+                    </h3>
+                    <p class="text-sm text-gray-600 mt-4 md:text-base">
                       We provide custom web development and design services that
                       cater to your taste.
                     </p>
@@ -227,12 +329,14 @@
                 />
                 <div class="p-4 h-full flex flex-col justify-between">
                   <div>
-                    <a
-                      href="services/custom-built-website.html"
-                      class="text-color-primary font-bold md:text-lg"
-                      >On-page SEO</a
-                    >
-                    <p class="text-sm text-gray-500 mt-4 md:text-base">
+                    <h3>
+                      <a
+                        href="services/custom-built-website.html"
+                        class="text-color-primary font-bold md:text-lg"
+                        >On-page SEO</a
+                      >
+                    </h3>
+                    <p class="text-sm text-gray-600 mt-4 md:text-base">
                       We structure your website in a way that Google favors so
                       people can easily find you online.
                     </p>
@@ -252,12 +356,14 @@
                 />
                 <div class="p-4 h-full flex flex-col justify-between">
                   <div>
-                    <a
-                      href="services/custom-built-website.html"
-                      class="text-color-primary font-bold md:text-lg"
-                      >Web Maintenance</a
-                    >
-                    <p class="text-sm text-gray-500 mt-4 md:text-base">
+                    <h3>
+                      <a
+                        href="services/custom-built-website.html"
+                        class="text-color-primary font-bold md:text-lg"
+                        >Web Maintenance</a
+                      >
+                    </h3>
+                    <p class="text-sm text-gray-600 mt-4 md:text-base">
                       We keep your website up-to-date so it’s secure and keep
                       track of the latest technical changes.
                     </p>
@@ -438,10 +544,10 @@
                     <p class="font-semibold md:text-lg">
                       Law Office of Hong-min Jun, P.C
                     </p>
-                    <p class="text-sm text-gray-500 mt-1 md:text-base">
+                    <p class="text-sm text-gray-600 mt-1 md:text-base">
                       Fishers, IN
                     </p>
-                    <p class="text-sm text-gray-500 mt-4 md:text-base">
+                    <p class="text-sm text-gray-600 mt-4 md:text-base">
                       Law Office of Hong-min Jun, P.C serves foreign-born
                       individuals and small business owners.
                     </p>
@@ -449,7 +555,7 @@
                   <a
                     href="https://junlawfirm.netlify.app/"
                     target="_blank"
-                    rel="nofollow noopener"
+                    rel="noopener"
                     class="w-max text-xs mt-8 bg-color-primary text-white inline-block uppercase px-6 py-3 shadow-md rounded-sm lg:text-sm"
                     >visit Hong-min Jun</a
                   >
@@ -474,10 +580,10 @@
                 <div class="p-4 h-full flex flex-col justify-between">
                   <div>
                     <p class="font-semibold md:text-lg">Haxa Labs</p>
-                    <p class="text-sm text-gray-500 mt-1 md:text-base">
+                    <p class="text-sm text-gray-600 mt-1 md:text-base">
                       Sacramento, CA
                     </p>
-                    <p class="text-sm text-gray-500 mt-4 md:text-base">
+                    <p class="text-sm text-gray-600 mt-4 md:text-base">
                       Haxa Labs offer a diverse selection of strains, expert
                       cultivation advice, and superior genetics for optimal
                       yields.
@@ -486,7 +592,7 @@
                   <a
                     href="https://haxalabs.com/"
                     target="_blank"
-                    rel="nofollow noopener"
+                    rel="noopener"
                     class="w-max text-xs mt-8 bg-color-primary text-white inline-block uppercase px-6 py-3 shadow-md rounded-sm lg:text-sm"
                     >visit Haxa Labs</a
                   >
@@ -511,10 +617,10 @@
                 <div class="p-4 h-full flex flex-col justify-between">
                   <div>
                     <p class="font-semibold md:text-lg">Arnid Xiong</p>
-                    <p class="text-sm text-gray-500 mt-1 md:text-base">
+                    <p class="text-sm text-gray-600 mt-1 md:text-base">
                       Sacramento, CA
                     </p>
-                    <p class="text-sm text-gray-500 mt-4 md:text-base">
+                    <p class="text-sm text-gray-600 mt-4 md:text-base">
                       Arnid Xiong is a graphic designer who specialized in
                       digital designing, illustration, and web design.
                     </p>
@@ -522,7 +628,7 @@
                   <a
                     href="https://arnidxiong.co/"
                     target="_blank"
-                    rel="nofollow noopener"
+                    rel="noopener"
                     class="w-max text-xs mt-8 bg-color-primary text-white inline-block uppercase px-6 py-3 shadow-md rounded-sm lg:text-sm"
                     >visit arnid xiong</a
                   >
@@ -587,11 +693,11 @@
                   >
                     3 Reasons You Need to Create a Custom Website
                   </a>
-                  <p class="text-gray-500 text-xs mt-2 md:text-sm">
+                  <p class="text-gray-600 text-xs mt-2 md:text-sm">
                     10-07-2023
                   </p>
                 </div>
-                <p class="text-sm text-gray-500 mt-4 md:text-base">
+                <p class="text-sm text-gray-600 mt-4 md:text-base">
                   There are two ways to create a website. The first method is to
                   build a website with a web builder and a pre-made template.
                   The other method is to develop a custom website by coding.
@@ -611,10 +717,10 @@
                   >
                     5 Reasons Why Website Development Takes Long
                   </a>
-                  <p class="text-gray-500 text-xs mt-2 md:text-sm">
+                  <p class="text-gray-600 text-xs mt-2 md:text-sm">
                     09-02-2023
                   </p>
-                  <p class="text-sm text-gray-500 mt-4 md:text-base">
+                  <p class="text-sm text-gray-600 mt-4 md:text-base">
                     The duration of the website development may vary depending
                     on the design, number of pages...
                   </p>
@@ -630,10 +736,10 @@
                   >
                     How to Prevent Fraud From Website Development
                   </a>
-                  <p class="text-gray-500 text-xs mt-2 md:text-sm">
+                  <p class="text-gray-600 text-xs mt-2 md:text-sm">
                     08-05-2023
                   </p>
-                  <p class="text-sm text-gray-500 mt-4 md:text-base">
+                  <p class="text-sm text-gray-600 mt-4 md:text-base">
                     This column is a follow-up to the previous column, '3
                     reasons for the high number of scammers...
                   </p>
