@@ -798,6 +798,10 @@ video {
   margin-top: 2rem;
 }
 
+.ml-4{
+  margin-left: 1rem;
+}
+
 .box-border{
   box-sizing: border-box;
 }
@@ -977,10 +981,6 @@ video {
 .w-max{
   width: -moz-max-content;
   width: max-content;
-}
-
-.max-w-screen-lg{
-  max-width: 1024px;
 }
 
 .max-w-screen-sm{
@@ -2230,6 +2230,10 @@ video {
   padding-top: 2rem;
 }
 
+.pl-4{
+  padding-left: 1rem;
+}
+
 .text-left{
   text-align: left;
 }
@@ -2324,6 +2328,11 @@ video {
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .font-bold{
@@ -2428,19 +2437,9 @@ video {
   color: rgb(243 244 246 / var(--tw-text-opacity));
 }
 
-.text-gray-200{
-  --tw-text-opacity: 1;
-  color: rgb(229 231 235 / var(--tw-text-opacity));
-}
-
 .text-gray-400{
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
-}
-
-.text-gray-500{
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
 .text-gray-600{
@@ -2466,6 +2465,16 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-red-400{
+  --tw-text-opacity: 1;
+  color: rgb(248 113 113 / var(--tw-text-opacity));
+}
+
+.text-red-600{
+  --tw-text-opacity: 1;
+  color: rgb(220 38 38 / var(--tw-text-opacity));
 }
 
 .underline{
@@ -3074,6 +3083,14 @@ ul {
     margin-top: 2rem;
   }
 
+  .md\:ml-0{
+    margin-left: 0px;
+  }
+
+  .md\:block{
+    display: block;
+  }
+
   .md\:hidden{
     display: none;
   }
@@ -3084,6 +3101,11 @@ ul {
 
   .md\:w-auto{
     width: auto;
+  }
+
+  .md\:w-max{
+    width: -moz-max-content;
+    width: max-content;
   }
 
   .md\:grid-cols-2{
@@ -3102,6 +3124,10 @@ ul {
     padding: 1rem;
   }
 
+  .md\:pl-0{
+    padding-left: 0px;
+  }
+
   .md\:text-center{
     text-align: center;
   }
@@ -3109,6 +3135,11 @@ ul {
   .md\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .md\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .md\:text-5xl{
@@ -3158,6 +3189,10 @@ ul {
 
   .lg\:inset-0{
     inset: 0px;
+  }
+
+  .lg\:bottom-4{
+    bottom: 1rem;
   }
 
   .lg\:order-1{
