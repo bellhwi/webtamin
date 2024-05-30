@@ -52,7 +52,6 @@
         "sameAs": [
           "https://www.facebook.com/webtamin/",
           "https://www.instagram.com/webtamin.design/",
-          "https://www.youtube.com/@webtamin",
           "https://www.linkedin.com/in/jonghwikim/",
           "https://webtamin.co/"
         ]
@@ -73,43 +72,43 @@
             "@type": "ListItem",
             "position": 2,
             "name": "About",
-            "url": "https://webtamin.co/about"
+            "url": "https://webtamin.co/#about"
           },
           {
             "@type": "ListItem",
             "position": 3,
-            "name": "Web Design",
-            "url": "https://webtamin.co/services/web-design"
-          },
-          {
-            "@type": "ListItem",
-            "position": 4,
-            "name": "Web Maintenance",
-            "url": "https://webtamin.co/services/web-maintenance"
-          },
-          {
-            "@type": "ListItem",
-            "position": 5,
-            "name": "SEO",
-            "url": "https://webtamin.co/services/seo"
-          },
-          {
-            "@type": "ListItem",
-            "position": 6,
             "name": "Portfolio",
             "url": "https://webtamin.co/#portfolio"
           },
           {
             "@type": "ListItem",
-            "position": 7,
+            "position": 4,
             "name": "Blog",
             "url": "https://webtamin.co/blog"
           },
           {
             "@type": "ListItem",
-            "position": 8,
+            "position": 5,
+            "name": "Pricing",
+            "url": "https://webtamin.co/#pricing"
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
             "name": "Contact",
-            "url": "https://webtamin.co/contact"
+            "url": "https://webtamin.co/#contact"
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "name": "Privacy Policy",
+            "url": "https://webtamin.co/privacy-policy"
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "name": "Terms of Service",
+            "url": "https://webtamin.co/terms-of-service"
           }
         ]
       }
@@ -163,16 +162,17 @@
         <!-- Hero content -->
         <div class="container mx-auto flex flex-col items-center">
           <!-- Topbar -->
-          <div class="w-full flex items-center justify-between">
+          <nav class="w-full flex items-center justify-between">
             <!-- Logo -->
-            <a href="../index.html"
-              ><img
+            <a href="../index.html#hero">
+              <img
                 src="../images/logo.webp"
                 alt="logo"
-                class="w-24 sm:w-36"
+                class="w-32 sm:w-36"
                 width="240"
                 height="56"
-            /></a>
+              />
+            </a>
             <div class="nav-overlay hidden" id="nav-overlay"></div>
             <!-- Hamburger Menu Icon -->
             <div class="lg:hidden">
@@ -181,7 +181,7 @@
                 class="text-white focus:outline-none"
                 aria-label="navigation-menu"
               >
-                <i class="fa-solid fa-bars text-2xl"></i>
+                <i class="fa-solid fa-bars text-3xl"></i>
               </button>
             </div>
             <ul
@@ -189,36 +189,9 @@
               id="nav-list"
             >
               <li>
-                <a href="../index.html" class="uppercase">home</a>
-              </li>
-              <li>
-                <a href="../about.html" class="uppercase">about</a>
-              </li>
-              <li class="relative" id="services-menu">
-                <a href="#" class="uppercase" id="services"
-                  >services <i class="fa-solid fa-chevron-down ml-1"></i
-                ></a>
-                <div
-                  class="lg:hidden text-xs lg:text-base lg:absolute lg:h-fit lg:bg-gray-200 z-10 lg:w-max ml-1 lg:ml-0 mt-4 lg:p-4 lg:inset-0 lg:mt-6 flex flex-col space-y-4 lg:space-y-2 text-gray-400"
+                <a href="../index.html#about" class="uppercase" id="about-menu"
+                  >about</a
                 >
-                  <a
-                    href="../services/custom-built-website.html"
-                    class="uppercase hover:text-gray-800"
-                    >web design</a
-                  >
-                  <hr class="hidden border border-gray-300 lg:inline-block" />
-                  <a
-                    href="../services/monthly-website-maintenance-packages.html"
-                    class="uppercase hover:text-gray-800"
-                    ><span class="hidden lg:inline">web</span> maintenance</a
-                  >
-                  <hr class="hidden border border-gray-300 lg:inline-block" />
-                  <a
-                    href="../services/sacramento-local-seo.html"
-                    class="uppercase hover:text-gray-800"
-                    >seo</a
-                  >
-                </div>
               </li>
               <li>
                 <a
@@ -232,7 +205,18 @@
                 <a href="../blog.html" class="uppercase">blog</a>
               </li>
               <li>
-                <a href="../contact.html" class="uppercase" id="contact-menu"
+                <a
+                  href="../index.html#pricing"
+                  class="uppercase"
+                  id="pricing-menu"
+                  >pricing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../index.html#contact"
+                  class="uppercase"
+                  id="contact-menu"
                   >contact</a
                 >
               </li>
@@ -240,13 +224,13 @@
               <li class="lg:hidden">
                 <div
                   id="nav-close"
-                  class="nav-close mx-auto mt-8 cursor-pointer w-max"
+                  class="nav-close border rounded-full w-8 h-8 flex items-center justify-center mx-auto mt-8 cursor-pointer"
                 >
                   <i class="fa-solid fa-x"></i>
                 </div>
               </li>
             </ul>
-          </div>
+          </nav>
           <!-- Text -->
 
           <h1
@@ -671,7 +655,7 @@
               class="flex justify-center items-center space-x-4 w-max lg:space-x-8"
             >
               <a
-                href="../contact.html"
+                href="../index.html#contact"
                 class="text-sm bg-color-primary text-white inline-block uppercase px-6 py-3 shadow-md rounded-sm lg:text-base"
                 >contact me</a
               >
@@ -788,22 +772,27 @@
             aria-label="Instagram"
             ><i class="fa-brands fa-instagram"></i
           ></a>
-          <a
-            href="https://www.youtube.com/@jonghwikim"
-            target="_blank"
-            rel="noopener"
-            class="hover:text-white"
-            aria-label="YouTube"
-            ><i class="fa-brands fa-youtube"></i
-          ></a>
         </div>
 
         <div>
           &copy; <span id="currentYear"></span> Webtamin. All rights reserved.
         </div>
+        <div class="flex relative mt-2 space-x-2">
+          <a
+            href="../privacy-policy.html"
+            class="text-gray-400 hover:text-white"
+            >Privacy Policy</a
+          >
+          <span>|</span>
+          <a
+            href="../terms-of-service.html"
+            class="text-gray-400 hover:text-white"
+            >Terms of Service</a
+          >
+        </div>
       </div>
     </footer>
 
-    <script defer src="../js/index.js"></script>
+    <script defer src="../js/script.js"></script>
   </body>
 </html>

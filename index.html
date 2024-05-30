@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Are you looking for websites for small automotive business? Look no further. I offer websites that sells your services. Check out..."
+      content="Are you looking for website design for small automotive businesses? Look no further. I offer websites that bring you leads. Check out..."
     />
     <script type="application/ld+json">
       {
@@ -48,7 +48,6 @@
         "sameAs": [
           "https://www.facebook.com/webtamin/",
           "https://www.instagram.com/webtamin.design/",
-          "https://www.youtube.com/@webtamin",
           "https://www.linkedin.com/in/jonghwikim/",
           "https://webtamin.co/"
         ]
@@ -69,43 +68,43 @@
             "@type": "ListItem",
             "position": 2,
             "name": "About",
-            "url": "https://webtamin.co/about"
+            "url": "https://webtamin.co/#about"
           },
           {
             "@type": "ListItem",
             "position": 3,
-            "name": "Web Design",
-            "url": "https://webtamin.co/services/web-design"
-          },
-          {
-            "@type": "ListItem",
-            "position": 4,
-            "name": "Web Maintenance",
-            "url": "https://webtamin.co/services/web-maintenance"
-          },
-          {
-            "@type": "ListItem",
-            "position": 5,
-            "name": "SEO",
-            "url": "https://webtamin.co/services/seo"
-          },
-          {
-            "@type": "ListItem",
-            "position": 6,
             "name": "Portfolio",
             "url": "https://webtamin.co/#portfolio"
           },
           {
             "@type": "ListItem",
-            "position": 7,
+            "position": 4,
             "name": "Blog",
             "url": "https://webtamin.co/blog"
           },
           {
             "@type": "ListItem",
-            "position": 8,
+            "position": 5,
+            "name": "Pricing",
+            "url": "https://webtamin.co/#pricing"
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
             "name": "Contact",
-            "url": "https://webtamin.co/contact"
+            "url": "https://webtamin.co/#contact"
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "name": "Privacy Policy",
+            "url": "https://webtamin.co/privacy-policy"
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "name": "Terms of Service",
+            "url": "https://webtamin.co/terms-of-service"
           }
         ]
       }
@@ -158,34 +157,113 @@
 
       gtag('config', 'G-JGET5W7JRZ')
     </script>
+    <!-- MailerLite Universal -->
+    <script>
+      ;(function (w, d, e, u, f, l, n) {
+        ;(w[f] =
+          w[f] ||
+          function () {
+            ;(w[f].q = w[f].q || []).push(arguments)
+          }),
+          (l = d.createElement(e)),
+          (l.async = 1),
+          (l.src = u),
+          (n = d.getElementsByTagName(e)[0]),
+          n.parentNode.insertBefore(l, n)
+      })(
+        window,
+        document,
+        'script',
+        'https://assets.mailerlite.com/js/universal.js',
+        'ml'
+      )
+      ml('account', '965486')
+    </script>
+    <!-- End MailerLite Universal -->
   </head>
   <body>
     <main>
+      <!-- Moving Navbar -->
+      <nav
+        class="moving-nav fixed top-0 left-0 right-0 z-30 w-full flex items-center px-8 py-2 lg:py-4 justify-between bg-color-primary drop-shadow-md"
+        id="moving-nav"
+      >
+        <!-- Logo -->
+        <a href="index.html#hero">
+          <img
+            src="images/logo.webp"
+            alt="logo"
+            class="w-32 sm:w-36"
+            width="240"
+            height="56"
+          />
+        </a>
+        <div class="nav-overlay hidden" id="nav-overlay"></div>
+        <!-- Hamburger Menu Icon -->
+        <div class="lg:hidden">
+          <button
+            id="menu-toggle"
+            class="text-white focus:outline-none"
+            aria-label="navigation-menu"
+          >
+            <i class="fa-solid fa-bars text-3xl"></i>
+          </button>
+        </div>
+        <ul
+          class="z-50 nav fixed right-0 top-0 h-full w-36 text-sm bg-gray-900 text-gray-100 font-semibold flex flex-col p-6 space-y-6 lg:translate-x-0 lg:bg-transparent lg:flex-row lg:w-max lg:text-base lg:relative lg:p-0 lg:space-y-0 lg:space-x-8"
+          id="nav-list"
+        >
+          <li>
+            <a href="index.html#about" class="uppercase" id="about-menu"
+              >about</a
+            >
+          </li>
+          <li>
+            <a href="index.html#portfolio" class="uppercase" id="portfolio-menu"
+              >portfolio</a
+            >
+          </li>
+          <li>
+            <a href="blog.html" class="uppercase">blog</a>
+          </li>
+          <li>
+            <a href="index.html#pricing" class="uppercase" id="pricing-menu"
+              >pricing</a
+            >
+          </li>
+          <li>
+            <a href="index.html#contact" class="uppercase" id="contact-menu"
+              >contact</a
+            >
+          </li>
+
+          <li class="lg:hidden">
+            <div
+              id="nav-close"
+              class="nav-close border rounded-full w-8 h-8 flex items-center justify-center mx-auto mt-8 cursor-pointer"
+            >
+              <i class="fa-solid fa-x"></i>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
       <!-- Hero -->
-      <section class="relative py-16 px-8 xl:py-24">
-        <!-- Hero image -->
-        <img
-          src="images/car-hero-1536.webp"
-          srcset="
-            images/car-hero-640.webp   640w,
-            images/car-hero-1024.webp 1024w,
-            images/car-hero-1536.webp 1536w
-          "
-          alt="super car"
-          class="bg-overlay-dark"
-        />
+      <section class="relative py-16 px-8 bg-gray-900" id="hero">
         <!-- Hero content -->
         <div class="container mx-auto flex flex-col items-center">
-          <!-- Topbar -->
-          <div class="w-full flex items-center justify-between">
+          <!-- Navbar -->
+          <nav class="w-full flex items-center justify-between">
             <!-- Logo -->
-            <img
-              src="images/logo.webp"
-              alt="logo"
-              class="w-24 sm:w-36"
-              width="240"
-              height="56"
-            />
+            <a href="index.html#hero">
+              <img
+                src="images/logo.webp"
+                alt="logo"
+                class="w-32 sm:w-36"
+                width="240"
+                height="56"
+              />
+            </a>
             <div class="nav-overlay hidden" id="nav-overlay"></div>
             <!-- Hamburger Menu Icon -->
             <div class="lg:hidden">
@@ -194,7 +272,7 @@
                 class="text-white focus:outline-none"
                 aria-label="navigation-menu"
               >
-                <i class="fa-solid fa-bars text-2xl"></i>
+                <i class="fa-solid fa-bars text-3xl"></i>
               </button>
             </div>
             <ul
@@ -202,40 +280,9 @@
               id="nav-list"
             >
               <li>
-                <a
-                  href="index.html"
-                  class="uppercase underline underline-offset-4"
-                  >home</a
+                <a href="index.html#about" class="uppercase" id="about-menu"
+                  >about</a
                 >
-              </li>
-              <li>
-                <a href="about.html" class="uppercase">about</a>
-              </li>
-              <li class="relative" id="services-menu">
-                <a href="#" class="uppercase" id="services"
-                  >services <i class="fa-solid fa-chevron-down ml-1"></i
-                ></a>
-                <div
-                  class="lg:hidden text-xs lg:text-base lg:absolute lg:h-fit lg:bg-gray-200 z-10 lg:w-max ml-1 lg:ml-0 mt-4 lg:p-4 lg:inset-0 lg:mt-6 flex flex-col space-y-4 lg:space-y-2 text-gray-400"
-                >
-                  <a
-                    href="services/custom-built-website.html"
-                    class="uppercase hover:text-gray-800"
-                    >web design</a
-                  >
-                  <hr class="hidden border border-gray-300 lg:inline-block" />
-                  <a
-                    href="services/monthly-website-maintenance-packages.html"
-                    class="uppercase hover:text-gray-800"
-                    ><span class="hidden lg:inline">web</span> maintenance</a
-                  >
-                  <hr class="hidden border border-gray-300 lg:inline-block" />
-                  <a
-                    href="services/sacramento-local-seo.html"
-                    class="uppercase hover:text-gray-800"
-                    >seo</a
-                  >
-                </div>
               </li>
               <li>
                 <a
@@ -249,7 +296,12 @@
                 <a href="blog.html" class="uppercase">blog</a>
               </li>
               <li>
-                <a href="contact.html" class="uppercase" id="contact-menu"
+                <a href="index.html#pricing" class="uppercase" id="pricing-menu"
+                  >pricing</a
+                >
+              </li>
+              <li>
+                <a href="index.html#contact" class="uppercase" id="contact-menu"
                   >contact</a
                 >
               </li>
@@ -257,364 +309,388 @@
               <li class="lg:hidden">
                 <div
                   id="nav-close"
-                  class="nav-close mx-auto mt-8 cursor-pointer w-max"
+                  class="nav-close border rounded-full w-8 h-8 flex items-center justify-center mx-auto mt-8 cursor-pointer"
                 >
                   <i class="fa-solid fa-x"></i>
                 </div>
               </li>
             </ul>
-          </div>
+          </nav>
           <!-- Text -->
-          <div>
-            <h1 class="mt-16 text-white font-bold text-5xl lg:text-7xl">
-              Automotive
-              <br />Website Design
-            </h1>
-            <p class="mt-4 text-gray-100 md:text-2xl md:mt-8">
-              Website that sells for small automotive businesses.
-            </p>
+          <div class="flex flex-col lg:flex-row lg:items-center mt-16">
+            <div>
+              <h1 class="text-white font-bold text-5xl lg:text-7xl">
+                Automotive<br />
+                Website Design
+              </h1>
+              <p class="text-gray-100 md:text-xl my-8">
+                Forget the website that brings you nothing. I specialize in
+                website design that gets leads for your automotive business.
+              </p>
+              <a
+                href="index.html#benefits"
+                class="mx-auto text-sm text-white bg-color-primary inline-block uppercase px-6 py-3 shadow-md rounded-sm lg:text-base"
+                >learn more</a
+              >
+            </div>
+            <!-- Hero image -->
+            <img
+              src="images/hero.png"
+              alt="responsive design of website project"
+              width="955"
+              height="817"
+              class="lg:w-1/2"
+            />
           </div>
         </div>
       </section>
 
-      <!-- Missing out -->
-      <section class="py-16 bg-gray-50">
-        <div class="max-w-screen-md mx-auto flex flex-col items-center">
+      <!-- What you get -->
+      <section class="py-16 bg-gray-50" id="benefits">
+        <div>
           <!-- Title -->
           <h2 class="text-center mt-4 text-3xl font-bold md:text-5xl">
-            What you are <br class="md:hidden" /><i>missing out</i>
+            What you <i>get</i>
           </h2>
-
-          <div
-            class="flex flex-col items-center justify-center mt-16 lg:flex-row lg:space-x-8"
-          >
-            <div
-              class="mt-4 px-8 lg:mt-0 space-y-8 lg:px-0 md:text-lg text-gray-700"
-            >
-              <p>Bill Gates, one of the world's greatest fortunes, said;</p>
-              <p class="italic">
-                “If your business is not on the Internet, then your business
-                will be out of business.”
-              </p>
-              <p>
-                In this digital era, everyone seems to have a website for their
-                businesses. However, you might wonder if a website is really for
-                you. You might be unsure what you exactly get out of a website.
-              </p>
-              <p>
-                But the real question is -
-                <span class="font-semibold"
-                  >do you lose anything by not having a website?</span
-                >
-                Without a website, you will;
-              </p>
-              <ul class="space-y-2">
-                <li>⚠️ lose potential customers online</li>
-                <li>⚠️ lack of credibility for your business</li>
-                <li>
-                  ⚠️ fall behind as your competitors have an online presence
-                </li>
-              </ul>
+          <div class="mt-16 md:text-lg">
+            <div class="flex items-center">
+              <img
+                src="images/super-car.jpg"
+                alt="super car"
+                class="hidden lg:block mr-8 w-1/2 object-cover"
+              />
+              <div class="w-full px-8 lg:w-1/2 space-y-8">
+                <div class="flex items-center pb-2">
+                  <div
+                    class="w-8 h-8 bg-color-primary rounded-full flex justify-center items-center mr-2"
+                  >
+                    <i class="fa-solid fa-check text-white"></i>
+                  </div>
+                  <span class="text-lg font-semibold lg:text-xl">
+                    More Leads</span
+                  >
+                </div>
+                A website can drive more leads by attracting visitors through
+                compelling content, SEO, and other digital marketing strategies.
+                It can convert them through lead capture forms, calls-to-action,
+                and personalized offers.
+                <hr />
+                <div class="flex items-center pb-2">
+                  <div
+                    class="w-8 h-8 bg-color-primary rounded-full flex justify-center items-center mr-2"
+                  >
+                    <i class="fa-solid fa-check text-white"></i>
+                  </div>
+                  <span class="text-lg font-semibold lg:text-xl">
+                    Credibility</span
+                  >
+                </div>
+                A professionally designed website enhances your business's
+                credibility. It showcases your expertise, products, services,
+                and customer testimonials to build trust and make a positive
+                impression on potential customers.
+                <hr />
+                <div class="flex items-center pb-2">
+                  <div
+                    class="w-8 h-8 bg-color-primary rounded-full flex justify-center items-center mr-2"
+                  >
+                    <i class="fa-solid fa-check text-white"></i>
+                  </div>
+                  <span class="text-lg font-semibold lg:text-xl">
+                    Online Presence
+                  </span>
+                </div>
+                Having a website ensures that your business is visible online.
+                It allows your potential customers to find and reach you beyond
+                local boundaries.
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- Hard truth -->
-      <section class="py-16 bg-gray-100">
-        <div class="max-w-screen-md mx-auto flex flex-col items-center">
+      <!-- What I do -->
+      <section class="pt-16 px-8 bg-gray-100" id="about">
+        <div class="container mx-auto flex flex-col items-center">
           <!-- Title -->
-          <h2 class="text-center mt-4 text-3xl font-bold md:text-5xl">
-            The hard truth<br class="md:hidden" />
-            <i>no one</i> tells you
+          <h2 class="text-center text-3xl font-bold md:text-5xl">
+            What I <i>do</i>
           </h2>
 
           <div
-            class="flex flex-col items-center justify-center mt-16 lg:flex-row lg:space-x-8"
+            class="flex flex-col items-center justify-center mt-4 lg:flex-row"
           >
-            <div
-              class="mt-4 px-8 lg:mt-0 space-y-8 lg:px-0 md:text-lg text-gray-700"
-            >
-              <p>
-                Then how come some businesses still struggle even with websites?
-                It’s because
-                <span class="font-semibold"
-                  >their websites are not built for the right purpose.</span
-                >
-              </p>
-              <p>
-                Have you ever been offered website design from phone calls or
-                emails? Let me tell you the truth. Most of them are either
-                freelance web designers or web developers.
-              </p>
-              <p>
-                They can build you a beautiful website with nice features.
-                However,
-                <span class="font-semibold"
-                  >they’ve never run their own businesses.</span
-                >
-                They don’t know what are the pain points that business owners
-                have. They don't consider your website as a marketing tool.
-              </p>
-              <p>
-                As a result, your website doesn’t get you a single lead, let
-                alone bring profits. You end up invested a lot of time and money
-                only to have a digital brochure that nobody cares to see.
-              </p>
+            <div class="flex flex-col lg:flex-row items-end">
+              <img
+                src="images/about/founder-mobile.webp"
+                alt="webtamin founder"
+                class="w-1/2 lg:hidden mx-auto"
+              />
+
+              <div
+                class="lg:w-2/3 mt-8 lg:mr-8 pb-16 space-y-8 md:text-lg text-gray-700"
+              >
+                <p>
+                  Hello, I'm Johnny Kim. Thank you for taking the time to learn
+                  about me and my services.
+                </p>
+                <p>
+                  I founded Webtamin in 2023 out of a passion for helping people
+                  with my web development skills. Recognizing the growing need
+                  for digital marketing, I set out to help small automotive
+                  business owners.
+                </p>
+                <p>
+                  In today's web design industry, finding the right person for
+                  automotive website design for small businesses can be
+                  challenging. That's where I come in.
+                </p>
+                <p>
+                  At Webtamin, I’m dedicated to delivering websites that bring
+                  leads and sales to clients. My goal is to help small
+                  automotive business owners get the most profits out of a
+                  website.
+                </p>
+              </div>
+              <img
+                src="images/about/founder-desktop.webp"
+                alt="webtamin founder"
+                class="w-1/3 hidden lg:block ml-8 pt-16"
+              />
             </div>
           </div>
         </div>
       </section>
-
-      <!-- Why choose us -->
+      <!-- Why choose me -->
       <section class="relative bg-gray-900 py-16 px-8">
         <div class="container mx-auto">
           <!-- Title -->
           <h2
             class="text-center text-white mt-4 text-3xl font-bold md:text-5xl"
           >
-            What I do <i>differently</i>
-          </h2>
-          <div class="mx-auto grid grid-cols-1 gap-8 mt-16 lg:grid-cols-3">
-            <div
-              class="flex justify-center items-center flex-col md:justify-start"
-            >
-              <i
-                class="text-color-primary-lighter text-center fa-solid fa-magnifying-glass"
-              ></i>
-              <div>
-                <p
-                  class="text-color-primary-lighter font-bold text-center mt-2 md:text-lg"
-                >
-                  1. Research business
-                </p>
-                <p class="text-gray-100 mt-4 md:text-lg">
-                  I send you a questionnaire about your business. Then I
-                  research your business to figure out your services,
-                  competitors, and target market.
-                </p>
-              </div>
-            </div>
-            <div
-              class="flex justify-center items-center flex-col md:justify-start"
-            >
-              <i
-                class="text-color-primary-lighter text-center fa-solid fa-pen-nib"
-              ></i>
-              <div>
-                <p
-                  class="text-color-primary-lighter font-bold text-center mt-2 md:text-lg"
-                >
-                  2. Write message
-                </p>
-                <p class="text-gray-100 mt-4 md:text-lg">
-                  I write down engaging content about your business. I focus on
-                  customer's needs and pinpoint your solutions to their
-                  problems.
-                </p>
-              </div>
-            </div>
-            <div
-              class="flex justify-center items-center flex-col md:justify-start"
-            >
-              <i
-                class="text-color-primary-lighter text-center fa-solid fa-paper-plane"
-              ></i>
-              <div>
-                <p
-                  class="text-color-primary-lighter font-bold text-center mt-2 md:text-lg"
-                >
-                  3. Deliver content
-                </p>
-                <p class="text-gray-100 mt-4 md:text-lg">
-                  I structure your website in a way that can rank high on
-                  Google. Your prospects will find their answer in your services
-                  and contact you.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Who this is not for -->
-      <section class="px-8 py-16 bg-gray-50">
-        <div class="max-w-screen-md mx-auto">
-          <!-- Title -->
-          <h2 class="text-center mt-4 text-3xl font-bold md:text-5xl">
-            Who this is <i>NOT</i> for
-          </h2>
-          <div class="mt-16 space-y-8 md:text-lg">
-            <p>
-              A website is an investment, not a turnkey product. It takes time
-              to build your online presence and get a return on investment. If
-              you’re one of the below, I may not be the right fit.
-            </p>
-            <p>
-              <span class="font-semibold inline-block mb-1"
-                >❌ Short-term Visionary</span
-              ><br />
-              On average, a newborn website takes at least 6-12 months to rank
-              well online. If you’re expecting a quick sales boost in a month or
-              two, building a website may not the right choice.
-            </p>
-            <p>
-              <span class="font-semibold inline-block mb-1"
-                >❌ Digital Marketing Skeptic</span
-              ><br />To maximize your website's impact, investing in strategies
-              like SEO and content marketing is vital. Without these efforts,
-              your site may struggle to get traffic and leads.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- What you will get -->
-      <section class="px-8 py-16 bg-gray-100">
-        <div class="container mx-auto">
-          <!-- Title -->
-          <h2 class="text-center mt-4 text-3xl font-bold md:text-5xl">
-            What you <i>get</i>
+            Why choose <i>me</i>
           </h2>
           <div
-            class="mt-16 md:text-lg text-gray-700 grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-8"
+            class="grid grid-cols-1 gap-8 mt-16 max-w-sm lg:container lg:grid-cols-4 mx-auto"
           >
-            <p class="rounded p-8 bg-gray-900 shadow text-gray-200">
-              <span class="text-white font-semibold inline-block mb-2"
-                >Right Leads</span
-              ><br />
-              I research the keywords for your website to identify the best
-              target market for your services.
-            </p>
-            <p class="rounded p-8 bg-gray-900 shadow text-gray-200">
-              <span class="text-white font-semibold inline-block mb-2"
-                >Captivating Content</span
-              ><br />
-              I write content that pinpoints your customers’ problems and
-              provides a clear solution.
-            </p>
-            <p class="rounded p-8 bg-gray-900 shadow text-gray-200">
-              <span class="text-white font-semibold inline-block mb-2"
-                >Online Presence</span
-              ><br />
-              I do on-page SEO that helps your website rank high on Google
-              search ranking. More potential customers can find you online.
-            </p>
-            <p class="rounded p-8 border-l-4 border-gray-900 shadow">
-              <span class="font-semibold inline-block mb-2">24/7 Support</span
-              ><br />
-              I provide peace of mind with direct customer support that is
-              available around the clock.
-            </p>
-            <p class="rounded p-8 border-l-4 border-gray-900 shadow">
-              <span class="font-semibold inline-block mb-2"
-                >Unlimited Revision</span
-              ><br />
-              I edit your website design as many times as you want at no extra
-              cost.
-            </p>
-            <p class="rounded p-8 border-l-4 border-gray-900 shadow">
-              <span class="font-semibold inline-block mb-2"
-                >Lifetime Maintenance</span
-              ><br />
-              I manage your website to be always up-to-date and secure with
-              regular back-up.
-            </p>
-            <p class="rounded p-8 border-l-4 border-gray-900 shadow">
-              <span class="font-semibold inline-block mb-2"
-                >Responsive Design</span
-              ><br />
-              I build your website look good on all devices including desktops,
-              tablets, and smartphones. You won’t lose leads online from any
-              device.
-            </p>
-            <p class="rounded p-8 border-l-4 border-gray-900 shadow">
-              <span class="font-semibold inline-block mb-2"
-                >High-speed Website</span
-              ><br />
-              I optimize the website’s speed to keep visitors engaged and
-              satisfied.
-            </p>
-            <p class="rounded p-8 border-l-4 border-gray-900 shadow">
-              <span class="font-semibold inline-block mb-2">Hosting</span><br />
-              I take care of your website with reliable and fast hosting
-              services. Guarantee your website is always accessible.
-            </p>
+            <div
+              class="flex justify-center items-center flex-col md:justify-start"
+            >
+              <i
+                class="text-color-primary-lighter text-center fa-solid fa-brush"
+              ></i>
+              <div>
+                <p
+                  class="text-color-primary-lighter font-bold text-center mt-2 md:text-lg"
+                >
+                  Custom Design
+                </p>
+                <p class="text-gray-50 mt-4 md:text-lg">
+                  I provide a customized website without using templates. It
+                  will stand out from competitors.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex justify-center items-center flex-col md:justify-start"
+            >
+              <i
+                class="text-color-primary-lighter text-center fa-solid fa-bell-concierge"
+              ></i>
+              <div>
+                <p
+                  class="text-color-primary-lighter font-bold text-center mt-2 md:text-lg"
+                >
+                  24/7 Support
+                </p>
+                <p class="text-gray-50 mt-4 md:text-lg">
+                  You can contact me directly around the clock - no phone tree
+                  or automated responses.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex justify-center items-center flex-col md:justify-start"
+            >
+              <i
+                class="text-color-primary-lighter text-center fa-solid fa-infinity"
+              ></i>
+              <div>
+                <p
+                  class="text-color-primary-lighter font-bold text-center mt-2 md:text-lg"
+                >
+                  Unlimited Revision
+                </p>
+                <p class="text-gray-50 mt-4 md:text-lg">
+                  I edit your website design as many times as you want - no
+                  additional cost.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex justify-center items-center flex-col md:justify-start"
+            >
+              <i
+                class="text-color-primary-lighter text-center fa-solid fa-screwdriver-wrench"
+              ></i>
+              <div>
+                <p
+                  class="text-color-primary-lighter font-bold text-center mt-2 md:text-lg"
+                >
+                  Lifetime Maintenance
+                </p>
+                <p class="text-gray-50 mt-4 md:text-lg">
+                  I take care of your website to make sure it’s secure and works
+                  24/7 - no hassle.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- That's not it -->
-      <section class="px-8 py-16 bg-gray-50">
-        <div class="container mx-auto">
+      <!-- What are the features -->
+      <section class="py-16 bg-gray-50">
+        <div class="container mx-auto flex flex-col items-center">
           <!-- Title -->
           <h2 class="text-center mt-4 text-3xl font-bold md:text-5xl">
-            That's not <i>it</i>
+            What are the <i>features</i>
           </h2>
-          <div
-            class="mt-16 md:text-lg grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-8"
-          >
-            <p class="rounded p-8 shadow">
-              <span class="font-semibold inline-block mb-2">Email Capture</span
-              ><br />
-              I set up an email capture form on your website. You can grow your
-              subscriber list and build relationships with your customers.
-            </p>
-            <p class="rounded p-8 shadow">
-              <span class="font-semibold inline-block mb-2">Contact Form</span
-              ><br />
-              I create a contact form on your website that allows your visitors
-              get in touch with you.
-            </p>
-            <p class="rounded p-8 shadow">
-              <span class="font-semibold inline-block mb-2"
-                >Google Analytics</span
-              ><br />
-              I install Google Analytics on your website. You can gain valuable
-              insights of your visitor’s behavior on your website.
-            </p>
-            <p class="rounded p-8 shadow">
-              <span class="font-semibold inline-block mb-2"
-                >Google Business Profile</span
-              ><br />
-              I set up your Google business profile. It will boost your
-              credibility and helps local customers find you.
-            </p>
-            <p class="rounded p-8 shadow">
-              <span class="font-semibold inline-block mb-2"
-                >Domain Registration</span
-              ><br />
-              I help you find your desired domain name and register it on the
-              internet.
-            </p>
-            <p class="rounded p-8 shadow">
-              <span class="font-semibold inline-block mb-2">Business Email</span
-              ><br />
-              I help you set up a professional email address for your business.
-            </p>
+          <div class="mt-16">
+            <div
+              class="px-8 gap-8 lg:px-0 md:text-lg text-gray-700 grid grid-cols-1 lg:grid-cols-3"
+            >
+              <div class="rounded p-8 shadow border-l-4 border-color-primary">
+                <p
+                  class="text-lg lg:text-xl font-semibold text-color-primary mb-4"
+                >
+                  Hand-coded Website
+                </p>
+                <p>
+                  I build hand-coded websites without using page builders. It
+                  has less bloated code, leading to quicker loading speeds.
+                </p>
+              </div>
+              <div class="rounded p-8 shadow border-l-4 border-color-primary">
+                <p
+                  class="text-lg lg:text-xl font-semibold text-color-primary mb-4"
+                >
+                  On-page SEO
+                </p>
+                <p>
+                  I do on-page SEO that helps your website rank high on Google
+                  search ranking. More potential customers can find you online.
+                </p>
+              </div>
+              <div class="rounded p-8 shadow border-l-4 border-color-primary">
+                <p
+                  class="text-lg lg:text-xl font-semibold text-color-primary mb-4"
+                >
+                  High Speed
+                </p>
+                <p>
+                  I provide high-speed websites by optimizing code. It
+                  contributes to customer satisfaction and better search engine
+                  rankings.
+                </p>
+              </div>
+
+              <div class="rounded p-8 shadow border-l-4 border-color-primary">
+                <p
+                  class="text-lg lg:text-xl font-semibold text-color-primary mb-4"
+                >
+                  Responsive Design
+                </p>
+                <p>
+                  I build your website to look good on all devices including
+                  desktops, tablets, and smartphones. You won’t lose leads from
+                  any device.
+                </p>
+              </div>
+              <div class="rounded p-8 shadow border-l-4 border-color-primary">
+                <p
+                  class="text-lg lg:text-xl font-semibold text-color-primary mb-4"
+                >
+                  Hosting
+                </p>
+                <p>
+                  I take care of your website with reliable and fast hosting
+                  services. I guarantee your website is always accessible.
+                </p>
+              </div>
+              <div class="rounded p-8 shadow border-l-4 border-color-primary">
+                <p
+                  class="text-lg lg:text-xl font-semibold text-color-primary mb-4"
+                >
+                  Contact Form
+                </p>
+                <p>
+                  I create a contact form on your website that allows your
+                  visitors get in touch with you.
+                </p>
+              </div>
+              <div class="rounded p-8 shadow border-l-4 border-color-primary">
+                <p
+                  class="text-lg lg:text-xl font-semibold text-color-primary mb-4"
+                >
+                  Google Analytics
+                </p>
+                <p>
+                  I install Google Analytics on your website. You can gain
+                  valuable insights of your visitor’s behavior on your website.
+                </p>
+              </div>
+              <div class="rounded p-8 shadow border-l-4 border-color-primary">
+                <p
+                  class="text-lg lg:text-xl font-semibold text-color-primary mb-4"
+                >
+                  Domain Registration
+                </p>
+                <p>
+                  I help you secure the perfect domain name for your business.
+                  It establishes a strong online presence and enhance brand's
+                  visibility.
+                </p>
+              </div>
+              <div class="rounded p-8 shadow border-l-4 border-color-primary">
+                <p
+                  class="text-lg lg:text-xl font-semibold text-color-primary mb-4"
+                >
+                  Business Email
+                </p>
+                <p>
+                  I offer professional business email setup services. It boosts
+                  your business's credibility with custom email addresses.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- Portfolio -->
       <section class="px-8 py-16 bg-gray-100" id="portfolio">
-        <div class="max-w-screen-md mx-auto">
+        <div class="container mx-auto">
           <!-- Title -->
           <h2 class="text-center mt-4 text-3xl font-bold md:text-5xl">
-            What I have <i>built</i>
+            Check my <i>project</i>
           </h2>
           <!-- Container -->
-          <div class="mt-16 gap-4 grid grid-cols-1">
+          <div class="mt-16 flex">
             <!-- Content -->
             <div class="flex flex-col mx-auto">
-              <div class="rounded flex flex-col h-full">
+              <div
+                class="rounded flex flex-col h-full lg:flex-row lg:items-center"
+              >
                 <img
                   src="images/portfolio/specialized-auto-tint.png"
                   alt="specialized auto tint website mockup"
-                  class="p-4"
+                  class="lg:w-1/2"
                   width="1012"
                   height="532"
                 />
-                <div class="p-4 h-full flex flex-col justify-between">
+                <div
+                  class="p-4 flex flex-col justify-between mt-4 lg:mt-0 lg:p-0 lg:ml-8 lg:justify-start"
+                >
                   <div>
                     <p class="font-semibold md:text-lg">
                       Specialized Auto Tint
@@ -640,27 +716,145 @@
         </div>
       </section>
 
-      <!-- Quality Assurance -->
+      <!-- How does it work -->
       <section class="relative bg-gray-900 py-16 px-8">
         <div class="container mx-auto">
+          <!-- Title -->
           <h2
             class="text-center text-white mt-4 text-3xl font-bold md:text-5xl"
           >
-            Don't <i>worry</i>
+            How does it <i>work</i>
           </h2>
-          <p class="text-gray-100 text-lg md:text-xl mt-8 md:text-center">
-            If you have no traffic to your website in the first year, I will
-            refund you 2x the entire cost.
-          </p>
+          <div
+            class="mx-auto grid grid-cols-1 gap-8 mt-16 lg:grid-cols-4 max-w-sm lg:container"
+          >
+            <div
+              class="flex justify-center items-center flex-col md:justify-start"
+            >
+              <i
+                class="text-color-primary-lighter text-center fa-solid fa-magnifying-glass"
+              ></i>
+              <div>
+                <p
+                  class="text-color-primary-lighter font-bold text-center mt-2 md:text-lg"
+                >
+                  1. Research Business
+                </p>
+                <p class="text-gray-50 mt-4 md:text-lg">
+                  I send you a questionnaire about your business. Then I
+                  research your business to figure out your services,
+                  competitors, and target market.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex justify-center items-center flex-col md:justify-start"
+            >
+              <i
+                class="text-color-primary-lighter text-center fa-solid fa-pen-nib"
+              ></i>
+              <div>
+                <p
+                  class="text-color-primary-lighter font-bold text-center mt-2 md:text-lg"
+                >
+                  2. Write Content
+                </p>
+                <p class="text-gray-50 mt-4 md:text-lg">
+                  I write down engaging content about your business. I focus on
+                  customer's needs and pinpoint your solutions to their
+                  problems.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex justify-center items-center flex-col md:justify-start"
+            >
+              <i
+                class="text-color-primary-lighter text-center fa-solid fa-code"
+              ></i>
+              <div>
+                <p
+                  class="text-color-primary-lighter font-bold text-center mt-2 md:text-lg"
+                >
+                  3. Design & Develop
+                </p>
+                <p class="text-gray-50 mt-4 md:text-lg">
+                  I design the website's look to ensure it represents the best
+                  of your business. Then I develop the website by hand-coding to
+                  make it alive.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="flex justify-center items-center flex-col md:justify-start"
+            >
+              <i
+                class="text-color-primary-lighter text-center fa-solid fa-user"
+              ></i>
+              <div>
+                <p
+                  class="text-color-primary-lighter font-bold text-center mt-2 md:text-lg"
+                >
+                  4. Get Leads
+                </p>
+                <p class="text-gray-50 mt-4 md:text-lg">
+                  I structure your website in a way that can rank high on
+                  Google. Your prospects will find their answer in your services
+                  and contact you.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
+      <!-- Who this is not for -->
+      <section class="px-8 pt-16 pb-16 lg:pb-0 bg-gray-100">
+        <div class="container mx-auto">
+          <!-- Title -->
+          <h2 class="text-center text-3xl font-bold md:text-5xl">
+            Who this is <i>NOT</i> for
+          </h2>
+          <div
+            class="space-y-8 mt-16 md:text-lg flex items-end max-w-md lg:container mx-auto"
+          >
+            <div class="w-full lg:w-2/3 lg:pb-16">
+              <p>
+                A website is an investment, not a turnkey product. It takes time
+                to build your online presence and get a return on investment. If
+                you’re one of the below, I may not be the right fit.
+              </p>
+              <p class="my-8">
+                <span class="font-semibold text-lg md:text-xl inline-block mb-1"
+                  >❌ Short-term Visionary</span
+                ><br />
+                On average, a newborn website takes at least 6-12 months to rank
+                well online. If you’re expecting a quick sales boost in a month
+                or two, building a website may not the right choice.
+              </p>
+              <p>
+                <span class="font-semibold text-lg md:text-xl inline-block mb-1"
+                  >❌ Digital Marketing Skeptic</span
+                ><br />To maximize your website's impact, investing in
+                strategies like SEO and content marketing is vital. Without
+                these efforts, your site may struggle to get traffic and leads.
+              </p>
+            </div>
+            <img
+              src="images/founder.webp"
+              alt="founder"
+              class="hidden lg:block w-1/3"
+            />
+          </div>
+        </div>
+      </section>
       <!-- Pricing -->
-      <section class="px-8 py-16 bg-gray-50">
+      <section class="px-8 py-16 bg-gray-50" id="pricing">
         <div class="container mx-auto text-center">
           <!-- Title -->
           <h2 class="text-center mt-4 text-3xl font-bold md:text-5xl">
-            Your digital marketing <br class="lg:hidden" />starts<i> here</i>
+            How is the <i>pricing</i>
           </h2>
           <ul
             class="list-disc mx-auto text-left text-gray-700 text-lg md:text-xl mt-8 md:w-max pl-4 md:pl-0"
@@ -670,115 +864,21 @@
             <li>12 month minimum contract required for monthly plan</li>
           </ul>
           <!-- Pricing container -->
-          <div class="grid grid-cols-1 mt-16 gap-4 lg:grid-cols-3 lg:gap-8">
-            <!-- Upfront -->
+          <div
+            class="grid grid-cols-1 mt-16 md:grid-cols-2 gap-8 max-w-md lg:container mx-auto"
+          >
+            <!-- Monthly -->
             <div
-              class="overflow-hidden relative flex flex-col items-center justify-start p-8 rounded shadow-md border-b-4 border-color-primary"
+              class="flex flex-col items-center justify-start p-8 rounded shadow-md border-b-4 border-color-primary"
             >
               <p
                 class="text-lg font-bold text-center text-color-primary uppercase lg:text-2xl"
               >
-                Upfront
+                monthly
               </p>
               <div class="flex justify-center mt-2 space-x-2">
                 <span class="text-5xl font-semibold text-center md:text-7xl">
-                  $3.5k
-                </span>
-              </div>
-              <ul class="mt-8 space-y-4 mx-auto text-gray-700">
-                <li class="relative flex items-center">
-                  <svg
-                    class="w-5 h-5 text-color-primary mr-2"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M5 13l4 4L19 7"
-                    ></path>
-                  </svg>
-                  $50/hr Revision
-                </li>
-                <li class="relative flex items-center">
-                  <svg
-                    class="w-5 h-5 text-color-primary mr-2"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M5 13l4 4L19 7"
-                    ></path>
-                  </svg>
-                  $25/mo Hosting
-                </li>
-                <li class="relative flex items-center">
-                  <svg
-                    class="w-5 h-5 text-color-primary mr-2"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M5 13l4 4L19 7"
-                    ></path>
-                  </svg>
-                  Lifetime Maintenance
-                </li>
-                <li class="relative flex items-center">
-                  <svg
-                    class="w-5 h-5 text-color-primary mr-2"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M5 13l4 4L19 7"
-                    ></path>
-                  </svg>
-                  24/7 Customer Support
-                </li>
-              </ul>
-              <!-- CTA -->
-              <a
-                href="contact.html"
-                class="mx-auto text-sm mt-8 text-white bg-color-primary inline-block uppercase px-6 py-3 shadow-md rounded-sm lg:text-base"
-                >contact me</a
-              >
-            </div>
-            <!-- Standard -->
-            <div
-              class="overflow-hidden relative lg:bottom-4 flex flex-col items-center justify-start p-8 rounded shadow-md border-b-4 border-color-primary"
-            >
-              <div
-                class="absolute -left-12 top-6 w-44 text-center bg-color-primary text-white font-bold -rotate-45 lg:text-lg lg:hidden"
-              >
-                Popular
-              </div>
-              <p
-                class="text-lg font-bold text-center text-color-primary uppercase lg:text-2xl"
-              >
-                standard
-              </p>
-              <div class="flex justify-center mt-2 space-x-2">
-                <span class="text-5xl font-semibold text-center md:text-7xl">
-                  $150<span class="text-2xl">/mo</span>
+                  $180<span class="text-2xl">/mo</span>
                 </span>
               </div>
               <ul class="mt-8 space-y-4 mx-auto text-gray-700">
@@ -853,23 +953,23 @@
               </ul>
               <!-- CTA -->
               <a
-                href="contact.html"
+                href="index.html#contact"
                 class="mx-auto text-sm mt-8 text-white bg-color-primary inline-block uppercase px-6 py-3 shadow-md rounded-sm lg:text-base"
                 >contact me</a
               >
             </div>
-            <!-- Subscription -->
+            <!-- Annually -->
             <div
-              class="relative flex flex-col items-center justify-start p-8 rounded shadow-md border-b-4 border-color-primary"
+              class="flex flex-col items-center justify-start p-8 rounded shadow-md border-b-4 border-color-primary"
             >
               <p
                 class="text-lg font-bold text-center text-color-primary uppercase lg:text-2xl"
               >
-                premium
+                annually
               </p>
               <div class="flex justify-center mt-2 space-x-2">
                 <span class="text-5xl font-semibold text-center md:text-7xl">
-                  $300<span class="text-2xl">/mo</span>
+                  $165<span class="text-2xl">/mo</span>
                 </span>
               </div>
               <ul class="mt-8 space-y-4 mx-auto text-gray-700">
@@ -888,7 +988,7 @@
                       d="M5 13l4 4L19 7"
                     ></path>
                   </svg>
-                  Tailored Design
+                  Hosting Included
                 </li>
                 <li class="relative flex items-center">
                   <svg
@@ -905,7 +1005,7 @@
                       d="M5 13l4 4L19 7"
                     ></path>
                   </svg>
-                  Basic SEO Setup
+                  Unlimited Revision
                 </li>
                 <li class="relative flex items-center">
                   <svg
@@ -922,7 +1022,7 @@
                       d="M5 13l4 4L19 7"
                     ></path>
                   </svg>
-                  Custom Features
+                  Lifetime Maintenance
                 </li>
                 <li class="relative flex items-center">
                   <svg
@@ -939,17 +1039,410 @@
                       d="M5 13l4 4L19 7"
                     ></path>
                   </svg>
-                  Include Standard Plan
+                  24/7 Customer Support
                 </li>
               </ul>
               <!-- CTA -->
               <a
-                href="contact.html"
+                href="index.html#contact"
                 class="mx-auto text-sm mt-8 text-white bg-color-primary inline-block uppercase px-6 py-3 shadow-md rounded-sm lg:text-base"
                 >contact me</a
               >
             </div>
           </div>
+        </div>
+      </section>
+      <!-- Quality Assurance -->
+      <section class="relative py-16 px-8 bg-gray-900">
+        <div class="container mx-auto">
+          <h2
+            class="text-white text-center mt-4 text-3xl font-bold md:text-5xl"
+          >
+            Don't <i>worry</i>
+          </h2>
+          <p
+            class="text-gray-100 text-lg md:text-xl mt-8 md:text-center max-w-md lg:container mx-auto"
+          >
+            If you have no traffic to your website in the first year, I will
+            refund you 2x the entire cost.
+          </p>
+        </div>
+      </section>
+
+      <!-- Lead capture form -->
+      <section class="px-8 pt-16 pb-16 lg:pb-0 bg-gray-50">
+        <div class="container mx-auto">
+          <!-- Title -->
+          <h2 class="text-center text-3xl font-bold md:text-5xl">
+            No <i>rush</i>
+          </h2>
+          <div
+            class="space-y-8 mt-16 md:text-lg flex items-end max-w-md lg:container mx-auto"
+          >
+            <div class="w-full lg:w-2/3 space-y-8 mx-auto lg:hidden">
+              <p>
+                Not sure yet? That's okay. Sign up for my exclusive 5-day email
+                series and discover everything you need to know about a website
+                for your small business. Throughout this series, you'll find
+                answers to these crucial questions:
+              </p>
+              <div class="space-y-4">
+                <div class="flex items-center">
+                  <div
+                    class="w-6 h-6 bg-color-primary rounded-full flex justify-center items-center mr-2"
+                  >
+                    <i class="fa-solid fa-check text-white text-sm"></i>
+                  </div>
+                  <span class="lg:text-lg">Why some websites fail?</span>
+                </div>
+                <div class="flex items-center">
+                  <div
+                    class="w-6 h-6 bg-color-primary rounded-full flex justify-center items-center mr-2"
+                  >
+                    <i class="fa-solid fa-check text-white text-sm"></i>
+                  </div>
+                  <span class="lg:text-lg"
+                    >What makes a website profitable?
+                  </span>
+                </div>
+                <div class="flex items-center">
+                  <div
+                    class="w-6 h-6 bg-color-primary rounded-full flex justify-center items-center mr-2"
+                  >
+                    <i class="fa-solid fa-check text-white text-sm"></i>
+                  </div>
+                  <span class="lg:text-lg">What can a website bring?</span>
+                </div>
+                <div class="flex items-cente">
+                  <div
+                    class="w-6 h-6 bg-color-primary rounded-full flex justify-center items-center mr-2"
+                  >
+                    <i class="fa-solid fa-check text-white text-sm"></i>
+                  </div>
+                  <span class="lg:text-lg">
+                    And a special offer just for you!</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col lg:pb-16 lg:flex-row lg:items-center lg:space-x-8 max-w-md lg:container mx-auto"
+          >
+            <div class="lg:w-7/12 order-2 lg:order-1">
+              <p class="text-lg mb-8 hidden lg:block">
+                Not sure yet? That's okay. Sign up for my exclusive 5-day email
+                series and discover everything you need to know about a website
+                for your small business. Throughout this series, you'll find
+                answers to these crucial questions:
+              </p>
+              <div class="space-y-4 hidden lg:block">
+                <div class="flex items-center">
+                  <div
+                    class="w-6 h-6 bg-color-primary rounded-full flex justify-center items-center mr-2"
+                  >
+                    <i class="fa-solid fa-check text-white text-sm"></i>
+                  </div>
+                  <span class="lg:text-lg">Why some websites fail?</span>
+                </div>
+                <div class="flex items-center">
+                  <div
+                    class="w-6 h-6 bg-color-primary rounded-full flex justify-center items-center mr-2"
+                  >
+                    <i class="fa-solid fa-check text-white text-sm"></i>
+                  </div>
+                  <span class="lg:text-lg"
+                    >What makes a website profitable?
+                  </span>
+                </div>
+                <div class="flex items-center">
+                  <div
+                    class="w-6 h-6 bg-color-primary rounded-full flex justify-center items-center mr-2"
+                  >
+                    <i class="fa-solid fa-check text-white text-sm"></i>
+                  </div>
+                  <span class="lg:text-lg">What can a website bring?</span>
+                </div>
+                <div class="flex items-cente">
+                  <div
+                    class="w-6 h-6 bg-color-primary rounded-full flex justify-center items-center mr-2"
+                  >
+                    <i class="fa-solid fa-check text-white text-sm"></i>
+                  </div>
+                  <span class="lg:text-lg">
+                    And a special offer just for you!</span
+                  >
+                </div>
+              </div>
+
+              <div class="ml-embedded mt-8" data-form="29RQPn"></div>
+            </div>
+            <img
+              src="images/email-cover.png"
+              width="512"
+              height="800"
+              alt="email cover"
+              class="w-full mt-8 lg:mt-0 lg:w-5/12 order-1 lg:order-2"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="relative bg-gray-100" id="contact">
+        <img src="images/founder-coding-1536.webp" alt="" class="bg-overlay" />
+        <!-- Text and form Container -->
+        <div
+          class="container mx-auto flex flex-col items-center py-16 z-20 relative w-max lg:mx-0 lg:ml-auto lg:pr-16 2xl:pr-48"
+        >
+          <!-- Title -->
+          <h2
+            class="text-center lg:text-left text-white text-3xl font-bold md:text-5xl lg:mb-8"
+          >
+            Get started here <i>today</i>
+          </h2>
+          <div
+            class="w-full mt-8 flex flex-col lg:flex-row lg:items-center lg:mt-0"
+          >
+            <div class="w-full">
+              <!-- Address -->
+              <div class="flex flex-col space-y-2">
+                <a
+                  href="mailto:contact@webtamin.co"
+                  class="text-white w-max md:text-lg text-center flex items-center contact-link"
+                >
+                  <i class="fa-solid fa-envelope mr-2"></i>
+                  contact@webtamin.co
+                </a>
+                <a
+                  href="tel:+19165918323"
+                  class="text-white w-max md:text-lg text-center flex items-center contact-link"
+                >
+                  <i class="fa-solid fa-phone mr-2"></i>
+                  (+1) 916-591-8323
+                </a>
+              </div>
+              <form
+                name="contact"
+                method="POST"
+                class="w-full mt-8"
+                data-netlify="true"
+              >
+                <!-- Name -->
+                <div class="mb-4">
+                  <label for="name" class="block text-white mb-1 font-medium"
+                    >Name</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="w-full px-4 py-2 border border-gray-300 focus:outline-none focus:border-blue-500 rounded"
+                    required
+                  />
+                </div>
+
+                <!-- Email -->
+                <div class="mb-4">
+                  <label for="email" class="block text-white mb-1 font-medium"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="w-full px-4 py-2 border border-gray-300 focus:outline-none focus:border-blue-500 rounded"
+                    required
+                  />
+                </div>
+
+                <!-- Message -->
+                <div class="mb-4">
+                  <label for="message" class="block text-white mb-1 font-medium"
+                    >Message</label
+                  >
+                  <textarea
+                    id="message"
+                    name="message"
+                    class="w-full px-4 py-2 border border-gray-300 focus:outline-none focus:border-blue-500 rounded"
+                    rows="4"
+                    required
+                  ></textarea>
+                </div>
+                <!-- Submit button -->
+                <button
+                  type="submit"
+                  class="block mx-auto uppercase py-4 px-16 mt-8 text-white tracking-wider font-semibold bg-color-primary w-full"
+                >
+                  send
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section>
+        <div class="bg-white container mx-auto py-16 px-8 space-y-6">
+          <h2 class="text-center text-3xl font-bold md:text-5xl pb-16">FAQ</h2>
+          <div class="accordion">
+            <div
+              class="font-semibold lg:text-lg mb-2 mr-1 flex items-center justify-between"
+            >
+              Are there any additional costs I should be aware of?
+              <i class="fas fa-chevron-down open-icon"></i>
+              <i class="fas fa-chevron-up close-icon hidden"></i>
+            </div>
+            <p class="hidden">
+              Additional costs may include copywriting, business email setup,
+              domain registration, blog setup, extra pages, translation, and
+              advanced features. I will outline all potential additional costs
+              in our proposal to avoid surprises.
+            </p>
+          </div>
+          <hr />
+          <div class="accordion">
+            <div
+              class="font-semibold lg:text-lg mb-2 mr-1 flex items-center justify-between"
+            >
+              How long will it take to complete my automotive website?
+              <i class="fas fa-chevron-down open-icon"></i>
+              <i class="fas fa-chevron-up close-icon hidden"></i>
+            </div>
+            <p class="hidden">
+              While I can source images and create content, I recommend that you
+              provide any specific content and images that reflect your brand
+              accurately.
+            </p>
+          </div>
+          <hr />
+          <div class="accordion">
+            <div
+              class="font-semibold lg:text-lg mb-2 mr-1 flex items-center justify-between"
+            >
+              Do I need to provide content and images for my automotive website?
+              <i class="fas fa-chevron-down open-icon"></i>
+              <i class="fas fa-chevron-up close-icon hidden"></i>
+            </div>
+            <p class="hidden">
+              While I can source images and create content, I recommend that you
+              provide any specific content and images that reflect your brand
+              accurately.
+            </p>
+          </div>
+          <hr />
+          <div class="accordion">
+            <div
+              class="font-semibold lg:text-lg mb-2 mr-1 flex items-center justify-between"
+            >
+              Will my automotive website be mobile-friendly?
+              <i class="fas fa-chevron-down open-icon"></i>
+              <i class="fas fa-chevron-up close-icon hidden"></i>
+            </div>
+            <p class="hidden">
+              Absolutely! I ensure that all websites I design are fully
+              responsive and look great on all devices, including desktops,
+              tablets, and smartphones.
+            </p>
+          </div>
+          <hr />
+          <div class="accordion">
+            <div
+              class="font-semibold lg:text-lg mb-2 mr-1 flex items-center justify-between"
+            >
+              Can you redesign my existing automotive website?
+              <i class="fas fa-chevron-down open-icon"></i>
+              <i class="fas fa-chevron-up close-icon hidden"></i>
+            </div>
+            <p class="hidden">
+              Yes, I can revamp your existing site to improve its appearance,
+              functionality, and performance. The cost is the same as a web
+              design service.
+            </p>
+          </div>
+          <hr />
+          <div class="accordion">
+            <div
+              class="font-semibold lg:text-lg mb-2 mr-1 flex items-center justify-between"
+            >
+              Do you offer ongoing maintenance and support?
+              <i class="fas fa-chevron-down open-icon"></i>
+              <i class="fas fa-chevron-up close-icon hidden"></i>
+            </div>
+            <p class="hidden">
+              Yes, I offer maintenance packages to keep your website updated,
+              secure, and running smoothly. I also provide 24/7 direct support
+              that you can contact me anytime around the clock.
+            </p>
+          </div>
+          <hr />
+          <div class="accordion">
+            <div
+              class="font-semibold lg:text-lg mb-2 mr-1 flex items-center justify-between"
+            >
+              How do you ensure my automotive website will be found on search
+              engines?
+              <i class="fas fa-chevron-down open-icon"></i>
+              <i class="fas fa-chevron-up close-icon hidden"></i>
+            </div>
+            <p class="hidden">
+              I implement best practices in SEO (Search Engine Optimization)
+              during the design process to help your website rank well on search
+              engines. This includes optimizing site speed, writing proper
+              codes, and ensuring mobile friendliness.
+            </p>
+          </div>
+          <hr />
+          <div class="accordion">
+            <div
+              class="font-semibold lg:text-lg mb-2 mr-1 flex items-center justify-between"
+            >
+              How do you ensure I will get leads from my automotive website?
+              <i class="fas fa-chevron-down open-icon"></i>
+              <i class="fas fa-chevron-up close-icon hidden"></i>
+            </div>
+            <p class="hidden">
+              I design your website with lead generation in mind, incorporating
+              target customer research, clear calls-to-action (CTAs), and
+              engaging content. Additionally, my SEO and digital marketing
+              strategies aim to drive targeted traffic to your site.
+            </p>
+          </div>
+          <hr />
+          <div class="accordion">
+            <div
+              class="font-semibold lg:text-lg mb-2 mr-1 flex items-center justify-between"
+            >
+              How long does it take to get more leads from my automotive
+              website?
+              <i class="fas fa-chevron-down open-icon"></i>
+              <i class="fas fa-chevron-up close-icon hidden"></i>
+            </div>
+            <p class="hidden">
+              The timeframe for seeing an increase in leads can vary based on
+              factors like your industry, competition, and the effectiveness of
+              your marketing efforts. Generally, clients begin to see noticeable
+              improvements within 6 to 12 months after implementing my lead
+              generation strategies.
+            </p>
+          </div>
+          <hr />
+          <div class="accordion">
+            <div
+              class="font-semibold lg:text-lg mb-2 mr-1 flex items-center justify-between"
+            >
+              What happens if I have no traffic to my website at all?
+              <i class="fas fa-chevron-down open-icon"></i>
+              <i class="fas fa-chevron-up close-icon hidden"></i>
+            </div>
+            <p class="hidden">
+              I provide your website traffic status regularly after it's
+              launched. If there is no traffic for the first year, I will return
+              you 2x the whole cost you paid.
+            </p>
+          </div>
+          <!-- End repeat -->
         </div>
       </section>
     </main>
@@ -960,11 +1453,11 @@
     >
       <!-- Call Icon -->
       <a href="tel:+19165918323" class="lg:hidden">
-        <div class="z-10 fixed right-0 bottom-0 m-4">
+        <div class="z-20 fixed right-0 bottom-0 m-4">
           <div
             class="flex items-center justify-center rounded-full bg-color-primary text-white w-12 h-12 md:w-auto md:h-auto md:p-4"
           >
-            <i class="fa-solid fa-phone md:mr-2"></i>
+            <i class="fa-solid fa-phone"></i>
           </div>
         </div>
       </a>
@@ -1005,22 +1498,23 @@
             aria-label="Instagram"
             ><i class="fa-brands fa-instagram"></i
           ></a>
-          <a
-            href="https://www.youtube.com/@jonghwikim"
-            target="_blank"
-            rel="noopener"
-            class="hover:text-white"
-            aria-label="YouTube"
-            ><i class="fa-brands fa-youtube"></i
-          ></a>
         </div>
 
         <div>
           &copy; <span id="currentYear"></span> Webtamin. All rights reserved.
         </div>
+        <div class="flex relative mt-2 space-x-2">
+          <a href="privacy-policy.html" class="text-gray-400 hover:text-white"
+            >Privacy Policy</a
+          >
+          <span>|</span>
+          <a href="terms-of-service.html" class="text-gray-400 hover:text-white"
+            >Terms of Service</a
+          >
+        </div>
       </div>
     </footer>
 
-    <script defer src="js/index.js"></script>
+    <script defer src="js/script.js"></script>
   </body>
 </html>
