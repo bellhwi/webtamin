@@ -3,7 +3,7 @@ const menuToggle = document.getElementById('menu-toggle'),
   navClose = document.getElementById('nav-close'),
   navOverlay = document.getElementById('nav-overlay'),
   portfolioMenu = document.getElementById('portfolio-menu'),
-  aboutMenu = document.getElementById('about-menu'),
+  servicesMenu = document.getElementById('services-menu'),
   pricingMenu = document.getElementById('pricing-menu'),
   currentDate = new Date(),
   currentYear = document.getElementById('currentYear'),
@@ -66,8 +66,8 @@ function handleSideNavbar() {
       portfolioMenu.addEventListener('click', () => {
         toggleSideNavbar()
       }),
-    null !== aboutMenu &&
-      aboutMenu.addEventListener('click', () => {
+    null !== servicesMenu &&
+      servicesMenu.addEventListener('click', () => {
         toggleSideNavbar()
       }),
     null !== pricingMenu &&
