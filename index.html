@@ -191,12 +191,6 @@
           sendToId = 'AW-11444917825/fsBKCIiLtbUZEMGsrtEq'
         }
 
-        var callback = function () {
-          if (typeof url != 'undefined') {
-            window.location = url
-          }
-        }
-
         gtag('event', 'conversion', {
           send_to: sendToId,
           event_callback: callback,
