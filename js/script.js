@@ -9,7 +9,14 @@ const menuToggle = document.getElementById('menu-toggle'),
   currentYear = document.getElementById('currentYear'),
   movingNav = document.getElementById('moving-nav')
 
+const emailSubscribeBtn = document.querySelector('.ml-form-embedSubmit button')
 let lastScrollTop = 0
+
+if (emailSubscribeBtn !== null) {
+  emailSubscribeBtn.onclick = function () {
+    return gtag_report_conversion('email')
+  }
+}
 
 // FAQ open and close
 let questions = document.querySelectorAll('.accordion')

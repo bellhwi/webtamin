@@ -176,6 +176,35 @@
       ml('account', '965486')
     </script>
     <!-- End MailerLite Universal -->
+    <!-- Event snippet for Email Signup conversion page -->
+
+    <script>
+      function gtag_report_conversion(eventType) {
+        var url
+        var sendToId
+
+        if (eventType === 'email') {
+          url = 'https://webtamin.co/'
+          sendToId = 'AW-11444917825/t_jiCNzvs7UZEMGsrtEq'
+        } else if (eventType === 'contact') {
+          url = 'https://webtamin.co/'
+          sendToId = 'AW-11444917825/fsBKCIiLtbUZEMGsrtEq'
+        }
+
+        var callback = function () {
+          if (typeof url != 'undefined') {
+            window.location = url
+          }
+        }
+
+        gtag('event', 'conversion', {
+          send_to: sendToId,
+          event_callback: callback,
+        })
+
+        return false // Prevent the default action (following the link) immediately
+      }
+    </script>
   </head>
   <body>
     <main>
@@ -1308,6 +1337,7 @@
                 <button
                   type="submit"
                   class="block mx-auto uppercase py-4 px-16 mt-8 text-white tracking-wider font-semibold bg-color-primary w-full"
+                  onclick="return gtag_report_conversion('contact')"
                 >
                   send
                 </button>
