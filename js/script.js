@@ -1,7 +1,4 @@
-const menuToggle = document.getElementById('menu-toggle'),
-  navList = document.getElementById('nav-list'),
-  navClose = document.getElementById('nav-close'),
-  navOverlay = document.getElementById('nav-overlay'),
+const navList = document.getElementById('nav-list'),
   portfolioMenu = document.getElementById('portfolio-menu'),
   servicesMenu = document.getElementById('services-menu'),
   pricingMenu = document.getElementById('pricing-menu'),
@@ -50,44 +47,13 @@ function handleScroll() {
   }
 }
 
-function toggleSideNavbar() {
-  navList.classList.toggle('show'),
-    null !== navOverlay &&
-      !(document.body.clientWidth > 1024) &&
-      navOverlay.classList.toggle('hidden')
-}
-function handleSideNavbar() {
-  null !== menuToggle &&
-    menuToggle.addEventListener('click', () => {
-      toggleSideNavbar()
-    }),
-    null !== navClose &&
-      navClose.addEventListener('click', () => {
-        toggleSideNavbar()
-      }),
-    null !== navOverlay &&
-      navOverlay.addEventListener('click', () => {
-        toggleSideNavbar()
-      }),
-    null !== portfolioMenu &&
-      portfolioMenu.addEventListener('click', () => {
-        toggleSideNavbar()
-      }),
-    null !== servicesMenu &&
-      servicesMenu.addEventListener('click', () => {
-        toggleSideNavbar()
-      }),
-    null !== pricingMenu &&
-      pricingMenu.addEventListener('click', () => {
-        toggleSideNavbar()
-      })
-}
-function initAllEventListeners() {
-  handleSideNavbar()
-  window.addEventListener('scroll', handleScroll)
-}
 function getCurrentYear() {
   currentYear.innerText = currentDate.getFullYear()
 }
-initAllEventListeners()
-getCurrentYear()
+
+function init() {
+  getCurrentYear()
+  window.addEventListener('scroll', handleScroll)
+}
+
+init()

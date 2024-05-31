@@ -61,48 +61,42 @@
           {
             "@type": "ListItem",
             "position": 1,
-            "name": "Home",
-            "url": "https://webtamin.co/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
             "name": "Services",
             "url": "https://webtamin.co/#services"
           },
           {
             "@type": "ListItem",
-            "position": 3,
+            "position": 2,
             "name": "Portfolio",
             "url": "https://webtamin.co/#portfolio"
           },
           {
             "@type": "ListItem",
-            "position": 4,
+            "position": 3,
             "name": "Pricing",
             "url": "https://webtamin.co/#pricing"
           },
           {
             "@type": "ListItem",
-            "position": 5,
+            "position": 4,
             "name": "Blog",
             "url": "https://webtamin.co/blog"
           },
           {
             "@type": "ListItem",
-            "position": 6,
+            "position": 5,
             "name": "Contact",
             "url": "https://webtamin.co/#contact"
           },
           {
             "@type": "ListItem",
-            "position": 7,
+            "position": 6,
             "name": "Privacy Policy",
             "url": "https://webtamin.co/privacy-policy"
           },
           {
             "@type": "ListItem",
-            "position": 6,
+            "position": 7,
             "name": "Terms of Service",
             "url": "https://webtamin.co/terms-of-service"
           }
@@ -204,7 +198,7 @@
     <main>
       <!-- Moving Navbar -->
       <nav
-        class="moving-nav fixed top-0 left-0 right-0 z-30 w-full flex items-center px-8 py-2 lg:py-4 justify-between bg-color-primary drop-shadow-md"
+        class="moving-nav hidden lg:flex fixed top-0 left-0 right-0 z-30 w-full flex items-center px-8 py-2 lg:py-4 justify-between bg-color-primary-dark drop-shadow-md"
         id="moving-nav"
       >
         <!-- Logo -->
@@ -217,17 +211,6 @@
             height="56"
           />
         </a>
-        <div class="nav-overlay hidden" id="nav-overlay"></div>
-        <!-- Hamburger Menu Icon -->
-        <div class="lg:hidden">
-          <button
-            id="menu-toggle"
-            class="text-white focus:outline-none"
-            aria-label="navigation-menu"
-          >
-            <i class="fa-solid fa-bars text-3xl"></i>
-          </button>
-        </div>
         <ul
           class="z-50 nav fixed right-0 top-0 h-full w-36 text-sm bg-gray-900 text-gray-100 font-semibold flex flex-col p-6 space-y-6 lg:translate-x-0 lg:bg-transparent lg:flex-row lg:w-max lg:text-base lg:relative lg:p-0 lg:space-y-0 lg:space-x-8"
           id="nav-list"
@@ -255,18 +238,8 @@
               >contact</a
             >
           </li>
-
-          <li class="lg:hidden">
-            <div
-              id="nav-close"
-              class="nav-close border rounded-full w-8 h-8 flex items-center justify-center mx-auto mt-8 cursor-pointer"
-            >
-              <i class="fa-solid fa-x"></i>
-            </div>
-          </li>
         </ul>
       </nav>
-
       <!-- Hero -->
       <section class="relative py-16 px-8 bg-gray-900" id="hero">
         <!-- Hero content -->
@@ -283,19 +256,8 @@
                 height="56"
               />
             </a>
-            <div class="nav-overlay hidden" id="nav-overlay"></div>
-            <!-- Hamburger Menu Icon -->
-            <div class="lg:hidden">
-              <button
-                id="menu-toggle"
-                class="text-white focus:outline-none"
-                aria-label="navigation-menu"
-              >
-                <i class="fa-solid fa-bars text-3xl"></i>
-              </button>
-            </div>
             <ul
-              class="z-50 nav fixed right-0 top-0 h-full w-36 text-sm bg-gray-900 text-gray-100 font-semibold flex flex-col p-6 space-y-6 lg:translate-x-0 lg:bg-transparent lg:flex-row lg:w-max lg:text-base lg:relative lg:p-0 lg:space-y-0 lg:space-x-8"
+              class="z-50 nav fixed right-0 top-0 bottom-0 h-full w-36 text-sm bg-gray-900 text-gray-100 font-semibold flex flex-col p-6 space-y-6 lg:translate-x-0 lg:bg-transparent lg:flex-row lg:w-max lg:text-base lg:relative lg:p-0 lg:space-y-0 lg:space-x-8"
               id="nav-list"
             >
               <li>
@@ -444,12 +406,137 @@
           </div>
         </div>
       </section>
+
+      <!-- Lead capture form -->
+      <section class="px-8 pt-16 pb-16 lg:pb-0 bg-gray-100" id="signup">
+        <div class="container mx-auto">
+          <!-- Title -->
+          <h2 class="text-center text-3xl font-bold md:text-5xl">
+            Discover website<br class="lg:hidden" />
+            for <i>small business</i>
+          </h2>
+          <div
+            class="space-y-8 mt-16 md:text-lg flex items-end max-w-md lg:container mx-auto"
+          >
+            <div class="w-full lg:w-2/3 space-y-8 mx-auto lg:hidden">
+              <p>
+                Not sure yet? That's okay. Sign up for my exclusive 5-day email
+                series and discover everything you need to know about a website
+                for your small business. Throughout this series, you'll find
+                answers to these crucial questions:
+              </p>
+              <div class="space-y-4">
+                <div class="flex items-center">
+                  <div
+                    class="w-6 h-6 bg-color-primary rounded-full flex justify-center items-center mr-2"
+                  >
+                    <i class="fa-solid fa-check text-white text-sm"></i>
+                  </div>
+                  <span class="lg:text-lg">Why some websites fail?</span>
+                </div>
+                <div class="flex items-center">
+                  <div
+                    class="w-6 h-6 bg-color-primary rounded-full flex justify-center items-center mr-2"
+                  >
+                    <i class="fa-solid fa-check text-white text-sm"></i>
+                  </div>
+                  <span class="lg:text-lg"
+                    >What makes a website profitable?
+                  </span>
+                </div>
+                <div class="flex items-center">
+                  <div
+                    class="w-6 h-6 bg-color-primary rounded-full flex justify-center items-center mr-2"
+                  >
+                    <i class="fa-solid fa-check text-white text-sm"></i>
+                  </div>
+                  <span class="lg:text-lg">What can a website bring?</span>
+                </div>
+                <div class="flex items-cente">
+                  <div
+                    class="w-6 h-6 bg-color-primary rounded-full flex justify-center items-center mr-2"
+                  >
+                    <i class="fa-solid fa-check text-white text-sm"></i>
+                  </div>
+                  <span class="lg:text-lg">
+                    And a special offer just for you!</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col lg:pb-16 lg:flex-row lg:items-center lg:space-x-8 max-w-md lg:container mx-auto"
+          >
+            <div class="lg:w-2/3 order-2 lg:order-1">
+              <p class="text-lg mb-8 hidden lg:block">
+                Sign up for my exclusive 5-day email series and discover
+                everything you need to know about a website for your small
+                business. Throughout this series, you'll find answers to these
+                crucial questions:
+              </p>
+              <div class="space-y-4 hidden lg:block">
+                <div class="flex items-center">
+                  <div
+                    class="w-6 h-6 bg-color-primary rounded-full flex justify-center items-center mr-2"
+                  >
+                    <i class="fa-solid fa-check text-white text-sm"></i>
+                  </div>
+                  <span class="lg:text-lg">Why some websites fail?</span>
+                </div>
+                <div class="flex items-center">
+                  <div
+                    class="w-6 h-6 bg-color-primary rounded-full flex justify-center items-center mr-2"
+                  >
+                    <i class="fa-solid fa-check text-white text-sm"></i>
+                  </div>
+                  <span class="lg:text-lg"
+                    >What makes a website profitable?
+                  </span>
+                </div>
+                <div class="flex items-center">
+                  <div
+                    class="w-6 h-6 bg-color-primary rounded-full flex justify-center items-center mr-2"
+                  >
+                    <i class="fa-solid fa-check text-white text-sm"></i>
+                  </div>
+                  <span class="lg:text-lg">What can a website bring?</span>
+                </div>
+                <div class="flex items-cente">
+                  <div
+                    class="w-6 h-6 bg-color-primary rounded-full flex justify-center items-center mr-2"
+                  >
+                    <i class="fa-solid fa-check text-white text-sm"></i>
+                  </div>
+                  <span class="lg:text-lg">
+                    And a special offer just for you!</span
+                  >
+                </div>
+              </div>
+
+              <div
+                class="ml-embedded mt-8"
+                data-form="29RQPn"
+                style="background-color: none"
+              ></div>
+            </div>
+            <img
+              src="images/email-cover.webp"
+              width="512"
+              height="800"
+              alt="email cover"
+              class="w-full mt-8 lg:mt-0 lg:w-1/3 order-1 lg:order-2"
+            />
+          </div>
+        </div>
+      </section>
+
       <!-- What I do -->
-      <section class="pt-16 px-8 bg-gray-100" id="about">
+      <section class="pt-16 px-8 bg-gray-50" id="about">
         <div class="container mx-auto flex flex-col items-center">
           <!-- Title -->
           <h2 class="text-center text-3xl font-bold md:text-5xl">
-            What I <i>do</i>
+            Who I <i>am</i>
           </h2>
 
           <div
@@ -507,7 +594,7 @@
           <h2
             class="text-center text-white mt-4 text-3xl font-bold md:text-5xl"
           >
-            Why choose <i>me</i>
+            What makes me <i>different</i>
           </h2>
           <div
             class="grid grid-cols-1 gap-8 mt-16 max-w-sm lg:container lg:grid-cols-4 mx-auto"
@@ -737,7 +824,7 @@
                   class="p-4 flex flex-col justify-between mt-4 lg:mt-0 lg:p-0 lg:ml-8 lg:justify-start"
                 >
                   <div>
-                    <p class="font-semibold md:text-lg">
+                    <p class="font-semibold text-lg md:text-xl">
                       Specialized Auto Tint
                     </p>
                     <p class="text-sm mt-1 md:text-lg">Irvine, CA</p>
@@ -751,7 +838,7 @@
                     href="https://s-worktint.com/"
                     target="_blank"
                     rel="noopener"
-                    class="w-max text-xs mt-8 bg-color-primary text-white inline-block uppercase px-6 py-3 shadow-md rounded-sm lg:text-sm"
+                    class="w-max mt-8 bg-color-primary text-white inline-block uppercase px-6 py-3 shadow-md rounded-sm text-sm lg:text-base"
                     >visit Specialized Auto Tint</a
                   >
                 </div>
@@ -855,7 +942,7 @@
       </section>
 
       <!-- Who this is not for -->
-      <section class="px-8 pt-16 pb-16 lg:pb-0 bg-gray-100">
+      <section class="px-8 pt-16 pb-16 lg:pb-0 bg-gray-50">
         <div class="container mx-auto">
           <!-- Title -->
           <h2 class="text-center text-3xl font-bold md:text-5xl">
@@ -897,7 +984,7 @@
         </div>
       </section>
       <!-- Pricing -->
-      <section class="px-8 py-16 bg-gray-50" id="pricing">
+      <section class="px-8 py-16 bg-gray-100" id="pricing">
         <div class="container mx-auto text-center">
           <!-- Title -->
           <h2 class="text-center mt-4 text-3xl font-bold md:text-5xl">
@@ -925,7 +1012,7 @@
               </p>
               <div class="flex justify-center mt-2 space-x-2">
                 <span class="text-5xl font-semibold text-center md:text-7xl">
-                  $165<span class="text-2xl">/mo</span>
+                  $180<span class="text-2xl">/mo</span>
                 </span>
               </div>
               <ul class="mt-8 space-y-4 mx-auto text-gray-700">
@@ -1113,125 +1200,6 @@
             If you have no traffic to your website in the first year, I will
             refund you 2x the entire cost.
           </p>
-        </div>
-      </section>
-
-      <!-- Lead capture form -->
-      <section class="px-8 pt-16 pb-16 lg:pb-0 bg-gray-50" id="signup">
-        <div class="container mx-auto">
-          <!-- Title -->
-          <h2 class="text-center text-3xl font-bold md:text-5xl">
-            No <i>rush</i>
-          </h2>
-          <div
-            class="space-y-8 mt-16 md:text-lg flex items-end max-w-md lg:container mx-auto"
-          >
-            <div class="w-full lg:w-2/3 space-y-8 mx-auto lg:hidden">
-              <p>
-                Not sure yet? That's okay. Sign up for my exclusive 5-day email
-                series and discover everything you need to know about a website
-                for your small business. Throughout this series, you'll find
-                answers to these crucial questions:
-              </p>
-              <div class="space-y-4">
-                <div class="flex items-center">
-                  <div
-                    class="w-6 h-6 bg-color-primary rounded-full flex justify-center items-center mr-2"
-                  >
-                    <i class="fa-solid fa-check text-white text-sm"></i>
-                  </div>
-                  <span class="lg:text-lg">Why some websites fail?</span>
-                </div>
-                <div class="flex items-center">
-                  <div
-                    class="w-6 h-6 bg-color-primary rounded-full flex justify-center items-center mr-2"
-                  >
-                    <i class="fa-solid fa-check text-white text-sm"></i>
-                  </div>
-                  <span class="lg:text-lg"
-                    >What makes a website profitable?
-                  </span>
-                </div>
-                <div class="flex items-center">
-                  <div
-                    class="w-6 h-6 bg-color-primary rounded-full flex justify-center items-center mr-2"
-                  >
-                    <i class="fa-solid fa-check text-white text-sm"></i>
-                  </div>
-                  <span class="lg:text-lg">What can a website bring?</span>
-                </div>
-                <div class="flex items-cente">
-                  <div
-                    class="w-6 h-6 bg-color-primary rounded-full flex justify-center items-center mr-2"
-                  >
-                    <i class="fa-solid fa-check text-white text-sm"></i>
-                  </div>
-                  <span class="lg:text-lg">
-                    And a special offer just for you!</span
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="flex flex-col lg:pb-16 lg:flex-row lg:items-center lg:space-x-8 max-w-md lg:container mx-auto"
-          >
-            <div class="lg:w-2/3 order-2 lg:order-1">
-              <p class="text-lg mb-8 hidden lg:block">
-                Not sure yet? That's okay. Sign up for my exclusive 5-day email
-                series and discover everything you need to know about a website
-                for your small business. Throughout this series, you'll find
-                answers to these crucial questions:
-              </p>
-              <div class="space-y-4 hidden lg:block">
-                <div class="flex items-center">
-                  <div
-                    class="w-6 h-6 bg-color-primary rounded-full flex justify-center items-center mr-2"
-                  >
-                    <i class="fa-solid fa-check text-white text-sm"></i>
-                  </div>
-                  <span class="lg:text-lg">Why some websites fail?</span>
-                </div>
-                <div class="flex items-center">
-                  <div
-                    class="w-6 h-6 bg-color-primary rounded-full flex justify-center items-center mr-2"
-                  >
-                    <i class="fa-solid fa-check text-white text-sm"></i>
-                  </div>
-                  <span class="lg:text-lg"
-                    >What makes a website profitable?
-                  </span>
-                </div>
-                <div class="flex items-center">
-                  <div
-                    class="w-6 h-6 bg-color-primary rounded-full flex justify-center items-center mr-2"
-                  >
-                    <i class="fa-solid fa-check text-white text-sm"></i>
-                  </div>
-                  <span class="lg:text-lg">What can a website bring?</span>
-                </div>
-                <div class="flex items-cente">
-                  <div
-                    class="w-6 h-6 bg-color-primary rounded-full flex justify-center items-center mr-2"
-                  >
-                    <i class="fa-solid fa-check text-white text-sm"></i>
-                  </div>
-                  <span class="lg:text-lg">
-                    And a special offer just for you!</span
-                  >
-                </div>
-              </div>
-
-              <div class="ml-embedded mt-8" data-form="29RQPn"></div>
-            </div>
-            <img
-              src="images/email-cover.webp"
-              width="512"
-              height="800"
-              alt="email cover"
-              class="w-full mt-8 lg:mt-0 lg:w-1/3 order-1 lg:order-2"
-            />
-          </div>
         </div>
       </section>
 
@@ -1467,9 +1435,9 @@
       <a href="tel:+19165918323" class="lg:hidden">
         <div class="z-20 fixed right-0 bottom-0 m-4">
           <div
-            class="flex items-center justify-center rounded-full bg-color-primary text-white w-12 h-12 md:w-auto md:h-auto md:p-4"
+            class="flex items-center justify-center rounded-full bg-color-primary text-white w-14 h-14 md:w-auto md:h-auto md:p-4"
           >
-            <i class="fa-solid fa-phone"></i>
+            <i class="fa-solid fa-phone text-xl"></i>
           </div>
         </div>
       </a>
