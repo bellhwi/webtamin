@@ -1,8 +1,4 @@
-const navList = document.getElementById('nav-list'),
-  portfolioMenu = document.getElementById('portfolio-menu'),
-  servicesMenu = document.getElementById('services-menu'),
-  pricingMenu = document.getElementById('pricing-menu'),
-  currentDate = new Date(),
+const currentDate = new Date(),
   currentYear = document.getElementById('currentYear'),
   movingNav = document.getElementById('moving-nav')
 
