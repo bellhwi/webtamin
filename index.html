@@ -156,29 +156,6 @@
       ml('account', '965486')
     </script>
     <!-- End MailerLite Universal -->
-    <!-- Event snippet for Email Signup conversion page -->
-
-    <script>
-      function gtag_report_conversion(eventType) {
-        var url
-        var sendToId
-
-        if (eventType === 'email') {
-          url = 'https://webtamin.co/'
-          sendToId = 'AW-11444917825/t_jiCNzvs7UZEMGsrtEq'
-        } else if (eventType === 'contact') {
-          url = 'https://webtamin.co/'
-          sendToId = 'AW-11444917825/fsBKCIiLtbUZEMGsrtEq'
-        }
-
-        gtag('event', 'conversion', {
-          send_to: sendToId,
-          event_callback: callback,
-        })
-
-        return false // Prevent the default action (following the link) immediately
-      }
-    </script>
   </head>
   <body>
     <main>

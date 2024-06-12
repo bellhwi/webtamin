@@ -150,27 +150,20 @@
       ml('account', '965486')
     </script>
     <!-- End MailerLite Universal -->
-    <!-- Event snippet for Email Signup conversion page -->
-
+    <!-- Event snippet for Contact Me Through Form conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
     <script>
-      function gtag_report_conversion(eventType) {
-        var url
-        var sendToId
-
-        if (eventType === 'email') {
-          url = 'https://webtamin.co/'
-          sendToId = 'AW-11444917825/t_jiCNzvs7UZEMGsrtEq'
-        } else if (eventType === 'contact') {
-          url = 'https://webtamin.co/'
-          sendToId = 'AW-11444917825/fsBKCIiLtbUZEMGsrtEq'
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof url != 'undefined') {
+            window.location = url
+          }
         }
-
         gtag('event', 'conversion', {
-          send_to: sendToId,
+          send_to: 'AW-11444917825/fsBKCIiLtbUZEMGsrtEq',
           event_callback: callback,
         })
-
-        return false // Prevent the default action (following the link) immediately
+        return false
       }
     </script>
   </head>
