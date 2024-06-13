@@ -814,6 +814,10 @@ video {
   margin-top: 2rem;
 }
 
+.mb-16{
+  margin-bottom: 4rem;
+}
+
 .box-border{
   box-sizing: border-box;
 }
@@ -3255,6 +3259,10 @@ ul {
     margin-top: 0px;
   }
 
+  .lg\:mb-0{
+    margin-bottom: 0px;
+  }
+
   .lg\:block{
     display: block;
   }
@@ -3311,12 +3319,6 @@ ul {
 
   .lg\:justify-start{
     justify-content: flex-start;
-  }
-
-  .lg\:space-x-16 > :not([hidden]) ~ :not([hidden]){
-    --tw-space-x-reverse: 0;
-    margin-right: calc(4rem * var(--tw-space-x-reverse));
-    margin-left: calc(4rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .lg\:space-x-8 > :not([hidden]) ~ :not([hidden]){
