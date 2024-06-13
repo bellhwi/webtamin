@@ -153,15 +153,9 @@
     <!-- Event snippet for Contact Me Through Form conversion page
 In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
     <script>
-      function gtag_report_conversion(url) {
-        var callback = function () {
-          if (typeof url != 'undefined') {
-            window.location = url
-          }
-        }
+      function gtag_report_conversion() {
         gtag('event', 'conversion', {
           send_to: 'AW-11444917825/fsBKCIiLtbUZEMGsrtEq',
-          event_callback: callback,
         })
         return false
       }
@@ -1253,7 +1247,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                 <button
                   type="submit"
                   class="block mx-auto uppercase py-4 px-16 mt-8 text-white tracking-wider font-semibold bg-color-primary w-full"
-                  onclick="return gtag_report_conversion('contact')"
+                  onclick="return gtag_report_conversion()"
                 >
                   send
                 </button>
