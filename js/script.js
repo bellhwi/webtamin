@@ -39,10 +39,11 @@ function setSignupConversionTag() {
   const emailSubscribeBtn = document.querySelector(
     '.ml-embedded .ml-form-embedSubmit button'
   )
-  console.log(emailSubscribeBtn)
   if (emailSubscribeBtn !== null) {
     emailSubscribeBtn.onclick = function () {
-      return gtag_report_conversion_signup()
+      gtag_report_conversion_signup()
+      fbq('track', 'Lead')
+      return false
     }
   }
 }
