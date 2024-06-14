@@ -41,8 +41,11 @@ function setSignupConversionTag() {
   )
   if (emailSubscribeBtn !== null) {
     emailSubscribeBtn.onclick = function () {
-      gtag_report_conversion_signup()
-      fbq('track', 'Lead')
+      if (typeof gtag_report_conversion_signup === 'function') {
+        gtag_report_conversion_signup()
+      } else {
+        fbq('track', 'Lead')
+      }
       return false
     }
   }

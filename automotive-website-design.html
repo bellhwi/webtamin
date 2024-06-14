@@ -113,43 +113,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
     <link rel="manifest" href="site.webmanifest" />
-    <!-- Meta Pixel Code -->
-    <script>
-      !(function (f, b, e, v, n, t, s) {
-        if (f.fbq) return
-        n = f.fbq = function () {
-          n.callMethod
-            ? n.callMethod.apply(n, arguments)
-            : n.queue.push(arguments)
-        }
-        if (!f._fbq) f._fbq = n
-        n.push = n
-        n.loaded = !0
-        n.version = '2.0'
-        n.queue = []
-        t = b.createElement(e)
-        t.async = !0
-        t.src = v
-        s = b.getElementsByTagName(e)[0]
-        s.parentNode.insertBefore(t, s)
-      })(
-        window,
-        document,
-        'script',
-        'https://connect.facebook.net/en_US/fbevents.js'
-      )
-      fbq('init', '1414664242555753')
-      fbq('track', 'PageView')
-    </script>
-    <noscript>
-      <img
-        height="1"
-        width="1"
-        src="https://www.facebook.com/tr?id=1414664242555753&ev=PageView
-  &noscript=1"
-      />
-    </noscript>
-    <!-- End Meta Pixel Code -->
+
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -1287,7 +1251,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                 <button
                   type="submit"
                   class="block mx-auto uppercase py-4 px-16 mt-8 text-white tracking-wider font-semibold bg-color-primary w-full"
-                  onclick="gtag_report_conversion('contact'); fbq('track', 'Contact'); return false;"
+                  onclick="return gtag_report_conversion('contact')"
                 >
                   send
                 </button>
