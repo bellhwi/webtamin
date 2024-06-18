@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Are you looking for website design for small businesses? Look no further. I offer websites that bring you leads. Check out..."
+      content="Are you looking for website design for small law firm? Look no further. I offer websites that bring you leads. Check out..."
     />
     <script type="application/ld+json">
       {
@@ -79,31 +79,25 @@
           {
             "@type": "ListItem",
             "position": 4,
-            "name": "Blog",
-            "url": "https://webtamin.co/blog"
-          },
-          {
-            "@type": "ListItem",
-            "position": 5,
             "name": "Contact",
             "url": "https://webtamin.co/#contact"
           },
           {
             "@type": "ListItem",
-            "position": 6,
+            "position": 5,
             "name": "Privacy Policy",
             "url": "https://webtamin.co/privacy-policy"
           },
           {
             "@type": "ListItem",
-            "position": 7,
+            "position": 6,
             "name": "Terms of Service",
             "url": "https://webtamin.co/terms-of-service"
           }
         ]
       }
     </script>
-    <title>Web Design For Small Businesses | Webtamin</title>
+    <title>Law Website Design | Webtamin</title>
 
     <!-- CSS Files -->
     <link
@@ -119,43 +113,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
     <link rel="manifest" href="site.webmanifest" />
-    <!-- Meta Pixel Code -->
-    <script>
-      !(function (f, b, e, v, n, t, s) {
-        if (f.fbq) return
-        n = f.fbq = function () {
-          n.callMethod
-            ? n.callMethod.apply(n, arguments)
-            : n.queue.push(arguments)
-        }
-        if (!f._fbq) f._fbq = n
-        n.push = n
-        n.loaded = !0
-        n.version = '2.0'
-        n.queue = []
-        t = b.createElement(e)
-        t.async = !0
-        t.src = v
-        s = b.getElementsByTagName(e)[0]
-        s.parentNode.insertBefore(t, s)
-      })(
-        window,
-        document,
-        'script',
-        'https://connect.facebook.net/en_US/fbevents.js'
-      )
-      fbq('init', '1414664242555753')
-      fbq('track', 'PageView')
-    </script>
-    <noscript>
-      <img
-        height="1"
-        width="1"
-        src="https://www.facebook.com/tr?id=1414664242555753&ev=PageView
-  &noscript=1"
-      />
-    </noscript>
-    <!-- End Meta Pixel Code -->
+
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -192,7 +150,24 @@
       )
       ml('account', '965486')
     </script>
-    <!-- End MailerLite Universal -->
+    <!-- Event snippet for Contact Me Through Form conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+      function gtag_report_conversion_contact() {
+        gtag('event', 'conversion', {
+          send_to: 'AW-11444917825/fsBKCIiLtbUZEMGsrtEq',
+        })
+        return false
+      }
+    </script>
+    <script>
+      function gtag_report_conversion_signup() {
+        gtag('event', 'conversion', {
+          send_to: 'AW-11444917825/B0RQCKqK2rkZEMGsrtEq',
+        })
+        return false
+      }
+    </script>
   </head>
   <body>
     <main>
@@ -202,7 +177,7 @@
         id="moving-nav"
       >
         <!-- Logo -->
-        <a href="index.html#hero">
+        <a href="#hero">
           <img
             src="images/logo.webp"
             alt="logo"
@@ -216,19 +191,19 @@
           id="nav-list"
         >
           <li>
-            <a href="index.html#services" class="uppercase">services</a>
+            <a href="#about" class="uppercase">about</a>
           </li>
           <li>
-            <a href="index.html#portfolio" class="uppercase">portfolio</a>
+            <a href="#services" class="uppercase">services</a>
           </li>
           <li>
-            <a href="index.html#pricing" class="uppercase">pricing</a>
+            <a href="#portfolio" class="uppercase">portfolio</a>
           </li>
           <li>
-            <a href="blog.html" class="uppercase">blog</a>
+            <a href="#pricing" class="uppercase">pricing</a>
           </li>
           <li>
-            <a href="index.html#contact" class="uppercase">contact</a>
+            <a href="#contact" class="uppercase">contact</a>
           </li>
         </ul>
       </nav>
@@ -239,7 +214,7 @@
           <!-- Navbar -->
           <nav class="w-full flex items-center justify-between">
             <!-- Logo -->
-            <a href="index.html#hero">
+            <a href="#hero">
               <img
                 src="images/logo.webp"
                 alt="logo"
@@ -248,29 +223,24 @@
                 height="56"
               />
             </a>
-            <a
-              href="blog.html"
-              class="uppercase text-gray-100 font-semibold lg:hidden"
-              >blog</a
-            >
             <ul
               class="z-50 nav fixed right-0 top-0 bottom-0 h-full w-36 text-sm bg-gray-900 text-gray-100 font-semibold flex flex-col p-6 space-y-6 lg:translate-x-0 lg:bg-transparent lg:flex-row lg:w-max lg:text-base lg:relative lg:p-0 lg:space-y-0 lg:space-x-8"
               id="nav-list"
             >
               <li>
-                <a href="index.html#services" class="uppercase">services</a>
+                <a href="#about" class="uppercase">about</a>
               </li>
               <li>
-                <a href="index.html#portfolio" class="uppercase">portfolio</a>
+                <a href="#services" class="uppercase">services</a>
               </li>
               <li>
-                <a href="index.html#pricing" class="uppercase">pricing</a>
+                <a href="#portfolio" class="uppercase">portfolio</a>
               </li>
               <li>
-                <a href="blog.html" class="uppercase">blog</a>
+                <a href="#pricing" class="uppercase">pricing</a>
               </li>
               <li>
-                <a href="index.html#contact" class="uppercase">contact</a>
+                <a href="#contact" class="uppercase">contact</a>
               </li>
 
               <li class="lg:hidden">
@@ -287,26 +257,26 @@
           <div class="flex flex-col lg:flex-row lg:items-center mt-16">
             <div>
               <h1 class="text-white font-bold text-5xl lg:text-7xl">
-                Web Design<br />
-                For Small Businesses
+                Law Firm<br />
+                Web Design
               </h1>
               <p class="text-gray-100 md:text-xl my-8">
                 Forget the website that brings you nothing. I specialize in
-                website design that gets leads for your small business.
+                website design that gets leads for your law firm.
               </p>
               <a
-                href="index.html#benefits"
+                href="#benefits"
                 class="mx-auto text-sm text-white bg-color-primary inline-block uppercase px-6 py-3 shadow-md rounded-sm lg:text-base"
                 >learn more</a
               >
             </div>
             <!-- Hero image -->
             <img
-              src="images/hero.webp"
+              src="images/junlawfirm-hero.webp"
               srcset="
-                images/hero-480.webp 480w,
-                images/hero-640.webp 640w,
-                images/hero.webp     955w
+                images/junlawfirm-hero-480.webp 480w,
+                images/junlawfirm-hero-640.webp 640w,
+                images/junlawfirm-hero.webp     955w
               "
               sizes="100vw"
               alt="responsive design of website project"
@@ -543,17 +513,17 @@
                 <p>
                   I founded Webtamin in 2023 out of a passion for helping people
                   with my web development skills. Recognizing the growing need
-                  for digital marketing, I set out to help small business
+                  for digital marketing, I set out to help small law firm
                   owners.
                 </p>
                 <p>
                   In today's web design industry, finding the right person for
-                  website design for small businesses can be challenging. That's
-                  where I come in.
+                  law website design for small businesses can be challenging.
+                  That's where I come in.
                 </p>
                 <p>
                   At Webtamin, I’m dedicated to delivering websites that bring
-                  leads and sales to clients. My goal is to help small business
+                  leads and sales to clients. My goal is to help small law firm
                   owners get the most profits out of a website.
                 </p>
               </div>
@@ -783,111 +753,44 @@
             Check my <i>project</i>
           </h2>
           <!-- Container -->
-          <div class="mt-16 gap-8 grid grid-cols-1 md:grid-cols-3">
+          <div class="mt-16 flex">
             <!-- Content -->
-            <div class="flex flex-col">
-              <div class="shadow-md rounded flex flex-col h-full">
+            <div class="flex flex-col mx-auto">
+              <div
+                class="rounded flex flex-col h-full lg:flex-row lg:items-center"
+              >
                 <img
                   src="images/portfolio/junlawfirm-1024.webp"
                   srcset="
-                    images/portfolio/junlawfirm-480.webp   480w,
                     images/portfolio/junlawfirm-640.webp   640w,
+                    images/portfolio/junlawfirm-480.webp   480w,
                     images/portfolio/junlawfirm-1024.webp 1024w
                   "
-                  alt="jun law firm website mockup"
+                  alt="specialized auto tint website mockup"
+                  class="lg:w-1/2"
                   width="1024"
                   height="556"
-                  class="p-8"
                 />
-                <div class="h-full p-8 flex flex-col justify-between">
+                <div
+                  class="p-4 flex flex-col justify-between mt-4 lg:mt-0 lg:p-0 lg:ml-8 lg:justify-start"
+                >
                   <div>
-                    <p class="font-semibold md:text-lg">
+                    <p class="font-semibold text-lg md:text-xl">
                       Law Office of Hong-min Jun, P.C
                     </p>
-                    <p class="text-sm mt-1 md:text-base">Fishers, IN</p>
-                    <p class="text-sm mt-4 md:text-base">
+                    <p class="text-sm mt-1 md:text-lg">Fishers, IN</p>
+                    <p class="mt-4 md:text-lg">
                       Law Office of Hong-min Jun, P.C serves foreign-born
-                      individuals and small business owners.
+                      individuals and small business owners. The website is
+                      designed to showcase their services and attract customers.
                     </p>
                   </div>
                   <a
                     href="https://junlawfirm.com/"
                     target="_blank"
                     rel="noopener"
-                    class="w-max mt-8 bg-color-primary text-white inline-block uppercase px-6 py-3 shadow-md rounded-sm text-sm md:text-base"
+                    class="w-max mt-8 bg-color-primary text-white inline-block uppercase px-6 py-3 shadow-md rounded-sm text-sm lg:text-base"
                     >visit Hong-min Jun</a
-                  >
-                </div>
-              </div>
-            </div>
-            <!-- Content -->
-            <div class="flex flex-col">
-              <div class="shadow-md rounded flex flex-col h-full">
-                <img
-                  src="images/portfolio/specialized-auto-tint-1024.webp"
-                  srcset="
-                    images/portfolio/specialized-auto-tint-480.webp   480w,
-                    images/portfolio/specialized-auto-tint-640.webp   640w,
-                    images/portfolio/specialized-auto-tint-1024.webp 1024w
-                  "
-                  alt="specialized auto tint website mockup"
-                  width="1024"
-                  height="556"
-                  class="p-8"
-                />
-                <div class="h-full p-8 flex flex-col justify-between">
-                  <div>
-                    <p class="font-semibold md:text-lg">
-                      Specialized Auto Tint
-                    </p>
-                    <p class="text-sm mt-1 md:text-base">Irvine, CA</p>
-                    <p class="text-sm mt-4 md:text-base">
-                      Specialized Auto Tint offers premium window tinting
-                      services and ceramic coating for vehicles.
-                    </p>
-                  </div>
-                  <a
-                    href="https://s-worktint.com/"
-                    target="_blank"
-                    rel="noopener"
-                    class="w-max mt-8 bg-color-primary text-white inline-block uppercase px-6 py-3 shadow-md rounded-sm text-sm md:text-base"
-                    >visit Specialized Auto Tint</a
-                  >
-                </div>
-              </div>
-            </div>
-
-            <!-- Content -->
-            <div class="flex flex-col">
-              <div class="shadow-md rounded flex flex-col h-full">
-                <img
-                  src="images/portfolio/haxa-1024.webp"
-                  srcset="
-                    images/portfolio/haxa-480.webp   480w,
-                    images/portfolio/haxa-640.webp   640w,
-                    images/portfolio/haxa-1024.webp 1024w
-                  "
-                  alt="haxa website mockup"
-                  width="1024"
-                  height="556"
-                  class="p-8"
-                />
-                <div class="h-full p-8 flex flex-col justify-between">
-                  <div>
-                    <p class="font-semibold md:text-lg">Haxa Labs</p>
-                    <p class="text-sm mt-1 md:text-base">Sacramento, CA</p>
-                    <p class="text-sm mt-4 md:text-base">
-                      Haxa Labs offers a diverse selection of strains, expert
-                      cultivation advice, and superior genetics for optimal
-                      yields.
-                    </p>
-                  </div>
-                  <a
-                    href="https://haxalabs.com/"
-                    target="_blank"
-                    rel="noopener"
-                    class="w-max mt-8 bg-color-primary text-white inline-block uppercase px-6 py-3 shadow-md rounded-sm text-sm md:text-base"
-                    >visit Haxa Labs</a
                   >
                 </div>
               </div>
@@ -1347,7 +1250,7 @@
                 <button
                   type="submit"
                   class="block mx-auto uppercase py-4 px-16 mt-8 text-white tracking-wider font-semibold bg-color-primary w-full"
-                  onclick="fbq('track', 'Contact');"
+                  onclick="return gtag_report_conversion_contact()"
                 >
                   send
                 </button>
@@ -1536,15 +1439,6 @@
 
         <div>
           &copy; <span id="currentYear"></span> Webtamin. All rights reserved.
-        </div>
-        <div class="flex relative mt-2 space-x-2">
-          <a href="privacy-policy.html" class="text-gray-400 hover:text-white"
-            >Privacy Policy</a
-          >
-          <span>|</span>
-          <a href="terms-of-service.html" class="text-gray-400 hover:text-white"
-            >Terms of Service</a
-          >
         </div>
       </div>
     </footer>
