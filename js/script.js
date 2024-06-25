@@ -68,12 +68,12 @@ if (questions !== null) {
 }
 
 function handleScroll() {
-  let benefitsEl = document.getElementById('benefits')
-  let benefitsElPosition =
-    benefitsEl.getBoundingClientRect().top + window.scrollY
+  let servicesEl = document.getElementById('services')
+  let servicesElPosition =
+    servicesEl.getBoundingClientRect().top + window.scrollY
 
   // If scrolling past the benefits section
-  if (window.scrollY > benefitsElPosition) {
+  if (window.scrollY > servicesElPosition) {
     // Detect scroll direction
     let st = window.scrollY || document.documentElement.scrollTop
     movingNav.classList.toggle('show', st < lastScrollTop)
