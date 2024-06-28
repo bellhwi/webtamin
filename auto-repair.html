@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Are you looking for website design for small businesses? Look no further. I offer websites that bring you leads. Check out..."
+      content="Are you looking for website design for small auto repair businesses? Look no further. I offer websites that bring you leads. Check out..."
     />
     <script type="application/ld+json">
       {
@@ -67,43 +67,31 @@
           {
             "@type": "ListItem",
             "position": 2,
+            "name": "About",
+            "url": "https://webtamin.co/#about"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
             "name": "Portfolio",
             "url": "https://webtamin.co/#portfolio"
           },
           {
             "@type": "ListItem",
-            "position": 3,
+            "position": 4,
             "name": "Pricing",
             "url": "https://webtamin.co/#pricing"
-          },
-          {
-            "@type": "ListItem",
-            "position": 4,
-            "name": "Blog",
-            "url": "https://webtamin.co/blog"
           },
           {
             "@type": "ListItem",
             "position": 5,
             "name": "Contact",
             "url": "https://webtamin.co/#contact"
-          },
-          {
-            "@type": "ListItem",
-            "position": 6,
-            "name": "Privacy Policy",
-            "url": "https://webtamin.co/privacy-policy"
-          },
-          {
-            "@type": "ListItem",
-            "position": 7,
-            "name": "Terms of Service",
-            "url": "https://webtamin.co/terms-of-service"
           }
         ]
       }
     </script>
-    <title>Web Design For Small Businesses | Webtamin</title>
+    <title>Auto Repair Website Design | Webtamin</title>
 
     <!-- CSS Files -->
 
@@ -118,16 +106,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="preload" as="image" href="images/hero.webp" />
-    <noscript>
-      <img
-        height="1"
-        width="1"
-        src="https://www.facebook.com/tr?id=1414664242555753&ev=PageView
-  &noscript=1"
-      />
-    </noscript>
-    <!-- End Meta Pixel Code -->
+    <link rel="preload" as="image" href="images/hero-repair.webp" />
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -142,29 +121,16 @@
 
       gtag('config', 'G-JGET5W7JRZ')
     </script>
-    <!-- MailerLite Universal -->
+    <!-- Event snippet for Contact Me Through Form conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
     <script>
-      ;(function (w, d, e, u, f, l, n) {
-        ;(w[f] =
-          w[f] ||
-          function () {
-            ;(w[f].q = w[f].q || []).push(arguments)
-          }),
-          (l = d.createElement(e)),
-          (l.async = 1),
-          (l.src = u),
-          (n = d.getElementsByTagName(e)[0]),
-          n.parentNode.insertBefore(l, n)
-      })(
-        window,
-        document,
-        'script',
-        'https://assets.mailerlite.com/js/universal.js',
-        'ml'
-      )
-      ml('account', '965486')
+      function gtag_report_conversion_contact() {
+        gtag('event', 'conversion', {
+          send_to: 'AW-11444917825/fsBKCIiLtbUZEMGsrtEq',
+        })
+        return false
+      }
     </script>
-    <!-- End MailerLite Universal -->
   </head>
   <body>
     <main>
@@ -174,7 +140,7 @@
         id="moving-nav"
       >
         <!-- Logo -->
-        <a href="index.html#hero">
+        <a href="#hero">
           <img
             src="images/logo.webp"
             alt="logo"
@@ -188,19 +154,20 @@
           id="nav-list"
         >
           <li>
-            <a href="index.html#services" class="uppercase">services</a>
+            <a href="#services" class="uppercase">services</a>
           </li>
           <li>
-            <a href="index.html#portfolio" class="uppercase">portfolio</a>
+            <a href="#about" class="uppercase">about</a>
+          </li>
+
+          <li>
+            <a href="#portfolio" class="uppercase">portfolio</a>
           </li>
           <li>
-            <a href="index.html#pricing" class="uppercase">pricing</a>
+            <a href="#pricing" class="uppercase">pricing</a>
           </li>
           <li>
-            <a href="blog.html" class="uppercase">blog</a>
-          </li>
-          <li>
-            <a href="index.html#contact" class="uppercase">contact</a>
+            <a href="#contact" class="uppercase">contact</a>
           </li>
         </ul>
       </nav>
@@ -211,7 +178,7 @@
           <!-- Navbar -->
           <nav class="w-full flex items-center justify-between">
             <!-- Logo -->
-            <a href="index.html#hero">
+            <a href="#hero">
               <img
                 src="images/logo.webp"
                 alt="logo"
@@ -220,29 +187,25 @@
                 height="56"
               />
             </a>
-            <a
-              href="blog.html"
-              class="uppercase text-gray-100 font-semibold lg:hidden"
-              >blog</a
-            >
             <ul
               class="z-50 nav fixed right-0 top-0 bottom-0 h-full w-36 text-sm bg-gray-900 text-gray-100 font-semibold flex flex-col p-6 space-y-6 lg:translate-x-0 lg:bg-transparent lg:flex-row lg:w-max lg:text-base lg:relative lg:p-0 lg:space-y-0 lg:space-x-8"
               id="nav-list"
             >
               <li>
-                <a href="index.html#services" class="uppercase">services</a>
+                <a href="#services" class="uppercase">services</a>
               </li>
               <li>
-                <a href="index.html#portfolio" class="uppercase">portfolio</a>
+                <a href="#about" class="uppercase">about</a>
+              </li>
+
+              <li>
+                <a href="#portfolio" class="uppercase">portfolio</a>
               </li>
               <li>
-                <a href="index.html#pricing" class="uppercase">pricing</a>
+                <a href="#pricing" class="uppercase">pricing</a>
               </li>
               <li>
-                <a href="blog.html" class="uppercase">blog</a>
-              </li>
-              <li>
-                <a href="index.html#contact" class="uppercase">contact</a>
+                <a href="#contact" class="uppercase">contact</a>
               </li>
             </ul>
           </nav>
@@ -250,26 +213,26 @@
           <div class="flex flex-col lg:flex-row lg:items-center mt-16">
             <div>
               <h1 class="text-white font-bold text-5xl lg:text-7xl">
-                Web Design<br />
-                For Small Businesses
+                Looking for<br />
+                Auto Repair<br />
+                Web Design?
               </h1>
               <p class="text-gray-100 md:text-xl my-8">
                 Forget the website that brings you nothing. I specialize in
-                website design that gets leads for your small business.
+                website design that gets leads for your auto repair business.
               </p>
               <a
-                href="index.html#benefits"
+                href="#contact"
                 class="mx-auto text-sm text-white bg-color-primary inline-block uppercase px-6 py-3 shadow-md rounded-sm lg:text-base"
-                >learn more</a
+                >contact me</a
               >
             </div>
             <!-- Hero image -->
             <img
-              src="images/hero.webp"
+              src="images/hero-repair.webp"
               srcset="
-                images/hero-480.webp 480w,
-                images/hero-640.webp 640w,
-                images/hero.webp     955w
+                images/hero-repair-600.webp 600w,
+                images/hero-repair.webp     601w
               "
               sizes="100vw"
               alt="responsive design of website project"
@@ -280,460 +243,12 @@
           </div>
         </div>
       </section>
-
-      <!-- What you get -->
-      <section class="py-16 bg-gray-100" id="benefits">
-        <div>
-          <!-- Title -->
-          <h2 class="text-center mt-4 text-3xl font-bold md:text-5xl">
-            What you <i>get</i>
-          </h2>
-          <div class="mt-16 md:text-lg">
-            <div class="flex flex-col lg:flex-row items-center">
-              <video
-                width="320"
-                height="240"
-                controls
-                class="lg:mr-8 w-full lg:w-1/2 mb-16 lg:mb-0"
-              >
-                <source src="images/webtamin-intro.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-              <div class="w-full px-8 lg:w-1/2 space-y-8">
-                <div class="flex items-center pb-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="40px"
-                    viewBox="0 -960 960 960"
-                    width="40px"
-                    fill="#374151"
-                    class="mr-2"
-                  >
-                    <path
-                      d="M422-297.33 704.67-580l-49.34-48.67L422-395.33l-118-118-48.67 48.66L422-297.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Zm0-66.67q139.33 0 236.33-97.33t97-236q0-139.33-97-236.33t-236.33-97q-138.67 0-236 97-97.33 97-97.33 236.33 0 138.67 97.33 236 97.33 97.33 236 97.33ZM480-480Z"
-                    />
-                  </svg>
-                  <span class="text-lg font-semibold lg:text-xl">
-                    More Leads</span
-                  >
-                </div>
-                A website can drive more leads by attracting visitors through
-                compelling content, SEO, and other digital marketing strategies.
-                It can convert them through lead capture forms, calls-to-action,
-                and personalized offers.
-                <hr />
-                <div class="flex items-center pb-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="40px"
-                    viewBox="0 -960 960 960"
-                    width="40px"
-                    fill="#374151"
-                    class="mr-2"
-                  >
-                    <path
-                      d="M422-297.33 704.67-580l-49.34-48.67L422-395.33l-118-118-48.67 48.66L422-297.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Zm0-66.67q139.33 0 236.33-97.33t97-236q0-139.33-97-236.33t-236.33-97q-138.67 0-236 97-97.33 97-97.33 236.33 0 138.67 97.33 236 97.33 97.33 236 97.33ZM480-480Z"
-                    />
-                  </svg>
-                  <span class="text-lg font-semibold lg:text-xl">
-                    Credibility</span
-                  >
-                </div>
-                A professionally designed website enhances your business's
-                credibility. It showcases your expertise, products, services,
-                and customer testimonials to build trust and make a positive
-                impression on potential customers.
-                <hr />
-                <div class="flex items-center pb-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="40px"
-                    viewBox="0 -960 960 960"
-                    width="40px"
-                    fill="#374151"
-                    class="mr-2"
-                  >
-                    <path
-                      d="M422-297.33 704.67-580l-49.34-48.67L422-395.33l-118-118-48.67 48.66L422-297.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Zm0-66.67q139.33 0 236.33-97.33t97-236q0-139.33-97-236.33t-236.33-97q-138.67 0-236 97-97.33 97-97.33 236.33 0 138.67 97.33 236 97.33 97.33 236 97.33ZM480-480Z"
-                    />
-                  </svg>
-                  <span class="text-lg font-semibold lg:text-xl">
-                    Online Presence
-                  </span>
-                </div>
-                Having a website ensures that your business is visible online.
-                It allows your potential customers to find and reach you beyond
-                local boundaries.
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Lead capture form -->
-      <section class="px-8 pt-16 pb-16 lg:pb-0 bg-gray-50" id="signup">
-        <div class="container mx-auto">
-          <!-- Title -->
-          <h2 class="text-center text-3xl font-bold md:text-5xl">
-            Get Free <br class="lg:hidden" /><i>Email Series</i>
-          </h2>
-          <div
-            class="space-y-8 mt-16 md:text-lg flex items-end max-w-md lg:container mx-auto"
-          >
-            <div class="w-full lg:w-2/3 space-y-8 mx-auto lg:hidden">
-              <p>
-                Sign up for my exclusive 5-day email series and discover
-                everything you need to know about a website for your small
-                business. Throughout this series, you'll find answers to these
-                crucial questions:
-              </p>
-              <div class="space-y-4">
-                <div class="flex items-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="32px"
-                    viewBox="0 -960 960 960"
-                    width="32px"
-                    fill="#374151"
-                    class="mr-1"
-                  >
-                    <path
-                      d="M422-297.33 704.67-580l-49.34-48.67L422-395.33l-118-118-48.67 48.66L422-297.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Zm0-66.67q139.33 0 236.33-97.33t97-236q0-139.33-97-236.33t-236.33-97q-138.67 0-236 97-97.33 97-97.33 236.33 0 138.67 97.33 236 97.33 97.33 236 97.33ZM480-480Z"
-                    />
-                  </svg>
-                  <span class="lg:text-lg"
-                    >What makes a website profitable?
-                  </span>
-                </div>
-                <div class="flex items-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="32px"
-                    viewBox="0 -960 960 960"
-                    width="32px"
-                    fill="#374151"
-                    class="mr-1"
-                  >
-                    <path
-                      d="M422-297.33 704.67-580l-49.34-48.67L422-395.33l-118-118-48.67 48.66L422-297.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Zm0-66.67q139.33 0 236.33-97.33t97-236q0-139.33-97-236.33t-236.33-97q-138.67 0-236 97-97.33 97-97.33 236.33 0 138.67 97.33 236 97.33 97.33 236 97.33ZM480-480Z"
-                    />
-                  </svg>
-                  <span class="lg:text-lg"
-                    >What are the website's benefits?</span
-                  >
-                </div>
-                <div class="flex items-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="32px"
-                    viewBox="0 -960 960 960"
-                    width="32px"
-                    fill="#374151"
-                    class="mr-1"
-                  >
-                    <path
-                      d="M422-297.33 704.67-580l-49.34-48.67L422-395.33l-118-118-48.67 48.66L422-297.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Zm0-66.67q139.33 0 236.33-97.33t97-236q0-139.33-97-236.33t-236.33-97q-138.67 0-236 97-97.33 97-97.33 236.33 0 138.67 97.33 236 97.33 97.33 236 97.33ZM480-480Z"
-                    />
-                  </svg>
-                  <span class="lg:text-lg">Why some websites fail?</span>
-                </div>
-                <div class="flex items-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="32px"
-                    viewBox="0 -960 960 960"
-                    width="32px"
-                    fill="#374151"
-                    class="mr-1"
-                  >
-                    <path
-                      d="M422-297.33 704.67-580l-49.34-48.67L422-395.33l-118-118-48.67 48.66L422-297.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Zm0-66.67q139.33 0 236.33-97.33t97-236q0-139.33-97-236.33t-236.33-97q-138.67 0-236 97-97.33 97-97.33 236.33 0 138.67 97.33 236 97.33 97.33 236 97.33ZM480-480Z"
-                    />
-                  </svg>
-                  <span class="lg:text-lg">
-                    And a special offer just for you!</span
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="flex flex-col lg:pb-16 lg:flex-row lg:items-center lg:space-x-8 max-w-md lg:container mx-auto"
-          >
-            <div class="lg:w-2/3 order-2 lg:order-1">
-              <p class="text-lg mb-8 hidden lg:block">
-                Sign up for my exclusive 5-day email series and discover
-                everything you need to know about a website for your small
-                business. Throughout this series, you'll find answers to these
-                crucial questions:
-              </p>
-              <div class="space-y-4 hidden lg:block">
-                <div class="flex items-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="32px"
-                    viewBox="0 -960 960 960"
-                    width="32px"
-                    fill="#374151"
-                    class="mr-1"
-                  >
-                    <path
-                      d="M422-297.33 704.67-580l-49.34-48.67L422-395.33l-118-118-48.67 48.66L422-297.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Zm0-66.67q139.33 0 236.33-97.33t97-236q0-139.33-97-236.33t-236.33-97q-138.67 0-236 97-97.33 97-97.33 236.33 0 138.67 97.33 236 97.33 97.33 236 97.33ZM480-480Z"
-                    />
-                  </svg>
-                  <span class="lg:text-lg"
-                    >What makes a website profitable?
-                  </span>
-                </div>
-                <div class="flex items-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="32px"
-                    viewBox="0 -960 960 960"
-                    width="32px"
-                    fill="#374151"
-                    class="mr-1"
-                  >
-                    <path
-                      d="M422-297.33 704.67-580l-49.34-48.67L422-395.33l-118-118-48.67 48.66L422-297.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Zm0-66.67q139.33 0 236.33-97.33t97-236q0-139.33-97-236.33t-236.33-97q-138.67 0-236 97-97.33 97-97.33 236.33 0 138.67 97.33 236 97.33 97.33 236 97.33ZM480-480Z"
-                    />
-                  </svg>
-                  <span class="lg:text-lg"
-                    >What are the website's benefits?</span
-                  >
-                </div>
-                <div class="flex items-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="32px"
-                    viewBox="0 -960 960 960"
-                    width="32px"
-                    fill="#374151"
-                    class="mr-1"
-                  >
-                    <path
-                      d="M422-297.33 704.67-580l-49.34-48.67L422-395.33l-118-118-48.67 48.66L422-297.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Zm0-66.67q139.33 0 236.33-97.33t97-236q0-139.33-97-236.33t-236.33-97q-138.67 0-236 97-97.33 97-97.33 236.33 0 138.67 97.33 236 97.33 97.33 236 97.33ZM480-480Z"
-                    />
-                  </svg>
-                  <span class="lg:text-lg">Why some websites fail?</span>
-                </div>
-                <div class="flex items-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="32px"
-                    viewBox="0 -960 960 960"
-                    width="32px"
-                    fill="#374151"
-                    class="mr-1"
-                  >
-                    <path
-                      d="M422-297.33 704.67-580l-49.34-48.67L422-395.33l-118-118-48.67 48.66L422-297.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Zm0-66.67q139.33 0 236.33-97.33t97-236q0-139.33-97-236.33t-236.33-97q-138.67 0-236 97-97.33 97-97.33 236.33 0 138.67 97.33 236 97.33 97.33 236 97.33ZM480-480Z"
-                    />
-                  </svg>
-                  <span class="lg:text-lg">
-                    And a special offer just for you!</span
-                  >
-                </div>
-              </div>
-
-              <div
-                class="ml-embedded mt-8"
-                data-form="29RQPn"
-                style="background-color: none"
-              ></div>
-            </div>
-            <img
-              src="images/email-cover.webp"
-              width="512"
-              height="800"
-              alt="email cover"
-              class="w-full mt-8 lg:mt-0 lg:w-1/3 order-1 lg:order-2"
-            />
-          </div>
-        </div>
-      </section>
-
-      <!-- What I do -->
-      <section class="pt-16 px-8 bg-gray-100" id="about">
-        <div class="container mx-auto flex flex-col items-center">
-          <!-- Title -->
-          <h2 class="text-center text-3xl font-bold md:text-5xl">
-            Who I <i>am</i>
-          </h2>
-
-          <div
-            class="flex flex-col items-center justify-center mt-4 lg:flex-row"
-          >
-            <div class="flex flex-col lg:flex-row items-end">
-              <img
-                src="images/about/founder-mobile.webp"
-                alt="webtamin founder"
-                class="w-1/2 lg:hidden mx-auto"
-                width="480"
-                height="640"
-              />
-
-              <div
-                class="lg:w-2/3 mt-8 lg:mr-8 pb-16 space-y-8 md:text-lg text-gray-700"
-              >
-                <p>
-                  Hello, I'm Johnny Kim. Thank you for taking the time to learn
-                  about me and my services.
-                </p>
-                <p>
-                  I founded Webtamin in 2023 out of a passion for helping people
-                  with my web development skills. Recognizing the growing need
-                  for digital marketing, I set out to help small business
-                  owners.
-                </p>
-                <p>
-                  In today's web design industry, finding the right person for
-                  website design for small businesses can be challenging. That's
-                  where I come in.
-                </p>
-                <p>
-                  At Webtamin, I’m dedicated to delivering websites that bring
-                  leads and sales to clients. My goal is to help small business
-                  owners get the most profits out of a website.
-                </p>
-              </div>
-              <img
-                src="images/about/founder-desktop.webp"
-                alt="webtamin founder"
-                class="w-1/3 hidden lg:block ml-8 pt-16"
-                width="480"
-                height="412"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Why choose me -->
-      <section class="relative bg-gray-900 py-16 px-8">
-        <div class="container mx-auto">
-          <!-- Title -->
-          <h2
-            class="text-center text-white mt-4 text-3xl font-bold md:text-5xl"
-          >
-            What makes me <i>different</i>
-          </h2>
-          <div
-            class="grid grid-cols-1 gap-8 mt-16 max-w-sm lg:container lg:grid-cols-4 mx-auto"
-          >
-            <div
-              class="flex justify-center items-center flex-col md:justify-start"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="24px"
-                viewBox="0 -960 960 960"
-                width="24px"
-                fill="#bbdefb"
-              >
-                <path
-                  d="M440-80q-33 0-56.5-23.5T360-160v-160H240q-33 0-56.5-23.5T160-400v-280q0-66 47-113t113-47h480v440q0 33-23.5 56.5T720-320H600v160q0 33-23.5 56.5T520-80h-80ZM240-560h480v-200h-40v160h-80v-160h-40v80h-80v-80H320q-33 0-56.5 23.5T240-680v120Zm0 160h480v-80H240v80Zm0 0v-80 80Z"
-                />
-              </svg>
-              <div>
-                <p
-                  class="text-color-primary-lighter font-bold text-center mt-2 md:text-lg"
-                >
-                  Custom Design
-                </p>
-                <p class="text-gray-50 mt-4 md:text-lg">
-                  I provide a customized website without using templates. It
-                  will stand out from competitors.
-                </p>
-              </div>
-            </div>
-            <div
-              class="flex justify-center items-center flex-col md:justify-start"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="24px"
-                viewBox="0 -960 960 960"
-                width="24px"
-                fill="#bbdefb"
-              >
-                <path
-                  d="M80-200v-80h800v80H80Zm40-120v-40q0-128 78.5-226T400-710v-10q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720v10q124 26 202 124t78 226v40H120Zm82-80h556q-14-104-93-172t-185-68q-106 0-184.5 68T202-400Zm278 0Z"
-                />
-              </svg>
-              <div>
-                <p
-                  class="text-color-primary-lighter font-bold text-center mt-2 md:text-lg"
-                >
-                  24/7 Support
-                </p>
-                <p class="text-gray-50 mt-4 md:text-lg">
-                  You can contact me directly around the clock - no phone tree
-                  or automated responses.
-                </p>
-              </div>
-            </div>
-            <div
-              class="flex justify-center items-center flex-col md:justify-start"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="24px"
-                viewBox="0 -960 960 960"
-                width="24px"
-                fill="#bbdefb"
-              >
-                <path
-                  d="M220-260q-92 0-156-64T0-480q0-92 64-156t156-64q37 0 71 13t61 37l68 62-60 54-62-56q-16-14-36-22t-42-8q-58 0-99 41t-41 99q0 58 41 99t99 41q22 0 42-8t36-22l310-280q27-24 61-37t71-13q92 0 156 64t64 156q0 92-64 156t-156 64q-37 0-71-13t-61-37l-68-62 60-54 62 56q16 14 36 22t42 8q58 0 99-41t41-99q0-58-41-99t-99-41q-22 0-42 8t-36 22L352-310q-27 24-61 37t-71 13Z"
-                />
-              </svg>
-              <div>
-                <p
-                  class="text-color-primary-lighter font-bold text-center mt-2 md:text-lg"
-                >
-                  Unlimited Revision
-                </p>
-                <p class="text-gray-50 mt-4 md:text-lg">
-                  I edit your website design as many times as you want - no
-                  additional cost.
-                </p>
-              </div>
-            </div>
-            <div
-              class="flex justify-center items-center flex-col md:justify-start"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="24px"
-                viewBox="0 -960 960 960"
-                width="24px"
-                fill="#bbdefb"
-              >
-                <path
-                  d="M756-120 537-339l84-84 219 219-84 84Zm-552 0-84-84 276-276-68-68-28 28-51-51v82l-28 28-121-121 28-28h82l-50-50 142-142q20-20 43-29t47-9q24 0 47 9t43 29l-92 92 50 50-28 28 68 68 90-90q-4-11-6.5-23t-2.5-24q0-59 40.5-99.5T701-841q15 0 28.5 3t27.5 9l-99 99 72 72 99-99q7 14 9.5 27.5T841-701q0 59-40.5 99.5T701-561q-12 0-24-2t-23-7L204-120Z"
-                />
-              </svg>
-              <div>
-                <p
-                  class="text-color-primary-lighter font-bold text-center mt-2 md:text-lg"
-                >
-                  Lifetime Maintenance
-                </p>
-                <p class="text-gray-50 mt-4 md:text-lg">
-                  I take care of your website to make sure it’s secure and works
-                  24/7 - no hassle.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <!-- What are the services -->
       <section class="py-16 bg-gray-50" id="services">
         <div class="container mx-auto flex flex-col items-center">
           <!-- Title -->
           <h2 class="text-center mt-4 text-3xl font-bold md:text-5xl">
-            What are the <i>services</i>
+            Services
           </h2>
           <div class="mt-16">
             <div
@@ -846,120 +361,225 @@
           </div>
         </div>
       </section>
+      <!-- What I do -->
+      <section class="pt-16 px-8 bg-gray-100" id="about">
+        <div class="container mx-auto flex flex-col items-center">
+          <!-- Title -->
+          <h2 class="text-center text-3xl font-bold md:text-5xl">About Me</h2>
+
+          <div
+            class="flex flex-col items-center justify-center mt-4 lg:flex-row"
+          >
+            <div class="flex flex-col lg:flex-row items-end">
+              <img
+                src="images/about/founder-mobile.webp"
+                alt="webtamin founder"
+                class="w-1/2 lg:hidden mx-auto"
+                width="480"
+                height="640"
+              />
+
+              <div
+                class="lg:w-2/3 mt-8 lg:mr-8 pb-16 space-y-8 md:text-lg text-gray-700"
+              >
+                <p>
+                  Hello, I'm Johnny Kim. Thank you for taking the time to learn
+                  about me and my services.
+                </p>
+                <p>
+                  I founded Webtamin in 2023 out of a passion for helping people
+                  with my web development skills. Recognizing the growing need
+                  for digital marketing, I set out to help small auto repair
+                  business owners.
+                </p>
+                <p>
+                  In today's web design industry, finding the right person for
+                  auto repair website design for small businesses can be
+                  challenging. That's where I come in.
+                </p>
+                <p>
+                  At Webtamin, I’m dedicated to delivering websites that bring
+                  leads and sales to clients. My goal is to help small auto
+                  repair business owners get the most profits out of a website.
+                </p>
+                <a
+                  href="#contact"
+                  class="mx-auto text-sm text-white bg-color-primary inline-block uppercase px-6 py-3 shadow-md rounded-sm lg:text-base"
+                  >contact me</a
+                >
+              </div>
+              <img
+                src="images/about/founder-desktop.webp"
+                alt="webtamin founder"
+                class="w-1/3 hidden lg:block ml-8 pt-16"
+                width="480"
+                height="412"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Why choose me -->
+      <section class="relative bg-gray-900 py-16 px-8">
+        <div class="container mx-auto">
+          <!-- Title -->
+          <h2
+            class="text-center text-white mt-4 text-3xl font-bold md:text-5xl"
+          >
+            What Makes Me Different
+          </h2>
+          <div
+            class="grid grid-cols-1 gap-8 mt-16 max-w-sm lg:container lg:grid-cols-4 mx-auto"
+          >
+            <div
+              class="flex justify-center items-center flex-col md:justify-start"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#bbdefb"
+              >
+                <path
+                  d="M440-80q-33 0-56.5-23.5T360-160v-160H240q-33 0-56.5-23.5T160-400v-280q0-66 47-113t113-47h480v440q0 33-23.5 56.5T720-320H600v160q0 33-23.5 56.5T520-80h-80ZM240-560h480v-200h-40v160h-80v-160h-40v80h-80v-80H320q-33 0-56.5 23.5T240-680v120Zm0 160h480v-80H240v80Zm0 0v-80 80Z"
+                />
+              </svg>
+              <div>
+                <p
+                  class="text-color-primary-lighter font-bold text-center mt-2 md:text-lg"
+                >
+                  Custom Design
+                </p>
+                <p class="text-gray-50 mt-4 md:text-lg">
+                  I provide a customized website without using templates. It
+                  will stand out from competitors.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex justify-center items-center flex-col md:justify-start"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#bbdefb"
+              >
+                <path
+                  d="M80-200v-80h800v80H80Zm40-120v-40q0-128 78.5-226T400-710v-10q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720v10q124 26 202 124t78 226v40H120Zm82-80h556q-14-104-93-172t-185-68q-106 0-184.5 68T202-400Zm278 0Z"
+                />
+              </svg>
+              <div>
+                <p
+                  class="text-color-primary-lighter font-bold text-center mt-2 md:text-lg"
+                >
+                  24/7 Support
+                </p>
+                <p class="text-gray-50 mt-4 md:text-lg">
+                  You can contact me directly around the clock - no phone tree
+                  or automated responses.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex justify-center items-center flex-col md:justify-start"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#bbdefb"
+              >
+                <path
+                  d="M220-260q-92 0-156-64T0-480q0-92 64-156t156-64q37 0 71 13t61 37l68 62-60 54-62-56q-16-14-36-22t-42-8q-58 0-99 41t-41 99q0 58 41 99t99 41q22 0 42-8t36-22l310-280q27-24 61-37t71-13q92 0 156 64t64 156q0 92-64 156t-156 64q-37 0-71-13t-61-37l-68-62 60-54 62 56q16 14 36 22t42 8q58 0 99-41t41-99q0-58-41-99t-99-41q-22 0-42 8t-36 22L352-310q-27 24-61 37t-71 13Z"
+                />
+              </svg>
+              <div>
+                <p
+                  class="text-color-primary-lighter font-bold text-center mt-2 md:text-lg"
+                >
+                  Unlimited Revision
+                </p>
+                <p class="text-gray-50 mt-4 md:text-lg">
+                  I edit your website design as many times as you want - no
+                  additional cost.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex justify-center items-center flex-col md:justify-start"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#bbdefb"
+              >
+                <path
+                  d="M756-120 537-339l84-84 219 219-84 84Zm-552 0-84-84 276-276-68-68-28 28-51-51v82l-28 28-121-121 28-28h82l-50-50 142-142q20-20 43-29t47-9q24 0 47 9t43 29l-92 92 50 50-28 28 68 68 90-90q-4-11-6.5-23t-2.5-24q0-59 40.5-99.5T701-841q15 0 28.5 3t27.5 9l-99 99 72 72 99-99q7 14 9.5 27.5T841-701q0 59-40.5 99.5T701-561q-12 0-24-2t-23-7L204-120Z"
+                />
+              </svg>
+              <div>
+                <p
+                  class="text-color-primary-lighter font-bold text-center mt-2 md:text-lg"
+                >
+                  Lifetime Maintenance
+                </p>
+                <p class="text-gray-50 mt-4 md:text-lg">
+                  I take care of your website to make sure it’s secure and works
+                  24/7 - no hassle.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- Portfolio -->
       <section class="px-8 py-16 bg-gray-100" id="portfolio">
         <div class="container mx-auto">
           <!-- Title -->
           <h2 class="text-center mt-4 text-3xl font-bold md:text-5xl">
-            Check my <i>project</i>
+            Portfolio
           </h2>
           <!-- Container -->
-          <div class="mt-16 gap-8 grid grid-cols-1 md:grid-cols-3">
+          <div class="mt-16 flex">
             <!-- Content -->
-            <div class="flex flex-col">
-              <div class="shadow-md rounded flex flex-col h-full">
+            <div class="flex flex-col mx-auto">
+              <div
+                class="rounded flex flex-col h-full lg:flex-row lg:items-center"
+              >
                 <img
-                  src="images/portfolio/junlawfirm-1024.webp"
-                  srcset="
-                    images/portfolio/junlawfirm-480.webp   480w,
-                    images/portfolio/junlawfirm-640.webp   640w,
-                    images/portfolio/junlawfirm-1024.webp 1024w
-                  "
-                  alt="jun law firm website mockup"
-                  width="1024"
-                  height="556"
-                  class="p-8"
+                  src="images/portfolio/next-level.webp"
+                  alt="next level website mockup"
+                  class="lg:w-1/2"
+                  width="600"
+                  height="326"
                 />
-                <div class="h-full p-8 flex flex-col justify-between">
+                <div
+                  class="p-4 flex flex-col justify-between mt-4 lg:mt-0 lg:p-0 lg:ml-8 lg:justify-start"
+                >
                   <div>
-                    <p class="font-semibold md:text-lg">
-                      Law Office of Hong-min Jun, P.C
+                    <p class="font-semibold text-lg md:text-xl">
+                      Next Level Performance & Dyno
                     </p>
-                    <p class="text-sm mt-1 md:text-base">Fishers, IN</p>
-                    <p class="text-sm mt-4 md:text-base">
-                      Law Office of Hong-min Jun, P.C serves foreign-born
-                      individuals and small business owners.
+                    <p class="text-sm mt-1 md:text-lg">Jefferson City, TN</p>
+                    <p class="mt-4 md:text-lg">
+                      Next Level Performance & Dyno offers auto repair, engine
+                      modifications, suspension upgrades, and other performance
+                      upgrades.
                     </p>
                   </div>
                   <a
-                    href="https://junlawfirm.com/"
+                    href="https://nextlevelperformancedyno.com/"
                     target="_blank"
                     rel="noopener"
-                    class="w-max mt-8 bg-color-primary text-white inline-block uppercase px-6 py-3 shadow-md rounded-sm text-sm md:text-base"
-                    >visit Hong-min Jun</a
-                  >
-                </div>
-              </div>
-            </div>
-            <!-- Content -->
-            <div class="flex flex-col">
-              <div class="shadow-md rounded flex flex-col h-full">
-                <img
-                  src="images/portfolio/specialized-auto-tint-1024.webp"
-                  srcset="
-                    images/portfolio/specialized-auto-tint-480.webp   480w,
-                    images/portfolio/specialized-auto-tint-640.webp   640w,
-                    images/portfolio/specialized-auto-tint-1024.webp 1024w
-                  "
-                  alt="specialized auto tint website mockup"
-                  width="1024"
-                  height="556"
-                  class="p-8"
-                />
-                <div class="h-full p-8 flex flex-col justify-between">
-                  <div>
-                    <p class="font-semibold md:text-lg">
-                      Specialized Auto Tint
-                    </p>
-                    <p class="text-sm mt-1 md:text-base">Irvine, CA</p>
-                    <p class="text-sm mt-4 md:text-base">
-                      Specialized Auto Tint offers premium window tinting
-                      services and ceramic coating for vehicles.
-                    </p>
-                  </div>
-                  <a
-                    href="https://s-worktint.com/"
-                    target="_blank"
-                    rel="noopener"
-                    class="w-max mt-8 bg-color-primary text-white inline-block uppercase px-6 py-3 shadow-md rounded-sm text-sm md:text-base"
-                    >visit Specialized Auto Tint</a
-                  >
-                </div>
-              </div>
-            </div>
-
-            <!-- Content -->
-            <div class="flex flex-col">
-              <div class="shadow-md rounded flex flex-col h-full">
-                <img
-                  src="images/portfolio/haxa-1024.webp"
-                  srcset="
-                    images/portfolio/haxa-480.webp   480w,
-                    images/portfolio/haxa-640.webp   640w,
-                    images/portfolio/haxa-1024.webp 1024w
-                  "
-                  alt="haxa website mockup"
-                  width="1024"
-                  height="556"
-                  class="p-8"
-                />
-                <div class="h-full p-8 flex flex-col justify-between">
-                  <div>
-                    <p class="font-semibold md:text-lg">Haxa Labs</p>
-                    <p class="text-sm mt-1 md:text-base">Sacramento, CA</p>
-                    <p class="text-sm mt-4 md:text-base">
-                      Haxa Labs offers a diverse selection of strains, expert
-                      cultivation advice, and superior genetics for optimal
-                      yields.
-                    </p>
-                  </div>
-                  <a
-                    href="https://haxalabs.com/"
-                    target="_blank"
-                    rel="noopener"
-                    class="w-max mt-8 bg-color-primary text-white inline-block uppercase px-6 py-3 shadow-md rounded-sm text-sm md:text-base"
-                    >visit Haxa Labs</a
+                    class="w-max mt-8 bg-color-primary text-white inline-block uppercase px-6 py-3 shadow-md rounded-sm text-sm lg:text-base"
+                    >visit Next Level Performance & Dyno</a
                   >
                 </div>
               </div>
@@ -975,7 +595,7 @@
           <h2
             class="text-center text-white mt-4 text-3xl font-bold md:text-5xl"
           >
-            How does it <i>work</i>
+            How Does It Work
           </h2>
           <div
             class="mx-auto grid grid-cols-1 gap-8 mt-16 lg:grid-cols-4 max-w-sm lg:container"
@@ -1093,54 +713,12 @@
         </div>
       </section>
 
-      <!-- Who this is not for -->
-      <section class="px-8 pt-16 pb-16 lg:pb-0 bg-gray-50">
-        <div class="container mx-auto">
-          <!-- Title -->
-          <h2 class="text-center text-3xl font-bold md:text-5xl">
-            Who this is <i>NOT</i> for
-          </h2>
-          <div
-            class="space-y-8 mt-16 md:text-lg flex items-end max-w-md lg:container mx-auto"
-          >
-            <div class="w-full lg:w-2/3 lg:pb-16">
-              <p>
-                A website is an investment, not a turnkey product. It takes time
-                to build your online presence and get a return on investment. If
-                you’re one of the below, I may not be the right fit.
-              </p>
-              <p class="my-8">
-                <span class="font-semibold text-lg md:text-xl inline-block mb-1"
-                  >❌ Short-term Visionary</span
-                ><br />
-                On average, a newborn website takes at least 6-12 months to rank
-                well online. If you’re expecting a quick sales boost in a month
-                or two, building a website may not the right choice.
-              </p>
-              <p>
-                <span class="font-semibold text-lg md:text-xl inline-block mb-1"
-                  >❌ Digital Marketing Skeptic</span
-                ><br />To maximize your website's impact, investing in
-                strategies like SEO and content marketing is vital. Without
-                these efforts, your site may struggle to get traffic and leads.
-              </p>
-            </div>
-            <img
-              src="images/founder.webp"
-              alt="founder"
-              class="hidden lg:block w-1/3"
-              width="328"
-              height="292"
-            />
-          </div>
-        </div>
-      </section>
       <!-- Pricing -->
       <section class="px-8 py-16 bg-gray-100" id="pricing">
         <div class="container mx-auto text-center">
           <!-- Title -->
           <h2 class="text-center mt-4 text-3xl font-bold md:text-5xl">
-            How is the <i>pricing</i>
+            Pricing
           </h2>
           <ul
             class="list-disc mx-auto text-left text-gray-700 text-lg md:text-xl mt-8 md:w-max pl-4 md:pl-0"
@@ -1344,7 +922,7 @@
           <h2
             class="text-white text-center mt-4 text-3xl font-bold md:text-5xl"
           >
-            Don't <i>worry</i>
+            Quality Assurance
           </h2>
           <p
             class="text-gray-100 text-lg md:text-xl mt-8 md:text-center max-w-md lg:container mx-auto"
@@ -1378,7 +956,7 @@
           <h2
             class="text-center lg:text-left text-white text-3xl font-bold md:text-5xl lg:mb-8"
           >
-            Get started here <i>today</i>
+            Let's Get Started Today
           </h2>
           <div
             class="w-full mt-8 flex flex-col lg:flex-row lg:items-center lg:mt-0"
@@ -1472,6 +1050,7 @@
                 <button
                   type="submit"
                   class="block mx-auto uppercase py-4 px-16 mt-8 text-white tracking-wider font-semibold bg-color-primary w-full"
+                  onclick="return gtag_report_conversion_contact()"
                 >
                   send
                 </button>
@@ -1480,7 +1059,6 @@
           </div>
         </div>
       </section>
-
       <!-- FAQ -->
       <section>
         <div class="bg-white container mx-auto py-16 px-8 space-y-6">
@@ -1939,15 +1517,6 @@
 
         <div>
           &copy; <span id="currentYear"></span> Webtamin. All rights reserved.
-        </div>
-        <div class="flex relative mt-2 space-x-2">
-          <a href="privacy-policy.html" class="text-gray-400 hover:text-white"
-            >Privacy Policy</a
-          >
-          <span>|</span>
-          <a href="terms-of-service.html" class="text-gray-400 hover:text-white"
-            >Terms of Service</a
-          >
         </div>
       </div>
     </footer>
