@@ -130,6 +130,12 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
         })
         return false
       }
+      function gtag_report_conversion_email() {
+        gtag('event', 'conversion', {
+          send_to: 'AW-11444917825/xzXqCIKLir8ZEMGsrtEq',
+        })
+        return false
+      }
     </script>
   </head>
   <body>
@@ -1066,6 +1072,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                 <a
                   href="mailto:contact@webtamin.co"
                   class="text-white w-max md:text-lg text-center flex items-center contact-link"
+                  onclick="return gtag_report_conversion_email()"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -1465,8 +1472,8 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
               version="1.1"
               xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink"
-              fill="##9ca3af"
-              stroke="##9ca3af"
+              fill="#9ca3af"
+              stroke="#9ca3af"
             >
               <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
               <g
