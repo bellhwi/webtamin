@@ -53,44 +53,6 @@
         ]
       }
     </script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org/",
-        "@type": "ItemList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Services",
-            "url": "https://webtamin.co/#services"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "About",
-            "url": "https://webtamin.co/#about"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "Portfolio",
-            "url": "https://webtamin.co/#portfolio"
-          },
-          {
-            "@type": "ListItem",
-            "position": 4,
-            "name": "Pricing",
-            "url": "https://webtamin.co/#pricing"
-          },
-          {
-            "@type": "ListItem",
-            "position": 5,
-            "name": "Contact",
-            "url": "https://webtamin.co/#contact"
-          }
-        ]
-      }
-    </script>
     <title>Web Design For Small Businesses | Webtamin</title>
 
     <!-- CSS Files -->
@@ -141,43 +103,6 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
   </head>
   <body>
     <main>
-      <!-- Moving Navbar -->
-      <nav
-        class="moving-nav hidden lg:flex fixed top-0 left-0 right-0 z-30 w-full flex items-center px-8 py-2 lg:py-4 justify-between bg-color-primary-dark drop-shadow-md"
-        id="moving-nav"
-      >
-        <!-- Logo -->
-        <a href="#hero">
-          <img
-            src="images/logo.webp"
-            alt="logo"
-            class="w-32 sm:w-36"
-            width="240"
-            height="56"
-          />
-        </a>
-        <ul
-          class="z-50 nav fixed right-0 top-0 h-full w-36 text-sm bg-gray-900 text-gray-100 font-semibold flex flex-col p-6 space-y-6 lg:translate-x-0 lg:bg-transparent lg:flex-row lg:w-max lg:text-base lg:relative lg:p-0 lg:space-y-0 lg:space-x-8"
-          id="nav-list"
-        >
-          <li>
-            <a href="#services" class="uppercase">services</a>
-          </li>
-          <li>
-            <a href="#about" class="uppercase">about</a>
-          </li>
-
-          <li>
-            <a href="#portfolio" class="uppercase">portfolio</a>
-          </li>
-          <li>
-            <a href="#pricing" class="uppercase">pricing</a>
-          </li>
-          <li>
-            <a href="#contact" class="uppercase">contact</a>
-          </li>
-        </ul>
-      </nav>
       <!-- Hero -->
       <section class="relative py-16 px-8 bg-gray-900" id="hero">
         <!-- Hero content -->
@@ -194,27 +119,6 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                 height="56"
               />
             </a>
-            <ul
-              class="z-50 nav fixed right-0 top-0 bottom-0 h-full w-36 text-sm bg-gray-900 text-gray-100 font-semibold flex flex-col p-6 space-y-6 lg:translate-x-0 lg:bg-transparent lg:flex-row lg:w-max lg:text-base lg:relative lg:p-0 lg:space-y-0 lg:space-x-8"
-              id="nav-list"
-            >
-              <li>
-                <a href="#services" class="uppercase">services</a>
-              </li>
-              <li>
-                <a href="#about" class="uppercase">about</a>
-              </li>
-
-              <li>
-                <a href="#portfolio" class="uppercase">portfolio</a>
-              </li>
-              <li>
-                <a href="#pricing" class="uppercase">pricing</a>
-              </li>
-              <li>
-                <a href="#contact" class="uppercase">contact</a>
-              </li>
-            </ul>
           </nav>
           <!-- Text -->
           <div class="flex flex-col lg:flex-row lg:items-center mt-16">
@@ -249,7 +153,49 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
           </div>
         </div>
       </section>
-      <!-- What are the services -->
+      <!-- Trusted By -->
+      <section class="py-16 bg-gray-100 px-8">
+        <div class="container mx-auto flex flex-col items-center">
+          <!-- Title -->
+          <h2 class="text-center mt-4 text-3xl font-bold md:text-5xl">
+            Trusted By
+          </h2>
+          <div
+            class="mt-16 grid grid-cols-2 justify-items-center items-center gap-8 md:grid-cols-4"
+          >
+            <img
+              src="images/client-logos/sat-logo-400.webp"
+              alt="client logo 1"
+              class="w-2/3"
+              width="400"
+              height="85"
+            />
+            <img
+              src="images/client-logos/next-level-logo-400.webp"
+              alt="client logo 2"
+              class="w-2/3"
+              width="400"
+              height="53"
+            />
+            <img
+              src="images/client-logos/jun-law-firm-logo-400.webp"
+              alt="client logo 3"
+              class="w-2/3"
+              width="400"
+              height="188"
+            />
+            <img
+              src="images/client-logos/samsung-shipping-logo-400.webp"
+              alt="client logo 4"
+              class="w-2/3"
+              width="400"
+              height="140"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
       <section class="py-16 bg-gray-50" id="services">
         <div class="container mx-auto flex flex-col items-center">
           <!-- Title -->
@@ -466,73 +412,13 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
           </div>
         </div>
       </section>
-      <!-- What I do -->
-      <section class="pt-16 px-8 bg-gray-100" id="about">
-        <div class="container mx-auto flex flex-col items-center">
-          <!-- Title -->
-          <h2 class="text-center text-3xl font-bold md:text-5xl">About Me</h2>
 
-          <div
-            class="flex flex-col items-center justify-center mt-4 lg:flex-row"
-          >
-            <div class="flex flex-col lg:flex-row items-end">
-              <img
-                src="images/about/founder-mobile.webp"
-                alt="webtamin founder"
-                class="w-1/2 lg:hidden mx-auto"
-                width="480"
-                height="640"
-              />
-
-              <div
-                class="lg:w-2/3 mt-8 lg:mr-8 pb-16 space-y-8 md:text-lg text-gray-700"
-              >
-                <p>
-                  Hello, I'm Johnny Kim. Thank you for taking the time to learn
-                  about me and my services.
-                </p>
-                <p>
-                  I founded Webtamin in 2023 out of a passion for helping people
-                  with my web development skills. Recognizing the growing need
-                  for digital marketing, I set out to help small business
-                  owners.
-                </p>
-                <p>
-                  In today's web design industry, finding the right person for
-                  website design for small businesses can be challenging. That's
-                  where I come in.
-                </p>
-                <p>
-                  At Webtamin, I’m dedicated to delivering websites that bring
-                  leads and sales to clients. My goal is to help small auto
-                  detailing business owners get the most profits out of a
-                  website.
-                </p>
-                <a
-                  href="#contact"
-                  class="mx-auto text-sm text-white bg-color-primary inline-block uppercase px-6 py-3 shadow-md rounded-sm lg:text-base"
-                  >contact me</a
-                >
-              </div>
-              <img
-                src="images/about/founder-desktop.webp"
-                alt="webtamin founder"
-                class="w-1/3 hidden lg:block ml-8 pt-16"
-                width="480"
-                height="412"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Why choose me -->
-      <section class="relative bg-gray-900 py-16 px-8">
+      <!-- Benefits -->
+      <section class="relative bg-gray-100 py-16 px-8">
         <div class="container mx-auto">
           <!-- Title -->
-          <h2
-            class="text-center text-white mt-4 text-3xl font-bold md:text-5xl"
-          >
-            What makes me <i>different</i>
+          <h2 class="text-center mt-4 text-3xl font-bold md:text-5xl">
+            Benefits
           </h2>
           <div
             class="grid grid-cols-1 gap-8 mt-16 max-w-sm lg:container lg:grid-cols-4 mx-auto"
@@ -545,7 +431,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                 height="24px"
                 viewBox="0 -960 960 960"
                 width="24px"
-                fill="#bbdefb"
+                fill="#1976d2"
               >
                 <path
                   d="M440-80q-33 0-56.5-23.5T360-160v-160H240q-33 0-56.5-23.5T160-400v-280q0-66 47-113t113-47h480v440q0 33-23.5 56.5T720-320H600v160q0 33-23.5 56.5T520-80h-80ZM240-560h480v-200h-40v160h-80v-160h-40v80h-80v-80H320q-33 0-56.5 23.5T240-680v120Zm0 160h480v-80H240v80Zm0 0v-80 80Z"
@@ -553,11 +439,11 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
               </svg>
               <div>
                 <p
-                  class="text-color-primary-lighter font-bold text-center mt-2 md:text-lg"
+                  class="text-color-primary font-bold text-center mt-2 md:text-lg"
                 >
                   Custom Design
                 </p>
-                <p class="text-gray-50 mt-4 md:text-lg">
+                <p class="mt-4 md:text-lg">
                   I provide a customized website without using templates. It
                   will stand out from competitors.
                 </p>
@@ -571,7 +457,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                 height="24px"
                 viewBox="0 -960 960 960"
                 width="24px"
-                fill="#bbdefb"
+                fill="#1976d2"
               >
                 <path
                   d="M80-200v-80h800v80H80Zm40-120v-40q0-128 78.5-226T400-710v-10q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720v10q124 26 202 124t78 226v40H120Zm82-80h556q-14-104-93-172t-185-68q-106 0-184.5 68T202-400Zm278 0Z"
@@ -579,11 +465,11 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
               </svg>
               <div>
                 <p
-                  class="text-color-primary-lighter font-bold text-center mt-2 md:text-lg"
+                  class="text-color-primary font-bold text-center mt-2 md:text-lg"
                 >
                   24/7 Support
                 </p>
-                <p class="text-gray-50 mt-4 md:text-lg">
+                <p class="mt-4 md:text-lg">
                   You can contact me directly around the clock - no phone tree
                   or automated responses.
                 </p>
@@ -597,7 +483,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                 height="24px"
                 viewBox="0 -960 960 960"
                 width="24px"
-                fill="#bbdefb"
+                fill="#1976d2"
               >
                 <path
                   d="M220-260q-92 0-156-64T0-480q0-92 64-156t156-64q37 0 71 13t61 37l68 62-60 54-62-56q-16-14-36-22t-42-8q-58 0-99 41t-41 99q0 58 41 99t99 41q22 0 42-8t36-22l310-280q27-24 61-37t71-13q92 0 156 64t64 156q0 92-64 156t-156 64q-37 0-71-13t-61-37l-68-62 60-54 62 56q16 14 36 22t42 8q58 0 99-41t41-99q0-58-41-99t-99-41q-22 0-42 8t-36 22L352-310q-27 24-61 37t-71 13Z"
@@ -605,11 +491,11 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
               </svg>
               <div>
                 <p
-                  class="text-color-primary-lighter font-bold text-center mt-2 md:text-lg"
+                  class="text-color-primary font-bold text-center mt-2 md:text-lg"
                 >
                   Unlimited Revision
                 </p>
-                <p class="text-gray-50 mt-4 md:text-lg">
+                <p class="mt-4 md:text-lg">
                   I edit your website design as many times as you want - no
                   additional cost.
                 </p>
@@ -623,7 +509,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                 height="24px"
                 viewBox="0 -960 960 960"
                 width="24px"
-                fill="#bbdefb"
+                fill="#1976d2"
               >
                 <path
                   d="M756-120 537-339l84-84 219 219-84 84Zm-552 0-84-84 276-276-68-68-28 28-51-51v82l-28 28-121-121 28-28h82l-50-50 142-142q20-20 43-29t47-9q24 0 47 9t43 29l-92 92 50 50-28 28 68 68 90-90q-4-11-6.5-23t-2.5-24q0-59 40.5-99.5T701-841q15 0 28.5 3t27.5 9l-99 99 72 72 99-99q7 14 9.5 27.5T841-701q0 59-40.5 99.5T701-561q-12 0-24-2t-23-7L204-120Z"
@@ -631,22 +517,27 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
               </svg>
               <div>
                 <p
-                  class="text-color-primary-lighter font-bold text-center mt-2 md:text-lg"
+                  class="text-color-primary font-bold text-center mt-2 md:text-lg"
                 >
                   Lifetime Maintenance
                 </p>
-                <p class="text-gray-50 mt-4 md:text-lg">
+                <p class="mt-4 md:text-lg">
                   I take care of your website to make sure it’s secure and works
                   24/7 - no hassle.
                 </p>
               </div>
             </div>
           </div>
+          <a
+            href="#contact"
+            class="mx-auto text-sm text-white bg-color-primary block uppercase mt-16 px-6 w-max text-center py-3 shadow-md rounded-sm lg:text-base"
+            >contact me</a
+          >
         </div>
       </section>
 
       <!-- Portfolio -->
-      <section class="px-8 py-16 bg-gray-100" id="portfolio">
+      <section class="px-8 py-16 bg-gray-50" id="portfolio">
         <div class="container mx-auto">
           <!-- Title -->
           <h2 class="text-center mt-4 text-3xl font-bold md:text-5xl">
@@ -760,131 +651,6 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                     >visit Haxa Labs</a
                   >
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- How does it work -->
-      <section class="relative bg-gray-900 py-16 px-8">
-        <div class="container mx-auto">
-          <!-- Title -->
-          <h2
-            class="text-center text-white mt-4 text-3xl font-bold md:text-5xl"
-          >
-            How does it <i>work</i>
-          </h2>
-          <div
-            class="mx-auto grid grid-cols-1 gap-8 mt-16 lg:grid-cols-4 max-w-sm lg:container"
-          >
-            <div
-              class="flex justify-center items-center flex-col md:justify-start"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="24px"
-                viewBox="0 -960 960 960"
-                width="24px"
-                fill="#bbdefb"
-              >
-                <path
-                  d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"
-                />
-              </svg>
-              <div>
-                <p
-                  class="text-color-primary-lighter font-bold text-center mt-2 md:text-lg"
-                >
-                  1. Research Business
-                </p>
-                <p class="text-gray-50 mt-4 md:text-lg">
-                  I send you a questionnaire about your business. Then I
-                  research your business to figure out your services,
-                  competitors, and target market.
-                </p>
-              </div>
-            </div>
-            <div
-              class="flex justify-center items-center flex-col md:justify-start"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="24px"
-                viewBox="0 -960 960 960"
-                width="24px"
-                fill="#bbdefb"
-              >
-                <path
-                  d="M200-200h57l391-391-57-57-391 391v57Zm-80 80v-170l528-527q12-11 26.5-17t30.5-6q16 0 31 6t26 18l55 56q12 11 17.5 26t5.5 30q0 16-5.5 30.5T817-647L290-120H120Zm640-584-56-56 56 56Zm-141 85-28-29 57 57-29-28Z"
-                />
-              </svg>
-              <div>
-                <p
-                  class="text-color-primary-lighter font-bold text-center mt-2 md:text-lg"
-                >
-                  2. Write Content
-                </p>
-                <p class="text-gray-50 mt-4 md:text-lg">
-                  I write down engaging content about your business. I focus on
-                  customer's needs and pinpoint your solutions to their
-                  problems.
-                </p>
-              </div>
-            </div>
-            <div
-              class="flex justify-center items-center flex-col md:justify-start"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="24px"
-                viewBox="0 -960 960 960"
-                width="24px"
-                fill="#bbdefb"
-              >
-                <path
-                  d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z"
-                />
-              </svg>
-              <div>
-                <p
-                  class="text-color-primary-lighter font-bold text-center mt-2 md:text-lg"
-                >
-                  3. Design & Develop
-                </p>
-                <p class="text-gray-50 mt-4 md:text-lg">
-                  I design the website's look to ensure it represents the best
-                  of your business. Then I develop the website by hand-coding to
-                  make it alive.
-                </p>
-              </div>
-            </div>
-
-            <div
-              class="flex justify-center items-center flex-col md:justify-start"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="24px"
-                viewBox="0 -960 960 960"
-                width="24px"
-                fill="#bbdefb"
-              >
-                <path
-                  d="M720-400v-120H600v-80h120v-120h80v120h120v80H800v120h-80Zm-360-80q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM40-160v-112q0-34 17.5-62.5T104-378q62-31 126-46.5T360-440q66 0 130 15.5T616-378q29 15 46.5 43.5T680-272v112H40Zm80-80h480v-32q0-11-5.5-20T580-306q-54-27-109-40.5T360-360q-56 0-111 13.5T140-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T440-640q0-33-23.5-56.5T360-720q-33 0-56.5 23.5T280-640q0 33 23.5 56.5T360-560Zm0-80Zm0 400Z"
-                />
-              </svg>
-              <div>
-                <p
-                  class="text-color-primary-lighter font-bold text-center mt-2 md:text-lg"
-                >
-                  4. Get Leads
-                </p>
-                <p class="text-gray-50 mt-4 md:text-lg">
-                  I structure your website in a way that can rank high on
-                  Google. Your prospects will find their answer in your services
-                  and contact you.
-                </p>
               </div>
             </div>
           </div>
@@ -1094,6 +860,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
           </div>
         </div>
       </section>
+
       <!-- Quality Assurance -->
       <section class="relative py-16 px-8 bg-gray-900">
         <div class="container mx-auto">
@@ -1134,7 +901,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
           <h2
             class="text-center lg:text-left text-white text-3xl font-bold md:text-5xl lg:mb-8"
           >
-            Let's Get Started Today
+            Contact Me Today
           </h2>
           <div
             class="w-full mt-8 flex flex-col lg:flex-row lg:items-center lg:mt-0"
@@ -1239,8 +1006,8 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
         </div>
       </section>
       <!-- FAQ -->
-      <section>
-        <div class="bg-white container mx-auto py-16 px-8 space-y-6">
+      <section class="bg-gray-50">
+        <div class="container mx-auto py-16 px-8 space-y-6">
           <h2 class="text-center text-3xl font-bold md:text-5xl pb-16">FAQ</h2>
           <div class="accordion">
             <div
