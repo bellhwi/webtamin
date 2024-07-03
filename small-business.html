@@ -84,22 +84,6 @@
 
       gtag('config', 'G-JGET5W7JRZ')
     </script>
-    <!-- Event snippet for Contact Me Through Form conversion page
-In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-    <script>
-      function gtag_report_conversion_contact() {
-        gtag('event', 'conversion', {
-          send_to: 'AW-11444917825/fsBKCIiLtbUZEMGsrtEq',
-        })
-        return false
-      }
-      function gtag_report_conversion_email() {
-        gtag('event', 'conversion', {
-          send_to: 'AW-11444917825/xzXqCIKLir8ZEMGsrtEq',
-        })
-        return false
-      }
-    </script>
   </head>
   <body>
     <main>
@@ -196,7 +180,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
       </section>
 
       <!-- Services -->
-      <section class="py-16 bg-gray-50" id="services">
+      <section class="py-16 bg-gray-50">
         <div class="container mx-auto flex flex-col items-center">
           <!-- Title -->
           <h2 class="text-center mt-4 text-3xl font-bold md:text-5xl">
@@ -912,7 +896,6 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                 <a
                   href="mailto:contact@webtamin.co"
                   class="text-white w-max md:text-lg text-center flex items-center contact-link"
-                  onclick="return gtag_report_conversion_email()"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -996,7 +979,6 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                 <button
                   type="submit"
                   class="block mx-auto uppercase py-4 px-16 mt-8 text-white tracking-wider font-semibold bg-color-primary w-full"
-                  onclick="return gtag_report_conversion_contact()"
                 >
                   send
                 </button>

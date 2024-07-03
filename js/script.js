@@ -49,6 +49,28 @@ function setSignupConversionTag() {
   }
 }
 
+// Handle form submission
+const handleSubmit = (event) => {
+  event.preventDefault()
+
+  const myForm = event.target
+  const formData = new FormData(myForm)
+
+  fetch('/', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: new URLSearchParams(formData).toString(),
+  })
+    .then((response) => {
+      if (response.ok) {
+        window.open('/thank-you.html', '_blank')
+      } else {
+        throw new Error('Form submission failed')
+      }
+    })
+    .catch((error) => alert(error))
+}
+
 // FAQ open and close
 let questions = document.querySelectorAll('.accordion')
 
@@ -67,6 +89,8 @@ if (questions !== null) {
 
 function handleScroll() {
   let servicesEl = document.getElementById('services')
+  if (servicesEl === null) return
+
   let servicesElPosition =
     servicesEl.getBoundingClientRect().top + window.scrollY
 
@@ -87,6 +111,7 @@ function getCurrentYear() {
 
 function init() {
   getCurrentYear()
+  document.querySelector('form').addEventListener('submit', handleSubmit)
   window.addEventListener('scroll', handleScroll)
 }
 
