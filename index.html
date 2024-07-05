@@ -104,21 +104,37 @@
       }
     </script>
     <title>Web Design For Small Businesses | Webtamin</title>
-
-    <!-- CSS Files -->
-
+    <!-- Preload Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      />
+    </noscript>
+    <!-- Preload Hero Images -->
+    <link rel="preload" as="image" href="images/hero.webp" />
+    <link rel="preload" as="image" href="images/hero-480.webp" />
+    <link rel="preload" as="image" href="images/hero-640.webp" />
+    <!-- Load CSS -->
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
     <link rel="manifest" href="site.webmanifest" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preload" as="image" href="images/hero.webp" />
 
     <!-- Google tag (gtag.js) -->
     <script
@@ -242,12 +258,11 @@
           <div class="flex flex-col lg:flex-row lg:items-center mt-16">
             <div>
               <h1 class="text-white font-bold text-5xl lg:text-7xl">
-                Web Design<br />
-                For Small Businesses
+                Website That Gets Leads For Small Business
               </h1>
               <p class="text-gray-100 md:text-xl my-8">
-                Forget the website that brings you nothing. I specialize in
-                website design that gets leads for your small business.
+                Forget the website that brings you nothing. Get a personal
+                expert help to build a website and boost your sales.
               </p>
               <a
                 href="#contact"
@@ -272,7 +287,63 @@
           </div>
         </div>
       </section>
-
+      <!-- Trusted By -->
+      <section class="py-16 bg-gray-50 px-8">
+        <div class="container mx-auto flex flex-col items-center">
+          <!-- Title -->
+          <h2 class="text-center mt-4 text-3xl font-bold md:text-5xl">
+            Trusted By
+          </h2>
+          <div
+            class="mt-16 grid grid-cols-2 justify-items-center items-center gap-8 md:grid-cols-4"
+          >
+            <img
+              src="images/client-logos/sat-logo-400.webp"
+              srcset="
+                images/client-logos/sat-logo-200.webp 200w,
+                images/client-logos/sat-logo-400.webp 201w
+              "
+              alt="client logo 1"
+              class="w-full md:w-2/3"
+              width="400"
+              height="85"
+            />
+            <img
+              src="images/client-logos/next-level-logo-400.webp"
+              srcset="
+                images/client-logos/next-level-logo-200.webp 200w,
+                images/client-logos/next-level-logo-400.webp 201w
+              "
+              alt="client logo 2"
+              class="w-full md:w-2/3"
+              width="400"
+              height="53"
+            />
+            <img
+              src="images/client-logos/jun-law-firm-logo-400.webp"
+              srcset="
+                images/client-logos/jun-law-firm-logo-200.webp 200w,
+                images/client-logos/jun-law-firm-logo-400.webp 201w
+              "
+              alt="client logo 3"
+              class="w-full md:w-2/3"
+              width="400"
+              height="188"
+            />
+            <img
+              src="images/client-logos/samsung-shipping-logo-400.webp"
+              srcset="
+                images/client-logos/samsung-shipping-logo-200.webp 200w,
+                images/client-logos/samsung-shipping-logo-400.webp 201w
+              "
+              alt="client logo 4"
+              class="w-full md:w-2/3"
+              width="400"
+              height="140"
+            />
+          </div>
+        </div>
+      </section>
       <!-- What you get -->
       <section class="py-16 bg-gray-100" id="benefits">
         <div>
@@ -591,7 +662,7 @@
                 <a
                   href="#contact"
                   class="mx-auto text-sm text-white bg-color-primary inline-block uppercase px-6 py-3 shadow-md rounded-sm lg:text-base"
-                  >contact me</a
+                  >get started</a
                 >
               </div>
               <img
