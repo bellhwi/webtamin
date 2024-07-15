@@ -63,7 +63,7 @@ const handleSubmit = (event) => {
   })
     .then((response) => {
       if (response.ok) {
-        window.open('/thank-you.html', '_blank')
+        window.location.href = '/thank-you.html' // Redirect in the same tab
       } else {
         throw new Error('Form submission failed')
       }
