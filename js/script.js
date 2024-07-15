@@ -113,6 +113,13 @@ function init() {
   getCurrentYear()
   document.querySelector('form').addEventListener('submit', handleSubmit)
   window.addEventListener('scroll', handleScroll)
+  document.addEventListener('DOMContentLoaded', (event) => {
+    const urlParams = new URLSearchParams(window.location.search)
+    if (urlParams.get('clearForm') === 'true') {
+      // Assuming you have a form with an id of 'contactForm'
+      document.getElementById('contactForm').reset()
+    }
+  })
 }
 
 init()

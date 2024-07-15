@@ -158,8 +158,8 @@
               </p>
               <a
                 href="#"
+                onclick="goBackAndClearForm()"
                 class="mx-auto text-sm text-white bg-color-primary inline-block uppercase px-6 py-3 shadow-md rounded-sm lg:text-base"
-                onclick="window.history.back()"
                 >Go back</a
               >
             </div>
@@ -167,5 +167,22 @@
         </div>
       </section>
     </main>
+    <script>
+      function goBackAndClearForm() {
+        // Check if the document.referrer is not empty and is from your site
+        if (
+          document.referrer &&
+          new URL(document.referrer).hostname === window.location.hostname
+        ) {
+          // Navigate back with a special query parameter to signal form clearing
+          const previousPageUrl = new URL(document.referrer)
+          previousPageUrl.searchParams.set('clearForm', 'true')
+          window.location.href = previousPageUrl.href
+        } else {
+          // Fallback if there's no referrer or it's not from the same site
+          window.history.back()
+        }
+      }
+    </script>
   </body>
 </html>
