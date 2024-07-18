@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "lite-youtube-embed": "^0.3.2",
     "webpack": "^5.89.0"
   },
   "devDependencies": {
