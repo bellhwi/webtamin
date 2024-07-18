@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "braces": "^3.0.3",
     "webpack": "^5.89.0"
   },
   "devDependencies": {
